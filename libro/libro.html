@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Genealogía de Manuel Salvador Álvarez del Pino Ruiz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --ink:#2a2622; --muted:#6f665c; --rule:#e2d7c3; --paper:#fbf8f1; --accent:#1f5f68; --gold:#c39322;
+  --l0:#1f6f78; --l1:#a23b48; --l2:#b07a12; --l3:#4d5fa3; }
+@page { size: A4; margin: 20mm 19mm 22mm;
+  @bottom-center { content: counter(page); font: 10pt "EB Garamond", serif; color: #8a8075; } }
+@page cover { margin: 0; @bottom-center { content: none; } }
+@page land { size: A4 landscape; margin: 11mm 13mm 14mm;
+  @bottom-center { content: counter(page); font: 9pt "EB Garamond", serif; color: #8a8075; } }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; color: var(--ink); font: 11.6pt/1.55 "EB Garamond", Georgia, serif; }
+.cover { page: cover; height: 297mm; width: 210mm; background: #f6f1e7; position: relative; overflow: hidden; break-after: page; }
+.cover-art { position: absolute; left: 50%; top: 18mm; width: 175mm; height: 175mm; transform: translateX(-50%); }
+.cover-art svg { width: 100%; height: 100%; }
+.cover-text { position: absolute; left: 22mm; right: 22mm; bottom: 26mm; text-align: center; }
+.kicker { font: 600 9pt Inter, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: var(--accent); }
+.cover h1 { font: 500 37pt/1.05 "EB Garamond", serif; margin: 4mm 0 5mm; letter-spacing: -.01em; }
+.cover .sub { font-style: italic; font-size: 14pt; color: #4a433b; margin: 0 0 6mm; }
+.cover .meta { font: 500 9pt Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+.front { break-after: page; }
+.small-title { font: 600 9pt Inter, sans-serif; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin: 0 0 5mm; }
+p.big { font-size: 15pt; line-height: 1.5; }
+.toc { list-style: none; counter-reset: c; padding: 0; margin: 0; }
+.toc li { counter-increment: c; display: flex; gap: 6mm; padding: 2.6mm 0; border-bottom: 1px solid var(--rule); font-size: 14pt; }
+.toc li::before { content: counter(c); font: 600 10pt Inter, sans-serif; color: var(--accent); width: 8mm; padding-top: 1.2mm; }
+
+.chapter { break-before: page; }
+.chap-n { font: 600 9pt Inter, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin-top: 18mm; }
+.chapter h1 { font: 500 30pt/1.08 "EB Garamond", serif; margin: 3mm 0 8mm; padding-bottom: 6mm; border-bottom: 1px solid var(--rule); }
+p { margin: 0 0 3.2mm; text-align: justify; hyphens: auto; }
+p.lead { font-size: 13.5pt; line-height: 1.5; color: #3d3730; text-align: left; }
+p.drop::first-letter { float: left; font-size: 46pt; line-height: .85; padding: 1.5mm 2mm 0 0; color: var(--accent); }
+h3 { font: 600 15pt "EB Garamond", serif; margin: 8mm 0 3mm; break-after: avoid; }
+ol.num li, ul.notes li { margin-bottom: 1.4mm; font-size: 11pt; line-height: 1.45; }
+ul.notes { padding-left: 5mm; }
+.aside { background: #f6f1e7; border-left: 3px solid var(--gold); padding: 4mm 5mm; margin-top: 6mm; font-size: 11pt; }
+.note { font-size: 9.5pt; color: var(--muted); font-family: Inter, sans-serif; }
+
+.lineage { margin: 6mm 0 4mm; border-left: 2px solid #cfe0e0; padding-left: 0; }
+.lin-row { display: flex; gap: 4mm; align-items: flex-start; padding: 1.6mm 0 1.6mm 0; break-inside: avoid; }
+.lin-g { flex: none; width: 7mm; height: 7mm; margin-left: -3.6mm; border-radius: 50%; background: #fff; border: 1.5px solid var(--l0); color: var(--l0);
+  font: 600 7.5pt/6.4mm Inter, sans-serif; text-align: center; }
+.lin-row.hl .lin-g { background: var(--l0); color: #fff; }
+.lin-row b { font-weight: 600; }
+.lin-row .yr { font: 8.5pt Inter, sans-serif; color: var(--muted); }
+.lin-row .sp { font-style: italic; color: #5b544b; font-size: 10.5pt; }
+article.gen { margin-top: 9mm; }
+.gen-head { display: flex; gap: 4mm; align-items: flex-start; break-after: avoid; margin-bottom: 3mm; }
+.gen-n { flex: none; width: 10mm; height: 10mm; border-radius: 50%; background: var(--l0); color: #fff; font: 600 11pt/10mm Inter, sans-serif; text-align: center; margin-top: 1mm; }
+.gen-head h2 { font: 600 18pt/1.15 "EB Garamond", serif; margin: 0; }
+.dates { font: 600 9pt Inter, sans-serif; color: var(--l0); letter-spacing: .05em; margin-top: 1mm; }
+.subt { font-style: italic; color: var(--muted); }
+.kids-t { font-weight: 600; margin-top: 3mm; break-after: avoid; }
+ol.kids { margin: 0 0 2mm; padding-left: 6mm; font-size: 11pt; }
+ol.kids li { margin-bottom: 1mm; }
+.photos { display: flex; gap: 4mm; margin: 4mm 0; break-inside: avoid; }
+.photos figure { flex: 1; margin: 0; }
+.photos img { width: 100%; height: 78mm; object-fit: cover; border-radius: 2mm; }
+figcaption { font: italic 9pt "EB Garamond", serif; color: var(--muted); margin-top: 1.5mm; }
+blockquote { margin: 5mm 0; padding: 4mm 6mm; background: #f6f1e7; border-left: 3px solid var(--gold); break-inside: avoid; }
+blockquote p { font-style: italic; }
+cite { font: 600 8.5pt Inter, sans-serif; color: var(--muted); font-style: normal; }
+figure.hero { margin: 6mm 0; break-inside: avoid; text-align: center; }
+figure.hero img { max-width: 100%; max-height: 120mm; border-radius: 2mm; }
+.kidcards { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+.kc { border: 1px solid var(--rule); border-radius: 2mm; padding: 3mm 4mm; break-inside: avoid; background: #fffdf8; }
+.kc b { display: block; font-size: 13pt; }
+.kc span { display: block; font: 8.8pt/1.45 Inter, sans-serif; color: var(--muted); }
+.lines4 { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin: 5mm 0; }
+.lines4 div { border: 1px solid var(--rule); border-radius: 2mm; padding: 3mm 4mm; display: grid; grid-template-columns: 5mm 1fr; column-gap: 2mm; }
+.lines4 i { width: 4mm; height: 4mm; border-radius: 50%; margin-top: 1.4mm; grid-row: span 2; }
+.lines4 span { font-size: 10pt; color: var(--muted); }
+table.gens { width: 100%; border-collapse: collapse; margin: 5mm 0 3mm; font: 9.5pt Inter, sans-serif; }
+table.gens th { text-align: left; font-weight: 600; color: var(--muted); border-bottom: 1.5px solid var(--ink); padding: 1.6mm 2mm; }
+table.gens td { border-bottom: 1px solid var(--rule); padding: 1mm 2mm; }
+table.gens tr { break-inside: avoid; }
+
+.land { page: land; break-before: page; height: 184mm; display: flex; flex-direction: column; }
+.land-t { font: 500 18pt "EB Garamond", serif; margin: 0 0 1mm; }
+.land-s { font-size: 10pt; color: var(--muted); margin: 0 0 2mm; }
+.land svg { flex: 1; width: 100%; min-height: 0; }
+.facs-h { display: flex; align-items: baseline; gap: 4mm; border-bottom: 1px solid var(--rule); padding-bottom: 2mm; margin-bottom: 3mm; }
+.facs-h span { font: 600 9pt Inter, sans-serif; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+.facs-h b { font: 500 14pt "EB Garamond", serif; }
+.facs-img { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; }
+.facs-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+.index .idx { columns: 2; column-gap: 8mm; font-size: 9.6pt; line-height: 1.3; }
+.index h4 { font: 600 13pt "EB Garamond", serif; color: var(--accent); margin: 3mm 0 1mm; break-after: avoid; }
+.ix { display: grid; grid-template-columns: 3mm 1fr; column-gap: 1.6mm; break-inside: avoid; margin-bottom: 1.1mm; }
+.ix i { width: 2.2mm; height: 2.2mm; border-radius: 50%; margin-top: 1.1mm; }
+.ix .m { grid-column: 2; font: 7.4pt Inter, sans-serif; color: var(--muted); }
+.colophon { break-before: page; display: flex; flex-direction: column; justify-content: flex-end; height: 240mm; text-align: center; }
+.colophon p { text-align: center; }
+
+svg text { font-family: Inter, sans-serif; }
+.pl { fill: none; stroke: #b9ad99; stroke-width: 1.2; }
+</style>
+</head>
+<body>
+<section class="cover">
+  <div class="cover-art"><svg id="fan" viewBox="-1000 -1000 2000 2000"></svg></div>
+  <div class="cover-text">
+    <div class="kicker">Genealogía de</div>
+    <h1>Manuel Salvador<br>Álvarez del Pino Ruiz</h1>
+    <p class="sub">Ascendencia, historia y descendencia de la familia Álvarez del Pino en Antioquia</p>
+    <p class="meta">510 antepasados · 16 generaciones · 28 cuadros genealógicos</p>
+  </div>
+</section>
+<section class="front">
+  <h2 class="small-title">Presentación</h2>
+  <p class="big">Este libro reúne la investigación genealógica de la familia Álvarez del Pino: la historia del apellido, el linaje que llegó a Antioquia a comienzos del siglo XVII y que, generación tras generación, desembocó en Manuel Salvador Álvarez Ruiz, arriero de San Cristóbal asentado en San Antonio de Prado, y en sus hijos.</p>
+  <p>La información proviene de los 28 cuadros de ascendientes y de los textos elaborados por el autor de la investigación, que suman 2.029 posiciones en los árboles. Como muchos antepasados aparecen varias veces —algo habitual en las familias antioqueñas de la Colonia, donde los matrimonios entre parientes eran frecuentes—, en este libro cada persona se cuenta una sola vez: en total, <b>510 antepasados distintos</b> repartidos en <b>16 generaciones</b>, desde alrededor de 1500.</p>
+  <p>Los nombres, lugares y fechas se transcribieron tal como aparecen en los cuadros originales, que se reproducen completos en el capítulo 6. Cuando un dato aparece escrito de varias maneras, se conservó la forma más completa.</p>
+  <h2 class="small-title" style="margin-top:14mm">Contenido</h2>
+  <ol class="toc">
+    <li><span>Metodología y notas del autor</span></li>
+    <li><span>Álvarez: origen y significado</span></li>
+    <li><span>El linaje Álvarez del Pino</span></li>
+    <li><span>Manuel Salvador Álvarez Ruiz y su familia</span></li>
+    <li><span>El árbol de ascendientes</span></li>
+    <li><span>Los 28 cuadros originales</span></li>
+    <li><span>Índice de personas</span></li>
+  </ol>
+</section>
+<section class="chapter"><div class="chap-n">Capítulo 1</div><h1>Metodología y notas del autor</h1>
+<p class="lead">La metodología del trabajo fue:</p><ol class="num"><li>Investigación de los ancestros de los apellidos en diferentes fuentes bibliográficas sobre genealogías.</li><li>Consultas en genealogías de apellidos investigados que tienen alguna relación con la familia Restrepo Jaramillo – Sánchez Isaza.</li><li>Consultas telefónicas y por correo electrónico a diferentes descendientes.</li><li>Datos recolectados de miembros de la familia para confirmar, completar y corregir la información.</li></ol>
+<h3>Notas para leer los cuadros</h3><ul class="notes"><li>Es común que en los primeros descendientes directos de los españoles algunos de sus ancestros tengan como primer apellido el apellido de la madre o el segundo del padre.</li><li>En la época de la Independencia, los hijos de los españoles, para identificarse con la causa, suprimieron el «De» o «De la». Por ejemplo: De Restrepo, Del Pino, De Castrillón y De Alza.</li><li>Otros suprimieron el primer apellido. Por ejemplo: López de Restrepo quedó Restrepo; Álvarez de Castrillón quedó Álvarez; Álvarez del Pino quedó Álvarez; Vélez de Rivero quedó Vélez, y otros.</li><li>El árbol genealógico está diseñado en diferentes tamaños de letra por la cantidad de ascendientes. Al final del árbol n.º 1 cada integrante tiene un número en la parte de abajo, que corresponde al número del árbol en el que continúa.</li><li>Es posible que haya algún error en las fechas, o que no se especifique si son de nacimiento o de muerte; también puede haber algún error en un nombre, ya que todos estos datos fueron recopilados de diferentes fuentes genealógicas y, por su antigüedad, es imposible verificarlos. Se trató de hacer lo mejor posible.</li><li>Selección de los escudos: en España y otros países los apellidos se identifican con escudos que algún personaje de ese apellido escogió porque lo identificaba con sus hazañas, especialmente en las guerras, o por servicio al rey de turno; otros, porque tenían algún título nobiliario. El escudo de un mismo apellido cambia en las diferentes provincias de España; los escudos de este trabajo se tomaron al azar.</li><li>Convenciones: * = lugar y/o fecha de nacimiento; + = lugar y/o fecha de muerte.</li><li>Los apellidos más directos se marcaron con un color determinado para que sea más fácil identificarlos en cada cuadro.</li></ul>
+<div class="aside"><b>Cómo leer las fechas.</b> En los cuadros, cada persona lleva debajo un lugar y un año abreviados: <i>ESP.</i> España, <i>MED.</i> Medellín, <i>ANT.</i> Antioquia, <i>SANTA FE</i> Santa Fe de Antioquia, <i>BOG.</i> Bogotá, <i>REM.</i> Remedios, <i>ZARAG.</i> Zaragoza. «X» indica un dato desconocido y «XXX», que no se conoce la ascendencia de esa persona.</div>
+</section>
+<section class="chapter"><div class="chap-n">Capítulo 2</div><h1>Álvarez: origen y significado</h1>
+<p class="lead drop">El apellido «Álvarez» es uno de los más antiguos de España y está extendido por las Américas y Portugal. Como apellido patronímico parece iniciarse en el capitán Alvar, nacido en la provincia de Soria, quien fue compañero del Cid. A las familias que llevan este apellido siempre se las ha considerado descendientes de las casas de Asturias y León.</p><p class="">El más antiguo y principal solar de los Álvarez estuvo en Nava, Castropol, provincia de Asturias, y floreció hacia el siglo X. Otra rama, los Álvarez de León, tuvo su solar en Robledo, ayuntamiento de Láncara; de esta familia se derivaron varias ramas que extendieron el apellido por toda Iberoamérica.</p><p class="">En el Diccionario nobiliario español, Julio de Atienza registra más de ochenta familias «Álvarez» que llevan apellidos compuestos con títulos suficientes para hacerlo, todas descendientes de las casas de Asturias y de Toledo. Allí figuran, entre otras: Álvarez-Baragaña, Álvarez-Barriada, Álvarez-Caramuela, Álvarez de Coca, Álvarez de Espejo, Álvarez de Eulate, Álvarez de Faria, Álvarez de Lorenzana, Álvarez de Meda, Álvarez de Pedrosa, Álvarez de Toledo, Álvarez de la Torre, Álvarez del Bayo, Álvarez del Pino, Álvarez de la Villeta, Álvarez-Rabanal y Álvarez-Salazar.</p><p class="">Varios autores afirman que hay Álvarez procedentes de León en los que el apellido no es patronímico, puesto que no lo tomaron del nombre de su antecesor sino del sitio conocido como Albares, cerca del Bierzo, en Ponferrada. Sin embargo, se ha establecido que los «Álvarez del Pino» son el tronco principal que trajo este apellido a Colombia y luego a Antioquia.</p><p class="">Desarrollar en detalle toda la línea genealógica de esta descendencia es complejo, dada la profusión con la que se multiplicó el apellido en el país, la extensa información que existe al respecto y la aparición de muchos otros troncos diferentes del principal. El genealogista don Rodrigo Escobar Restrepo afirma que uno de los primeros en traer el apellido a Colombia fue don Diego Álvarez del Pino.</p>
+</section>
+<section class="chapter"><div class="chap-n">Capítulo 3</div><h1>El linaje Álvarez del Pino</h1>
+<p class="lead">Diez generaciones por línea de varón, desde don Diego Álvarez del Pino, fundador de la familia en Antioquia, hasta Manuel Salvador Álvarez Ruiz. Los cuadros conservan además los nombres de tres generaciones anteriores en España.</p>
+<div class="lineage">
+<div class="lin-row"><span class="lin-g">·</span><div><b>García Álvarez de Toledo</b> <span class="yr">España</span><br><span class="sp">casado con María Loaiza</span></div></div>
+<div class="lin-row"><span class="lin-g">·</span><div><b>Diego Álvarez Loaiza</b> <span class="yr">1534 · España</span><br><span class="sp">casado con Lucía Maldonado</span></div></div>
+<div class="lin-row"><span class="lin-g">·</span><div><b>Diego Álvarez Maldonado</b> <span class="yr">1564 · España</span><br><span class="sp">casado con Ana María del Pino Fernández</span></div></div>
+<div class="lin-row hl"><span class="lin-g">1</span><div><b>Diego Álvarez del Pino Fernández</b> <span class="yr">1584 · España</span><br><span class="sp">casado con Justina Arcos Cortés</span></div></div>
+<div class="lin-row hl"><span class="lin-g">2</span><div><b>Pedro Álvarez del Pino Arcos Cortés</b> <span class="yr">1610 · Arma (Antioquia)</span><br><span class="sp">casado con Gregoria de los Arcos Cortés Rodríguez</span></div></div>
+<div class="lin-row hl"><span class="lin-g">3</span><div><b>Gregorio Álvarez del Pino de los Arcos Cortés</b> <span class="yr">1635 · Santa Fe de Antioquia</span><br><span class="sp">casado con Juana Gabriela García de Ordaz Paladines</span></div></div>
+<div class="lin-row hl"><span class="lin-g">4</span><div><b>Juan Manuel Álvarez del Pino García de Ordaz</b> <span class="yr">1600</span><br><span class="sp">casado con Juana Lucía González de Noriega Gómez de Ureña</span></div></div>
+<div class="lin-row hl"><span class="lin-g">5</span><div><b>Diego José Álvarez del Pino González</b> <span class="yr">1724</span><br><span class="sp">casado con Tomasa Mauris Posada</span></div></div>
+<div class="lin-row hl"><span class="lin-g">6</span><div><b>José Ignacio Álvarez del Pino Mauris</b> <span class="yr">1744</span><br><span class="sp">casado con Rosalía Velásquez González</span></div></div>
+<div class="lin-row hl"><span class="lin-g">7</span><div><b>Fermin Álvarez Velásquez</b> <span class="yr">1784 · Medellín</span><br><span class="sp">casado con María Antonia Vélez Restrepo</span></div></div>
+<div class="lin-row hl"><span class="lin-g">8</span><div><b>José Miguel Álvarez Vélez</b> <span class="yr">1835</span><br><span class="sp">casado con Rosalía Vélez Rivera</span></div></div>
+<div class="lin-row hl"><span class="lin-g">9</span><div><b>Manuel Antonio Álvarez de Pino Vélez</b> <span class="yr">1851 · Medellín</span><br><span class="sp">casado con Trinidad Ruiz Velásquez Moreno</span></div></div>
+<div class="lin-row hl"><span class="lin-g">10</span><div><b>Manuel Salvador Álvarez Ruiz</b><br><span class="sp">casado con Teresa Ruiz Maya</span></div></div>
+</div>
+<article class="gen"><div class="gen-head"><span class="gen-n">1</span><div><h2>Don Diego Álvarez del Pino</h2>
+    <div class="dates">1584 – 1670</div><div class="subt">Fundador de la familia Álvarez o Álvarez del Pino en Antioquia</div></div></div>
+<p>Español, natural de Talavera de la Reina, hijo de Diego Álvarez Loaiza Maldonado, nacido en 1534, y de Ana María Álvarez Maldonado, nacida en la localidad de El Pino, España. Al establecerse el Virreinato de la Nueva Granada llegó, a fines del siglo XVI, a la Gobernación de Popayán, por los años 1610 a 1615, y luego se radicó en Cartago, donde fue tesorero de la Real Hacienda.</p>
+<p>Pasó luego a la antigua ciudad de Arma y se casó con doña Justina de los Arcos Cortés y Osorio, de ilustre linaje, hija del capitán Gómez de Arcos Cortés y de Catalina de Osorio, y nieta del alférez general Alonso de Arcos Cortés y de doña Isabel de los Ríos. Don Diego murió en Arma Vieja en 1670.</p>
+<p class="kids-t">Fueron padres de dos varones, que se sepa:</p><ol class="kids"><li>Capitán Pedro Álvarez del Pino de los Arcos Cortés, el más referenciado, ya que se radicó en el Valle de Aburrá.</li><li>Don Diego Álvarez del Pino de los Arcos Cortés, nacido en Arma hacia 1600, casado en Santa Fe de Antioquia en noviembre de 1637 con doña Beatriz de Tabares Morga, bautizada en esa ciudad en 1611. La pareja se trasladó al Valle de Aburrá, donde murió don Diego el 10 de marzo de 1661. Tuvieron cinco hijas y dos hijos: el bachiller don Juan Matías Álvarez del Pino Tabares, juez de la Santa Cruzada, residente en Cartago, que dejó descendencia de su esposa doña Mariana Bueno de Herrera; y el capitán don Mateo Álvarez del Pino Tabares, casado con doña Isabel de Lezcano Heredia, con quien tuvo diez hijos y dejó descendencia conocida en Medellín.</li></ol>
+</article>
+<article class="gen"><div class="gen-head"><span class="gen-n">2</span><div><h2>Capitán Pedro Álvarez del Pino de los Arcos Cortés</h2>
+    <div class="dates">1617 – 1700</div><div class="subt">Casado hacia 1635 con doña Gregoria Cortés Rodríguez</div></div></div>
+<p>Se trasladó con su familia a la ciudad de Santa Fe de Antioquia y luego se radicó en el Valle de Aburrá, antes de fundarse la ciudad. Por problemas con su esposa se fue a Cartago, donde vivían sus parientes Álvarez del Pino, que tenían notable posición, y allí murió en 1700. Su esposa y descendientes siguieron viviendo en el Valle de Aburrá.</p>
+<p>Doña Gregoria Cortés testó en el sitio de Tasajera, hoy Copacabana, el 14 de noviembre de 1702. Allí declaró que ella había aportado más al matrimonio que su esposo.</p>
+<p class="kids-t">Fueron padres de cuatro hijas y seis hijos:</p><ol class="kids"><li>Capitán Gregorio Álvarez del Pino Cortés.</li><li>María Álvarez del Pino Cortés, casada con Cristóbal Gómez de Castro.</li><li>Antonia Álvarez del Pino Cortés, casada con el alférez Juan Bautista de Mesa.</li><li>Úrsula Álvarez del Pino Cortés, casada con Juan López Maldonado.</li><li>Fabiana Álvarez del Pino Cortés, casada con Lorenzo Gómez de Castro.</li><li>Tomás Álvarez del Pino Cortés, casado con María Bernabela Betancur.</li><li>Sebastián Álvarez del Pino Cortés.</li><li>Pedro Álvarez del Pino Cortés.</li><li>Jacinto Álvarez del Pino Cortés.</li><li>Juan Álvarez del Pino Cortés.</li></ol>
+</article>
+<article class="gen"><div class="gen-head"><span class="gen-n">3</span><div><h2>Capitán Gregorio Álvarez del Pino Cortés</h2>
+    <div class="dates">1635 – 1690</div><div class="subt">Nació en Santa Fe de Antioquia y murió en Medellín</div></div></div>
+<p>Casado con doña Juana Gabriela García de Ordaz en el sitio de Aná, hoy Medellín, el 22 de abril de 1663. De ellos provienen los «Álvarez» más conocidos en Medellín, El Poblado y Envigado, asegura el genealogista don Rodrigo Escobar Restrepo.</p>
+<p>Don Gregorio y doña Juana Gabriela fueron padres de diez hijos, cuatro mujeres y seis varones. El apellido se perpetuó por tres varones.</p>
+<p class="kids-t">Entre sus hijos:</p><ol class="kids"><li>Don Juan Manuel Álvarez del Pino García.</li><li>Don Francisco Javier Álvarez García, casado con doña Lucía Carvajal Mejía.</li><li>Jerónima Álvarez del Pino García.</li><li>Alfonsa Álvarez del Pino García.</li><li>María Álvarez del Pino García.</li><li>Don Martín Álvarez García, casado con doña Ignacia Carvajal Mejía. Su bisnieto, don Jacinto Álvarez Somoano, se radicó en Rionegro y luego en Sonsón, siendo uno de sus primeros pobladores; fue casado con doña Mariana Londoño Bernal, y de ellos provienen la mayoría de los Álvarez de Sonsón y del antiguo departamento de Caldas.</li></ol>
+</article>
+<article class="gen"><div class="gen-head"><span class="gen-n">4</span><div><h2>Don Juan Manuel Álvarez del Pino García</h2>
+    <div class="dates">1689 – 1774</div><div class="subt">Nació el 22 de agosto de 1689</div></div></div>
+<p>Casado en primeras nupcias con doña Juana Lucía González Gómez, y en segundas con doña Francisca Pérez.</p>
+<p class="kids-t">Don Juan Manuel y doña Juana Lucía González fueron padres de tres hijos:</p><ol class="kids"><li>Don Francisco Álvarez del Pino González.</li><li>Don Gregorio Álvarez del Pino González.</li><li>Don Diego Álvarez del Pino González.</li></ol>
+</article>
+<article class="gen"><div class="gen-head"><span class="gen-n">5</span><div><h2>Don Diego Álvarez del Pino González</h2>
+    <div class="dates">1723 – 1811</div><div class="subt">Casado con doña Tomasa Mauris Posada</div></div></div>
+<p class="kids-t">Fueron padres de:</p><ol class="kids"><li>Don José Manuel Álvarez del Pino Mauris, casado con doña Rosalía Vélez González.</li><li>Don Ignacio Álvarez del Pino Mauris, casado con Rosalía Velásquez Calle y, en segundas nupcias, con Gertrudis Pérez.</li><li>Don Rafael Álvarez del Pino Mauris, casado con doña María Magdalena Díaz y, en segundas, con María de Jesús Molina.</li><li>Beatriz Álvarez del Pino Mauris, casada con Francisco Miguel Velásquez.</li><li>José Antonio Pío Álvarez del Pino Mauris, casado con María del Socorro Acosta y, en segundas nupcias, con Juana María Pérez.</li><li>Fermín Álvarez del Pino Mauris, casado con Ana María Montoya y, en segundas nupcias, con María Jesús Cañola.</li><li>Juan Pablo Álvarez del Pino, casado con Ana María Velásquez.</li><li>Clemente Álvarez del Pino Mauris, casado con Mercedes Arango y, en segundas nupcias, con Juana Muñoz Molina.</li></ol>
+</article>
+<article class="gen"><div class="gen-head"><span class="gen-n">6</span><div><h2>Ignacio Álvarez del Pino y Mauris</h2>
+    <div class="dates">1744</div><div class="subt">Casado en primeras nupcias con doña Rosa Velásquez</div></div></div>
+<p>En segundas nupcias se casó con doña Gertrudis Pérez, hija de don José Antonio Pérez y de doña María Antonia Maya.</p>
+<p class="kids-t">Hijos del primer matrimonio:</p><ol class="kids"><li>José Antonio Álvarez Velásquez, casado con doña Jacinta Escobar.</li><li>José María Álvarez Velásquez, casado con doña Ciriaca Escobar Rivera.</li><li>Silvestre Álvarez Velásquez, casado primero con doña Francisca Escobar Rivera, hermana de las anteriores, y después con doña Josefa Montoya.</li><li>Juan de Dios Álvarez Velásquez, casado con doña Josefa Piedrahíta.</li><li>Policarpo Álvarez Velásquez, casado con doña Juana María Correa.</li><li>Francisca Álvarez Velásquez, casada con don Antonio Vélez.</li><li>Fermín Álvarez Velásquez, casado con doña María Antonia Vélez.</li><li>Blas Álvarez Velásquez, casado con doña Josefa Posada.</li><li>María Ignacia Álvarez Velásquez, casada con don Florentino Vélez.</li><li>Josefa de los Dolores Álvarez Velásquez, monja carmelita de Medellín.</li></ol>
+<p class="kids-t">Hijos del segundo matrimonio:</p><ol class="kids"><li>María Josefa Álvarez Pérez, casada con don Joaquín García (de Rionegro).</li><li>Francisco José Álvarez Pérez, casado con doña Joaquina Mejía.</li><li>José María Álvarez Pérez, casado con doña Juana Echeverri.</li><li>Mariano Álvarez Pérez, casado con doña María Micaela Echeverri.</li><li>Joaquina Álvarez Pérez, casada con don José María Correa.</li><li>María Álvarez Pérez, casada con don Francisco Díaz.</li><li>María de Jesús Álvarez Pérez, casada con don Francisco Fernández.</li><li>José Ignacio Álvarez Pérez, casado con doña Guadalupe Fernández.</li></ol>
+</article>
+<article class="gen"><div class="gen-head"><span class="gen-n">7</span><div><h2>Fermín Álvarez Velásquez</h2>
+    <div class="dates">1784</div><div class="subt">Casado con María Antonia Vélez Restrepo</div></div></div>
+<p class="kids-t">Fueron padres de:</p><ol class="kids"><li>José Miguel Álvarez Vélez.</li></ol>
+</article>
+<article class="gen"><div class="gen-head"><span class="gen-n">8</span><div><h2>José Miguel Álvarez Vélez</h2>
+    <div class="dates">1835</div><div class="subt">Casado con Rosalía Vélez</div></div></div>
+<p class="kids-t">Fueron padres de:</p><ol class="kids"><li>Manuel Antonio Álvarez Vélez.</li></ol>
+</article>
+<article class="gen"><div class="gen-head"><span class="gen-n">9</span><div><h2>Manuel Antonio Álvarez Vélez</h2>
+    <div class="dates">1851</div><div class="subt">Casado con Trinidad Ruiz Velásquez</div></div></div>
+<p>Manuel Antonio Álvarez Vélez fue impulsor del progreso de San Cristóbal. Vivió en San Sebastián de Palmitas, en La Aldea, pero cuando la familia estaba pequeña se radicó en San Cristóbal, en El Copete, parte baja del patio conocido como El Filo, en la casa que luego fuera de Tulio Arteaga: una casa antigua con techo de madera redonda y cañabrava y piso de ladrillo partido. La finca estaba cultivada en café y caña, con establecimiento para la molienda de panela; en la parte de arriba estaba el trapiche.</p>
+<p>Eran arrieros. Sus antepasados españoles fueron dignatarios del gobierno español en Popayán y Cartago. Antiguamente la familia era arriera.</p>
+<p>La primera maquinaria para la fábrica Coltejer la trajeron los hijos de Manuel Antonio: Manuel Álvarez Ruiz, Elías Segundo Álvarez, Antonio José (papá de Nelo), Isaac (papá de los Álvarez de Palmitas), De Jesús y Gilberto. Esa maquinaria la trajeron desde la estación Limón, pues el túnel de La Quiebra aún no lo habían abierto.</p>
+<div class="photos"><figure><img src="../docs/img/manuel-antonio-1.jpg"><figcaption>Fotografía incluida en la sección de Manuel Antonio Álvarez Vélez y Trinidad Ruiz Velásquez.</figcaption></figure><figure><img src="../docs/img/manuel-antonio-2.jpg"><figcaption>Fotografía incluida en la sección de Manuel Antonio Álvarez Vélez y Trinidad Ruiz Velásquez.</figcaption></figure></div>
+<p class="kids-t">Fueron padres de:</p><ol class="kids"><li>Elías Segundo Álvarez Ruiz, papá de Elías «Chiquito».</li><li>Ángel María (Jesús) Álvarez Ruiz, papá de Conrado, Isaac y Marcos Álvarez.</li><li>Antonio José Álvarez Ruiz, papá de Nelo, Gerardo y Ramón Álvarez.</li><li>Gilberto Álvarez Ruiz.</li><li>Isaac Álvarez Ruiz, papá de los Álvarez de Palmitas.</li><li>Mercedes Álvarez Ruiz.</li><li>Manuel Salvador Álvarez Ruiz.</li><li>Anatolia Álvarez Ruiz, mamá de Luis Restrepo, esposo de Berta Restrepo.</li></ol>
+</article>
+<article class="gen"><div class="gen-head"><span class="gen-n">10</span><div><h2>Manuel Salvador Álvarez Ruiz</h2>
+    <div class="dates"></div><div class="subt">Casado con Teresa Ruiz Maya · arriero fino de San Cristóbal, se asentó en San Antonio de Prado</div></div></div>
+<div class="photos"><figure><img src="../docs/img/manuel-salvador-y-teresa.jpg"><figcaption>Fotografía incluida en la sección de Manuel Salvador Álvarez Ruiz y Teresa Ruiz Maya.</figcaption></figure></div>
+<blockquote><p>«Cuando mi tío Toño encabezaba era porque mi papá estaba enfermo. En una ocasión le llegó una razón con un arriero de que llevara dos mulas de carga a Caracolí, porque se les habían ahogado en un pantanero las mulas que traían la turega con la Pelton. Salió a las 5 de la mañana de San Cristóbal y llegó después de viajar 3 días y 2 noches sin descansar. Llegó, empacaron y arrancaron con la carga.»</p><cite>Testimonios de arriería — Conrado Álvarez</cite></blockquote>
+<p class="kids-t">Manuel Álvarez Ruiz y Teresa Ruiz Maya tuvieron 18 hijos, de los cuales se criaron solamente 11: 3 varones y 8 mujeres.</p>
+</article>
+</section>
+<section class="chapter"><div class="chap-n">Capítulo 4</div><h1>Manuel Salvador Álvarez Ruiz y su familia</h1>
+<p class="lead">Manuel Salvador Álvarez Ruiz, hijo de Manuel Antonio Álvarez Vélez y de Trinidad Ruiz Velásquez, se casó con Teresa Ruiz Maya. Tuvieron 18 hijos, de los cuales se criaron 11: tres varones y ocho mujeres.</p>
+<figure class="hero"><img src="../docs/img/manuel-salvador-y-teresa.jpg"><figcaption>Fotografía incluida en la sección de Manuel Salvador Álvarez Ruiz y Teresa Ruiz Maya.</figcaption></figure>
+<h3>Los hijos</h3><div class="kidcards">
+<div class="kc"><b>Horacio Álvarez Ruiz <i>(«Pate Palo»)</i></b><span>Nacido el 15/7/1920</span><span>Casado con Miryam Velásquez</span></div>
+<div class="kc"><b>Otilia Álvarez Ruiz</b><span>Nacida el 23/10/1921</span><span>Religiosa de la Madre Laura</span></div>
+<div class="kc"><b>Edelmira Álvarez Ruiz</b><span>Nacida el 6/4/1923</span><span>Casada con Alejandro Vélez</span></div>
+<div class="kc"><b>Alicia Álvarez Ruiz</b><span>Nacida el 6/7/1924</span><span>Casada con Horacio Álvarez («Galleta»)</span></div>
+<div class="kc"><b>Concha Álvarez Ruiz</b><span>Nacida el 22/11/1925</span><span>Casada con Eduardo Ruiz</span></div>
+<div class="kc"><b>Judith Álvarez Ruiz</b><span>Nacida el 5/9/1928</span><span>Casada con Ricardo Vélez</span></div>
+<div class="kc"><b>Bernardo Álvarez Ruiz</b><span>Nacido el 18/1/1930</span><span>Casado con Teresita Restrepo Álvarez</span></div>
+<div class="kc"><b>Marta Álvarez Ruiz</b><span>Nacida el 19/4/1934</span><span>Casada con Gerardo Álvarez</span></div>
+<div class="kc"><b>Hernán Álvarez Ruiz</b><span>Nacido el 3/12/1935</span><span>Casado con Esther Velásquez</span></div>
+<div class="kc"><b>Sabina Álvarez Ruiz</b><span>Nacida el 28/9/1941</span><span>Casada con Eusebio Betancur</span></div>
+<div class="kc"><b>Rocío Álvarez Ruiz</b><span>Nacida el 26/3/1944</span><span>Casada con Darío Álvarez</span></div>
+</div>
+<h3>Los hermanos de Manuel Salvador</h3><p>Hijos de Manuel Antonio Álvarez Vélez y Trinidad Ruiz Velásquez: Elías Segundo Álvarez Ruiz, Ángel María (Jesús) Álvarez Ruiz, Antonio José Álvarez Ruiz, Gilberto Álvarez Ruiz, Isaac Álvarez Ruiz, Mercedes Álvarez Ruiz, Anatolia Álvarez Ruiz y el propio Manuel Salvador.</p>
+<figure class="hero"><img src="../docs/img/familia-final.jpg"><figcaption>Fotografía familiar incluida al final de la sección de los hijos de Manuel Salvador Álvarez Ruiz.</figcaption></figure>
+</section>
+<section class="chapter"><div class="chap-n">Capítulo 5</div><h1>El árbol de ascendientes</h1>
+<p class="lead">Cada persona tiene dos padres, cuatro abuelos, ocho bisabuelos… En este libro el árbol se organiza a partir de los cuatro abuelos de Manuel Salvador, y cada línea lleva su color.</p>
+<div class="lines4"><div><i style="background:#1f6f78"></i><b>Línea Álvarez</b><span>José Miguel Álvarez Vélez</span></div><div><i style="background:#a23b48"></i><b>Línea Vélez</b><span>Rosalía Vélez Rivera</span></div><div><i style="background:#b07a12"></i><b>Línea Ruiz</b><span>José María Ruiz Moreno</span></div><div><i style="background:#4d5fa3"></i><b>Línea Velásquez</b><span>María Mercedes Velásquez Restrepo</span></div></div>
+<p>La línea Vélez —la de la abuela paterna, Rosalía Vélez Rivera— no tiene ascendencia registrada en los cuadros; por eso casi no aparece en el gráfico. Las otras tres se extienden hasta la España del siglo XVI.</p>
+<table class="gens"><thead><tr><th>Generación</th><th>Parentesco con Manuel Salvador</th><th>Posibles</th><th>Identificados</th></tr></thead><tbody>
+<tr><td>1</td><td>Padres</td><td>2</td><td>2</td></tr><tr><td>2</td><td>Abuelos</td><td>4</td><td>4</td></tr><tr><td>3</td><td>Bisabuelos</td><td>8</td><td>6</td></tr><tr><td>4</td><td>Tatarabuelos</td><td>16</td><td>12</td></tr><tr><td>5</td><td>Cuartos abuelos</td><td>32</td><td>20</td></tr><tr><td>6</td><td>Quintos abuelos</td><td>64</td><td>36</td></tr><tr><td>7</td><td>Sextos abuelos</td><td>128</td><td>50</td></tr><tr><td>8</td><td>Séptimos abuelos</td><td>256</td><td>71</td></tr><tr><td>9</td><td>Octavos abuelos</td><td>512</td><td>89</td></tr><tr><td>10</td><td>Novenos abuelos</td><td>1.024</td><td>83</td></tr><tr><td>11</td><td>Décimos abuelos</td><td>2.048</td><td>70</td></tr><tr><td>12</td><td>Undécimos abuelos</td><td>4.096</td><td>33</td></tr><tr><td>13</td><td>Duodécimos abuelos</td><td>8.192</td><td>20</td></tr><tr><td>14</td><td>Decimotercers abuelos</td><td>16.384</td><td>6</td></tr><tr><td>15</td><td>Decimocuartos abuelos</td><td>32.768</td><td>4</td></tr><tr><td>16</td><td>Decimoquintos abuelos</td><td>65.536</td><td>4</td></tr>
+</tbody></table>
+<p class="note">«Posibles» es el número teórico de antepasados en cada generación. La diferencia con los identificados se debe tanto a los datos que no se conocen como a los antepasados que se repiten por matrimonios entre parientes.</p>
+</section>
+<section class="land"><h2 class="land-t">Los primeros cinco niveles del árbol</h2><svg id="pedigree" viewBox="0 0 1500 960"></svg></section>
+<section class="land"><h2 class="land-t">Todos los antepasados, en abanico</h2><p class="land-s">Manuel Salvador en el centro; cada anillo es una generación. Colores: <span style="color:#1f6f78">●</span> Álvarez · <span style="color:#a23b48">●</span> Vélez · <span style="color:#b07a12">●</span> Ruiz · <span style="color:#4d5fa3">●</span> Velásquez. Las dorados tienen historia en el capítulo 3.</p><svg id="fan2" viewBox="-1000 -1000 2000 2000"></svg></section>
+<section class="chapter"><div class="chap-n">Capítulo 6</div><h1>Los 28 cuadros originales</h1>
+<p class="lead">A continuación se reproducen los cuadros de ascendientes tal como fueron elaborados en la investigación original. El cuadro n.º 1 parte de Manuel Salvador; en su última fila, cada persona lleva el número del cuadro donde continúa su ascendencia.</p>
+<p>Los tamaños de letra varían según la cantidad de ascendientes de cada cuadro. Los colores identifican los apellidos más directos a la familia. Para verlos con todo detalle, la versión digital permite ampliarlos.</p>
+<table class="gens"><thead><tr><th>Cuadro</th><th>Comienza en</th></tr></thead><tbody>
+<tr><td>n.º 1</td><td>Manuel Salvador Álvarez Ruiz</td></tr><tr><td>n.º 2</td><td>Juan Manuel Álvarez del Pino García de Ordaz y Juana Lucía González de Noriega Gómez de Ureña</td></tr><tr><td>n.º 3</td><td>Manuel Mauris López y Liberata Posada Álvarez</td></tr><tr><td>n.º 4</td><td>Ignacio Javier Vélez Toro</td></tr><tr><td>n.º 5</td><td>María Cecilia Peláez Pérez</td></tr><tr><td>n.º 6</td><td>Carlos Velásquez Betancur</td></tr><tr><td>n.º 7</td><td>María Josefa Sánchez Arroyave</td></tr><tr><td>n.º 8</td><td>Alonso Restrepo López</td></tr><tr><td>n.º 9</td><td>Ana María Vélez Toro</td></tr><tr><td>n.º 10</td><td>Bonifacio Escobar Pineda y Ana María Guerra Peláez</td></tr><tr><td>n.º 11</td><td>Domingo Ruiz Cortinez y Juana María Toro Rojo</td></tr><tr><td>n.º 12</td><td>Francisco Restrepo y Nicolasa Montoya y Antonio Vélez Peláez</td></tr><tr><td>n.º 13</td><td>Juana María Gómez Pérez</td></tr><tr><td>n.º 14</td><td>Fernando Arango Vélez</td></tr><tr><td>n.º 15</td><td>José Velásquez Betancur y María Teresa Pérez de la Calle Vélez</td></tr><tr><td>n.º 16</td><td>Juan Manuel Tamayo Piedrahita</td></tr><tr><td>n.º 17</td><td>María Maya Álvarez del Pino</td></tr><tr><td>n.º 18</td><td>Miguel Jerónimo Velásquez de la Parra y Bárbara Ambrosia Betancur Álvarez</td></tr><tr><td>n.º 19</td><td>Juan Pérez de la Calle y Teresa Vélez Toro</td></tr><tr><td>n.º 20</td><td>Francisco Baltasar Tamayo Piedrahita y Francisca Piedrahita Montoya</td></tr><tr><td>n.º 21</td><td>Juan José Maya Acevedo y María Candelaria Álvarez del Pino Lezcano</td></tr><tr><td>n.º 22</td><td>Pedro José Restrepo López</td></tr><tr><td>n.º 23</td><td>Josefa Ventura Vélez Toro</td></tr><tr><td>n.º 24</td><td>Bernardo José González Gómez y Rosa Gómez Garces</td></tr><tr><td>n.º 25</td><td>Alonso Restrepo López</td></tr><tr><td>n.º 26</td><td>Ana María Vélez Toro</td></tr><tr><td>n.º 27</td><td>Juan Isidoro Puerta Molina</td></tr><tr><td>n.º 28</td><td>Lorenza Zapata Serna</td></tr>
+</tbody></table></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 1</span><b>Manuel Salvador Álvarez Ruiz</b></div><div class="facs-img"><img src="cuadros/arbol-01.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 2</span><b>Juan Manuel Álvarez del Pino García de Ordaz y Juana Lucía González de Noriega Gómez de Ureña</b></div><div class="facs-img"><img src="cuadros/arbol-02.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 3</span><b>Manuel Mauris López y Liberata Posada Álvarez</b></div><div class="facs-img"><img src="cuadros/arbol-03.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 4</span><b>Ignacio Javier Vélez Toro</b></div><div class="facs-img"><img src="cuadros/arbol-04.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 5</span><b>María Cecilia Peláez Pérez</b></div><div class="facs-img"><img src="cuadros/arbol-05.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 6</span><b>Carlos Velásquez Betancur</b></div><div class="facs-img"><img src="cuadros/arbol-06.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 7</span><b>María Josefa Sánchez Arroyave</b></div><div class="facs-img"><img src="cuadros/arbol-07.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 8</span><b>Alonso Restrepo López</b></div><div class="facs-img"><img src="cuadros/arbol-08.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 9</span><b>Ana María Vélez Toro</b></div><div class="facs-img"><img src="cuadros/arbol-09.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 10</span><b>Bonifacio Escobar Pineda y Ana María Guerra Peláez</b></div><div class="facs-img"><img src="cuadros/arbol-10.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 11</span><b>Domingo Ruiz Cortinez y Juana María Toro Rojo</b></div><div class="facs-img"><img src="cuadros/arbol-11.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 12</span><b>Francisco Restrepo y Nicolasa Montoya y Antonio Vélez Peláez</b></div><div class="facs-img"><img src="cuadros/arbol-12.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 13</span><b>Juana María Gómez Pérez</b></div><div class="facs-img"><img src="cuadros/arbol-13.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 14</span><b>Fernando Arango Vélez</b></div><div class="facs-img"><img src="cuadros/arbol-14.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 15</span><b>José Velásquez Betancur y María Teresa Pérez de la Calle Vélez</b></div><div class="facs-img"><img src="cuadros/arbol-15.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 16</span><b>Juan Manuel Tamayo Piedrahita</b></div><div class="facs-img"><img src="cuadros/arbol-16.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 17</span><b>María Maya Álvarez del Pino</b></div><div class="facs-img"><img src="cuadros/arbol-17.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 18</span><b>Miguel Jerónimo Velásquez de la Parra y Bárbara Ambrosia Betancur Álvarez</b></div><div class="facs-img"><img src="cuadros/arbol-18.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 19</span><b>Juan Pérez de la Calle y Teresa Vélez Toro</b></div><div class="facs-img"><img src="cuadros/arbol-19.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 20</span><b>Francisco Baltasar Tamayo Piedrahita y Francisca Piedrahita Montoya</b></div><div class="facs-img"><img src="cuadros/arbol-20.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 21</span><b>Juan José Maya Acevedo y María Candelaria Álvarez del Pino Lezcano</b></div><div class="facs-img"><img src="cuadros/arbol-21.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 22</span><b>Pedro José Restrepo López</b></div><div class="facs-img"><img src="cuadros/arbol-22.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 23</span><b>Josefa Ventura Vélez Toro</b></div><div class="facs-img"><img src="cuadros/arbol-23.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 24</span><b>Bernardo José González Gómez y Rosa Gómez Garces</b></div><div class="facs-img"><img src="cuadros/arbol-24.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 25</span><b>Alonso Restrepo López</b></div><div class="facs-img"><img src="cuadros/arbol-25.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 26</span><b>Ana María Vélez Toro</b></div><div class="facs-img"><img src="cuadros/arbol-26.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 27</span><b>Juan Isidoro Puerta Molina</b></div><div class="facs-img"><img src="cuadros/arbol-27.jpg"></div></section>
+<section class="land facs"><div class="facs-h"><span>Cuadro n.º 28</span><b>Lorenza Zapata Serna</b></div><div class="facs-img"><img src="cuadros/arbol-28.jpg"></div></section>
+<section class="chapter index"><div class="chap-n">Capítulo 7</div><h1>Índice de personas</h1>
+<p class="lead">Todos los antepasados identificados, ordenados alfabéticamente. Se indica la generación (1 = padres de Manuel Salvador), el año y lugar que figuran en los cuadros y los números de los cuadros en que aparece cada persona.</p><div class="idx">
+<h4>A</h4>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Agustín González Piedrahita</span><span class="m">G11 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Agustín Suárez Cardoso</span><span class="m">G9 · c. 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Alberta de Montoya</span><span class="m">G11 · c. 27</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Alonso Arcos Cortés</span><span class="m">G11 · 1520 · España · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Alonso Arcos Cortés</span><span class="m">G13 · España · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Alonso de Grajeda</span><span class="m">G10 · España · c. 6, 7</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Alonso Gómez</span><span class="m">G10 · Santa Fe de Antioquia · c. 2, 3</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Alonso Jaramillo Andrade</span><span class="m">G11 · España · c. 14</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Alonso López de Restrepo</span><span class="m">G8 · 1620 · España · c. 5, 8, 12, 13, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Alonso López de Restrepo</span><span class="m">G10 · España · c. 5, 8, 12, 13, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Alonso López de Restrepo</span><span class="m">G11 · España · c. 5, 8, 12, 13, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Alonso López Paladines</span><span class="m">G9 · 1627 · España · c. 2, 3, 5, 11, 12, 17, 21, 24</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Alonso Mejía de Pedraza</span><span class="m">G12 · c. 24</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Alonso Mejía Tobar</span><span class="m">G11 · c. 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Alonso Pérez Pérez</span><span class="m">G10 · 1545 · España · c. 2, 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Alonso Restrepo López</span><span class="m">G6 · 1690 · Medellín · c. 1, 8, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Alonso Restrepo Peláez</span><span class="m">G7 · 1650 · Medellín · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Alonso Taborda de Rivera</span><span class="m">G13 · España · c. 14, 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Alonso Taborda Díaz</span><span class="m">G12 · España · c. 14, 17, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Alonso Tiburcio Arnedo</span><span class="m">G9 · España · c. 2, 24</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Alonso Velásquez Jaramillo Valle</span><span class="m">G8 · c. 6, 7, 15, 18</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Alonso Velásquez Mera</span><span class="m">G9 · 1665 · Tolima · c. 6, 7</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Alonso Velásquez Mera</span><span class="m">G7 · 1615 · Tolima · c. 15, 18</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Alvaro Jaramillo</span><span class="m">G11 · España · c. 6, 7</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Ana Agueda Garces</span><span class="m">G7 · Antioquia · c. 24</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Ana Correa Quiroz</span><span class="m">G9 · Medellín · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Ana de Toro Rodríguez</span><span class="m">G10 · España · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Ana de Villadiego</span><span class="m">G14 · c. 11</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Ana Josefa Pérez de Rivero Restrepo</span><span class="m">G7 · c. 13</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Ana María de Toro Zapata</span><span class="m">G8 · c. 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Ana María del Pino Fernández</span><span class="m">G10 · 1586 · España · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Ana María Guerra Peláez</span><span class="m">G6 · 1692 · Medellín · c. 1, 10</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Ana María Tamayo Maya</span><span class="m">G4 · c. 1</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Ana María Vélez Toro</span><span class="m">G6 · 1701 · Medellín · c. 1, 9, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Ana Poblete Veleros</span><span class="m">G9 · Antioquia · c. 2, 24</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Ana Ramírez Sánchez</span><span class="m">G9 · c. 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Ana Ruiz</span><span class="m">G11 · 1517 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Ana Ruiz Camara Ordóñez</span><span class="m">G8 · 1617 · Santa Fe de Antioquia · c. 5, 7, 10, 12</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Ana Santander Pimentel</span><span class="m">G11 · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Ana Suárez Maldonado</span><span class="m">G8 · 1613 · Bogotá · c. 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Ana Taborda Torres</span><span class="m">G9 · c. 17, 21</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Andrea de Espinosa</span><span class="m">G12 · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Andrea Guerra Peláez Ruiz</span><span class="m">G8 · 1637 · Medellín · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Andrés Garces</span><span class="m">G9 · c. 24</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Andrés González Piedrahita</span><span class="m">G10 · 1560 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Angela de Alvarado</span><span class="m">G8 · España · c. 27</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Angela de la Calle</span><span class="m">G7 · España · c. 15, 19</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Antonia de Toro Zapata</span><span class="m">G9 · c. 27</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Antonia Puerta Zapata</span><span class="m">G5 · 1734 · c. 1</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Antonio de Toledo</span><span class="m">G11 · c. 27</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Antonio Molina Toledo</span><span class="m">G9 · c. 27</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Antonio Moreno Tamayo</span><span class="m">G5 · 1729 · c. 1</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Antonio Pérez</span><span class="m">G10 · España · c. 2, 24</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Antonio Piedrahita Saavedra</span><span class="m">G8 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Antonio Prado Pimentel</span><span class="m">G13 · 1518 · España · c. 11</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Antonio Valdes de Arango</span><span class="m">G8 · c. 14</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Antonio Vélez Peláez</span><span class="m">G6 · c. 1, 12</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Antonio Zapata Gómez</span><span class="m">G8 · España · c. 28</span></div>
+<h4>B</h4>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Baltasar Tamayo Preciado</span><span class="m">G7 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Baltasar Tamayo Vivas</span><span class="m">G8 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Bárbara Ambrosia Betancur Álvarez</span><span class="m">G6 · 1674 · Medellín · c. 1, 6, 15, 18</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Bárbara González de Noriega</span><span class="m">G5 · 1729 · c. 1</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Bárbara Mendez Sotomayor</span><span class="m">G10 · España · c. 5, 8, 12, 13, 22, 25</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Bárbara Velázquez Betancur</span><span class="m">G16 · c. 11</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Bartolomé Gómez</span><span class="m">G8 · España · c. 13</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Bartolomé Sánchez Torreblanca</span><span class="m">G11 · 1517 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 19, 21, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Bartolomé Sánchez Torreblanca</span><span class="m">G11 · 1517 · España · c. 24</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Bartolomé Sánchez Vibancos</span><span class="m">G9 · c. 5, 11, 12, 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Beatriz Beltran Caicedo</span><span class="m">G10 · España · c. 27</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Beatriz Beltran Castillo</span><span class="m">G8 · c. 27</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Beatriz Díaz</span><span class="m">G11 · 1526 · España · c. 2, 3</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Beatriz Rodríguez de Tabares</span><span class="m">G10 · España · c. 5, 6, 11, 12, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Beatriz Tabares de Morga</span><span class="m">G8 · 1611 · Santa Fe de Antioquia · c. 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Benito Zalamea</span><span class="m">G12 · España · c. 6, 7</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Bernarda Santillana Quirós</span><span class="m">G8 · Medellín · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Bernardo José González Gómez</span><span class="m">G6 · 1699 · Medellín · c. 1, 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Blanca Núñez</span><span class="m">G13 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 19, 21, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Bonifacio Escobar Pineda</span><span class="m">G6 · 1688 · España · c. 1, 10</span></div>
+<h4>C</h4>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Capitán Alonso de los Arcos Cortés</span><span class="m">G9 · 1575 · España · c. 2, 3</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Capitán Gómez de Arcos Cortés</span><span class="m">G10 · España · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Carlos de Molina</span><span class="m">G10 · España · c. 27</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Carlos Molina Toro</span><span class="m">G8 · c. 27</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Carlos Velásquez Betancur</span><span class="m">G6 · Medellín · c. 1, 6</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Carlos Velásquez Calle</span><span class="m">G4 · 1747 · Medellín · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Carlos Vélez Gómez</span><span class="m">G5 · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Catalina Álvarez</span><span class="m">G9 · España · c. 11</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Catalina Bernaldo Quirós</span><span class="m">G12 · c. 11, 14, 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Catalina de Arroyo</span><span class="m">G11 · c. 27</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Catalina de Barrionuevo</span><span class="m">G12 · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Catalina de Heredia</span><span class="m">G10 · c. 11, 14, 17, 21</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Catalina de Heredia</span><span class="m">G11 · c. 11, 14, 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Catalina de Heredia</span><span class="m">G8 · c. 17, 21</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Catalina Duran</span><span class="m">G11 · España · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Catalina Gómez</span><span class="m">G10 · España · c. 2, 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Catalina Gómez de Osorio Redondo</span><span class="m">G10 · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Catalina González</span><span class="m">G9 · España · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Catalina González Ocampo</span><span class="m">G11 · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Catalina Hernández</span><span class="m">G13 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Catalina Lasso de la Vega</span><span class="m">G12 · España · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Catalina López Correal</span><span class="m">G7 · 1673 · Medellín · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Catalina Paladines de la Fuente</span><span class="m">G9 · c. 5, 11, 12, 17, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Catalina Pérez de Rivero</span><span class="m">G7 · 1674 · Medellín · c. 5, 12</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Catalina Piedrahita Piedrahita</span><span class="m">G7 · 1647 · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Catalina Posada</span><span class="m">G9 · España · c. 3</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Catalina Prado</span><span class="m">G12 · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Catalina Preciado Duran</span><span class="m">G8 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Catalina Redondo Mateus de la</span><span class="m">G12 · 1500 · España · c. 2, 3, 6</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Catalina Sánchez Quintana</span><span class="m">G8 · c. 3</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Catalina Tabares de Morga</span><span class="m">G9 · 1619 · Santa Fe de Antioquia · c. 5, 11, 12</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Catalina Zapata Cardenas Valero</span><span class="m">G9 · Remedios (Antioquia) · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Catarina Fernández</span><span class="m">G12 · c. 14</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Cirilo Sánchez Tamayo</span><span class="m">G10 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Constancia Mejía de Tovar</span><span class="m">G8 · 1621 · Santa Fe de Antioquia · c. 24</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Constanza de Montoya</span><span class="m">G10 · España · c. 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Cristóbal de Toro Zapata</span><span class="m">G8 · 1690 · Remedios (Antioquia) · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Cristóbal Pérez Teran</span><span class="m">G8 · 1624 · España · c. 5, 12, 13</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Cristóbal Sánchez Cortés</span><span class="m">G12 · 1560 · España · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Cristóbal Severo Bernal</span><span class="m">G10 · España · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<h4>D</h4>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Diego Álvarez Castrillón</span><span class="m">G10 · España · c. 11, 14, 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Diego Álvarez del Pino</span><span class="m">G8 · 1661 · Caldas · c. 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Diego Álvarez del Pino Fernández</span><span class="m">G9 · 1584 · España · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Diego Álvarez Loaiza</span><span class="m">G11 · 1534 · España · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Diego Álvarez Maldonado</span><span class="m">G10 · 1564 · España · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Diego Beltrán Caicedo</span><span class="m">G11 · c. 27</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Diego Beltran Castillo</span><span class="m">G9 · España · c. 27</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Diego José Álvarez del Pino González</span><span class="m">G5 · 1724 · c. 1</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Diego Martín Correal</span><span class="m">G12 · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Diego Martín del Corral</span><span class="m">G11 · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Diego Rodríguez</span><span class="m">G11 · 1537 · España · c. 2, 3</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Diego Ruiz Camara</span><span class="m">G9 · Venezuela · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Dominga López Yañes</span><span class="m">G7 · c. 3</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Domingo de Maya Enderiz</span><span class="m">G8 · 1628 · España · c. 17, 21</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Domingo de Rojo</span><span class="m">G9 · España · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Domingo Diego Vélez Franquin</span><span class="m">G8 · España · c. 4, 9, 10, 12, 14, 15, 19, 23, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Domingo Gómez de Ureña</span><span class="m">G9 · 1575 · España · c. 2, 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Domingo Mauris Yañez</span><span class="m">G7 · c. 3</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Domingo Ruiz Cortinez</span><span class="m">G6 · España · c. 1, 11</span></div>
+<h4>E</h4>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Elvira Martínez Cardenas</span><span class="m">G10 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Elvira Ramírez Sánchez</span><span class="m">G9 · c. 24</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Esteban Arango Zafra</span><span class="m">G7 · c. 14</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Esteban García</span><span class="m">G11 · España · c. 2, 3, 27, 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Esteban Velásquez Tamayo</span><span class="m">G3 · 1772 · c. 1</span></div>
+<h4>F</h4>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Fabián de Salazar</span><span class="m">G14 · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Facundo Ramírez Herrera</span><span class="m">G8 · c. 6, 7</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Felipe García de Ordaz</span><span class="m">G8 · 1567 · España · c. 2, 3</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Fermin Álvarez Velásquez</span><span class="m">G3 · 1784 · Medellín · c. 1</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Fernando Antonio Montoya</span><span class="m">G8 · 1603 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Fernando Arango Vélez</span><span class="m">G6 · 1705 · Rionegro · c. 1, 14</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Fernando de Toro Zapata</span><span class="m">G9 · c. 28</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Fernando de Zafra Centeno</span><span class="m">G11 · España · c. 14</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Fernando de Zafra Jaramillo</span><span class="m">G9 · c. 14</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Francisca Alonso</span><span class="m">G13 · España · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Francisca de los Ríos</span><span class="m">G9 · España · c. 17, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Francisca de Santibañez</span><span class="m">G9 · España · c. 4, 9, 10, 12, 14, 15, 19, 23, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Francisca Martínez</span><span class="m">G11 · Zaragoza (Antioquia) · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Francisca Piedrahita Montoya</span><span class="m">G6 · 1686 · Medellín · c. 1, 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Francisco Ángel Vélez Peláez</span><span class="m">G5 · 1732 · Medellín · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Francisco Antonio Cataño</span><span class="m">G10 · España · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Francisco Baltasar Tamayo Piedrahita</span><span class="m">G6 · 1672 · Medellín · c. 1, 16, 20</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Francisco Cataño Ponce</span><span class="m">G9 · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Francisco Correal Ocampo</span><span class="m">G9 · Bogotá · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Francisco de Morga</span><span class="m">G10 · España · c. 5, 6, 11, 12, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Francisco de Santillana</span><span class="m">G10 · Bogotá · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Francisco Fernández Arroyave</span><span class="m">G8 · España · c. 7</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Francisco Fernández Casserero</span><span class="m">G10 · Portugal · c. 5, 6, 11, 12, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Francisco Javier Restrepo Vélez</span><span class="m">G5 · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Francisco José Moreno Peláez</span><span class="m">G4 · c. 1</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Francisco Marquez Fontidueño</span><span class="m">G9 · España · c. 6</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Francisco Martínez Vibancos</span><span class="m">G10 · 1565 · c. 5, 11, 12, 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Francisco Pascual Márquez de</span><span class="m">G10 · c. 6, 7</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Francisco Peláez Trujillo</span><span class="m">G6 · 1758 · Medellín · c. 1</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Francisco Puerta Palacio</span><span class="m">G8 · España · c. 27</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Francisco Restrepo</span><span class="m">G6 · c. 1, 12</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Francisco Santillana García</span><span class="m">G9 · 1661 · Bogotá · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Francisco Velásquez</span><span class="m">G9 · c. 6, 7</span></div>
+<h4>G</h4>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">García Álvarez de Toledo</span><span class="m">G12 · España · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">García de Herrera</span><span class="m">G9 · c. 6, 7</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">García Sánchez de la Torre</span><span class="m">G9 · España · c. 3</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Gertrudis Benítez Colmenero</span><span class="m">G8 · Santa Fe de Antioquia · c. 5, 12</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Gertrudis Benítez Colmenero</span><span class="m">G9 · c. 11</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Gertrudis Vélez Toro</span><span class="m">G7 · c. 14</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Gómez de los Arcos</span><span class="m">G12 · España · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Gonzalo Correa Barragan</span><span class="m">G10 · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Gonzalo de Ávila</span><span class="m">G12 · España · c. 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Gonzalo de Carvajal</span><span class="m">G13 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 19, 21, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Gonzalo de Palencia</span><span class="m">G11 · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Gonzalo Gómez Crespo</span><span class="m">G11 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Gozalo de Ávila</span><span class="m">G12 · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Gracia de Guetaria</span><span class="m">G10 · Santa Fe de Antioquia · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Gregoria de los Arcos Cortés Rodríguez</span><span class="m">G8 · 1616 · Antioquia · c. 2, 3</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Gregorio Álvarez del Pino de los Arcos Cortés</span><span class="m">G7 · 1635 · Santa Fe de Antioquia · c. 2, 3</span></div>
+<h4>H</h4>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Hernando de Alvarado</span><span class="m">G9 · c. 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Hernando de Toro</span><span class="m">G11 · España · c. 4, 9, 10, 11, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Hernando de Zafra Centeno</span><span class="m">G12 · c. 14</span></div>
+<h4>I</h4>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Ignacia Cataño Castrillón</span><span class="m">G8 · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Ignacia Velásquez Sánchez</span><span class="m">G5 · 1742 · Medellín · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Ignacio Calle Vélez</span><span class="m">G16 · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Ignacio Javier Vélez Toro</span><span class="m">G6 · 1690 · Medellín · c. 1, 4</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Inés de Ordaz Mancilla</span><span class="m">G10 · España · c. 2, 3, 27, 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Inés Mendez Sotomayor</span><span class="m">G9 · España · c. 5, 8, 12, 13, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Inés Rodríguez</span><span class="m">G11 · España · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Inés Venero</span><span class="m">G9 · c. 17, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Isabel Bernal</span><span class="m">G11 · España · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Isabel Blasco Velasco</span><span class="m">G11 · España · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Isabel Díaz</span><span class="m">G13 · España · c. 14, 17, 21</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Isabel Fernández Salcedo</span><span class="m">G11 · c. 14</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Isabel García Guadramiros</span><span class="m">G13 · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Isabel Lezcano Urnieta</span><span class="m">G7 · 1650 · Santa Fe de Antioquia · c. 17, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Isabel Llosnos</span><span class="m">G13 · España · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Isabel Macías</span><span class="m">G12 · España · c. 6, 7</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Isabel Moreno Velásquez</span><span class="m">G3 · c. 1</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Isabel Peláez Cámara</span><span class="m">G8 · Medellín · c. 7</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Isabel Pérez Galeano</span><span class="m">G9 · Antioquia · c. 2, 3, 5, 11, 12, 17, 21, 24</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Isabel Piedrahita Gutiérrez</span><span class="m">G8 · 1611 · Antioquia · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Isabel Rodríguez de los Ríos</span><span class="m">G9 · Antioquia · c. 2, 3</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Isabel Rodríguez Díaz</span><span class="m">G10 · España · c. 2, 3</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Isabel Sánchez Paladines</span><span class="m">G8 · c. 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Isidoro Puerta Palacio</span><span class="m">G7 · España · c. 27</span></div>
+<h4>J</h4>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Jacinta García de Ordaz</span><span class="m">G9 · c. 27</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Jacinta Piedrahita Gutiérrez</span><span class="m">G8 · 1615 · Santa Fe de Antioquia · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Jerónima Álvarez del Pino García</span><span class="m">G7 · c. 3</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Jerónima de Tobar Rivera</span><span class="m">G12 · c. 24</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Jerónima García Valencia</span><span class="m">G10 · Venezuela · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Jerónima Paladines de la Fuente</span><span class="m">G8 · 1615 · Medellín · c. 2, 3</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Jerónima Peláez Echeverry</span><span class="m">G6 · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Jerónima Sánchez Espinosa</span><span class="m">G11 · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Jerónima Torres</span><span class="m">G10 · 1559 · Cali · c. 17, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Jerónimo de la Parra</span><span class="m">G11 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Jerónimo de Torres</span><span class="m">G11 · 1521 · España · c. 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Jerónimo Sánchez Tamayo</span><span class="m">G9 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Jerónimo Vélez Velásquez</span><span class="m">G4 · 1761 · c. 1</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Jorge García Hernández</span><span class="m">G10 · España · c. 2, 3, 27, 28</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">José Antonio Ruiz Restrepo</span><span class="m">G4 · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">José de Rojo Álvarez</span><span class="m">G8 · España · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">José Gómez Ureña</span><span class="m">G7 · 1684 · Medellín · c. 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">José Ignacio Álvarez del Pino Mauris</span><span class="m">G4 · 1744 · c. 1</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">José Ignacio Restrepo Vélez</span><span class="m">G5 · 1731 · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">José Ignacio Vélez Toro</span><span class="m">G7 · c. 12</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">José Lezcano Taborda</span><span class="m">G8 · c. 17, 21</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">José Lorenzo Ruiz Toro</span><span class="m">G5 · 1734 · c. 1</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">José Luis Gómez Poblete</span><span class="m">G8 · 1616 · Medellín · c. 2, 24</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">José Luis Gómez Poblete</span><span class="m">G8 · 1637 · Santa Fe de Antioquia · c. 24</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">José María Calle Velásquez</span><span class="m">G15 · c. 11</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">José María Ruiz Moreno</span><span class="m">G2 · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">José María Vásquez</span><span class="m">G14 · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">José Miguel Álvarez Vélez</span><span class="m">G2 · 1835 · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">José Miguel Mejía</span><span class="m">G16 · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">José Velásquez Betancur</span><span class="m">G5 · c. 1, 15</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Josefa Montoya Piedrahita</span><span class="m">G7 · 1644 · c. 16, 20</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Josefa Ventura Vélez Toro</span><span class="m">G6 · 1702 · Medellín · c. 1, 23</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Ambrosio Acevedo</span><span class="m">G8 · 1625 · España · c. 17, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Correa</span><span class="m">G10 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Juan Correa de Soto</span><span class="m">G11 · España · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan de Acevedo</span><span class="m">G9 · c. 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan de Dios Vicente Restrepo</span><span class="m">G4 · 1753 · Medellín · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Juan de Espinosa</span><span class="m">G13 · 1554 · España · c. 11</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Juan de Espinosa</span><span class="m">G14 · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan de Mancilla</span><span class="m">G11 · España · c. 2, 3, 27, 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan de Montoya</span><span class="m">G9 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan de Toro</span><span class="m">G9 · 1550 · España · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Juan de Toro Peláez</span><span class="m">G9 · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan del Castillo</span><span class="m">G11 · c. 27</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan del Puerto Mejía</span><span class="m">G10 · España · c. 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Fernández Pescozo</span><span class="m">G11 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Francisco González</span><span class="m">G7 · 1659 · España · c. 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Francisco González de Noriega</span><span class="m">G7 · 1659 · España · c. 2</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Francisco Gutiérrez Iriategui</span><span class="m">G10 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan García de Ordaz</span><span class="m">G9 · 1560 · España · c. 2</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan García de Ordaz</span><span class="m">G10 · 1567 · España · c. 3, 27, 28</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Juan García de Tineo</span><span class="m">G12 · c. 11, 14, 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan García Serna</span><span class="m">G9 · c. 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan González de Teleña</span><span class="m">G8 · España · c. 2</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan González Noriega</span><span class="m">G8 · España · c. 24</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan González Piedrahita</span><span class="m">G9 · 1585 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Guerra Peláez</span><span class="m">G10 · 1536 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Hidalgo O&#x27;Campo</span><span class="m">G12 · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Isidoro Puerta Molina</span><span class="m">G6 · 1691 · c. 1, 27</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Juan Jaramillo de Andrade</span><span class="m">G10 · 1579 · España · c. 14</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan José Maya Acevedo</span><span class="m">G6 · 1760 · Medellín · c. 1, 17, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan López de Restrepo</span><span class="m">G9 · España · c. 5, 8, 12, 13, 22, 25</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan López Delgado</span><span class="m">G9 · Bogotá · c. 6, 7</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan López Paladines</span><span class="m">G10 · España · c. 2, 3, 5, 11, 12, 17, 21, 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Manuel Álvarez del Pino García de Ordaz</span><span class="m">G6 · 1600 · c. 1, 2</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Manuel Tamayo Piedrahita</span><span class="m">G5 · 1716 · c. 1, 16</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Martín Ávila</span><span class="m">G13 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Mejía Tobar</span><span class="m">G9 · 1584 · España · c. 24</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Ordóñez Villaquirán</span><span class="m">G10 · España · c. 6, 7</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Ortiz Tocano</span><span class="m">G10 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Peláez Abeu</span><span class="m">G9 · 1570 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Peláez Hernández</span><span class="m">G9 · 1601 · Bogotá · c. 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Pérez de la Calle</span><span class="m">G6 · España · c. 1, 15, 19</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Pérez Palacio</span><span class="m">G7 · España · c. 15, 19</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Piedrahita Saavedra</span><span class="m">G8 · 1613 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Prieto Bustelo</span><span class="m">G10 · España · c. 5, 8, 12, 13, 22, 25</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Ramírez de Coy</span><span class="m">G10 · 1552 · España · c. 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Ruiz Parra</span><span class="m">G10 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Sánchez de Hinojosa</span><span class="m">G7 · Medellín · c. 7</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Sánchez de Hinojosa</span><span class="m">G8 · España · c. 7</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Sánchez Hinojosa</span><span class="m">G9 · España · c. 7</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Severo Villalba</span><span class="m">G11 · España · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Taborda de Rivero</span><span class="m">G11 · 1515 · España · c. 14, 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Taborda López</span><span class="m">G10 · 1547 · Santa Fe de Antioquia · c. 17, 21</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Juan Toro Cataño</span><span class="m">G7 · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juan Vélez de Rivero</span><span class="m">G7 · 1649 · España · c. 4, 9, 10, 12, 14, 15, 19, 23, 26</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juan Zapata Gómez</span><span class="m">G7 · 1643 · Santa Fe de Antioquia · c. 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juana Acevedo Vivancos</span><span class="m">G7 · 1656 · Medellín · c. 17, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juana Blasquez</span><span class="m">G11 · España · c. 2, 3, 27, 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juana Correa</span><span class="m">G11 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juana de Arroyo</span><span class="m">G12 · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juana de Morga</span><span class="m">G9 · Santa Fe de Antioquia · c. 5, 6, 11, 12, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juana de Velasco</span><span class="m">G8 · España · c. 6, 15, 18</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Juana de Zafra Centeno</span><span class="m">G10 · 1572 · Tunja · c. 14</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juana Gabriela García de Ordaz Paladines</span><span class="m">G7 · 1638 · Colombia · c. 2, 3</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juana Isabel Ríos</span><span class="m">G11 · 1537 · España · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juana Josefa Ruiz</span><span class="m">G9 · 1608 · Santa Fe de Antioquia · c. 4, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juana Lucía González de Noriega Gómez de Ureña</span><span class="m">G6 · Medellín · c. 1, 2</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juana Maldonado</span><span class="m">G9 · c. 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juana Manuela Restrepo Puerta</span><span class="m">G4 · 1753 · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Juana María Gómez Pérez</span><span class="m">G6 · 1728 · c. 1, 13</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Juana María Restrepo Montoya</span><span class="m">G5 · 1740 · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Juana María Toro Rojo</span><span class="m">G6 · c. 1, 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Juana Martínez</span><span class="m">G10 · 1575 · Antioquia · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juana Sánchez Torreblanca</span><span class="m">G10 · 1568 · Santa Fe de Antioquia · c. 24</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Juana Taborda López</span><span class="m">G11 · 1536 · España · c. 14</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Juana Tamayo Mesa</span><span class="m">G6 · 1759 · c. 1</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Juanes de Guetaria</span><span class="m">G11 · 1532 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Justina Arcos Cortés</span><span class="m">G9 · 1585 · Valle del Cauca · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<h4>L</h4>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Laureano Piedrahita Saavedra</span><span class="m">G7 · 1632 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Leonor Álvarez de Alza</span><span class="m">G11 · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Leonor López Santofimia</span><span class="m">G11 · España · c. 14, 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Leonor Marquez Fontidueño</span><span class="m">G8 · España · c. 6, 7, 15, 18</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Liberata Posada Álvarez</span><span class="m">G6 · 1693 · c. 1, 3</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Lorenza Zapata Serna</span><span class="m">G6 · Medellín · c. 1, 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Lorenzo García</span><span class="m">G11 · España · c. 2, 3, 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Lorenzo Peláez de Cámara</span><span class="m">G7 · Medellín · c. 10</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Lorenzo Peláez Hernández</span><span class="m">G8 · 1610 · Bogotá · c. 5, 7, 10, 12</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Lucía Arnedo Paladines</span><span class="m">G8 · 1637 · Santa Fe de Antioquia · c. 2, 24</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Lucía Fernández de Arnedo</span><span class="m">G8 · España · c. 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Lucía Maldonado</span><span class="m">G11 · España · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Luis de Betancourt</span><span class="m">G8 · España · c. 6, 15, 18</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Luis de Santander</span><span class="m">G13 · 1510 · España · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Luis Zapata Cardenas</span><span class="m">G10 · Remedios (Antioquia) · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Luisa González Ocampo</span><span class="m">G10 · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Luisa López de Haro</span><span class="m">G12 · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Luisa Piedrahita Saavedra</span><span class="m">G8 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Luisa Yameci</span><span class="m">G11 · 1550 · Santa Fe de Antioquia · c. 24</span></div>
+<h4>M</h4>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Magdalena Ortiz Tocano</span><span class="m">G9 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#2a2622"></i><span class="n">Manuel Antonio Álvarez de Pino Vélez</span><span class="m">G1 · 1851 · Medellín · c. 1</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Manuel Berdayes de Posada</span><span class="m">G8 · c. 3</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Manuel Berdayes Sánchez</span><span class="m">G7 · 1664 · España · c. 3</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Manuel Betancur Velasco</span><span class="m">G7 · 1626 · España · c. 6, 15, 18</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Manuel de Toro Benítez</span><span class="m">G8 · 1680 · c. 11</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Manuel Domingo Gómez de Rivero Vélez</span><span class="m">G7 · c. 13</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Manuel Mauris López</span><span class="m">G6 · 1680 · España · c. 1, 3</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Manuela de Toro Peláez</span><span class="m">G7 · Medellín · c. 4, 9, 10, 12, 14, 15, 19, 23, 26</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Marcela de la Parra Márquez</span><span class="m">G7 · 1620 · Medellín · c. 6, 7, 15, 18</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Margarita Arroyave Velázquez</span><span class="m">G7 · 1684 · Medellín · c. 7</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Margarita de Pineda</span><span class="m">G7 · España · c. 10</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Margarita Ruiz Carvajal</span><span class="m">G9 · 1627 · España · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Margarita Velásquez Parra</span><span class="m">G8 · Medellín · c. 7</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Abeo Araco</span><span class="m">G10 · 1536 · España · c. 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Alonsa Pineda</span><span class="m">G10 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">María Álvarez Heredia</span><span class="m">G9 · c. 14</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Antonia Álvarez del Pino Tabares</span><span class="m">G7 · Medellín · c. 6, 15, 18</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Antonia Vélez Restrepo</span><span class="m">G3 · 1823 · Medellín · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">María Bernaldo Quirós</span><span class="m">G11 · España · c. 11, 14, 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Candelaria Álvarez del Pino Lezcano</span><span class="m">G6 · 1681 · Medellín · c. 1, 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Carvajal Sánchez</span><span class="m">G10 · 1607 · c. 5, 11, 12, 17, 21</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">María Cecilia Peláez</span><span class="m">G7 · 1702 · c. 12</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Cecilia Peláez Pérez</span><span class="m">G6 · 1702 · Medellín · c. 1, 5</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Cortés</span><span class="m">G10 · España · c. 2, 3, 27, 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María de Grajeda</span><span class="m">G9 · Bogotá · c. 6, 7</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María de la Luz Restrepo</span><span class="m">G4 · 1771 · c. 1</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María de Nadal Saravia</span><span class="m">G9 · c. 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María de Rivero</span><span class="m">G8 · España · c. 4, 9, 10, 12, 14, 15, 19, 23, 26</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">María de Salazar</span><span class="m">G13 · 1560 · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María de Serna Palacio</span><span class="m">G7 · c. 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María de Toledo</span><span class="m">G10 · c. 27</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Enderiz</span><span class="m">G9 · c. 17, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Fernández</span><span class="m">G11 · España · c. 5, 8, 12, 13, 22, 25</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">María Francisca Velásquez Tamayo</span><span class="m">G4 · 1775 · c. 1</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Francisco ? Ramírez Marquez Serna Fontidueño</span><span class="m">G9 · España · c. 6, 7</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María García de Ordaz</span><span class="m">G9 · c. 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Gómez</span><span class="m">G10 · España · c. 2, 3, 5, 11, 12, 17, 21, 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Gómez de la Torre</span><span class="m">G10 · España · c. 3</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">María González</span><span class="m">G13 · España · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María González Cortines</span><span class="m">G9 · España · c. 3</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María González Quintana</span><span class="m">G10 · España · c. 3</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Gutiérrez Guetaria</span><span class="m">G9 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Hernández Barragan</span><span class="m">G11 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Hernández de la Vera</span><span class="m">G9 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Hernández de la Vera</span><span class="m">G10 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">María Ignacia López</span><span class="m">G16 · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María J. González de Nava</span><span class="m">G10 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Jaramillo Jiménez</span><span class="m">G10 · 1538 · España · c. 6, 7</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Jiménez Mogollón</span><span class="m">G11 · España · c. 6, 7</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Josefa Gómez</span><span class="m">G7 · 1669 · Arnedo (España) · c. 24</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Josefa Gómez de Ureña</span><span class="m">G7 · Medellín · c. 2</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Josefa Guerra Peláez</span><span class="m">G10 · España · c. 5, 8, 12, 13, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Josefa Peláez Ruiz</span><span class="m">G8 · 1635 · Medellín · c. 5, 8, 12, 13, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Josefa Sánchez Arroyave</span><span class="m">G6 · Medellín · c. 1, 7</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Loaiza</span><span class="m">G12 · España · c. 2, 3, 6, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María López</span><span class="m">G11 · España · c. 5, 8, 12, 13, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María López</span><span class="m">G12 · España · c. 8, 12, 13, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María López Paladines</span><span class="m">G9 · 1618 · Santa Fe de Antioquia · c. 2, 24</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">María Luisa Vélez Arango</span><span class="m">G4 · 1771 · c. 1</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Magdalena Grajeda de Mera</span><span class="m">G8 · Tolima · c. 6, 7, 15, 18</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Maya Álvarez del Pino</span><span class="m">G5 · 1733 · Medellín · c. 1, 17</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">María Mercedes Castrillón</span><span class="m">G9 · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Mercedes Velásquez Restrepo</span><span class="m">G2 · c. 1</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Nieto</span><span class="m">G9 · España · c. 7</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Ordóñez Jaramillo</span><span class="m">G9 · c. 6, 7</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Ortiz</span><span class="m">G10 · Santa Fe de Antioquia · c. 5, 6, 11, 12, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Palacio</span><span class="m">G8 · c. 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Paladines la Fuente</span><span class="m">G10 · c. 6, 7</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">María Peláez Tamayo</span><span class="m">G5 · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">María Quiroz Santander</span><span class="m">G10 · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Rodríguez</span><span class="m">G10 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">María Sánchez Guadramiros</span><span class="m">G12 · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Sánchez Paladines</span><span class="m">G10 · España · c. 5, 11, 12</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Teresa Pérez de la Calle Vélez</span><span class="m">G5 · 1715 · Antioquia · c. 1, 15</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Valero</span><span class="m">G10 · c. 2, 24</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">María Vásquez Guadramiros</span><span class="m">G10 · 1621 · Antioquia · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">María Vélez Toro</span><span class="m">G7 · 1673 · Medellín · c. 10</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">María Vivas Tovar</span><span class="m">G9 · España · c. 16, 20</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Mariana Valero Velasco Remed.ant</span><span class="m">G10 · Remedios (Antioquia) · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Marina Cortés Figueroa</span><span class="m">G9 · España · c. 2, 3, 27, 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Marina Ramírez de la Pila</span><span class="m">G9 · c. 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Martín Alonso Figueroa</span><span class="m">G10 · España · c. 2, 3, 27, 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Martín de Tabares</span><span class="m">G9 · Portugal · c. 5, 6, 11, 12, 15, 17, 18, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Martín García Valero</span><span class="m">G11 · 1526 · España · c. 4, 9, 10, 11, 12, 14, 15, 19, 23, 26, 27, 28</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Martín Vásquez Guadramiros</span><span class="m">G11 · 1583 · España · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Mateo Álvarez del Pino Tabares</span><span class="m">G7 · 1638 · Medellín · c. 17, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Mateo Benítez Colmenero</span><span class="m">G9 · 1608 · España · c. 5, 11, 12</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Mateo de Castrillón</span><span class="m">G10 · 1600 · Caldas · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Mateo de Castrillón</span><span class="m">G9 · 1600 · Caldas · c. 17, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Mateo Peláez Benítez</span><span class="m">G7 · Medellín · c. 5, 12</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Mayor Ortiz Osorio</span><span class="m">G10 · España · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Mayor Vásquez Núñez</span><span class="m">G12 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 19, 21, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Mencía Carvajal Martínez</span><span class="m">G9 · 1593 · Santa Fe de Antioquia · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Mencía Carvajal Vásquez</span><span class="m">G11 · 1552 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 19, 21, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Mencía Hernández</span><span class="m">G13 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 19, 21, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Miguel Jerónimo Velásquez de la Parra</span><span class="m">G6 · 1734 · Medellín · c. 1, 6, 15, 18</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Miguel Lezcano de Urnieta</span><span class="m">G9 · 1553 · España · c. 17, 21</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Miguel Maya de Torres</span><span class="m">G9 · c. 17, 21</span></div>
+<h4>N</h4>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Nicolás Blandón</span><span class="m">G11 · c. 11, 14, 17, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Nicolás Lorenzo Guerra Peláez Camara</span><span class="m">G8 · 1641 · Medellín · c. 5, 12</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Nicolasa Montoya</span><span class="m">G6 · 1716 · c. 1, 12</span></div>
+<h4>O</h4>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Olaya de Zafra Castrillón</span><span class="m">G8 · c. 14</span></div>
+<h4>P</h4>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Pedro Alonso Vásquez</span><span class="m">G13 · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Pedro Álvarez del Pino Arcos Cortés</span><span class="m">G8 · 1610 · Arma (Antioquia) · c. 2, 3</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Pedro Berdayes de Posada</span><span class="m">G10 · España · c. 3</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Pedro Correa Soto</span><span class="m">G10 · España · c. 11</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Pedro Cortés</span><span class="m">G13 · España · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Pedro de la Serna</span><span class="m">G8 · c. 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Pedro del Castillo</span><span class="m">G10 · c. 27</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Pedro Fernández Vásquez</span><span class="m">G12 · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Pedro Francisco Escobar</span><span class="m">G7 · España · c. 10</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Pedro Gutiérrez Colmenero</span><span class="m">G10 · España · c. 5, 11, 12</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Pedro Hernández Baquero</span><span class="m">G13 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 19, 21, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Pedro Ignacio Restrepo Vélez</span><span class="m">G5 · 1733 · Medellín · c. 1</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Pedro José Restrepo López</span><span class="m">G6 · 1696 · Medellín · c. 1, 22</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Pedro Martín de Ávila</span><span class="m">G11 · 1557 · Bogotá · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Pedro Martín Hernández</span><span class="m">G12 · 1515 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Pedro Sánchez Quintana</span><span class="m">G10 · 1616 · España · c. 3</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Pedro Santiago Garcés</span><span class="m">G8 · 1614 · Santa Fe de Antioquia · c. 24</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Pedro Vásquez</span><span class="m">G15 · c. 11</span></div>
+<h4>R</h4>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Remigia Sacramento Restrepo Restrepo</span><span class="m">G3 · 1787–1851 · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Rodrigo Álvarez Castrillón</span><span class="m">G11 · España · c. 11, 14, 17, 21</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Rodrigo Carvajal Jaramillo</span><span class="m">G12 · 1538 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 19, 21, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Rodrigo Carvajal Sánchez</span><span class="m">G10 · 1569 · España · c. 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 22, 23, 25, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Rodrigo López Atuesta</span><span class="m">G8 · España · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Rodrigo Restrepo</span><span class="m">G12 · España · c. 5, 8, 12, 13, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Rodrigo Rodríguez</span><span class="m">G11 · España · c. 5, 8, 12, 13, 22, 25</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Rodrigo Santander Alonso Pimentel</span><span class="m">G12 · 1558–1550 · Cali · c. 11</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Rosa Gómez Garces</span><span class="m">G6 · 1701 · Medellín · c. 1, 24</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Rosa Rojo Santillana</span><span class="m">G7 · c. 11</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Rosalía Arango Peláez</span><span class="m">G5 · c. 1</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Rosalía Velásquez González</span><span class="m">G4 · 1742 · c. 1</span></div>
+<div class="ix"><i style="background:#a23b48"></i><span class="n">Rosalía Vélez Rivera</span><span class="m">G2 · c. 1</span></div>
+<h4>S</h4>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Salvador Ruiz Vélez</span><span class="m">G3 · c. 1</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Sebastián de Quiroz</span><span class="m">G11 · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Sebastiana Restrepo Peláez</span><span class="m">G8 · Medellín · c. 5, 12, 13</span></div>
+<h4>T</h4>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Teresa Calle Mejía</span><span class="m">G14 · c. 11</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Teresa de Ordaz</span><span class="m">G11 · España · c. 2, 3, 27, 28</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Teresa Hernández</span><span class="m">G11 · España · c. 2, 3, 27, 28</span></div>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Teresa Vélez Toro</span><span class="m">G6 · c. 1, 15, 19</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Tomasa Correal Ocampo Ruiz</span><span class="m">G8 · Medellín · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Tomasa Escobar Peláez</span><span class="m">G5 · 1729 · c. 1</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Tomasa Mauris Posada</span><span class="m">G5 · 1731 · c. 1</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Toribia Fernández de Arnedo</span><span class="m">G8 · España · c. 2</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Toribio Berdayes González</span><span class="m">G9 · España · c. 3</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Toribio de Rivero</span><span class="m">G9 · España · c. 4, 9, 10, 12, 14, 15, 19, 23, 26</span></div>
+<div class="ix"><i style="background:#1f6f78"></i><span class="n">Toribio López Atuesta</span><span class="m">G9 · España · c. 8, 22, 25</span></div>
+<div class="ix"><i style="background:#2a2622"></i><span class="n">Trinidad Ruiz Velásquez Moreno</span><span class="m">G1 · c. 1</span></div>
+<h4>U</h4>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Ursula Molina Beltran</span><span class="m">G7 · 1652 · Medellín · c. 27</span></div>
+<h4>V</h4>
+<div class="ix"><i style="background:#4d5fa3"></i><span class="n">Ventura de Amaya</span><span class="m">G7 · Santa Fe de Antioquia · c. 17, 21</span></div>
+<div class="ix"><i style="background:#b07a12"></i><span class="n">Victoria Mejía Restrepo</span><span class="m">G15 · c. 11</span></div>
+</div></section>
+<section class="colophon"><p>Genealogía de Manuel Salvador Álvarez del Pino Ruiz</p><p class="note">Libro generado a partir de la investigación familiar original: textos, fotografías y 28 cuadros de ascendientes. Existe también una versión digital interactiva con buscador y árbol navegable.</p></section>
+<script src="../docs/vendor/d3.v7.min.js"></script>
+<script>
+const DATA={"root": "p0", "P": {"p0": {"name": "Manuel Salvador Álvarez Ruiz", "father": "p38", "mother": "p39", "line": -1, "bio": 10}, "p1": {"name": "José Velásquez Betancur", "father": "p24", "mother": "p25", "line": 3}, "p2": {"name": "María Teresa Pérez de la Calle Vélez", "father": "p26", "mother": "p27", "line": 3, "year": "1715"}, "p3": {"name": "Juan Manuel Tamayo Piedrahita", "father": "p28", "mother": "p29", "line": 3, "year": "1716"}, "p4": {"name": "María Maya Álvarez del Pino", "father": "p30", "mother": "p31", "line": 3, "year": "1733"}, "p5": {"name": "Juan Manuel Álvarez del Pino García de Ordaz", "father": "p81", "mother": "p82", "line": 0, "year": "1600", "bio": 4}, "p6": {"name": "Juana Lucía González de Noriega Gómez de Ureña", "father": "p83", "mother": "p84", "line": 0}, "p7": {"name": "Manuel Mauris López", "father": "p140", "mother": "p141", "line": 0, "year": "1680"}, "p8": {"name": "Liberata Posada Álvarez", "father": "p142", "mother": "p143", "line": 0, "year": "1693"}, "p9": {"name": "Ignacio Javier Vélez Toro", "father": "p155", "mother": "p156", "line": 0, "year": "1690"}, "p10": {"name": "María Cecilia Peláez Pérez", "father": "p212", "mother": "p213", "line": 0, "year": "1702"}, "p11": {"name": "Carlos Velásquez Betancur", "father": "p24", "mother": "p25", "line": 0}, "p12": {"name": "María Josefa Sánchez Arroyave", "father": "p280", "mother": "p281", "line": 0}, "p13": {"name": "Alonso Restrepo López", "father": "p289", "mother": "p290", "line": 0, "year": "1690"}, "p14": {"name": "Ana María Vélez Toro", "father": "p155", "mother": "p156", "line": 0, "year": "1701"}, "p15": {"name": "Bonifacio Escobar Pineda", "father": "p307", "mother": "p308", "line": 0, "year": "1688"}, "p16": {"name": "Ana María Guerra Peláez", "father": "p309", "mother": "p310", "line": 0, "year": "1692"}, "p17": {"name": "Domingo Ruiz Cortinez", "line": 2}, "p18": {"name": "Juana María Toro Rojo", "father": "p311", "mother": "p312", "line": 2}, "p19": {"name": "Francisco Restrepo", "line": 2}, "p20": {"name": "Nicolasa Montoya", "line": 2, "year": "1716"}, "p21": {"name": "Antonio Vélez Peláez", "father": "p377", "mother": "p378", "line": 2}, "p22": {"name": "Juana María Gómez Pérez", "father": "p380", "mother": "p381", "line": 2, "year": "1728"}, "p23": {"name": "Fernando Arango Vélez", "father": "p384", "mother": "p385", "line": 2, "year": "1705"}, "p24": {"name": "Miguel Jerónimo Velásquez de la Parra", "father": "p404", "mother": "p250", "line": 3, "year": "1734"}, "p25": {"name": "Bárbara Ambrosia Betancur Álvarez", "father": "p251", "mother": "p252", "line": 3, "year": "1674"}, "p26": {"name": "Juan Pérez de la Calle", "father": "p405", "mother": "p406", "line": 3}, "p27": {"name": "Teresa Vélez Toro", "father": "p155", "mother": "p156", "line": 3}, "p28": {"name": "Francisco Baltasar Tamayo Piedrahita", "father": "p410", "mother": "p411", "line": 3, "year": "1672"}, "p29": {"name": "Francisca Piedrahita Montoya", "father": "p412", "mother": "p413", "line": 3, "year": "1686"}, "p30": {"name": "Juan José Maya Acevedo", "father": "p440", "mother": "p441", "line": 3, "year": "1760"}, "p31": {"name": "María Candelaria Álvarez del Pino Lezcano", "father": "p442", "mother": "p443", "line": 3, "year": "1681"}, "p32": {"name": "Pedro José Restrepo López", "father": "p289", "mother": "p290", "line": 3, "year": "1696"}, "p33": {"name": "Josefa Ventura Vélez Toro", "father": "p155", "mother": "p156", "line": 3, "year": "1702"}, "p34": {"name": "Bernardo José González Gómez", "father": "p464", "mother": "p465", "line": 3, "year": "1699"}, "p35": {"name": "Rosa Gómez Garces", "father": "p466", "mother": "p467", "line": 3, "year": "1701"}, "p36": {"name": "Juan Isidoro Puerta Molina", "father": "p487", "mother": "p488", "line": 3, "year": "1691"}, "p37": {"name": "Lorenza Zapata Serna", "father": "p508", "mother": "p509", "line": 3}, "p38": {"name": "Manuel Antonio Álvarez de Pino Vélez", "father": "p40", "mother": "p41", "line": -2, "year": "1851", "bio": 9}, "p39": {"name": "Trinidad Ruiz Velásquez Moreno", "father": "p42", "mother": "p43", "line": -3}, "p40": {"name": "José Miguel Álvarez Vélez", "father": "p44", "mother": "p45", "line": 0, "year": "1835", "bio": 8}, "p41": {"name": "Rosalía Vélez Rivera", "line": 1}, "p42": {"name": "José María Ruiz Moreno", "father": "p46", "mother": "p47", "line": 2}, "p43": {"name": "María Mercedes Velásquez Restrepo", "father": "p48", "mother": "p49", "line": 3}, "p44": {"name": "Fermin Álvarez Velásquez", "father": "p50", "mother": "p51", "line": 0, "year": "1784", "bio": 7}, "p45": {"name": "María Antonia Vélez Restrepo", "father": "p52", "mother": "p53", "line": 0, "year": "1823"}, "p46": {"name": "Salvador Ruiz Vélez", "father": "p54", "mother": "p55", "line": 2}, "p47": {"name": "Isabel Moreno Velásquez", "father": "p56", "mother": "p57", "line": 2}, "p48": {"name": "Esteban Velásquez Tamayo", "father": "p58", "mother": "p59", "line": 3, "year": "1772"}, "p49": {"name": "Remigia Sacramento Restrepo Restrepo", "father": "p60", "mother": "p61", "line": 3, "year": "1787–1851"}, "p50": {"name": "José Ignacio Álvarez del Pino Mauris", "father": "p62", "mother": "p63", "line": 0, "year": "1744", "bio": 6}, "p51": {"name": "Rosalía Velásquez González", "line": 0, "year": "1742"}, "p52": {"name": "Jerónimo Vélez Velásquez", "father": "p64", "mother": "p65", "line": 0, "year": "1761"}, "p53": {"name": "María de la Luz Restrepo", "father": "p66", "mother": "p67", "line": 0, "year": "1771"}, "p54": {"name": "José Antonio Ruiz Restrepo", "father": "p68", "mother": "p69", "line": 2}, "p55": {"name": "María Luisa Vélez Arango", "father": "p70", "mother": "p71", "line": 2, "year": "1771"}, "p56": {"name": "Francisco José Moreno Peláez", "father": "p72", "mother": "p73", "line": 2}, "p57": {"name": "María Francisca Velásquez Tamayo", "father": "p58", "mother": "p59", "line": 2, "year": "1775"}, "p58": {"name": "Carlos Velásquez Calle", "father": "p1", "mother": "p2", "line": 3, "year": "1747"}, "p59": {"name": "Ana María Tamayo Maya", "father": "p3", "mother": "p4", "line": 3}, "p60": {"name": "Juan de Dios Vicente Restrepo", "father": "p74", "mother": "p75", "line": 3, "year": "1753"}, "p61": {"name": "Juana Manuela Restrepo Puerta", "father": "p76", "mother": "p77", "line": 3, "year": "1753"}, "p62": {"name": "Diego José Álvarez del Pino González", "father": "p5", "mother": "p6", "line": 0, "year": "1724", "bio": 5}, "p63": {"name": "Tomasa Mauris Posada", "father": "p7", "mother": "p8", "line": 0, "year": "1731"}, "p64": {"name": "Francisco Ángel Vélez Peláez", "father": "p9", "mother": "p10", "line": 0, "year": "1732"}, "p65": {"name": "Ignacia Velásquez Sánchez", "father": "p11", "mother": "p12", "line": 0, "year": "1742"}, "p66": {"name": "Francisco Javier Restrepo Vélez", "father": "p13", "mother": "p14", "line": 0}, "p67": {"name": "Tomasa Escobar Peláez", "father": "p15", "mother": "p16", "line": 0, "year": "1729"}, "p68": {"name": "José Lorenzo Ruiz Toro", "father": "p17", "mother": "p18", "line": 2, "year": "1734"}, "p69": {"name": "Juana María Restrepo Montoya", "father": "p19", "mother": "p20", "line": 2, "year": "1740"}, "p70": {"name": "Carlos Vélez Gómez", "father": "p21", "mother": "p22", "line": 2}, "p71": {"name": "Rosalía Arango Peláez", "father": "p23", "mother": "p78", "line": 2}, "p72": {"name": "Antonio Moreno Tamayo", "line": 2, "year": "1729"}, "p73": {"name": "María Peláez Tamayo", "father": "p79", "mother": "p80", "line": 2}, "p74": {"name": "Pedro Ignacio Restrepo Vélez", "father": "p32", "mother": "p33", "line": 3, "year": "1733"}, "p75": {"name": "Bárbara González de Noriega", "father": "p34", "mother": "p35", "line": 3, "year": "1729"}, "p76": {"name": "José Ignacio Restrepo Vélez", "father": "p13", "mother": "p14", "line": 3, "year": "1731"}, "p77": {"name": "Antonia Puerta Zapata", "father": "p36", "mother": "p37", "line": 3, "year": "1734"}, "p78": {"name": "Jerónima Peláez Echeverry", "line": 2}, "p79": {"name": "Francisco Peláez Trujillo", "line": 2, "year": "1758"}, "p80": {"name": "Juana Tamayo Mesa", "line": 2, "year": "1759"}, "p81": {"name": "Gregorio Álvarez del Pino de los Arcos Cortés", "father": "p85", "mother": "p86", "line": 0, "year": "1635", "bio": 3}, "p82": {"name": "Juana Gabriela García de Ordaz Paladines", "father": "p87", "mother": "p88", "line": 0, "year": "1638"}, "p83": {"name": "Juan Francisco González de Noriega", "father": "p89", "mother": "p90", "line": 0, "year": "1659"}, "p84": {"name": "María Josefa Gómez de Ureña", "father": "p91", "mother": "p92", "line": 0}, "p85": {"name": "Pedro Álvarez del Pino Arcos Cortés", "father": "p93", "mother": "p94", "line": 0, "year": "1610", "bio": 2}, "p86": {"name": "Gregoria de los Arcos Cortés Rodríguez", "father": "p95", "mother": "p96", "line": 0, "year": "1616"}, "p87": {"name": "Felipe García de Ordaz", "father": "p97", "mother": "p98", "line": 0, "year": "1567"}, "p88": {"name": "Jerónima Paladines de la Fuente", "father": "p99", "mother": "p100", "line": 0, "year": "1615"}, "p89": {"name": "Juan González de Teleña", "line": 0}, "p90": {"name": "Toribia Fernández de Arnedo", "line": 0}, "p91": {"name": "José Luis Gómez Poblete", "father": "p101", "mother": "p102", "line": 0, "year": "1616"}, "p92": {"name": "Lucía Arnedo Paladines", "father": "p103", "mother": "p104", "line": 0, "year": "1637"}, "p93": {"name": "Diego Álvarez del Pino Fernández", "father": "p105", "mother": "p106", "line": 0, "year": "1584", "bio": 1}, "p94": {"name": "Justina Arcos Cortés", "father": "p107", "mother": "p108", "line": 0, "year": "1585"}, "p95": {"name": "Capitán Alonso de los Arcos Cortés", "father": "p107", "mother": "p108", "line": 0, "year": "1575"}, "p96": {"name": "Isabel Rodríguez de los Ríos", "father": "p109", "mother": "p110", "line": 0}, "p97": {"name": "Juan García de Ordaz", "father": "p111", "mother": "p112", "line": 0, "year": "1560"}, "p98": {"name": "Marina Cortés Figueroa", "father": "p113", "mother": "p114", "line": 0}, "p99": {"name": "Alonso López Paladines", "father": "p115", "mother": "p116", "line": 0, "year": "1627"}, "p100": {"name": "Isabel Pérez Galeano", "line": 0}, "p101": {"name": "Domingo Gómez de Ureña", "father": "p117", "mother": "p118", "line": 0, "year": "1575"}, "p102": {"name": "Ana Poblete Veleros", "father": "p119", "mother": "p120", "line": 0}, "p103": {"name": "Alonso Tiburcio Arnedo", "line": 0}, "p104": {"name": "María López Paladines", "father": "p99", "mother": "p100", "line": 0, "year": "1618"}, "p105": {"name": "Diego Álvarez Maldonado", "father": "p121", "mother": "p122", "line": 0, "year": "1564"}, "p106": {"name": "Ana María del Pino Fernández", "line": 0, "year": "1586"}, "p107": {"name": "Capitán Gómez de Arcos Cortés", "father": "p123", "mother": "p124", "line": 0}, "p108": {"name": "Catalina Gómez de Osorio Redondo", "line": 0}, "p109": {"name": "Alonso Gómez", "line": 0}, "p110": {"name": "Isabel Rodríguez Díaz", "father": "p125", "mother": "p126", "line": 0}, "p111": {"name": "Jorge García Hernández", "father": "p127", "mother": "p128", "line": 0}, "p112": {"name": "Inés de Ordaz Mancilla", "father": "p129", "mother": "p130", "line": 0}, "p113": {"name": "Martín Alonso Figueroa", "father": "p131", "mother": "p132", "line": 0}, "p114": {"name": "María Cortés", "father": "p131", "mother": "p132", "line": 0}, "p115": {"name": "Juan López Paladines", "line": 0}, "p116": {"name": "María Gómez", "line": 0}, "p117": {"name": "Antonio Pérez", "line": 0}, "p118": {"name": "Catalina Gómez", "line": 0}, "p119": {"name": "Alonso Pérez Pérez", "line": 0, "year": "1545"}, "p120": {"name": "María Valero", "line": 0}, "p121": {"name": "Diego Álvarez Loaiza", "father": "p133", "mother": "p134", "line": 0, "year": "1534"}, "p122": {"name": "Lucía Maldonado", "line": 0}, "p123": {"name": "Alonso Arcos Cortés", "father": "p135", "mother": "p136", "line": 0, "year": "1520"}, "p124": {"name": "Juana Isabel Ríos", "mother": "p137", "line": 0, "year": "1537"}, "p125": {"name": "Diego Rodríguez", "line": 0, "year": "1537"}, "p126": {"name": "Beatriz Díaz", "line": 0, "year": "1526"}, "p127": {"name": "Lorenzo García", "line": 0}, "p128": {"name": "Teresa Hernández", "line": 0}, "p129": {"name": "Juan de Mancilla", "line": 0}, "p130": {"name": "Teresa de Ordaz", "line": 0}, "p131": {"name": "Esteban García", "line": 0}, "p132": {"name": "Juana Blasquez", "line": 0}, "p133": {"name": "García Álvarez de Toledo", "line": 0}, "p134": {"name": "María Loaiza", "line": 0}, "p135": {"name": "Gómez de los Arcos", "father": "p138", "mother": "p139", "line": 0}, "p136": {"name": "Catalina Redondo Mateus de la", "line": 0, "year": "1500"}, "p137": {"name": "Catalina Lasso de la Vega", "line": 0}, "p138": {"name": "Alonso Arcos Cortés", "line": 0}, "p139": {"name": "Isabel Llosnos", "line": 0}, "p140": {"name": "Domingo Mauris Yañez", "line": 0}, "p141": {"name": "Dominga López Yañes", "line": 0}, "p142": {"name": "Manuel Berdayes Sánchez", "father": "p144", "mother": "p145", "line": 0, "year": "1664"}, "p143": {"name": "Jerónima Álvarez del Pino García", "father": "p81", "mother": "p82", "line": 0}, "p144": {"name": "Manuel Berdayes de Posada", "father": "p146", "mother": "p147", "line": 0}, "p145": {"name": "Catalina Sánchez Quintana", "father": "p148", "mother": "p149", "line": 0}, "p146": {"name": "Toribio Berdayes González", "father": "p150", "mother": "p151", "line": 0}, "p147": {"name": "Catalina Posada", "father": "p152", "mother": "p153", "line": 0}, "p148": {"name": "García Sánchez de la Torre", "line": 0}, "p149": {"name": "María González Cortines", "line": 0}, "p150": {"name": "Pedro Berdayes de Posada", "line": 0}, "p151": {"name": "María González Quintana", "line": 0}, "p152": {"name": "Pedro Sánchez Quintana", "father": "p148", "mother": "p149", "line": 0, "year": "1616"}, "p153": {"name": "María Gómez de la Torre", "line": 0}, "p154": {"name": "Juan García de Ordaz", "father": "p111", "mother": "p112", "line": 3, "year": "1567"}, "p155": {"name": "Juan Vélez de Rivero", "father": "p157", "mother": "p158", "line": 0, "year": "1649"}, "p156": {"name": "Manuela de Toro Peláez", "father": "p159", "mother": "p160", "line": 0}, "p157": {"name": "Domingo Diego Vélez Franquin", "line": 0}, "p158": {"name": "María de Rivero", "father": "p161", "mother": "p162", "line": 0}, "p159": {"name": "Cristóbal de Toro Zapata", "father": "p163", "mother": "p164", "line": 0, "year": "1690"}, "p160": {"name": "Andrea Guerra Peláez Ruiz", "father": "p165", "mother": "p166", "line": 0, "year": "1637"}, "p161": {"name": "Toribio de Rivero", "line": 0}, "p162": {"name": "Francisca de Santibañez", "line": 0}, "p163": {"name": "Juan de Toro", "father": "p173", "mother": "p174", "line": 0, "year": "1550"}, "p164": {"name": "Catalina Zapata Cardenas Valero", "father": "p175", "mother": "p176", "line": 0}, "p165": {"name": "Juan Peláez Hernández", "father": "p167", "mother": "p168", "line": 0, "year": "1601"}, "p166": {"name": "Juana Josefa Ruiz", "father": "p169", "mother": "p170", "line": 0, "year": "1608"}, "p167": {"name": "Juan Peláez Abeu", "father": "p177", "mother": "p178", "line": 0, "year": "1570"}, "p168": {"name": "María Hernández de la Vera", "father": "p179", "mother": "p180", "line": 0}, "p169": {"name": "Diego Ruiz Camara", "father": "p181", "mother": "p182", "line": 0}, "p170": {"name": "Mencía Carvajal Martínez", "father": "p183", "mother": "p184", "line": 0, "year": "1593"}, "p171": {"name": "Jerónimo de la Parra", "line": 0}, "p172": {"name": "Ana Ruiz", "line": 0, "year": "1517"}, "p173": {"name": "Cristóbal Severo Bernal", "father": "p185", "mother": "p186", "line": 0}, "p174": {"name": "Ana de Toro Rodríguez", "father": "p187", "mother": "p188", "line": 0}, "p175": {"name": "Luis Zapata Cardenas", "father": "p189", "mother": "p190", "line": 0}, "p176": {"name": "Mariana Valero Velasco Remed.ant", "father": "p191", "mother": "p192", "line": 0}, "p177": {"name": "Juan Guerra Peláez", "line": 0, "year": "1536"}, "p178": {"name": "María Abeo Araco", "line": 0, "year": "1536"}, "p179": {"name": "Juan Correa", "father": "p193", "mother": "p194", "line": 0}, "p180": {"name": "María Hernández de la Vera", "father": "p195", "mother": "p196", "line": 0}, "p181": {"name": "Juan Ruiz Parra", "father": "p171", "mother": "p172", "line": 0}, "p182": {"name": "Elvira Martínez Cardenas", "line": 0}, "p183": {"name": "Rodrigo Carvajal Sánchez", "father": "p197", "mother": "p198", "line": 0, "year": "1569"}, "p184": {"name": "Juana Martínez", "father": "p199", "mother": "p200", "line": 0, "year": "1575"}, "p185": {"name": "Juan Severo Villalba", "line": 0}, "p186": {"name": "Isabel Bernal", "line": 0}, "p187": {"name": "Hernando de Toro", "line": 0}, "p188": {"name": "Inés Rodríguez", "line": 0}, "p189": {"name": "Gonzalo de Palencia", "father": "p306", "mother": "p201", "line": 0}, "p190": {"name": "Leonor Álvarez de Alza", "line": 0}, "p191": {"name": "Martín García Valero", "line": 0, "year": "1526"}, "p192": {"name": "Isabel Blasco Velasco", "line": 0}, "p193": {"name": "Juan Fernández Pescozo", "line": 0}, "p194": {"name": "Juana Correa", "line": 0}, "p195": {"name": "Gonzalo Gómez Crespo", "line": 0}, "p196": {"name": "María Hernández Barragan", "line": 0}, "p197": {"name": "Bartolomé Sánchez Torreblanca", "line": 0, "year": "1517"}, "p198": {"name": "Mencía Carvajal Vásquez", "father": "p202", "mother": "p203", "line": 0, "year": "1552"}, "p199": {"name": "Pedro Martín de Ávila", "father": "p204", "mother": "p205", "line": 0, "year": "1557"}, "p200": {"name": "Francisca Martínez", "line": 0}, "p201": {"name": "Gozalo de Ávila", "line": 0}, "p202": {"name": "Rodrigo Carvajal Jaramillo", "father": "p206", "mother": "p207", "line": 0, "year": "1538"}, "p203": {"name": "Mayor Vásquez Núñez", "father": "p208", "mother": "p209", "line": 0}, "p204": {"name": "Pedro Martín Hernández", "father": "p210", "mother": "p211", "line": 0, "year": "1515"}, "p205": {"name": "Catalina de Barrionuevo", "line": 0}, "p206": {"name": "Gonzalo de Carvajal", "line": 0}, "p207": {"name": "Mencía Hernández", "line": 0}, "p208": {"name": "Pedro Hernández Baquero", "line": 0}, "p209": {"name": "Blanca Núñez", "line": 0}, "p210": {"name": "Juan Martín Ávila", "line": 0}, "p211": {"name": "Catalina Hernández", "line": 0}, "p212": {"name": "Mateo Peláez Benítez", "father": "p214", "mother": "p215", "line": 0}, "p213": {"name": "Catalina Pérez de Rivero", "father": "p216", "mother": "p217", "line": 0, "year": "1674"}, "p214": {"name": "Nicolás Lorenzo Guerra Peláez Camara", "father": "p218", "mother": "p219", "line": 0, "year": "1641"}, "p215": {"name": "Gertrudis Benítez Colmenero", "father": "p222", "mother": "p223", "line": 0}, "p216": {"name": "Cristóbal Pérez Teran", "line": 0, "year": "1624"}, "p217": {"name": "Sebastiana Restrepo Peláez", "father": "p220", "mother": "p221", "line": 0}, "p218": {"name": "Lorenzo Peláez Hernández", "father": "p167", "mother": "p168", "line": 0, "year": "1610"}, "p219": {"name": "Ana Ruiz Camara Ordóñez", "father": "p169", "mother": "p170", "line": 0, "year": "1617"}, "p220": {"name": "Alonso López de Restrepo", "father": "p226", "mother": "p227", "line": 0, "year": "1620"}, "p221": {"name": "María Josefa Peláez Ruiz", "father": "p165", "mother": "p166", "line": 0, "year": "1635"}, "p222": {"name": "Mateo Benítez Colmenero", "father": "p230", "mother": "p231", "line": 0, "year": "1608"}, "p223": {"name": "Catalina Tabares de Morga", "father": "p224", "mother": "p225", "line": 0, "year": "1619"}, "p224": {"name": "Martín de Tabares", "father": "p233", "mother": "p234", "line": 3}, "p225": {"name": "Juana de Morga", "father": "p235", "mother": "p236", "line": 3}, "p226": {"name": "Juan López de Restrepo", "father": "p237", "mother": "p238", "line": 0}, "p227": {"name": "Inés Mendez Sotomayor", "father": "p239", "mother": "p240", "line": 0}, "p228": {"name": "Bartolomé Sánchez Vibancos", "father": "p241", "mother": "p242", "line": 3}, "p229": {"name": "Catalina Paladines de la Fuente", "father": "p99", "mother": "p100", "line": 3}, "p230": {"name": "Pedro Gutiérrez Colmenero", "line": 0}, "p231": {"name": "María Sánchez Paladines", "father": "p228", "mother": "p229", "line": 0}, "p233": {"name": "Francisco Fernández Casserero", "line": 3}, "p234": {"name": "Beatriz Rodríguez de Tabares", "line": 3}, "p235": {"name": "Francisco de Morga", "line": 3}, "p236": {"name": "María Ortiz", "line": 3}, "p237": {"name": "Alonso López de Restrepo", "father": "p243", "mother": "p244", "line": 0}, "p238": {"name": "María Josefa Guerra Peláez", "father": "p177", "mother": "p178", "line": 0}, "p239": {"name": "Juan Prieto Bustelo", "father": "p245", "mother": "p246", "line": 0}, "p240": {"name": "Bárbara Mendez Sotomayor", "line": 0}, "p241": {"name": "Francisco Martínez Vibancos", "line": 3, "year": "1565"}, "p242": {"name": "María Carvajal Sánchez", "father": "p197", "mother": "p198", "line": 3, "year": "1607"}, "p243": {"name": "Alonso López de Restrepo", "father": "p248", "mother": "p301", "line": 0}, "p244": {"name": "María Fernández", "line": 0}, "p245": {"name": "Rodrigo Rodríguez", "line": 0}, "p246": {"name": "María López", "line": 0}, "p248": {"name": "Rodrigo Restrepo", "line": 0}, "p250": {"name": "Marcela de la Parra Márquez", "father": "p261", "mother": "p256", "line": 3, "year": "1620"}, "p251": {"name": "Manuel Betancur Velasco", "father": "p257", "mother": "p258", "line": 3, "year": "1626"}, "p252": {"name": "María Antonia Álvarez del Pino Tabares", "father": "p259", "mother": "p260", "line": 3}, "p253": {"name": "Alonso Velásquez Mera", "father": "p254", "mother": "p255", "line": 0, "year": "1665"}, "p254": {"name": "Alonso Velásquez Jaramillo Valle", "father": "p262", "mother": "p263", "line": 3}, "p255": {"name": "María Magdalena Grajeda de Mera", "father": "p264", "mother": "p265", "line": 3}, "p256": {"name": "Leonor Marquez Fontidueño", "father": "p268", "mother": "p269", "line": 3}, "p257": {"name": "Luis de Betancourt", "line": 3}, "p258": {"name": "Juana de Velasco", "line": 3}, "p259": {"name": "Diego Álvarez del Pino", "father": "p93", "mother": "p94", "line": 3, "year": "1661"}, "p260": {"name": "Beatriz Tabares de Morga", "father": "p224", "mother": "p225", "line": 3, "year": "1611"}, "p261": {"name": "Facundo Ramírez Herrera", "father": "p266", "mother": "p267", "line": 3}, "p262": {"name": "Francisco Velásquez", "line": 3}, "p263": {"name": "María Ordóñez Jaramillo", "father": "p270", "mother": "p271", "line": 3}, "p264": {"name": "Juan López Delgado", "line": 3}, "p265": {"name": "María de Grajeda", "father": "p272", "mother": "p273", "line": 3}, "p266": {"name": "García de Herrera", "line": 3}, "p267": {"name": "María Francisco ? Ramírez Marquez Serna Fontidueño", "father": "p274", "mother": "p275", "line": 3}, "p268": {"name": "Francisco Marquez Fontidueño", "father": "p274", "mother": "p275", "line": 3}, "p269": {"name": "Desconocido/a", "line": 3}, "p270": {"name": "Juan Ordóñez Villaquirán", "line": 3}, "p271": {"name": "María Jaramillo Jiménez", "father": "p276", "mother": "p277", "line": 3, "year": "1538"}, "p272": {"name": "Alonso de Grajeda", "line": 3}, "p273": {"name": "Desconocido/a", "line": 3}, "p274": {"name": "Francisco Pascual Márquez de", "line": 3}, "p275": {"name": "María Paladines la Fuente", "line": 3}, "p276": {"name": "Alvaro Jaramillo", "line": 3}, "p277": {"name": "María Jiménez Mogollón", "father": "p278", "mother": "p279", "line": 3}, "p278": {"name": "Benito Zalamea", "line": 3}, "p279": {"name": "Isabel Macías", "line": 3}, "p280": {"name": "Juan Sánchez de Hinojosa", "father": "p282", "mother": "p283", "line": 0}, "p281": {"name": "Margarita Arroyave Velázquez", "father": "p284", "mother": "p285", "line": 0, "year": "1684"}, "p282": {"name": "Juan Sánchez de Hinojosa", "father": "p286", "mother": "p287", "line": 0}, "p283": {"name": "Isabel Peláez Cámara", "father": "p218", "mother": "p219", "line": 0}, "p284": {"name": "Francisco Fernández Arroyave", "line": 0}, "p285": {"name": "Margarita Velásquez Parra", "father": "p253", "mother": "p250", "line": 0}, "p286": {"name": "Juan Sánchez Hinojosa", "line": 0}, "p287": {"name": "María Nieto", "line": 0}, "p289": {"name": "Alonso Restrepo Peláez", "father": "p220", "mother": "p221", "line": 0, "year": "1650"}, "p290": {"name": "Catalina López Correal", "father": "p291", "mother": "p292", "line": 0, "year": "1673"}, "p291": {"name": "Rodrigo López Atuesta", "father": "p293", "mother": "p294", "line": 0}, "p292": {"name": "Tomasa Correal Ocampo Ruiz", "father": "p295", "mother": "p296", "line": 0}, "p293": {"name": "Toribio López Atuesta", "line": 0}, "p294": {"name": "Catalina González", "line": 0}, "p295": {"name": "Francisco Correal Ocampo", "father": "p297", "mother": "p298", "line": 0}, "p296": {"name": "Margarita Ruiz Carvajal", "father": "p169", "mother": "p170", "line": 0, "year": "1627"}, "p297": {"name": "Gonzalo Correa Barragan", "father": "p179", "mother": "p180", "line": 0}, "p298": {"name": "Luisa González Ocampo", "father": "p299", "mother": "p300", "line": 0}, "p299": {"name": "Diego Martín del Corral", "father": "p302", "mother": "p303", "line": 0}, "p300": {"name": "Catalina González Ocampo", "father": "p304", "mother": "p305", "line": 0}, "p301": {"name": "María López", "line": 0}, "p302": {"name": "Diego Martín Correal", "line": 0}, "p303": {"name": "Luisa López de Haro", "line": 0}, "p304": {"name": "Juan Hidalgo O'Campo", "line": 0}, "p305": {"name": "Juana de Arroyo", "line": 0}, "p306": {"name": "Gonzalo de Ávila", "line": 0}, "p307": {"name": "Pedro Francisco Escobar", "line": 0}, "p308": {"name": "Margarita de Pineda", "line": 0}, "p309": {"name": "Lorenzo Peláez de Cámara", "father": "p218", "mother": "p219", "line": 0}, "p310": {"name": "María Vélez Toro", "father": "p155", "mother": "p156", "line": 0, "year": "1673"}, "p311": {"name": "Juan Toro Cataño", "father": "p313", "mother": "p314", "line": 2}, "p312": {"name": "Rosa Rojo Santillana", "father": "p315", "mother": "p316", "line": 2}, "p313": {"name": "Manuel de Toro Benítez", "father": "p317", "mother": "p318", "line": 2, "year": "1680"}, "p314": {"name": "Ignacia Cataño Castrillón", "father": "p319", "mother": "p320", "line": 2}, "p315": {"name": "José de Rojo Álvarez", "father": "p321", "mother": "p322", "line": 2}, "p316": {"name": "Bernarda Santillana Quirós", "father": "p323", "mother": "p324", "line": 2}, "p317": {"name": "Juan de Toro Peláez", "father": "p159", "mother": "p160", "line": 2}, "p318": {"name": "Gertrudis Benítez Colmenero", "father": "p222", "mother": "p223", "line": 2}, "p319": {"name": "Francisco Cataño Ponce", "father": "p325", "mother": "p326", "line": 2}, "p320": {"name": "María Mercedes Castrillón", "father": "p327", "mother": "p328", "line": 2}, "p321": {"name": "Domingo de Rojo", "line": 2}, "p322": {"name": "Catalina Álvarez", "line": 2}, "p323": {"name": "Francisco Santillana García", "father": "p329", "mother": "p330", "line": 2, "year": "1661"}, "p324": {"name": "Ana Correa Quiroz", "father": "p331", "mother": "p332", "line": 2}, "p325": {"name": "Francisco Antonio Cataño", "line": 2}, "p326": {"name": "Mayor Ortiz Osorio", "line": 2}, "p327": {"name": "Mateo de Castrillón", "father": "p333", "mother": "p334", "line": 2, "year": "1600"}, "p328": {"name": "María Vásquez Guadramiros", "father": "p335", "mother": "p336", "line": 2, "year": "1621"}, "p329": {"name": "Francisco de Santillana", "line": 2}, "p330": {"name": "Jerónima García Valencia", "line": 2}, "p331": {"name": "Pedro Correa Soto", "father": "p337", "mother": "p338", "line": 2}, "p332": {"name": "María Quiroz Santander", "father": "p339", "mother": "p340", "line": 2}, "p333": {"name": "Diego Álvarez Castrillón", "father": "p341", "mother": "p342", "line": 2}, "p334": {"name": "Catalina de Heredia", "father": "p343", "mother": "p344", "line": 2}, "p335": {"name": "Martín Vásquez Guadramiros", "father": "p345", "mother": "p346", "line": 2, "year": "1583"}, "p336": {"name": "Jerónima Sánchez Espinosa", "father": "p347", "mother": "p348", "line": 2}, "p337": {"name": "Juan Correa de Soto", "line": 2}, "p338": {"name": "Catalina Duran", "line": 2}, "p339": {"name": "Sebastián de Quiroz", "line": 2}, "p340": {"name": "Ana Santander Pimentel", "father": "p349", "mother": "p350", "line": 2}, "p341": {"name": "Rodrigo Álvarez Castrillón", "line": 2}, "p342": {"name": "María Bernaldo Quirós", "father": "p351", "mother": "p352", "line": 2}, "p343": {"name": "Nicolás Blandón", "line": 2}, "p344": {"name": "Catalina de Heredia", "line": 2}, "p345": {"name": "Pedro Fernández Vásquez", "father": "p353", "mother": "p354", "line": 2}, "p346": {"name": "María Sánchez Guadramiros", "line": 2}, "p347": {"name": "Cristóbal Sánchez Cortés", "father": "p355", "mother": "p356", "line": 2, "year": "1560"}, "p348": {"name": "Andrea de Espinosa", "father": "p357", "mother": "p358", "line": 2}, "p349": {"name": "Rodrigo Santander Alonso Pimentel", "father": "p359", "mother": "p360", "line": 2, "year": "1558–1550"}, "p350": {"name": "Catalina Prado", "father": "p361", "mother": "p362", "line": 2}, "p351": {"name": "Juan García de Tineo", "line": 2}, "p352": {"name": "Catalina Bernaldo Quirós", "line": 2}, "p353": {"name": "Pedro Alonso Vásquez", "father": "p363", "mother": "p364", "line": 2}, "p354": {"name": "Isabel García Guadramiros", "line": 2}, "p355": {"name": "Pedro Cortés", "line": 2}, "p356": {"name": "María González", "line": 2}, "p357": {"name": "Juan de Espinosa", "father": "p365", "mother": "p366", "line": 2, "year": "1554"}, "p358": {"name": "María de Salazar", "father": "p367", "mother": "p368", "line": 2, "year": "1560"}, "p359": {"name": "Luis de Santander", "line": 2, "year": "1510"}, "p360": {"name": "Francisca Alonso", "line": 2}, "p361": {"name": "Antonio Prado Pimentel", "line": 2, "year": "1518"}, "p362": {"name": "Desconocido/a", "line": 2}, "p363": {"name": "José María Vásquez", "father": "p369", "mother": "p370", "line": 2}, "p364": {"name": "Teresa Calle Mejía", "father": "p371", "mother": "p372", "line": 2}, "p365": {"name": "Juan de Espinosa", "line": 2}, "p366": {"name": "Ana de Villadiego", "line": 2}, "p367": {"name": "Fabián de Salazar", "line": 2}, "p368": {"name": "Desconocido/a", "line": 2}, "p369": {"name": "Pedro Vásquez", "line": 2}, "p370": {"name": "Desconocido/a", "line": 2}, "p371": {"name": "José María Calle Velásquez", "father": "p373", "mother": "p374", "line": 2}, "p372": {"name": "Victoria Mejía Restrepo", "father": "p375", "mother": "p376", "line": 2}, "p373": {"name": "Ignacio Calle Vélez", "line": 2}, "p374": {"name": "Bárbara Velázquez Betancur", "line": 2}, "p375": {"name": "José Miguel Mejía", "line": 2}, "p376": {"name": "María Ignacia López", "line": 2}, "p377": {"name": "José Ignacio Vélez Toro", "father": "p155", "mother": "p156", "line": 2}, "p378": {"name": "María Cecilia Peláez", "father": "p212", "mother": "p213", "line": 2, "year": "1702"}, "p380": {"name": "Manuel Domingo Gómez de Rivero Vélez", "father": "p382", "mother": "p383", "line": 2}, "p381": {"name": "Ana Josefa Pérez de Rivero Restrepo", "father": "p216", "mother": "p217", "line": 2}, "p382": {"name": "Bartolomé Gómez", "line": 2}, "p383": {"name": "Desconocido/a", "line": 2}, "p384": {"name": "Esteban Arango Zafra", "father": "p386", "mother": "p387", "line": 2}, "p385": {"name": "Gertrudis Vélez Toro", "father": "p155", "mother": "p156", "line": 2}, "p386": {"name": "Antonio Valdes de Arango", "line": 2}, "p387": {"name": "Olaya de Zafra Castrillón", "father": "p388", "mother": "p389", "line": 2}, "p388": {"name": "Fernando de Zafra Jaramillo", "father": "p390", "mother": "p391", "line": 2}, "p389": {"name": "María Álvarez Heredia", "father": "p333", "mother": "p334", "line": 2}, "p390": {"name": "Juan Jaramillo de Andrade", "father": "p392", "mother": "p393", "line": 2, "year": "1579"}, "p391": {"name": "Juana de Zafra Centeno", "father": "p394", "mother": "p395", "line": 2, "year": "1572"}, "p392": {"name": "Alonso Jaramillo Andrade", "line": 2}, "p393": {"name": "Isabel Fernández Salcedo", "line": 2}, "p394": {"name": "Fernando de Zafra Centeno", "father": "p398", "mother": "p399", "line": 2}, "p395": {"name": "Juana Taborda López", "father": "p396", "mother": "p397", "line": 2, "year": "1536"}, "p396": {"name": "Juan Taborda de Rivero", "father": "p400", "mother": "p401", "line": 3, "year": "1515"}, "p397": {"name": "Leonor López Santofimia", "line": 3}, "p398": {"name": "Hernando de Zafra Centeno", "line": 2}, "p399": {"name": "Catarina Fernández", "line": 2}, "p400": {"name": "Alonso Taborda Díaz", "father": "p402", "mother": "p403", "line": 3}, "p401": {"name": "Desconocido/a", "line": 3}, "p402": {"name": "Alonso Taborda de Rivera", "line": 3}, "p403": {"name": "Isabel Díaz", "line": 3}, "p404": {"name": "Alonso Velásquez Mera", "father": "p254", "mother": "p255", "line": 3, "year": "1615"}, "p405": {"name": "Juan Pérez Palacio", "line": 3}, "p406": {"name": "Angela de la Calle", "line": 3}, "p410": {"name": "Baltasar Tamayo Preciado", "father": "p414", "mother": "p415", "line": 3}, "p411": {"name": "Catalina Piedrahita Piedrahita", "father": "p416", "mother": "p417", "line": 3, "year": "1647"}, "p412": {"name": "Laureano Piedrahita Saavedra", "father": "p418", "mother": "p419", "line": 3, "year": "1632"}, "p413": {"name": "Josefa Montoya Piedrahita", "father": "p420", "mother": "p421", "line": 3, "year": "1644"}, "p414": {"name": "Baltasar Tamayo Vivas", "father": "p422", "mother": "p423", "line": 3}, "p415": {"name": "Catalina Preciado Duran", "line": 3}, "p416": {"name": "Juan Piedrahita Saavedra", "father": "p418", "mother": "p419", "line": 3, "year": "1613"}, "p417": {"name": "Jacinta Piedrahita Gutiérrez", "father": "p424", "mother": "p425", "line": 3, "year": "1615"}, "p418": {"name": "Antonio Piedrahita Saavedra", "line": 3}, "p419": {"name": "Luisa Piedrahita Saavedra", "line": 3}, "p420": {"name": "Fernando Antonio Montoya", "father": "p426", "mother": "p427", "line": 3, "year": "1603"}, "p421": {"name": "Isabel Piedrahita Gutiérrez", "father": "p424", "mother": "p425", "line": 3, "year": "1611"}, "p422": {"name": "Jerónimo Sánchez Tamayo", "father": "p428", "mother": "p429", "line": 3}, "p423": {"name": "María Vivas Tovar", "line": 3}, "p424": {"name": "Juan González Piedrahita", "father": "p430", "mother": "p431", "line": 3, "year": "1585"}, "p425": {"name": "María Gutiérrez Guetaria", "father": "p432", "mother": "p433", "line": 3}, "p426": {"name": "Juan de Montoya", "line": 3}, "p427": {"name": "Magdalena Ortiz Tocano", "father": "p434", "mother": "p435", "line": 3}, "p428": {"name": "Cirilo Sánchez Tamayo", "line": 3}, "p429": {"name": "María Rodríguez", "line": 3}, "p430": {"name": "Andrés González Piedrahita", "father": "p436", "mother": "p437", "line": 3, "year": "1560"}, "p431": {"name": "María J. González de Nava", "line": 3}, "p432": {"name": "Juan Francisco Gutiérrez Iriategui", "line": 3}, "p433": {"name": "Gracia de Guetaria", "father": "p438", "mother": "p439", "line": 3}, "p434": {"name": "Juan Ortiz Tocano", "line": 3}, "p435": {"name": "María Alonsa Pineda", "line": 3}, "p436": {"name": "Agustín González Piedrahita", "line": 3}, "p437": {"name": "Desconocido/a", "line": 3}, "p438": {"name": "Juanes de Guetaria", "line": 3, "year": "1532"}, "p439": {"name": "Desconocido/a", "line": 3}, "p440": {"name": "Ventura de Amaya", "father": "p444", "mother": "p445", "line": 3}, "p441": {"name": "Juana Acevedo Vivancos", "father": "p446", "mother": "p447", "line": 3, "year": "1656"}, "p442": {"name": "Mateo Álvarez del Pino Tabares", "father": "p259", "mother": "p260", "line": 3, "year": "1638"}, "p443": {"name": "Isabel Lezcano Urnieta", "father": "p448", "mother": "p449", "line": 3, "year": "1650"}, "p444": {"name": "Domingo de Maya Enderiz", "father": "p450", "mother": "p451", "line": 3, "year": "1628"}, "p445": {"name": "Ana Suárez Maldonado", "father": "p452", "mother": "p453", "line": 3, "year": "1613"}, "p446": {"name": "Juan Ambrosio Acevedo", "father": "p454", "mother": "p455", "line": 3, "year": "1625"}, "p447": {"name": "Isabel Sánchez Paladines", "father": "p228", "mother": "p229", "line": 3}, "p448": {"name": "José Lezcano Taborda", "father": "p456", "mother": "p457", "line": 3}, "p449": {"name": "Catalina de Heredia", "father": "p458", "mother": "p459", "line": 3}, "p450": {"name": "Miguel Maya de Torres", "line": 3}, "p451": {"name": "María Enderiz", "line": 3}, "p452": {"name": "Agustín Suárez Cardoso", "line": 3}, "p453": {"name": "Juana Maldonado", "line": 3}, "p454": {"name": "Juan de Acevedo", "line": 3}, "p455": {"name": "Inés Venero", "line": 3}, "p456": {"name": "Miguel Lezcano de Urnieta", "line": 3, "year": "1553"}, "p457": {"name": "Ana Taborda Torres", "father": "p460", "mother": "p461", "line": 3}, "p458": {"name": "Mateo de Castrillón", "father": "p333", "mother": "p334", "line": 3, "year": "1600"}, "p459": {"name": "Francisca de los Ríos", "line": 3}, "p460": {"name": "Juan Taborda López", "father": "p396", "mother": "p397", "line": 3, "year": "1547"}, "p461": {"name": "Jerónima Torres", "father": "p462", "mother": "p463", "line": 3, "year": "1559"}, "p462": {"name": "Jerónimo de Torres", "line": 3, "year": "1521"}, "p463": {"name": "Desconocido/a", "line": 3}, "p464": {"name": "Juan Francisco González", "father": "p468", "mother": "p469", "line": 3, "year": "1659"}, "p465": {"name": "María Josefa Gómez", "father": "p91", "mother": "p92", "line": 3, "year": "1669"}, "p466": {"name": "José Gómez Ureña", "father": "p470", "mother": "p92", "line": 3, "year": "1684"}, "p467": {"name": "Ana Agueda Garces", "father": "p471", "mother": "p472", "line": 3}, "p468": {"name": "Juan González Noriega", "line": 3}, "p469": {"name": "Lucía Fernández de Arnedo", "line": 3}, "p470": {"name": "José Luis Gómez Poblete", "father": "p101", "mother": "p102", "line": 3, "year": "1637"}, "p471": {"name": "Pedro Santiago Garcés", "father": "p473", "mother": "p474", "line": 3, "year": "1614"}, "p472": {"name": "Constancia Mejía de Tovar", "father": "p475", "mother": "p476", "line": 3, "year": "1621"}, "p473": {"name": "Andrés Garces", "line": 3}, "p474": {"name": "Ana Ramírez Sánchez", "father": "p477", "mother": "p478", "line": 3}, "p475": {"name": "Juan Mejía Tobar", "father": "p479", "mother": "p480", "line": 3, "year": "1584"}, "p476": {"name": "Elvira Ramírez Sánchez", "father": "p477", "mother": "p478", "line": 3}, "p477": {"name": "Juan Ramírez de Coy", "line": 3, "year": "1552"}, "p478": {"name": "Juana Sánchez Torreblanca", "father": "p481", "mother": "p482", "line": 3, "year": "1568"}, "p479": {"name": "Juan del Puerto Mejía", "father": "p483", "mother": "p484", "line": 3}, "p480": {"name": "Constanza de Montoya", "line": 3}, "p481": {"name": "Bartolomé Sánchez Torreblanca", "line": 3, "year": "1517"}, "p482": {"name": "Luisa Yameci", "line": 3, "year": "1550"}, "p483": {"name": "Alonso Mejía Tobar", "father": "p485", "mother": "p486", "line": 3}, "p484": {"name": "Desconocido/a", "line": 3}, "p485": {"name": "Alonso Mejía de Pedraza", "line": 3}, "p486": {"name": "Jerónima de Tobar Rivera", "line": 3}, "p487": {"name": "Isidoro Puerta Palacio", "father": "p489", "mother": "p490", "line": 3}, "p488": {"name": "Ursula Molina Beltran", "father": "p491", "mother": "p492", "line": 3, "year": "1652"}, "p489": {"name": "Francisco Puerta Palacio", "line": 3}, "p490": {"name": "Angela de Alvarado", "line": 3}, "p491": {"name": "Carlos Molina Toro", "father": "p493", "mother": "p494", "line": 3}, "p492": {"name": "Beatriz Beltran Castillo", "father": "p495", "mother": "p496", "line": 3}, "p493": {"name": "Antonio Molina Toledo", "father": "p497", "mother": "p498", "line": 3}, "p494": {"name": "Antonia de Toro Zapata", "father": "p163", "mother": "p164", "line": 3}, "p495": {"name": "Diego Beltran Castillo", "father": "p499", "mother": "p500", "line": 3}, "p496": {"name": "Jacinta García de Ordaz", "father": "p154", "mother": "p98", "line": 3}, "p497": {"name": "Carlos de Molina", "line": 3}, "p498": {"name": "María de Toledo", "father": "p501", "mother": "p502", "line": 3}, "p499": {"name": "Pedro del Castillo", "father": "p503", "mother": "p504", "line": 3}, "p500": {"name": "Beatriz Beltran Caicedo", "father": "p505", "mother": "p506", "line": 3}, "p501": {"name": "Antonio de Toledo", "line": 3}, "p502": {"name": "Desconocido/a", "line": 3}, "p503": {"name": "Juan del Castillo", "line": 3}, "p504": {"name": "Alberta de Montoya", "line": 3}, "p505": {"name": "Diego Beltrán Caicedo", "line": 3}, "p506": {"name": "Catalina de Arroyo", "line": 3}, "p508": {"name": "Juan Zapata Gómez", "father": "p510", "mother": "p511", "line": 3, "year": "1643"}, "p509": {"name": "María de Serna Palacio", "father": "p512", "mother": "p513", "line": 3}, "p510": {"name": "Antonio Zapata Gómez", "line": 3}, "p511": {"name": "Ana María de Toro Zapata", "father": "p514", "mother": "p515", "line": 3}, "p512": {"name": "Pedro de la Serna", "father": "p516", "mother": "p517", "line": 3}, "p513": {"name": "María Palacio", "father": "p518", "mother": "p519", "line": 3}, "p514": {"name": "Fernando de Toro Zapata", "father": "p163", "mother": "p164", "line": 3}, "p515": {"name": "María García de Ordaz", "father": "p154", "mother": "p98", "line": 3}, "p516": {"name": "Juan García Serna", "line": 3}, "p517": {"name": "Marina Ramírez de la Pila", "line": 3}, "p518": {"name": "Hernando de Alvarado", "line": 3}, "p519": {"name": "María de Nadal Saravia", "line": 3}, "s0": {"name": "Elías Segundo Álvarez Ruiz", "father": "p38", "mother": "p39"}, "s1": {"name": "Ángel María (Jesús) Álvarez Ruiz", "father": "p38", "mother": "p39"}, "s2": {"name": "Antonio José Álvarez Ruiz", "father": "p38", "mother": "p39"}, "s3": {"name": "Gilberto Álvarez Ruiz", "father": "p38", "mother": "p39"}, "s4": {"name": "Isaac Álvarez Ruiz", "father": "p38", "mother": "p39"}, "s5": {"name": "Mercedes Álvarez Ruiz", "father": "p38", "mother": "p39"}, "s6": {"name": "Anatolia Álvarez Ruiz", "father": "p38", "mother": "p39"}}};
+const LCOL = ['#1f6f78', '#a23b48', '#b07a12', '#4d5fa3'], INK = '#2a2622';
+const P = DATA.P, ROOT = DATA.root;
+const color = p => (p && p.line >= 0 ? LCOL[p.line] : INK);
+function hierarchy() {
+  const seen = new Set([ROOT]); const root = { pid: ROOT, children: [] }; let fr = [root];
+  while (fr.length) { const nx = [];
+    for (const n of fr) for (const k of ['father', 'mother']) { const q = P[n.pid][k]; if (!q || !P[q]) continue;
+      if (seen.has(q)) n.children.push({ pid: q, stub: true, children: [] }); else { seen.add(q); const c = { pid: q, children: [] }; n.children.push(c); nx.push(c); } }
+    fr = nx; }
+  return d3.hierarchy(root, n => (n.children.length ? n.children : null));
+}
+function fan(sel, labels) {
+  const h = hierarchy(); const R = 960;
+  d3.tree().size([2 * Math.PI, R]).separation((a, b) => (a.parent === b.parent ? 1 : 1.35) / Math.max(1, a.depth))(h);
+  const svg = d3.select(sel);
+  const step = R / h.height;
+  svg.append('g').selectAll('circle').data(d3.range(1, h.height + 1)).join('circle').attr('r', d => d * step)
+    .attr('fill', 'none').attr('stroke', '#ddd2bd').attr('stroke-dasharray', '3 6').attr('stroke-width', 1.2);
+  svg.append('g').selectAll('path').data(h.links()).join('path')
+    .attr('d', d3.linkRadial().angle(d => d.x).radius(d => d.y)).attr('fill', 'none')
+    .attr('stroke', d => color(P[d.target.data.pid])).attr('stroke-opacity', .55).attr('stroke-width', 2.2);
+  const pt = d => { const a = d.x - Math.PI / 2; return [d.y * Math.cos(a), d.y * Math.sin(a)]; };
+  const n = svg.append('g').selectAll('g').data(h.descendants()).join('g').attr('transform', d => `translate(${pt(d)})`);
+  n.append('circle').attr('r', d => d.depth === 0 ? 16 : d.data.stub ? 4 : 7)
+    .attr('fill', d => d.data.stub ? '#fff' : color(P[d.data.pid]))
+    .attr('stroke', d => P[d.data.pid].bio && !d.data.stub ? '#c39322' : d.data.stub ? '#aaa' : '#fbf8f1')
+    .attr('stroke-width', d => P[d.data.pid].bio && !d.data.stub ? 5 : 2);
+  if (labels) {
+    n.filter(d => d.depth > 0 && d.depth <= labels && !d.data.stub).append('text')
+      .attr('transform', d => { const deg = d.x * 180 / Math.PI; return deg > 180 ? `rotate(${deg + 90}) translate(-13,0)` : `rotate(${deg - 90}) translate(13,0)`; })
+      .attr('text-anchor', d => (d.x > Math.PI ? 'end' : 'start')).attr('dy', '.33em')
+      .attr('font-size', d => [0, 26, 22, 18, 15, 13][d.depth]).attr('fill', '#2a2622').attr('font-weight', 500)
+      .attr('paint-order', 'stroke').attr('stroke', '#fff').attr('stroke-width', 5)
+      .text(d => P[d.data.pid].name);
+  }
+}
+function pedigree(sel) {
+  const svg = d3.select(sel), W = 1500, Hh = 960, colX = [10, 300, 590, 880, 1170], bw = 300 - 22, bh = 50;
+  const slots = [];
+  (function walk(id, d, i) { slots.push({ id, d, i }); if (d === 4) return; const p = id && P[id];
+    walk(p ? p.father : null, d + 1, 2 * i); walk(p ? p.mother : null, d + 1, 2 * i + 1); })(ROOT, 0, 0);
+  const cy = s => (s.i + 0.5) * Hh / 2 ** s.d;
+  const g = svg.append('g');
+  for (const s of slots) if (s.d < 4) {
+    const kids = slots.filter(t => t.d === s.d + 1 && (t.i >> 1) === s.i);
+    for (const k of kids) {
+      const x1 = colX[s.d] + bw, y1 = cy(s), x2 = colX[k.d], y2 = cy(k), xm = (x1 + x2) / 2;
+      g.append('path').attr('class', 'pl').attr('d', `M${x1},${y1}H${xm}V${y2}H${x2}`);
+    }
+  }
+  for (const s of slots) {
+    const p = s.id && P[s.id]; const x = colX[s.d], y = cy(s) - bh / 2;
+    const fs = [17, 15, 14, 13, 12.5][s.d];
+    const box = g.append('g').attr('transform', `translate(${x},${y})`);
+    box.append('rect').attr('width', bw).attr('height', bh).attr('rx', 7)
+      .attr('fill', p ? '#fffdf8' : 'none').attr('stroke', p ? color(p) : '#d8cdb9').attr('stroke-width', p ? 1.6 : 1).attr('stroke-dasharray', p ? null : '4 4');
+    if (p) {
+      box.append('rect').attr('width', 6).attr('height', bh).attr('rx', 3).attr('fill', color(p));
+      const t = box.append('text').attr('x', 15).attr('y', p.year ? 21 : 30).attr('font-size', fs).attr('font-weight', 600).attr('fill', '#2a2622').attr('font-family', '"EB Garamond", serif');
+      t.text(p.name.length > 34 ? p.name.slice(0, 33) + '…' : p.name);
+      if (p.year) box.append('text').attr('x', 15).attr('y', 40).attr('font-size', 11.5).attr('fill', '#6f665c').text(p.year);
+    } else box.append('text').attr('x', bw / 2).attr('y', 30).attr('text-anchor', 'middle').attr('font-size', 12).attr('fill', '#b0a591').text('sin datos');
+  }
+  const gl = ['Manuel Salvador', 'Padres', 'Abuelos', 'Bisabuelos', 'Tatarabuelos'];
+}
+document.fonts.ready.then(() => {
+  fan('#fan', 0); fan('#fan2', 4); pedigree('#pedigree');
+  Promise.all([...document.images].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; }))).then(() => { window.__listo = true; });
+});
+</script>
+</body>
+</html>

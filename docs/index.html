@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Familia Álvarez del Pino</title>
+<meta name="description" content="Genealogía de Manuel Salvador Álvarez del Pino Ruiz: árbol interactivo, historia de la familia y los cuadros originales.">
+<meta name="theme-color" content="#f6f1e7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231f5f68'/%3E%3Cpath d='M32 50V30M32 34l-10-10M32 30l10-10M32 40l-8-4M32 38l9-5' stroke='%23f6f1e7' stroke-width='4' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/arbol" aria-label="Inicio">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-text"><b>Álvarez del Pino</b><small>Genealogía familiar</small></span>
+  </a>
+  <nav class="tabs" aria-label="Secciones">
+    <a href="#/arbol" data-view="arbol">Árbol</a>
+    <a href="#/historia" data-view="historia">Historia</a>
+    <a href="#/personas" data-view="personas">Personas</a>
+    <a href="#/originales" data-view="originales">Cuadros originales</a>
+  </nav>
+  <div class="search">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+    <input id="q" type="search" placeholder="Buscar un nombre…" autocomplete="off" spellcheck="false" aria-label="Buscar persona">
+    <div id="results" class="results" role="listbox" hidden></div>
+  </div>
+</header>
+
+<main>
+  <section id="view-arbol" class="view">
+    <svg id="chart" aria-label="Árbol genealógico interactivo"></svg>
+    <div class="legend" id="legend"></div>
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Tipo de gráfico">
+        <button data-layout="radial" class="on" title="Vista en abanico">Abanico</button>
+        <button data-layout="tree" title="Vista de árbol">Árbol</button>
+      </div>
+      <div class="zoombtns">
+        <button id="zin" aria-label="Acercar">+</button>
+        <button id="zout" aria-label="Alejar">−</button>
+        <button id="zfit" aria-label="Ver todo" title="Ver todo">⤢</button>
+      </div>
+    </div>
+    <p class="hint" id="hint">Arrastra para moverte · pellizca o usa la rueda para hacer zoom · toca un nombre para ver su información</p>
+  </section>
+
+  <section id="view-historia" class="view page" hidden></section>
+  <section id="view-personas" class="view page" hidden></section>
+  <section id="view-originales" class="view page" hidden></section>
+</main>
+
+<aside id="panel" class="panel" aria-live="polite" hidden>
+  <button class="panel-close" id="panelClose" aria-label="Cerrar">×</button>
+  <div class="panel-grip" aria-hidden="true"></div>
+  <div id="panelBody" class="panel-body"></div>
+</aside>
+
+<div id="viewer" class="viewer" hidden>
+  <div class="viewer-bar">
+    <b id="viewerTitle"></b>
+    <span class="viewer-actions">
+      <a id="viewerOpen" target="_blank" rel="noopener">Abrir imagen</a>
+      <button id="viewerClose" aria-label="Cerrar">×</button>
+    </span>
+  </div>
+  <div class="viewer-stage" id="viewerStage"><img id="viewerImg" alt=""></div>
+</div>
+
+<script src="vendor/d3.v7.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

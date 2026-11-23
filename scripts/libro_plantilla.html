@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Genealogía de Manuel Salvador Álvarez del Pino Ruiz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --ink:#2a2622; --muted:#6f665c; --rule:#e2d7c3; --paper:#fbf8f1; --accent:#1f5f68; --gold:#c39322;
+  --l0:#1f6f78; --l1:#a23b48; --l2:#b07a12; --l3:#4d5fa3; }
+@page { size: A4; margin: 20mm 19mm 22mm;
+  @bottom-center { content: counter(page); font: 10pt "EB Garamond", serif; color: #8a8075; } }
+@page cover { margin: 0; @bottom-center { content: none; } }
+@page land { size: A4 landscape; margin: 11mm 13mm 14mm;
+  @bottom-center { content: counter(page); font: 9pt "EB Garamond", serif; color: #8a8075; } }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; color: var(--ink); font: 11.6pt/1.55 "EB Garamond", Georgia, serif; }
+.cover { page: cover; height: 297mm; width: 210mm; background: #f6f1e7; position: relative; overflow: hidden; break-after: page; }
+.cover-art { position: absolute; left: 50%; top: 18mm; width: 175mm; height: 175mm; transform: translateX(-50%); }
+.cover-art svg { width: 100%; height: 100%; }
+.cover-text { position: absolute; left: 22mm; right: 22mm; bottom: 26mm; text-align: center; }
+.kicker { font: 600 9pt Inter, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: var(--accent); }
+.cover h1 { font: 500 37pt/1.05 "EB Garamond", serif; margin: 4mm 0 5mm; letter-spacing: -.01em; }
+.cover .sub { font-style: italic; font-size: 14pt; color: #4a433b; margin: 0 0 6mm; }
+.cover .meta { font: 500 9pt Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+.front { break-after: page; }
+.small-title { font: 600 9pt Inter, sans-serif; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin: 0 0 5mm; }
+p.big { font-size: 15pt; line-height: 1.5; }
+.toc { list-style: none; counter-reset: c; padding: 0; margin: 0; }
+.toc li { counter-increment: c; display: flex; gap: 6mm; padding: 2.6mm 0; border-bottom: 1px solid var(--rule); font-size: 14pt; }
+.toc li::before { content: counter(c); font: 600 10pt Inter, sans-serif; color: var(--accent); width: 8mm; padding-top: 1.2mm; }
+
+.chapter { break-before: page; }
+.chap-n { font: 600 9pt Inter, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin-top: 18mm; }
+.chapter h1 { font: 500 30pt/1.08 "EB Garamond", serif; margin: 3mm 0 8mm; padding-bottom: 6mm; border-bottom: 1px solid var(--rule); }
+p { margin: 0 0 3.2mm; text-align: justify; hyphens: auto; }
+p.lead { font-size: 13.5pt; line-height: 1.5; color: #3d3730; text-align: left; }
+p.drop::first-letter { float: left; font-size: 46pt; line-height: .85; padding: 1.5mm 2mm 0 0; color: var(--accent); }
+h3 { font: 600 15pt "EB Garamond", serif; margin: 8mm 0 3mm; break-after: avoid; }
+ol.num li, ul.notes li { margin-bottom: 1.4mm; font-size: 11pt; line-height: 1.45; }
+ul.notes { padding-left: 5mm; }
+.aside { background: #f6f1e7; border-left: 3px solid var(--gold); padding: 4mm 5mm; margin-top: 6mm; font-size: 11pt; }
+.note { font-size: 9.5pt; color: var(--muted); font-family: Inter, sans-serif; }
+
+.lineage { margin: 6mm 0 4mm; border-left: 2px solid #cfe0e0; padding-left: 0; }
+.lin-row { display: flex; gap: 4mm; align-items: flex-start; padding: 1.6mm 0 1.6mm 0; break-inside: avoid; }
+.lin-g { flex: none; width: 7mm; height: 7mm; margin-left: -3.6mm; border-radius: 50%; background: #fff; border: 1.5px solid var(--l0); color: var(--l0);
+  font: 600 7.5pt/6.4mm Inter, sans-serif; text-align: center; }
+.lin-row.hl .lin-g { background: var(--l0); color: #fff; }
+.lin-row b { font-weight: 600; }
+.lin-row .yr { font: 8.5pt Inter, sans-serif; color: var(--muted); }
+.lin-row .sp { font-style: italic; color: #5b544b; font-size: 10.5pt; }
+article.gen { margin-top: 9mm; }
+.gen-head { display: flex; gap: 4mm; align-items: flex-start; break-after: avoid; margin-bottom: 3mm; }
+.gen-n { flex: none; width: 10mm; height: 10mm; border-radius: 50%; background: var(--l0); color: #fff; font: 600 11pt/10mm Inter, sans-serif; text-align: center; margin-top: 1mm; }
+.gen-head h2 { font: 600 18pt/1.15 "EB Garamond", serif; margin: 0; }
+.dates { font: 600 9pt Inter, sans-serif; color: var(--l0); letter-spacing: .05em; margin-top: 1mm; }
+.subt { font-style: italic; color: var(--muted); }
+.kids-t { font-weight: 600; margin-top: 3mm; break-after: avoid; }
+ol.kids { margin: 0 0 2mm; padding-left: 6mm; font-size: 11pt; }
+ol.kids li { margin-bottom: 1mm; }
+.photos { display: flex; gap: 4mm; margin: 4mm 0; break-inside: avoid; }
+.photos figure { flex: 1; margin: 0; }
+.photos img { width: 100%; height: 78mm; object-fit: cover; border-radius: 2mm; }
+figcaption { font: italic 9pt "EB Garamond", serif; color: var(--muted); margin-top: 1.5mm; }
+blockquote { margin: 5mm 0; padding: 4mm 6mm; background: #f6f1e7; border-left: 3px solid var(--gold); break-inside: avoid; }
+blockquote p { font-style: italic; }
+cite { font: 600 8.5pt Inter, sans-serif; color: var(--muted); font-style: normal; }
+figure.hero { margin: 6mm 0; break-inside: avoid; text-align: center; }
+figure.hero img { max-width: 100%; max-height: 120mm; border-radius: 2mm; }
+.kidcards { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+.kc { border: 1px solid var(--rule); border-radius: 2mm; padding: 3mm 4mm; break-inside: avoid; background: #fffdf8; }
+.kc b { display: block; font-size: 13pt; }
+.kc span { display: block; font: 8.8pt/1.45 Inter, sans-serif; color: var(--muted); }
+.lines4 { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin: 5mm 0; }
+.lines4 div { border: 1px solid var(--rule); border-radius: 2mm; padding: 3mm 4mm; display: grid; grid-template-columns: 5mm 1fr; column-gap: 2mm; }
+.lines4 i { width: 4mm; height: 4mm; border-radius: 50%; margin-top: 1.4mm; grid-row: span 2; }
+.lines4 span { font-size: 10pt; color: var(--muted); }
+table.gens { width: 100%; border-collapse: collapse; margin: 5mm 0 3mm; font: 9.5pt Inter, sans-serif; }
+table.gens th { text-align: left; font-weight: 600; color: var(--muted); border-bottom: 1.5px solid var(--ink); padding: 1.6mm 2mm; }
+table.gens td { border-bottom: 1px solid var(--rule); padding: 1mm 2mm; }
+table.gens tr { break-inside: avoid; }
+
+.land { page: land; break-before: page; height: 184mm; display: flex; flex-direction: column; }
+.land-t { font: 500 18pt "EB Garamond", serif; margin: 0 0 1mm; }
+.land-s { font-size: 10pt; color: var(--muted); margin: 0 0 2mm; }
+.land svg { flex: 1; width: 100%; min-height: 0; }
+.facs-h { display: flex; align-items: baseline; gap: 4mm; border-bottom: 1px solid var(--rule); padding-bottom: 2mm; margin-bottom: 3mm; }
+.facs-h span { font: 600 9pt Inter, sans-serif; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+.facs-h b { font: 500 14pt "EB Garamond", serif; }
+.facs-img { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; }
+.facs-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+.index .idx { columns: 2; column-gap: 8mm; font-size: 9.6pt; line-height: 1.3; }
+.index h4 { font: 600 13pt "EB Garamond", serif; color: var(--accent); margin: 3mm 0 1mm; break-after: avoid; }
+.ix { display: grid; grid-template-columns: 3mm 1fr; column-gap: 1.6mm; break-inside: avoid; margin-bottom: 1.1mm; }
+.ix i { width: 2.2mm; height: 2.2mm; border-radius: 50%; margin-top: 1.1mm; }
+.ix .m { grid-column: 2; font: 7.4pt Inter, sans-serif; color: var(--muted); }
+.colophon { break-before: page; display: flex; flex-direction: column; justify-content: flex-end; height: 240mm; text-align: center; }
+.colophon p { text-align: center; }
+
+svg text { font-family: Inter, sans-serif; }
+.pl { fill: none; stroke: #b9ad99; stroke-width: 1.2; }
+</style>
+</head>
+<body>
+<!--CONTENIDO-->
+<script src="../docs/vendor/d3.v7.min.js"></script>
+<script>
+/*DATOS*/
+const LCOL = ['#1f6f78', '#a23b48', '#b07a12', '#4d5fa3'], INK = '#2a2622';
+const P = DATA.P, ROOT = DATA.root;
+const color = p => (p && p.line >= 0 ? LCOL[p.line] : INK);
+function hierarchy() {
+  const seen = new Set([ROOT]); const root = { pid: ROOT, children: [] }; let fr = [root];
+  while (fr.length) { const nx = [];
+    for (const n of fr) for (const k of ['father', 'mother']) { const q = P[n.pid][k]; if (!q || !P[q]) continue;
+      if (seen.has(q)) n.children.push({ pid: q, stub: true, children: [] }); else { seen.add(q); const c = { pid: q, children: [] }; n.children.push(c); nx.push(c); } }
+    fr = nx; }
+  return d3.hierarchy(root, n => (n.children.length ? n.children : null));
+}
+function fan(sel, labels) {
+  const h = hierarchy(); const R = 960;
+  d3.tree().size([2 * Math.PI, R]).separation((a, b) => (a.parent === b.parent ? 1 : 1.35) / Math.max(1, a.depth))(h);
+  const svg = d3.select(sel);
+  const step = R / h.height;
+  svg.append('g').selectAll('circle').data(d3.range(1, h.height + 1)).join('circle').attr('r', d => d * step)
+    .attr('fill', 'none').attr('stroke', '#ddd2bd').attr('stroke-dasharray', '3 6').attr('stroke-width', 1.2);
+  svg.append('g').selectAll('path').data(h.links()).join('path')
+    .attr('d', d3.linkRadial().angle(d => d.x).radius(d => d.y)).attr('fill', 'none')
+    .attr('stroke', d => color(P[d.target.data.pid])).attr('stroke-opacity', .55).attr('stroke-width', 2.2);
+  const pt = d => { const a = d.x - Math.PI / 2; return [d.y * Math.cos(a), d.y * Math.sin(a)]; };
+  const n = svg.append('g').selectAll('g').data(h.descendants()).join('g').attr('transform', d => `translate(${pt(d)})`);
+  n.append('circle').attr('r', d => d.depth === 0 ? 16 : d.data.stub ? 4 : 7)
+    .attr('fill', d => d.data.stub ? '#fff' : color(P[d.data.pid]))
+    .attr('stroke', d => P[d.data.pid].bio && !d.data.stub ? '#c39322' : d.data.stub ? '#aaa' : '#fbf8f1')
+    .attr('stroke-width', d => P[d.data.pid].bio && !d.data.stub ? 5 : 2);
+  if (labels) {
+    n.filter(d => d.depth > 0 && d.depth <= labels && !d.data.stub).append('text')
+      .attr('transform', d => { const deg = d.x * 180 / Math.PI; return deg > 180 ? `rotate(${deg + 90}) translate(-13,0)` : `rotate(${deg - 90}) translate(13,0)`; })
+      .attr('text-anchor', d => (d.x > Math.PI ? 'end' : 'start')).attr('dy', '.33em')
+      .attr('font-size', d => [0, 26, 22, 18, 15, 13][d.depth]).attr('fill', '#2a2622').attr('font-weight', 500)
+      .attr('paint-order', 'stroke').attr('stroke', '#fff').attr('stroke-width', 5)
+      .text(d => P[d.data.pid].name);
+  }
+}
+function pedigree(sel) {
+  const svg = d3.select(sel), W = 1500, Hh = 960, colX = [10, 300, 590, 880, 1170], bw = 300 - 22, bh = 50;
+  const slots = [];
+  (function walk(id, d, i) { slots.push({ id, d, i }); if (d === 4) return; const p = id && P[id];
+    walk(p ? p.father : null, d + 1, 2 * i); walk(p ? p.mother : null, d + 1, 2 * i + 1); })(ROOT, 0, 0);
+  const cy = s => (s.i + 0.5) * Hh / 2 ** s.d;
+  const g = svg.append('g');
+  for (const s of slots) if (s.d < 4) {
+    const kids = slots.filter(t => t.d === s.d + 1 && (t.i >> 1) === s.i);
+    for (const k of kids) {
+      const x1 = colX[s.d] + bw, y1 = cy(s), x2 = colX[k.d], y2 = cy(k), xm = (x1 + x2) / 2;
+      g.append('path').attr('class', 'pl').attr('d', `M${x1},${y1}H${xm}V${y2}H${x2}`);
+    }
+  }
+  for (const s of slots) {
+    const p = s.id && P[s.id]; const x = colX[s.d], y = cy(s) - bh / 2;
+    const fs = [17, 15, 14, 13, 12.5][s.d];
+    const box = g.append('g').attr('transform', `translate(${x},${y})`);
+    box.append('rect').attr('width', bw).attr('height', bh).attr('rx', 7)
+      .attr('fill', p ? '#fffdf8' : 'none').attr('stroke', p ? color(p) : '#d8cdb9').attr('stroke-width', p ? 1.6 : 1).attr('stroke-dasharray', p ? null : '4 4');
+    if (p) {
+      box.append('rect').attr('width', 6).attr('height', bh).attr('rx', 3).attr('fill', color(p));
+      const t = box.append('text').attr('x', 15).attr('y', p.year ? 21 : 30).attr('font-size', fs).attr('font-weight', 600).attr('fill', '#2a2622').attr('font-family', '"EB Garamond", serif');
+      t.text(p.name.length > 34 ? p.name.slice(0, 33) + '…' : p.name);
+      if (p.year) box.append('text').attr('x', 15).attr('y', 40).attr('font-size', 11.5).attr('fill', '#6f665c').text(p.year);
+    } else box.append('text').attr('x', bw / 2).attr('y', 30).attr('text-anchor', 'middle').attr('font-size', 12).attr('fill', '#b0a591').text('sin datos');
+  }
+  const gl = ['Manuel Salvador', 'Padres', 'Abuelos', 'Bisabuelos', 'Tatarabuelos'];
+}
+document.fonts.ready.then(() => {
+  fan('#fan', 0); fan('#fan2', 4); pedigree('#pedigree');
+  Promise.all([...document.images].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; }))).then(() => { window.__listo = true; });
+});
+</script>
+</body>
+</html>
