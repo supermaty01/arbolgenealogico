@@ -9,11 +9,13 @@
 <style>
 :root { --ink:#2a2622; --muted:#6f665c; --rule:#e2d7c3; --paper:#fbf8f1; --accent:#1f5f68; --gold:#c39322;
   --l0:#1f6f78; --l1:#a23b48; --l2:#b07a12; --l3:#4d5fa3; }
-@page { size: A4; margin: 20mm 19mm 22mm;
-  @bottom-center { content: counter(page); font: 10pt "EB Garamond", serif; color: #8a8075; } }
-@page cover { margin: 0; @bottom-center { content: none; } }
-@page land { size: A4 landscape; margin: 11mm 13mm 14mm;
-  @bottom-center { content: counter(page); font: 9pt "EB Garamond", serif; color: #8a8075; } }
+@page { size: A4; margin: 18mm 18mm 20mm; }
+@page :right { margin-left: 22mm; margin-right: 16mm;
+  @bottom-right { content: counter(page); font: 10pt "EB Garamond", serif; color: #8a8075; } }
+@page :left { margin-left: 16mm; margin-right: 22mm;
+  @bottom-left { content: counter(page); font: 10pt "EB Garamond", serif; color: #8a8075; } }
+@page cover { margin: 0; @bottom-right { content: none; } @bottom-left { content: none; } }
+@page blank { @bottom-right { content: none; } @bottom-left { content: none; } }
 * { box-sizing: border-box; }
 html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 body { margin: 0; color: var(--ink); font: 11.6pt/1.55 "EB Garamond", Georgia, serif; }
@@ -26,23 +28,23 @@ body { margin: 0; color: var(--ink); font: 11.6pt/1.55 "EB Garamond", Georgia, s
 .cover .sub { font-style: italic; font-size: 14pt; color: #4a433b; margin: 0 0 6mm; }
 .cover .meta { font: 500 9pt Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 
-.front { break-after: page; }
+.front { break-before: right; }
 .small-title { font: 600 9pt Inter, sans-serif; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin: 0 0 5mm; }
 p.big { font-size: 15pt; line-height: 1.5; }
 .toc { list-style: none; counter-reset: c; padding: 0; margin: 0; }
 .toc li { counter-increment: c; display: flex; gap: 6mm; padding: 2.6mm 0; border-bottom: 1px solid var(--rule); font-size: 14pt; }
 .toc li::before { content: counter(c); font: 600 10pt Inter, sans-serif; color: var(--accent); width: 8mm; padding-top: 1.2mm; }
 
-.chapter { break-before: page; }
+.chapter { break-before: right; }
 .chap-n { font: 600 9pt Inter, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin-top: 18mm; }
 .chapter h1 { font: 500 30pt/1.08 "EB Garamond", serif; margin: 3mm 0 8mm; padding-bottom: 6mm; border-bottom: 1px solid var(--rule); }
 p { margin: 0 0 3.2mm; text-align: justify; hyphens: auto; }
 p.lead { font-size: 13.5pt; line-height: 1.5; color: #3d3730; text-align: left; }
 p.drop::first-letter { float: left; font-size: 46pt; line-height: .85; padding: 1.5mm 2mm 0 0; color: var(--accent); }
 h3 { font: 600 15pt "EB Garamond", serif; margin: 8mm 0 3mm; break-after: avoid; }
-ol.num li, ul.notes li { margin-bottom: 1.4mm; font-size: 11pt; line-height: 1.45; }
+ol.num li, ul.notes li { margin-bottom: 1.1mm; font-size: 10.6pt; line-height: 1.4; }
 ul.notes { padding-left: 5mm; }
-.aside { background: #f6f1e7; border-left: 3px solid var(--gold); padding: 4mm 5mm; margin-top: 6mm; font-size: 11pt; }
+.aside { background: #f6f1e7; border-left: 3px solid var(--gold); padding: 3mm 4mm; margin-top: 4mm; font-size: 10.4pt; }
 .note { font-size: 9.5pt; color: var(--muted); font-family: Inter, sans-serif; }
 
 .lineage { margin: 6mm 0 4mm; border-left: 2px solid #cfe0e0; padding-left: 0; }
@@ -99,10 +101,44 @@ table.gens tr { break-inside: avoid; }
 .ix { display: grid; grid-template-columns: 3mm 1fr; column-gap: 1.6mm; break-inside: avoid; margin-bottom: 1.1mm; }
 .ix i { width: 2.2mm; height: 2.2mm; border-radius: 50%; margin-top: 1.1mm; }
 .ix .m { grid-column: 2; font: 7.4pt Inter, sans-serif; color: var(--muted); }
-.colophon { break-before: page; display: flex; flex-direction: column; justify-content: flex-end; height: 240mm; text-align: center; }
+.colophon { page: blank; break-before: page; display: flex; flex-direction: column; justify-content: flex-end; height: 240mm; text-align: center; }
 .colophon p { text-align: center; }
 
 svg text { font-family: Inter, sans-serif; }
+.spacer { page: blank; break-before: page; break-after: page; height: 1px; }
+.fanpage { break-before: page; text-align: center; }
+.fanpage svg { width: 172mm; height: 172mm; display: block; margin: 4mm auto 0; }
+.fanpage .note { text-align: center; }
+.howto { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5mm; margin: 6mm 0; }
+.howto > div { display: flex; flex-direction: column; gap: 2mm; }
+.howto p { font-size: 9.6pt; line-height: 1.4; text-align: left; margin: 0; }
+.howto .bx.demo { position: relative; width: 26mm; height: 17mm; }
+.laminas { break-before: page; }
+.lam { position: relative; break-inside: avoid; margin: 0 0 9mm; }
+.lam-h { display: flex; align-items: baseline; gap: 3mm; flex-wrap: wrap; border-bottom: 1px solid var(--rule); padding-bottom: 1.6mm; margin-bottom: 4mm; height: 10mm; box-sizing: border-box; }
+.lam-n { font: 600 8pt Inter, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #fff; background: var(--ink); padding: .6mm 2mm; border-radius: 1mm; }
+.lam-t { font-size: 12.5pt; }
+.lam-s { margin-left: auto; font: 7.5pt Inter, sans-serif; color: var(--muted); }
+.lam-b { position: relative; }
+.lam-b svg { position: absolute; left: 0; top: 0; }
+.lam-b svg path { fill: none; stroke: #b3a690; stroke-width: .35; }
+.rl { position: absolute; left: 0; width: 8mm; display: flex; align-items: center; justify-content: center; }
+.rl span { writing-mode: vertical-rl; transform: rotate(180deg); font: 600 5.6pt Inter, sans-serif; color: #a2968a; letter-spacing: .03em; white-space: nowrap; }
+.bx { position: absolute; display: flex; flex-direction: column; justify-content: center; gap: .3mm; background: #fffdf8;
+  border: .3mm solid #ddd2bd; border-left: 1.4mm solid var(--c, #2a2622); border-radius: 1.2mm; padding: .8mm 1.4mm .8mm 1.6mm; }
+.bx .nm { font: 600 7.6pt/1.08 "EB Garamond", serif; color: var(--ink); }
+.bx .pd { font: 5.1pt/1.25 Inter, sans-serif; color: #5d554b; border-top: .2mm dotted #cfc5b3; padding-top: .4mm; margin-top: .2mm; }
+.bx .mt { font: 5.4pt/1.2 Inter, sans-serif; color: var(--muted); }
+.bx .tg { font: 600 5.4pt/1.2 Inter, sans-serif; color: #8a7f72; }
+.bx .tg.go { color: var(--accent); }
+.bx.rt { background: #f3ece0; }
+.bx.rt .nm { font-size: 8.6pt; }
+.bx.stub { border-style: dashed; border-left-style: solid; border-left-color: #cfc5b3; background: #fff; }
+.bx.stub .nm { font-style: italic; font-weight: 500; color: #6f665c; }
+.bx.unk .nm { font-style: italic; font-weight: 400; color: #8a8075; }
+h2.lam-line { break-before: page; break-after: avoid; font: 500 24pt "EB Garamond", serif; margin: 0 0 7mm; padding-left: 4mm; border-left: 2.5mm solid var(--c); }
+h2.lam-line small { display: block; font: 9pt Inter, sans-serif; color: var(--muted); margin-top: 1mm; }
+.ix .lr { font: 600 7pt Inter, sans-serif; color: var(--accent); white-space: nowrap; }
 .pl { fill: none; stroke: #b9ad99; stroke-width: 1.2; }
 </style>
 </head>
@@ -142,7 +178,7 @@ function fan(sel, labels) {
     n.filter(d => d.depth > 0 && d.depth <= labels && !d.data.stub).append('text')
       .attr('transform', d => { const deg = d.x * 180 / Math.PI; return deg > 180 ? `rotate(${deg + 90}) translate(-13,0)` : `rotate(${deg - 90}) translate(13,0)`; })
       .attr('text-anchor', d => (d.x > Math.PI ? 'end' : 'start')).attr('dy', '.33em')
-      .attr('font-size', d => [0, 26, 22, 18, 15, 13][d.depth]).attr('fill', '#2a2622').attr('font-weight', 500)
+      .attr('font-size', d => [0, 30, 25, 20, 15, 13][d.depth]).attr('fill', '#2a2622').attr('font-weight', 500)
       .attr('paint-order', 'stroke').attr('stroke', '#fff').attr('stroke-width', 5)
       .text(d => P[d.data.pid].name);
   }
@@ -177,7 +213,7 @@ function pedigree(sel) {
   const gl = ['Manuel Salvador', 'Padres', 'Abuelos', 'Bisabuelos', 'Tatarabuelos'];
 }
 document.fonts.ready.then(() => {
-  fan('#fan', 0); fan('#fan2', 4); pedigree('#pedigree');
+  fan('#fan', 0); fan('#fan2', 3);
   Promise.all([...document.images].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; }))).then(() => { window.__listo = true; });
 });
 </script>
