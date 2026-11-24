@@ -157,7 +157,7 @@ def render(chart, P, gen_of, gen_title, color, line_name, home):
         for i, n in enumerate(lv):
             p = P[n['pid']]
             x = GUT + pos[d][i] - BW / 2; y = d * RH
-            cls = 'bx' + (' stub' if n['stub'] else '') + (' unk' if p.get('unknown') else '') + (' rt' if d == 0 else '')
+            cls = 'bx' + (' stub' if n['stub'] else '') + (' unk' if p.get('unknown') else '') + (' rt' if d == 0 else '') + (' add' if p.get('invAdded') else '')
             meta = ' · '.join(v for v in [p.get('year'), p.get('place')] if v)
             tag = ''
             if n['stub'] and n.get('ref'): tag = f'<span class="tg">↺ ver lámina {n["ref"]}</span>'
