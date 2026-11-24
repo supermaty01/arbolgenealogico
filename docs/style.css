@@ -248,3 +248,6 @@ blockquote.testi cite { font-size: 13px; color: var(--muted); font-style: normal
   h2.sec { font-size: 29px; margin-top: 44px; }
 }
 @keyframes slideup { from { transform: translateY(40px); opacity: 0; } }
+.chip.both { background: #efe3f3; color: #5d2f6b; font-weight: 600; }
+.box.kin { background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid #8a4f9e; border-radius: 14px; padding: 14px 18px; margin: 16px 0; line-height: 1.55; }
+h2.sec + p.note { margin-top: -6px; }

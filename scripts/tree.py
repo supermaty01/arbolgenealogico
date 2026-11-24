@@ -10,15 +10,63 @@ SEGS[25] = [(36, 0, 700)]
 SEGS[26] = [(36, 700, 2000), (37, 0, 640)]
 SEGS[27] = [(37, 640, 2000), (38, 0, 700)]
 SEGS[28] = [(38, 700, 2000), (39, 0, 2000)]
+CFG = {}
+JUNK = re.compile(r'^(YaMi|REVISADO|CONTINUA|PASA|SIGUIENTE|COLUMNA)$')
+def clean_words(ws):
+    """Quita marcas de cuadro (# 9 C, 5 A, REVISADO...) que no son personas."""
+    ws = sorted(ws, key=lambda w: (round(w['y']), w['x']))
+    out = []; skip_until = -1
+    for i, w in enumerate(ws):
+        t = w['t']
+        if JUNK.match(t): continue
+        if w.get('pg', 0) >= 56 and (t == '17' or re.fullmatch(r'\d{1,2}(-[\w|]*)+-?|[A-D]-|-\d|\d-?', t)): continue
+        if t in ('#',) or t.startswith('#'):
+            # quita la etiqueta que sigue: números, letras sueltas y guiones en la misma línea
+            j = i + 1; last = w
+            while j < len(ws) and abs(ws[j]['y'] - w['y']) < 3 and ws[j]['x0'] - last['x1'] < 25 and re.fullmatch(r'[\dA-D\-–]{1,3}', ws[j]['t']):
+                last = ws[j]; j += 1
+            skip_until = j; continue
+        if i < skip_until: continue
+        out.append(w)
+    # "9 B", "|5 A" sueltos: número + letra A-D pegados
+    res = []
+    k = 0
+    while k < len(out):
+        w = out[k]
+        n = out[k + 1] if k + 1 < len(out) else None
+        if n and re.fullmatch(r'\|?\d{1,2}', w['t']) and re.fullmatch(r'[A-D]', n['t']) and abs(n['y'] - w['y']) < 3 and n['x0'] - w['x1'] < 15:
+            if w['t'].startswith('|'): res.append(dict(w, t='|'))
+            k += 2; continue
+        res.append(w); k += 1
+    return res
 def seg_words(pdf, tree):
+    if CFG: return cfg_words(pdf, tree)
     out = []
     for k, (pg, y0, y1) in enumerate(SEGS[tree]):
         for w in load(pdf, pg):
             if y0 <= w['y'] < y1:
                 w = dict(w); w['page'] = pg; w['py'] = w['y']; w['y'] += k * 1000; out.append(w)
     return out
+def cfg_words(pdf, tree):
+    out = []
+    for k, (pg, y0, y1) in enumerate(CFG['trees'][str(tree)]):
+        for w in clean_words([dict(w, pg=pg) for w in load(pdf, pg)]):
+            if y0 <= w['y'] < y1:
+                w = dict(w); w['page'] = pg; w['py'] = w['y']; w['y'] += k * 1000; out.append(w)
+    return out
+def drop_titles(lines, tree):
+    out = []; kept = False
+    for l in lines:
+        txt = ' '.join(w['t'] for w in l)
+        if txt.strip() in CFG.get('drop_lines', []):
+            if str(tree) in CFG.get('keep_title', []) and not kept: kept = True; out.append(l)
+            continue
+        out.append(l)
+    return out
 def get_bands(pdf, tree):
-    lines = fix_wraps(strip_header(lines_of(seg_words(pdf, tree))))
+    lines = lines_of(seg_words(pdf, tree))
+    if CFG: lines = drop_titles(lines, tree)
+    lines = fix_wraps(strip_header(lines))
     bands = []; cur = None; pendingY = []; prevConn = False
     lastY = None
     for l in lines:
@@ -32,6 +80,10 @@ def get_bands(pdf, tree):
         onlyCY = (not hasT) and hasY
         nY = sum(k == 'Y' for k in ks)
         newband = cur is None or (hasT and (pendingY or (hasY and (prevConn or nY >= 2))))
+        yx = [w['x'] for w, k in zip(l, ks) if k == 'Y']
+        twoSided = hasY and any(k == 'T' and w['x'] < min(yx) for w, k in zip(l, ks)) and any(k == 'T' and w['x'] > max(yx) for w, k in zip(l, ks))
+        if CFG and cur is not None and twoSided and cur['text'] and not cur['ys']:
+            newband = True  # la raíz (sin pareja) seguida directamente por la línea de sus padres
         if newband:
             cur = dict(text=[], anchors=[], ys=list(pendingY), refs=[]); bands.append(cur); pendingY = []
         for w, k in zip(l, ks):
@@ -101,6 +153,7 @@ def build_persons(b):
         j = min(cand, key=lambda j: abs(persons[j]['cx'] - t['x']))
         persons[j]['tokens'].append(t)
     for a in an:
+        if not persons: break
         j = min(range(len(persons)), key=lambda j: abs(persons[j]['cx'] - a['x']))
         if abs(persons[j]['cx'] - a['x']) < 60: persons[j]['marks'].append(a['t'])
     couples = [(2 * i, 2 * i + 1, ys[i]) for i in range(len(ys))]
@@ -164,7 +217,12 @@ def parse_tree(pdf, pno, tree):
 if __name__ == '__main__':
     pdf = sys.argv[1]
     allt = {}
-    for spec in sys.argv[2].split(','):
+    specs = sys.argv[2].split(',')
+    if sys.argv[2].endswith('.json'):
+        CFG.update(json.load(open(sys.argv[2], encoding='utf-8')))
+        specs = [f"{v[0][0]}:{k}" for k, v in CFG['trees'].items()]
+        if len(sys.argv) > 4: specs = [s for s in specs if s.split(':')[1] in sys.argv[4].split(',')]
+    for spec in specs:
         pno, tree = map(int, spec.split(':'))
         people, bandp, warn = parse_tree(pdf, pno, tree)
         allt[tree] = dict(page=pno, people=people, warn=warn)

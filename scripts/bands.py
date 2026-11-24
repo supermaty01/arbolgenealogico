@@ -6,7 +6,7 @@ YT={'Y','E'}
 def kind(w):
     t=w['t']
     if t in ('|','XXX','XX','I','l'): return 'C'
-    if t in ('v','V','.','-','–'): return 'IGN'
+    if t in ('v','V','.','-','–','B','B.','(',')'): return 'IGN'
     if t in YT: return 'Y'
     return 'T'
 def fix_wraps(lines):

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<title>Genealogía de Manuel Salvador Álvarez del Pino Ruiz</title>
+<title>Genealogía Álvarez Ruiz</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -77,6 +77,7 @@ figure.hero img { max-width: 100%; max-height: 120mm; border-radius: 2mm; }
 .kc { border: 1px solid var(--rule); border-radius: 2mm; padding: 3mm 4mm; break-inside: avoid; background: #fffdf8; }
 .kc b { display: block; font-size: 13pt; }
 .kc span { display: block; font: 8.8pt/1.45 Inter, sans-serif; color: var(--muted); }
+.cover h1 .amp { font-style: italic; font-weight: 400; }
 .lines4 { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin: 5mm 0; }
 .lines4 div { border: 1px solid var(--rule); border-radius: 2mm; padding: 3mm 4mm; display: grid; grid-template-columns: 5mm 1fr; column-gap: 2mm; }
 .lines4 i { width: 4mm; height: 4mm; border-radius: 50%; margin-top: 1.4mm; grid-row: span 2; }
@@ -147,14 +148,15 @@ h2.lam-line small { display: block; font: 9pt Inter, sans-serif; color: var(--mu
 <script src="../docs/vendor/d3.v7.min.js"></script>
 <script>
 /*DATOS*/
-const LCOL = ['#1f6f78', '#a23b48', '#b07a12', '#4d5fa3'], INK = '#2a2622';
+const LCOL = ['#1f6f78', '#a23b48', '#b07a12', '#4d5fa3', '#3f7d3a', '#8a4f9e'], INK = '#2a2622';
 const P = DATA.P, ROOT = DATA.root;
 const color = p => (p && p.line >= 0 ? LCOL[p.line] : INK);
+const MAXD = 16;
 function hierarchy() {
   const seen = new Set([ROOT]); const root = { pid: ROOT, children: [] }; let fr = [root];
   while (fr.length) { const nx = [];
-    for (const n of fr) for (const k of ['father', 'mother']) { const q = P[n.pid][k]; if (!q || !P[q]) continue;
-      if (seen.has(q)) n.children.push({ pid: q, stub: true, children: [] }); else { seen.add(q); const c = { pid: q, children: [] }; n.children.push(c); nx.push(c); } }
+    for (const n of fr) for (const k of ['father', 'mother']) { const q = P[n.pid][k]; if (!q || !P[q] || n.depth >= MAXD) continue;
+      if (seen.has(q)) n.children.push({ pid: q, stub: true, children: [] }); else { seen.add(q); const c = { pid: q, children: [], depth: (n.depth || 0) + 1 }; n.children.push(c); nx.push(c); } }
     fr = nx; }
   return d3.hierarchy(root, n => (n.children.length ? n.children : null));
 }

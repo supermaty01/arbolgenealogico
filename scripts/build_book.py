@@ -7,17 +7,29 @@ sys.stdout.reconfigure(encoding='utf-8')
 REPO = os.path.abspath(sys.argv[1])
 D = json.load(open(os.path.join(REPO, 'docs/data/familia.json'), encoding='utf-8'))
 H = D['historia']; P = {p['id']: p for p in D['people']}; ROOT = D['root']; LINES = D['lines']
-LCOL = ['#1f6f78', '#a23b48', '#b07a12', '#4d5fa3']; INK = '#2a2622'
+MANUEL, TERESA = D['manuel'], D['teresa']
+LCOL = ['#1f6f78', '#a23b48', '#b07a12', '#4d5fa3', '#3f7d3a', '#8a4f9e']; INK = '#2a2622'
 e = lambda s: html.escape(str(s or ''))
 col = lambda p: LCOL[p['line']] if p.get('line', -1) >= 0 else INK
 
 ORD = ['', '', '', '', 'cuarto', 'quinto', 'sexto', 'séptimo', 'octavo', 'noveno', 'décimo', 'undécimo',
        'duodécimo', 'decimotercer', 'decimocuarto', 'decimoquinto', 'decimosexto', 'decimoséptimo']
 def gen_title(g):
-    return {1: 'Padres', 2: 'Abuelos', 3: 'Bisabuelos', 4: 'Tatarabuelos'}.get(g) or ORD[g - 1].capitalize() + 's abuelos'
+    if g == 0: return 'Hijos'
+    return {1: 'Padres', 2: 'Abuelos', 3: 'Bisabuelos', 4: 'Tatarabuelos'}.get(g) or (ORD[g - 1].capitalize() + 's abuelos' if g - 1 < len(ORD) else f'{g - 1}.º abuelos')
 def meta(p): return ' · '.join(x for x in [p.get('year'), p.get('place')] if x)
 
-anc = [p for p in D['people'] if p.get('gen', 0) and p['gen'] > 0]
+anc = [p for p in D['people'] if p.get('gen') and p['gen'] > 1 and not p.get('sibling')]
+both = sum(1 for p in anc if p.get('both'))
+nT = sum(1 for t in D['trees'] if t['side'] == 'T' and not t.get('name'))
+def kin():
+    b = sorted((p for p in anc if p.get('both')), key=lambda p: p['genM'] + p['genT'])[0]
+    sp = next((P[x] for x in b.get('spouses', []) if x in P and P[x].get('both')), None)
+    word = lambda g: gen_title(g + 0).lower()
+    return b, sp, word(b['genM']), word(b['genT'])
+KB, KS, KWM, KWT = kin()
+KIN = (f'Manuel Salvador y María Teresa eran parientes: {e(KB["name"])}{" y " + e(KS["name"]) if KS else ""} eran {KWM} '
+       f'de él y {KWT} de ella. Por eso {both} de los {len(anc)} antepasados aparecen en las dos ramas del árbol.')
 max_gen = max(p['gen'] for p in anc)
 min_year = min(int(p['year'][:4]) for p in anc if p.get('year'))
 by_gen = collections.Counter(p['gen'] for p in anc)
@@ -29,10 +41,10 @@ w = out.append
 w(f'''<section class="cover">
   <div class="cover-art"><svg id="fan" viewBox="-1000 -1000 2000 2000"></svg></div>
   <div class="cover-text">
-    <div class="kicker">Genealogía de</div>
-    <h1>Manuel Salvador<br>Álvarez del Pino Ruiz</h1>
+    <div class="kicker">Genealogía de los hijos de</div>
+    <h1>Manuel Salvador Álvarez Ruiz<br><span class="amp">y</span> María Teresa Ruiz Maya</h1>
     <p class="sub">{e(H['subtitulo'])}</p>
-    <p class="meta">{len(anc)} antepasados · {max_gen} generaciones · siglos XVI a XX</p>
+    <p class="meta">{len(anc)} antepasados · {max_gen - 1} generaciones</p>
   </div>
 </section>''')
 
@@ -40,15 +52,16 @@ w(f'''<section class="cover">
 w('<!--SP:0-->')
 w(f'''<section class="front">
   <h2 class="small-title">Presentación</h2>
-  <p class="big">Este libro reúne la investigación genealógica de la familia Álvarez del Pino: la historia del apellido, el linaje que llegó a Antioquia a comienzos del siglo XVII y que, generación tras generación, desembocó en Manuel Salvador Álvarez Ruiz, arriero de San Cristóbal asentado en San Antonio de Prado, y en sus hijos.</p>
-  <p>La información proviene de los 28 cuadros de ascendientes y de los textos elaborados por el autor de la investigación, que suman 2.029 posiciones en los árboles. Como muchos antepasados aparecen varias veces —algo habitual en las familias antioqueñas de la Colonia, donde los matrimonios entre parientes eran frecuentes—, en este libro cada persona se cuenta una sola vez: en total, <b>{len(anc)} antepasados distintos</b> repartidos en <b>{max_gen} generaciones</b>, desde alrededor de {min_year}.</p>
+  <p class="big">Este libro reúne la investigación genealógica de la familia de Manuel Salvador Álvarez Ruiz, arriero de San Cristóbal asentado en San Antonio de Prado, y de su esposa María Teresa Ruiz Maya: la historia del apellido Álvarez del Pino, el linaje que llegó a Antioquia a comienzos del siglo XVII y la ascendencia de los dos, que es la de sus once hijos.</p>
+  <p>La información proviene de dos investigaciones: los 28 cuadros de ascendientes de Manuel Salvador, con los textos de su linaje, y los {nT} cuadros de María Teresa, que llegan hasta los linajes medievales de España. Como muchos antepasados aparecen varias veces —algo habitual en las familias antioqueñas de la Colonia, donde los matrimonios entre parientes eran frecuentes—, en este libro cada persona se cuenta una sola vez: en total, <b>{len(anc)} antepasados distintos</b>.</p>
+  <p>{KIN}</p>
   <p>Los nombres, lugares y fechas se transcribieron tal como aparecen en los cuadros originales; el árbol se redibujó en láminas para leerlo de arriba hacia abajo, generación por generación. Cuando un dato aparece escrito de varias maneras, se conservó la forma más completa. Los cuadros originales pueden consultarse en la versión digital.</p>
   <h2 class="small-title" style="margin-top:14mm">Contenido</h2>
   <ol class="toc">
     <li><span>Metodología y notas del autor</span></li>
     <li><span>Álvarez: origen y significado</span></li>
     <li><span>El linaje Álvarez del Pino</span></li>
-    <li><span>Manuel Salvador Álvarez Ruiz y su familia</span></li>
+    <li><span>Manuel Salvador, María Teresa y sus hijos</span></li>
     <li><span>El árbol de ascendientes</span></li>
     <li><span>Láminas del árbol</span></li>
     <li><span>Índice de personas</span></li>
@@ -77,7 +90,7 @@ w('''<section class="chapter"><div class="chap-n">Capítulo 3</div><h1>El linaje
 <p class="lead">Diez generaciones por línea de varón, desde don Diego Álvarez del Pino, fundador de la familia en Antioquia, hasta Manuel Salvador Álvarez Ruiz. Los cuadros conservan además los nombres de tres generaciones anteriores en España.</p>''')
 # diagrama de la línea
 line_ids = []
-x = ROOT
+x = MANUEL
 while x:
     line_ids.append(x); x = P[x].get('father')
 line_ids.reverse()
@@ -108,10 +121,13 @@ for g in H['linaje']:
 w('</section>')
 
 # ---------------- 4. familia de Manuel Salvador
-kids = sorted([p for p in D['people'] if p.get('gen') == -1], key=lambda p: p['year'])
+kids = sorted([p for p in D['people'] if p.get('child')], key=lambda p: p['year'])
+def nm(pid): return e(P[pid]['name']) if pid and pid in P else '—'
+T = P[TERESA]; TF, TM = T.get('father'), T.get('mother')
 w('<!--SP:4-->')
-w(f'''<section class="chapter"><div class="chap-n">Capítulo 4</div><h1>Manuel Salvador Álvarez Ruiz y su familia</h1>
-<p class="lead">Manuel Salvador Álvarez Ruiz, hijo de Manuel Antonio Álvarez Vélez y de Trinidad Ruiz Velásquez, se casó con Teresa Ruiz Maya. Tuvieron 18 hijos, de los cuales se criaron 11: tres varones y ocho mujeres.</p>
+w(f'''<section class="chapter"><div class="chap-n">Capítulo 4</div><h1>Manuel Salvador, María Teresa y sus hijos</h1>
+<p class="lead">Manuel Salvador Álvarez Ruiz, hijo de Manuel Antonio Álvarez Vélez y de Trinidad Ruiz Velásquez, se casó con María Teresa Ruiz Maya, hija de {nm(TF)} y de {nm(TM)}. Tuvieron 18 hijos, de los cuales se criaron 11: tres varones y ocho mujeres.</p>
+<div class="aside"><b>Parientes.</b> {KIN} La madre de Manuel Salvador, Trinidad Ruiz Velásquez, y la abuela materna de María Teresa, Dolores Ruiz Velásquez, eran hermanas: ambas hijas de José María Ruiz Moreno y María Mercedes Velásquez Restrepo.</div>
 <figure class="hero"><img src="../docs/img/manuel-salvador-y-teresa.jpg"><figcaption>{e(H['fotos']['manuel-salvador-y-teresa.jpg'])}</figcaption></figure>
 <h3>Los hijos</h3><div class="kidcards">''')
 for k in kids:
@@ -129,17 +145,18 @@ w(f'''<h3>Los hermanos de Manuel Salvador</h3><p>Hijos de Manuel Antonio Álvare
 sys.path.insert(0, os.path.join(REPO, 'scripts'))
 import laminas
 charts, home = laminas.partition(P, ROOT)
-GP = [P[P[ROOT]["father"]]["father"], P[P[ROOT]["father"]]["mother"], P[P[ROOT]["mother"]]["father"], P[P[ROOT]["mother"]]["mother"]]
+GP = D['lineRoots']
 w('<!--SP:5-->')
 w(f'''<section class="chapter"><div class="chap-n">Capítulo 5</div><h1>El árbol de ascendientes</h1>
-<p class="lead">Cada persona tiene dos padres, cuatro abuelos, ocho bisabuelos… En este libro el árbol se organiza a partir de los cuatro abuelos de Manuel Salvador, y cada línea lleva su color.</p>
+<p class="lead">El árbol parte de los once hijos: arriba están sus padres, Manuel Salvador y María Teresa, y desde ahí sube generación por generación. Cada persona tiene dos padres, cuatro abuelos, ocho bisabuelos… El árbol se organiza en seis líneas, a partir de los abuelos de Manuel Salvador y de María Teresa, y cada línea lleva su color.</p>
 <div class="lines4">{''.join(f'<div><i style="background:{LCOL[i]}"></i><b>Línea {e(n)}</b><span>{e(P[g]["name"])}</span></div>' for i, (n, g) in enumerate(zip(LINES, GP)))}</div>
-<p>La línea Vélez —la de la abuela paterna, Rosalía Vélez Rivera— no tiene ascendencia registrada en la investigación; las otras tres se extienden hasta la España del siglo XVI.</p>
-<table class="gens"><thead><tr><th>Generación</th><th>Parentesco con Manuel Salvador</th><th>Posibles</th><th>Identificados</th></tr></thead><tbody>
-{''.join(f'<tr><td>{g}</td><td>{gen_title(g)}</td><td>{2 ** g:,}</td><td>{by_gen[g]}</td></tr>'.replace(',', '.') for g in range(1, max_gen + 1))}
+<p>Las cuatro primeras líneas son las de los abuelos de Manuel Salvador; Naranjo y Maya, las de los abuelos de María Teresa. Su otro abuelo, Secundino Ruiz Moreno, y su abuela Dolores Ruiz Velásquez pertenecen a la línea Ruiz, que comparte con Manuel Salvador. La línea Vélez —la de Rosalía Vélez Rivera, abuela paterna de Manuel Salvador— no tiene ascendencia registrada.</p>
+<table class="gens"><thead><tr><th>Generación</th><th>Parentesco con los hijos</th><th>Posibles</th><th>Identificados</th></tr></thead><tbody>
+{''.join(f'<tr><td>{g}</td><td>{gen_title(g)}</td><td>{2 ** g:,}</td><td>{by_gen[g]}</td></tr>'.replace(',', '.') for g in range(1, min(max_gen, 20) + 1))}
+<tr><td>21–{max_gen}</td><td>Linajes medievales</td><td>—</td><td>{sum(c for g, c in by_gen.items() if g > 20)}</td></tr>
 </tbody></table>
-<p class="note">«Posibles» es el número teórico de antepasados en cada generación. La diferencia con los identificados se debe tanto a los datos que no se conocen como a los antepasados que se repiten por matrimonios entre parientes.</p>
-<div class="fanpage"><h3>Todos los antepasados, en abanico</h3><p class="note">Manuel Salvador en el centro; cada anillo es una generación más atrás. {' · '.join(f'<span style="color:{LCOL[i]}">●</span> {e(n)}' for i, n in enumerate(LINES))}. Los puntos con borde dorado tienen su historia en el capítulo 3.</p><svg id="fan2" viewBox="-1000 -1000 2000 2000"></svg></div>
+<p class="note">«Posibles» es el número teórico de antepasados en cada generación. La diferencia con los identificados se debe tanto a los datos que no se conocen como a los antepasados que se repiten por matrimonios entre parientes. Después de la generación 20 solo continúan algunas líneas, que llegan a la nobleza y a las casas reales de la Edad Media.</p>
+<div class="fanpage"><h3>Los antepasados, en abanico</h3><p class="note">Los hijos en el centro; cada anillo es una generación más atrás (hasta la 16.ª). {' · '.join(f'<span style="color:{LCOL[i]}">●</span> {e(n)}' for i, n in enumerate(LINES))}. Los puntos con borde dorado tienen su historia en el capítulo 3.</p><svg id="fan2" viewBox="-1000 -1000 2000 2000"></svg></div>
 </section>''')
 
 # ---------------- 6. láminas
@@ -151,7 +168,7 @@ w(f'''<section class="chapter"><div class="chap-n">Capítulo 6</div><h1>Láminas
   <div><span class="bx demo stub"><span class="nm">Nombre y apellidos</span><span class="tg">↺ ver lámina 5</span></span><p>Antepasado que aparece más de una vez por matrimonios entre parientes. Sus padres están en la lámina indicada.</p></div>
   <div><span class="bx demo" style="--c:{LCOL[2]}"><span class="nm">Nombre y apellidos</span><span class="mt">1690 · Medellín</span><span class="pd">Padres: Juan… y María…</span></span><p>Cuando los padres no tienen más ascendencia conocida, se escriben dentro de la caja. El año y el lugar son los que figuran en la investigación.</p></div>
 </div>
-<p>A la izquierda de cada fila se indica la generación contada desde Manuel Salvador (1 = padres, 2 = abuelos…). El color de cada caja corresponde a la línea de su abuelo o abuela.</p>
+<p>A la izquierda de cada fila se indica la generación contada desde los hijos (1 = Manuel Salvador y María Teresa, 2 = abuelos…). El color de cada caja corresponde a su línea; el rombo ◆ marca a los antepasados de ambos.</p>
 </section><section class="laminas">''')
 gen_of = lambda pid: P[pid]['gen']
 def line_name(p):
@@ -168,23 +185,23 @@ w('</section>')
 # ---------------- 7. índice
 w('<!--SP:7-->')
 w('''<section class="chapter index"><div class="chap-n">Capítulo 7</div><h1>Índice de personas</h1>
-<p class="lead">Todos los antepasados identificados, en orden alfabético. Para cada persona se indica la generación (G1 = padres de Manuel Salvador), el año y el lugar que figuran en la investigación, y la lámina donde aparece con sus padres.</p><div class="idx">''')
+<p class="lead">Todos los antepasados identificados, en orden alfabético. Para cada persona se indica la generación (G1 = Manuel Salvador y María Teresa, G2 = sus padres…), el año y el lugar que figuran en la investigación, y la lámina donde aparece con sus padres. El rombo ◆ marca a los antepasados de ambos.</p><div class="idx">''')
 letter = None
 import unicodedata
 def key(s): return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn').lower()
-for p in sorted([p for p in anc if not p.get('unknown')], key=lambda p: key(p['name'])):
+for p in sorted([p for p in anc + [P[MANUEL], P[TERESA]] if not p.get('unknown')], key=lambda p: key(p['name'])):
     L = key(p['name'])[0].upper()
     if L != letter:
         w(f'<h4>{L}</h4>'); letter = L
     lam = home.get(p['id'])
-    w(f'''<div class="ix"><i style="background:{col(p)}"></i><span class="n">{e(p['name'])}{f' <b class="lr">lám. {lam}</b>' if lam else ''}</span><span class="m">G{p['gen']}{' · ' + e(meta(p)) if meta(p) else ''}</span></div>''')
+    w(f'''<div class="ix"><i style="background:{col(p)}"></i><span class="n">{e(p['name'])}{f' <b class="lr">lám. {lam}</b>' if lam else ''}</span><span class="m">{'◆ ' if p.get('both') else ''}G{p['gen']}{' · ' + e(meta(p)) if meta(p) else ''}</span></div>''')
 w('</div></section>')
 
 # ---------------- colofón
-w('''<section class="colophon"><p>Genealogía de Manuel Salvador Álvarez del Pino Ruiz</p><p class="note">Libro elaborado a partir de la investigación familiar original: textos, fotografías y 28 cuadros de ascendientes. La versión digital interactiva, con buscador, árbol navegable y los cuadros originales, está en supermaty01.github.io/arbolgenealogico</p></section>''')
+w(f'''<section class="colophon"><p>Genealogía de los hijos de Manuel Salvador Álvarez Ruiz y María Teresa Ruiz Maya</p><p class="note">Libro elaborado a partir de la investigación familiar original: textos, fotografías, los 28 cuadros de ascendientes de Manuel Salvador y los {nT} de María Teresa. La versión digital interactiva, con buscador, árbol navegable y los cuadros originales, está en supermaty01.github.io/arbolgenealogico</p></section>''')
 
 # --------------- datos para los gráficos
-mini = {pid: {k: p[k] for k in ('name', 'father', 'mother', 'line', 'year', 'bio') if k in p} for pid, p in P.items() if p.get('gen') is not None and p['gen'] >= 0}
+mini = {pid: {k: p[k] for k in ('name', 'father', 'mother', 'line', 'year', 'bio') if k in p} for pid, p in P.items() if p.get('gen') is not None and p['gen'] >= 0 and not p.get('child')}
 tpl = open(os.path.join(REPO, 'scripts/libro_plantilla.html'), encoding='utf-8').read()
 DATA_JS = 'const DATA=' + json.dumps({'root': ROOT, 'P': mini}, ensure_ascii=False) + ';'
 os.makedirs(os.path.join(REPO, 'libro'), exist_ok=True)
@@ -200,7 +217,7 @@ print('libro.html escrito')
 if '--pdf' in sys.argv:
     import fitz
     from playwright.sync_api import sync_playwright
-    pdf = os.path.join(REPO, 'libro/Genealogia-Alvarez-del-Pino.pdf')
+    pdf = os.path.join(REPO, 'libro/Genealogia-Alvarez-Ruiz.pdf')
     MARK = {0: 'PRESENTACIÓN', **{n: f'CAPÍTULO{n}' for n in range(1, 8)}}
     spacers = set()
     with sync_playwright() as pw:

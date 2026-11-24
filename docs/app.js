@@ -5,28 +5,34 @@ const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const norm = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
-const LCOL = ['#1f6f78', '#a23b48', '#b07a12', '#4d5fa3'];
+const LCOL = ['#1f6f78', '#a23b48', '#b07a12', '#4d5fa3', '#3f7d3a', '#8a4f9e'];
 const INK = '#2a2622';
 const isMobile = () => matchMedia('(max-width: 760px)').matches;
 
-let D, P = {}, ROOT, H, LINES;
+let D, P = {}, ROOT, MANUEL, TERESA, H, LINES, TREE = {};
 const color = p => (p && p.line >= 0 ? LCOL[p.line] : INK);
 
 /* ---------------- relaciones ---------------- */
 const ORD = ['', '', '', '', 'cuarto', 'quinto', 'sexto', 'séptimo', 'octavo', 'noveno', 'décimo', 'undécimo',
   'duodécimo', 'decimotercer', 'decimocuarto', 'decimoquinto', 'decimosexto', 'decimoséptimo', 'decimoctavo'];
 const ordFem = (w, f) => (!f ? w : w.endsWith('o') ? w.slice(0, -1) + 'a' : w.endsWith('er') ? w + 'a' : w.replace('.º', '.ª'));
-function rel(p) {
-  const f = p.sex === 'F', m = p.sex === 'M', o = (a, b) => (f ? b : m ? a : a + '/' + b.slice(-1));
-  if (p.id === ROOT) return 'Raíz del árbol';
-  if (p.id === 'd0') return 'Esposa de Manuel Salvador';
-  if (p.sibling) return (f ? 'Hermana' : 'Hermano') + ' de Manuel Salvador';
-  if (p.gen === -1) return (f ? 'Hija' : 'Hijo') + ' de Manuel Salvador';
-  const g = p.gen;
-  if (g == null) return 'Persona de los cuadros (sin enlace directo)';
-  const base = g === 1 ? o('Padre', 'Madre') : g === 2 ? o('Abuelo', 'Abuela') : g === 3 ? o('Bisabuelo', 'Bisabuela')
+function relWord(g, f, m) {
+  const o = (a, b) => (f ? b : m ? a : a + '/' + b.slice(-1));
+  return g === 1 ? o('Padre', 'Madre') : g === 2 ? o('Abuelo', 'Abuela') : g === 3 ? o('Bisabuelo', 'Bisabuela')
     : g === 4 ? o('Tatarabuelo', 'Tatarabuela') : ordFem(ORD[g - 1] || `${g - 1}.º`, f).replace(/^./, c => c.toUpperCase()) + ' ' + o('abuelo', 'abuela');
-  return base + ' de Manuel Salvador';
+}
+function rel(p) {
+  const f = p.sex === 'F', m = p.sex === 'M';
+  if (p.id === ROOT) return 'Los once hijos de Manuel Salvador Álvarez Ruiz y María Teresa Ruiz Maya';
+  if (p.id === MANUEL) return 'Padre · esposo de María Teresa Ruiz Maya';
+  if (p.id === TERESA) return 'Madre · esposa de Manuel Salvador Álvarez Ruiz';
+  if (p.sibling) return (f ? 'Hermana' : 'Hermano') + ' de Manuel Salvador';
+  if (p.child) return (f ? 'Hija' : 'Hijo') + ' de Manuel Salvador y María Teresa';
+  const parts = [];
+  if (p.genM != null) parts.push(relWord(p.genM, f, m) + ' de Manuel Salvador');
+  if (p.genT != null) parts.push((parts.length ? relWord(p.genT, f, m).toLowerCase() : relWord(p.genT, f, m)) + ' de María Teresa');
+  if (!parts.length && p.gen != null) parts.push(relWord(p.gen, f, m) + ' de los hijos');
+  return parts.length ? parts.join(' y ') : 'Persona de los cuadros (sin enlace directo)';
 }
 const genTitle = g => g === 1 ? 'Padres' : g === 2 ? 'Abuelos' : g === 3 ? 'Bisabuelos' : g === 4 ? 'Tatarabuelos'
   : (ORD[g - 1] || `${g - 1}.º`).replace(/^./, c => c.toUpperCase()) + 's abuelos';
@@ -38,7 +44,8 @@ fetch('data/familia.json').then(r => r.json()).then(init).catch(err => {
 });
 
 function init(data) {
-  D = data; H = data.historia; ROOT = data.root; LINES = data.lines;
+  D = data; H = data.historia; ROOT = data.root; MANUEL = data.manuel; TERESA = data.teresa; LINES = data.lines;
+  data.trees.forEach(t => { TREE[t.n] = t; });
   data.people.forEach(p => { P[p.id] = p; p._n = norm([p.name, ...(p.variants || [])].join(' | ')); });
   buildChart();
   buildLegend();
@@ -94,14 +101,16 @@ function computeLayouts() {
   d3.tree().size([2 * Math.PI, hier.height * R])
     .separation((a, b) => (a.parent === b.parent ? 1 : 1.35) / Math.max(1, a.depth))(hier);
   hier.each(d => {
-    const a = d.x - Math.PI / 2;
-    d.rad = { x: d.y * Math.cos(a), y: d.y * Math.sin(a), ang: d.x, r: d.y };
+    const a = d.x - Math.PI / 2, r = RR(d.depth);
+    d.rad = { x: r * Math.cos(a), y: r * Math.sin(a), ang: d.x, r };
   });
   // árbol horizontal
   d3.tree().nodeSize([24, 280]).separation((a, b) => (a.parent === b.parent ? 1 : 1.3))(hier);
   hier.each(d => { d.tre = { x: d.y, y: d.x }; });
 }
 const pos = d => (layout === 'radial' ? d.rad : d.tre);
+// los anillos más lejanos (linajes medievales, con pocas personas) se acercan para no alejar el resto
+function RR(d) { return d <= 13 ? d * 250 : 13 * 250 + (d - 13) * 120; }
 
 function labelTransform(d) {
   if (layout === 'tree') return d.depth === 0 ? 'translate(-14,0)' : 'translate(9,0)';
@@ -138,9 +147,9 @@ function buildChart() {
   // anillos de generaciones (solo abanico)
   const maxD = hier.height;
   const ringData = d3.range(1, maxD + 1);
-  rings.selectAll('circle').data(ringData).join('circle').attr('class', 'ring').attr('r', d => d * 250);
-  rings.selectAll('text').data(ringData).join('text').attr('class', 'ringlbl').attr('text-anchor', 'middle')
-    .attr('y', d => -d * 250 + 125).text(d => genTitle(d));
+  rings.selectAll('circle').data(ringData).join('circle').attr('class', 'ring').attr('r', RR);
+  rings.selectAll('text').data(ringData.filter(d => d <= 13)).join('text').attr('class', 'ringlbl').attr('text-anchor', 'middle')
+    .attr('y', d => -(RR(d) + RR(d - 1)) / 2).text(d => genTitle(d));
 
   let lastS = 1;
   const baseR = d => (d.depth === 0 ? 10 : d.depth <= 2 ? 7 : 5);
@@ -186,7 +195,10 @@ function applyLayout(animate) {
 function fit(animate) {
   const el = svg.node(), w = el.clientWidth, h = el.clientHeight;
   if (!w || !h) return;
-  const b = gRoot.node().getBBox();
+  // se encuadra la parte central (hasta 13 generaciones); el resto se ve al alejar
+  const pts = hier.descendants().filter(d => layout !== 'radial' || d.depth <= 13).map(pos);
+  const x0 = d3.min(pts, p => p.x) - 120, x1 = d3.max(pts, p => p.x) + 120, y0 = d3.min(pts, p => p.y) - 60, y1 = d3.max(pts, p => p.y) + 60;
+  const b = { x: x0, y: y0, width: x1 - x0, height: y1 - y0 };
   const pad = 30;
   const k = Math.min((w - pad * 2) / b.width, (h - pad * 2) / b.height, 1.2);
   const t = d3.zoomIdentity.translate(w / 2 - (b.x + b.width / 2) * k, h / 2 - (b.y + b.height / 2) * k).scale(k);
@@ -216,13 +228,13 @@ function markSelected(pid) {
 
 function buildLegend() {
   const el = $('#legend');
-  el.innerHTML = `<span class="t">Líneas de los abuelos</span>` +
+  el.innerHTML = `<span class="t">Líneas</span>` +
     LINES.map((n, i) => `<button data-l="${i}"><i class="dot" style="background:${LCOL[i]}"></i>${esc(n)}</button>`).join('') +
     `<span><i class="bioring"></i>Con historia</span><span><i class="stubring"></i>Repetido</span>`;
   $$('button', el).forEach(b => b.onclick = () => {
     const l = +b.dataset.l;
     // ir al abuelo/abuela de esa línea
-    const r = P[ROOT], gp = [P[r.father].father, P[r.father].mother, P[r.mother].father, P[r.mother].mother][l];
+    const gp = D.lineRoots[l];
     focusNode(gp); openPanel(gp);
   });
 }
@@ -289,9 +301,10 @@ function personLink(id, extra = '') {
 function openPanel(id, updateHash = true) {
   const p = P[id]; if (!p) return;
   const panel = $('#panel'), body = $('#panelBody');
-  const lineName = p.line >= 0 ? 'Línea ' + LINES[p.line] : p.gen === -1 || p.id === 'd0' ? 'Descendencia' : 'Línea directa';
+  const lineName = p.line >= 0 ? 'Línea ' + LINES[p.line] : p.id === ROOT || p.child ? 'Los hijos' : p.line === -3 ? 'Línea directa de María Teresa' : 'Línea directa de Manuel Salvador';
   let html = `<span class="p-line"><i class="dot" style="background:${color(p)}"></i>${esc(lineName)}${p.gen > 0 ? ' · Generación ' + p.gen : ''}</span>
     <h2 class="p-name">${esc(p.name)}</h2><p class="p-rel">${esc(rel(p))}</p><div class="p-facts">`;
+  if (p.both) html += `<span class="chip both" title="Aparece en la ascendencia de los dos">Antepasado de ambos</span>`;
   if (p.born) html += `<span class="chip">Nació el ${esc(p.born)}</span>`;
   else if (p.year) html += `<span class="chip">${esc(p.year)}</span>`;
   if (p.place) html += `<span class="chip">${esc(p.place)}</span>`;
@@ -318,12 +331,12 @@ function openPanel(id, updateHash = true) {
   const kids = (p.children || []).filter(x => P[x]);
   if (kids.length) {
     const sorted = kids.slice().sort((a, b) => (P[a].year || '9999').localeCompare(P[b].year || '9999'));
-    html += `<div class="p-sec"><h4>${p.id === ROOT ? 'Hijos con Teresa Ruiz Maya' : 'Hijos en este árbol'}</h4>${sorted.map(x => personLink(x, P[x].born ? 'Nació el ' + P[x].born : '')).join('')}</div>`;
+    html += `<div class="p-sec"><h4>${p.id === ROOT ? 'Los hijos' : p.id === MANUEL || p.id === TERESA ? 'Hijos' : 'Hijos en este árbol'}</h4>${sorted.map(x => personLink(x, P[x].born ? 'Nació el ' + P[x].born : '')).join('')}</div>`;
   }
   const sibs = new Set();
-  for (const k of ['father', 'mother']) if (p[k] && P[p[k]]) (P[p[k]].children || []).forEach(c => c !== id && sibs.add(c));
+  if (id !== ROOT) for (const k of ['father', 'mother']) if (p[k] && P[p[k]]) (P[p[k]].children || []).forEach(c => c !== id && sibs.add(c));
   if (sibs.size) html += `<div class="p-sec"><h4>Hermanos</h4>${[...sibs].map(x => personLink(x)).join('')}</div>`;
-  if (p.trees && p.trees.length) html += `<div class="p-sec"><h4>Aparece en los cuadros originales</h4><div class="p-facts">${p.trees.map(t => `<button class="chip btn" data-tree="${t}">Cuadro n.º ${t}</button>`).join('')}</div></div>`;
+  if (p.trees && p.trees.length) html += `<div class="p-sec"><h4>Aparece en los cuadros originales</h4><div class="p-facts">${p.trees.map(t => `<button class="chip btn" data-tree="${t}">${esc(treeName(t))}</button>`).join('')}</div></div>`;
   if (p.variants && p.variants.length) html += `<div class="p-sec"><h4>También escrito como</h4><p class="note">${p.variants.map(esc).join(' · ')}</p></div>`;
   html += `<div class="p-actions">${nodeIndex.has(id) ? `<button class="btn-primary" data-focus="${id}">Ver en el gráfico</button>` : ''}<button class="btn-ghost" data-copy="${id}">Copiar enlace</button></div>`;
   body.innerHTML = html;
@@ -350,21 +363,23 @@ function closePanel(keepHash) {
 
 /* ---------------- Historia ---------------- */
 function renderHistoria() {
-  const anc = D.people.filter(p => p.gen > 0);
+  const anc = D.people.filter(p => p.gen > 1 || ((p.id === MANUEL || p.id === TERESA)));
   const maxGen = Math.max(...anc.map(p => p.gen));
   const years = anc.map(p => parseInt(p.year)).filter(Boolean);
   const minY = Math.min(...years);
+  const both = D.people.filter(p => p.both).length;
   const s = H;
   let h = `<div class="wrap">
-  <span class="kicker">Genealogía de</span>
-  <h1 class="display">Manuel Salvador Álvarez del Pino Ruiz</h1>
-  <p class="lede">${esc(s.subtitulo)}. Una investigación familiar que reúne ${anc.length} antepasados en ${maxGen} generaciones, desde la España del siglo XVI hasta San Cristóbal y San Antonio de Prado.</p>
+  <span class="kicker">Genealogía de los hijos de</span>
+  <h1 class="display">Manuel Salvador Álvarez Ruiz y María Teresa Ruiz Maya</h1>
+  <p class="lede">${esc(s.subtitulo)}. Una investigación familiar que reúne a ${anc.length} personas de la ascendencia de los dos, en ${maxGen - 1} generaciones: de las familias antioqueñas de la Colonia a los linajes de la España medieval.</p>
   <div class="stats">
     <div class="stat"><b>${anc.length}</b><span>antepasados identificados</span></div>
-    <div class="stat"><b>${maxGen}</b><span>generaciones</span></div>
-    <div class="stat"><b>28</b><span>cuadros genealógicos</span></div>
-    <div class="stat"><b>${minY}</b><span>fecha más antigua registrada</span></div>
+    <div class="stat"><b>${both}</b><span>son antepasados de los dos</span></div>
+    <div class="stat"><b>${D.trees.length}</b><span>cuadros genealógicos</span></div>
+    <div class="stat"><b>${maxGen - 1}</b><span>generaciones</span></div>
   </div>
+  <div class="box kin"><b>Parientes antes de casarse.</b> ${esc(kinText())}</div>
   <details class="box"><summary>${esc(s.metodologia.titulo)} y notas del autor</summary>
     <ol>${s.metodologia.items.map(i => `<li>${esc(i)}</li>`).join('')}</ol>
     <ul>${s.metodologia.notas.map(i => `<li>${esc(i)}</li>`).join('')}</ul></details>
@@ -383,7 +398,7 @@ function renderHistoria() {
     if (g.hijos && g.hijos.length) h += `<details ${g.n >= 9 ? 'open' : ''}><summary>${esc(g.hijos_titulo)}</summary><ol>${g.hijos.map(x => `<li>${esc(x)}</li>`).join('')}</ol></details>`;
     if (g.hijos2) h += `<details><summary>${esc(g.hijos2_titulo)}</summary><ol>${g.hijos2.map(x => `<li>${esc(x)}</li>`).join('')}</ol></details>`;
     if (g.n === 10) {
-      h += `<p style="margin-top:14px">${esc(g.hijos_titulo)}</p><div class="kids">${D.people.filter(p => p.gen === -1).map(k =>
+      h += `<p style="margin-top:14px">${esc(g.hijos_titulo)}</p><div class="kids">${D.people.filter(p => p.child).map(k =>
         `<button class="kid" data-go="${k.id}" style="text-align:left"><b>${esc(k.name)}${k.nick ? ` <small>(«${esc(k.nick)}»)</small>` : ''}</b><span>Nació el ${esc(k.born)}</span>${k.spouseName ? `<span>Casado/a con ${esc(k.spouseName)}</span>` : ''}${k.note ? `<span>${esc(k.note)}</span>` : ''}</button>`).join('')}</div>
         <figure class="ph" style="max-width:560px"><img src="img/familia-final.jpg" alt="${esc(H.fotos['familia-final.jpg'])}" data-photo="familia-final.jpg" loading="lazy"><figcaption>${esc(H.fotos['familia-final.jpg'])}</figcaption></figure>`;
     }
@@ -405,9 +420,10 @@ function renderPersonas() {
   const el = $('#view-personas');
   el.innerHTML = `<div class="wrap">
     <span class="kicker">Índice</span><h1 class="display" style="font-size:44px">Todas las personas</h1>
-    <p class="lede" style="font-size:18px">Antepasados de Manuel Salvador ordenados por generación, más sus hermanos, su esposa y sus hijos. Toca un nombre para ver su ficha.</p>
+    <p class="lede" style="font-size:18px">Los hijos de Manuel Salvador y María Teresa, sus padres y todos sus antepasados, ordenados por generación. Toca un nombre para ver su ficha.</p>
     <div class="toolbar"><input id="pq" type="search" placeholder="Filtrar por nombre o apellido…" aria-label="Filtrar personas">
       <button class="fchip on" data-f="all">Todas</button>
+      <button class="fchip" data-f="M">Lado de Manuel Salvador</button><button class="fchip" data-f="T">Lado de María Teresa</button><button class="fchip" data-f="B">De ambos</button>
       ${LINES.map((n, i) => `<button class="fchip" data-f="${i}"><i class="dot" style="background:${LCOL[i]}"></i>${esc(n)}</button>`).join('')}
       <button class="fchip" data-sort="az">A–Z</button></div>
     <p class="count" id="pcount"></p><div class="plist" id="plist"></div></div>`;
@@ -415,8 +431,11 @@ function renderPersonas() {
   const draw = () => {
     const q = $('#pq').value;
     let list = q.trim().length >= 2 ? searchPeople(q, 2000) : D.people.slice();
-    if (f !== 'all') list = list.filter(p => p.line === +f);
-    const key = p => (p.gen === -1 ? -0.5 : p.id === 'd0' ? 0.1 : p.sibling ? 0.2 : p.gen ?? 99);
+    if (f === 'M') list = list.filter(p => p.genM != null || p.id === MANUEL || p.sibling);
+    else if (f === 'T') list = list.filter(p => p.genT != null || p.id === TERESA);
+    else if (f === 'B') list = list.filter(p => p.both);
+    else if (f !== 'all') list = list.filter(p => p.line === +f);
+    const key = p => (p.id === ROOT ? -1 : p.child ? -0.5 : p.sibling ? 1.2 : p.gen ?? 99);
     let html = '';
     if (az) {
       list.sort((a, b) => a.name.localeCompare(b.name, 'es'));
@@ -425,8 +444,8 @@ function renderPersonas() {
       list.sort((a, b) => key(a) - key(b) || a.name.localeCompare(b.name, 'es'));
       let last = null;
       for (const p of list) {
-        const g = p.gen === -1 ? 'Hijos de Manuel Salvador' : (p.gen === 0 || p.id === 'd0') ? 'Manuel Salvador, su esposa y hermanos'
-          : p.gen == null ? 'Otras personas de los cuadros' : `Generación ${p.gen} · ${genTitle(p.gen)}`;
+        const g = p.gen === 0 ? 'Los hijos' : p.gen === 1 ? 'Manuel Salvador, María Teresa y los hermanos de Manuel Salvador'
+          : p.gen == null ? 'Otras personas de los cuadros' : `Generación ${p.gen} · ${genTitle(p.gen)} de los hijos`;
         if (g !== last) { html += `<h5>${esc(g)}</h5>`; last = g; }
         html += row(p);
       }
@@ -443,12 +462,27 @@ function renderPersonas() {
 }
 
 /* ---------------- Cuadros originales ---------------- */
-function treeTitle(t) { return t.roots.map(id => P[id]?.name).filter(Boolean).join(' y '); }
+function treeTitle(t) { return t.title || t.roots.map(id => P[id]?.name).filter(Boolean).join(' y '); }
+function treeName(n) { const t = TREE[n]; return !t ? `Cuadro ${n}` : t.name ? t.name : t.side === 'T' ? `Cuadro ${t.label} de María Teresa` : `Cuadro n.º ${t.label}`; }
+function kinText() {
+  const m = P[MANUEL], t = P[TERESA]; if (!m || !t) return '';
+  const best = D.people.filter(p => p.both).sort((a, b) => (a.genM + a.genT) - (b.genM + b.genT));
+  if (!best.length) return '';
+  const b = best[0], sp = (b.spouses || []).map(x => P[x]).find(x => x && x.both);
+  const who = sp ? `${b.name} y ${sp.name}` : b.name;
+  return `Según los cuadros, Manuel Salvador y María Teresa compartían antepasados: ${who} eran ${relWord(b.genM, false, true).toLowerCase()}s de Manuel Salvador y ${relWord(b.genT, false, true).toLowerCase()}s de María Teresa. Por eso ${best.length} personas aparecen en las dos ramas del árbol.`;
+}
+const card = t => `<button class="card" data-tree="${t.n}"><img src="arboles/${t.img.replace('.webp', '-mini.webp')}" alt="${esc(treeName(t.n))}" loading="lazy"><div><b>${esc(treeName(t.n))}</b><span>${esc(treeTitle(t))}</span></div></button>`;
 function renderOriginales() {
   const el = $('#view-originales');
   el.innerHTML = `<div class="wrap wide"><span class="kicker">Facsímil</span><h1 class="display" style="font-size:44px">Los cuadros originales</h1>
-    <p class="lede" style="font-size:18px">Los 28 cuadros de ascendientes tal como fueron elaborados en la investigación original (2.029 ascendientes en total). En el cuadro n.º 1, cada integrante de la última fila lleva el número del cuadro en el que continúa su ascendencia. Toca un cuadro para verlo en grande y hacer zoom.</p>
-    <div class="grid">${D.trees.map(t => `<button class="card" data-tree="${t.n}"><img src="arboles/arbol-${String(t.n).padStart(2, '0')}-mini.webp" alt="Cuadro ${t.n}" loading="lazy"><div><b>Cuadro n.º ${t.n}</b><span>${esc(treeTitle(t))}</span></div></button>`).join('')}</div></div>`;
+    <p class="lede" style="font-size:18px">Los cuadros de ascendientes tal como fueron elaborados en la investigación original. Toca un cuadro para verlo en grande y hacer zoom.</p>
+    <h2 class="sec">Manuel Salvador Álvarez Ruiz</h2>
+    <p class="note">28 cuadros. En el cuadro n.º 1, cada integrante de la última fila lleva el número del cuadro en el que continúa su ascendencia.</p>
+    <div class="grid">${D.trees.filter(t => t.side === 'M').map(card).join('')}</div>
+    <h2 class="sec">María Teresa Ruiz Maya</h2>
+    <p class="note">Cuadros n.º 1 a 11 y 16 a 19, con sus continuaciones (3A, 3B…). Los cuadros 17A a 17G llegan a los linajes medievales de España (Ponce de León, Guzmán, reyes de León, Castilla y Navarra, visigodos). Al final están, solo como imagen, las páginas de la parte 2 que no se pudieron leer automáticamente.</p>
+    <div class="grid">${D.trees.filter(t => t.side === 'T').map(card).join('')}</div></div>`;
   el.onclick = e => { const b = e.target.closest('[data-tree]'); if (b) openTree(+b.dataset.tree); };
 }
 
@@ -476,7 +510,7 @@ function openImage(src, title) {
 }
 function openTree(n) {
   const t = D.trees.find(x => x.n === n);
-  openImage('arboles/' + t.img, `Cuadro n.º ${n} — ${treeTitle(t)}`);
+  openImage('arboles/' + t.img, `${treeName(n)}${treeTitle(t) ? ' — ' + treeTitle(t) : ''}`);
 }
 function closeViewer() { $('#viewer').hidden = true; }
 })();

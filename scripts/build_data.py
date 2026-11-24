@@ -3,6 +3,9 @@ import sys, json, re, unicodedata, collections
 sys.stdout.reconfigure(encoding='utf-8')
 T = json.load(open(sys.argv[1], encoding='utf-8'))
 OUT = sys.argv[2]
+for extra in sys.argv[3:]:  # cuadros de otras ramas (p. ej. la de María Teresa Ruiz Maya, claves 101+)
+    T.update(json.load(open(extra, encoding='utf-8')))
+TERESA = '101' in T
 
 def strip_acc(s):
     return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
@@ -84,24 +87,63 @@ def fixups(T):
                                x=p['x'], y=p['y'] + 30, band=p['band'] + 1, father=None, mother=None, spouse=None,
                                more=False, none=True, ref=None, bbox=None, page=None)
                     P.append(new); p['mother'] = new['id']
+def fix_teresa1(T):
+    """El cuadro #1 de María Teresa pone la 6.ª generación en un bloque aparte, numerado por persona."""
+    if '101' not in T: return
+    P = T['101']['people']; by = {p['id']: p for p in P}
+    for p in P:
+        if p['band'] == 5:  # la fila de números (2, |, 3, 4...) quedó como fecha
+            p['date'] = re.sub(r'(?<![\d.])\d{1,2}(?![\d.])', '', p['date']).strip()
+    # las personas 22-28 de la 5.ª generación repiten a los padres de 15-18: se enlazan a esas mismas apariciones
+    drop = {'T101-55', 'T101-56', 'T101-57', 'T101-58', 'T101-59', 'T101-60'}
+    by['T101-27'].update(father='T101-15', mother='T101-16')
+    by['T101-28'].update(father='T101-17', mother='T101-18')
+    by['T101-29'].update(father='T101-37', mother='T101-38')
+    for i in range(63, 71): by[f'T101-{i}'].update(father=None, mother=None, ref=None)
+    # bloque inferior: pareja k -> padres de la persona n.º k de la 5.ª generación (T101-31 es la n.º 2)
+    idx = {n: f'T101-{33 + n}' for n in range(7, 22)}
+    idx[29] = 'T101-61'; idx[30] = 'T101-62'
+    lower = {10: (71, 72), 11: (73, 74), 12: (75, 76), 13: (77, 78), 14: (79, 80), 15: (81, 82), 16: (83, 84), 17: (85, 86),
+             18: (87, 88), 19: (89, 90), 20: (91, 92), 21: (93, 94), 29: (107, 108), 30: (109, 110)}
+    names = {71: ('ALONSO JARAMILLO MOLINA', 'MED. 1679'), 72: ('MARIA ANTONIA GALLON ARANGO', '1703'), 73: ('IGNACIO GARCIA JARAMILLO', 'SANTA FE'),
+             74: ('BARBARA MOLINA VILLA', 'X'), 77: ('JOSÉ PABLO VÉLEZ TORO', ''), 94: ('MARÍA PELÁEZ GÓMEZ TORO', '1734'),
+             93: ('MANUEL SALVADOR TAMAYO PIEDRAHITA', '1723'),
+             107: ('PEDRO RESTREPO VÉLEZ', 'MED. 1733'), 108: ('BÁRBARA GONZÁLEZ GÓMEZ', 'N. 1729'),
+             109: ('IGNACIO RESTREPO VÉLEZ', 'N. 1731'), 110: ('MARÍA ANTONIA PUERTA ZAPATA', '')}
+    for i, (n, d) in names.items(): by[f'T101-{i}'].update(name=n, date=d)
+    for i in range(71, 111):
+        q = by[f'T101-{i}']; q['father'] = q['mother'] = None; q['ref'] = None
+        q['date'] = re.sub(r'(1?\d|2\d|3[01])(?!\d)|\?', '', q['date']).strip(' |')
+    for k, (a, b) in lower.items():
+        child = by[idx[k]]
+        child['father'], child['mother'] = f'T101-{a}', f'T101-{b}'
+        by[f'T101-{a}']['spouse'] = f'T101-{b}'; by[f'T101-{b}']['spouse'] = f'T101-{a}'
+    keep_lower = {f'T101-{i}' for ab in lower.values() for i in ab}
+    drop |= {f'T101-{i}' for i in range(71, 111)} - keep_lower
+    T['101']['people'] = [p for p in P if p['id'] not in drop]
 fixups(T)
+fix_teresa1(T)
 clean_names = {}
 persons = []  # occurrences
 for t, v in T.items():
     for p in v['people']:
-        toks = p['name'].replace('(CONQUISTADOR)', '').split()
+        toks = re.sub(r'[”“"]', ' ', p['name'].replace('(CONQUISTADOR)', '')).split()
         extra = []
         title_prefix = ''
         keep = []
         for i, w in enumerate(toks):
             W = w.upper()
-            if W in ('.', '..', ',', '(', ')', 'Y', 'E') and i > 0: continue
+            if W in ('.', '..', ',', '(', ')', 'Y', 'E', '-B', 'B-', '-') and i > 0: continue
+            if W.strip('?¿') == '' and len(toks) > 1: continue
             if re.fullmatch(r'\d+', W) and len(W) != 4: continue
             if re.search(r'\d', W) or PLACE_TOKEN.match(W) or W in ('VENEZU.', 'VENZ.', 'VENEZ.', 'VENEZUE.', 'VENEZUL.', '.X'):
                 extra.append(W); continue
             if W == 'CAP.': title_prefix = 'Capitán '; continue
+            if strip_acc(W).strip('.') in ('RIONEGRO', 'MEDELLIN', 'ENVIGADO', 'COPACABANA') and i > 1:
+                extra.append(W); continue
             keep.append(w.strip('.,') if W not in ('J.',) else w)
         keep = [w for w in keep if w.upper() not in ('X', 'XX')]
+        if keep and all(w.upper() in LOWER for w in keep): keep = []
         while keep and (keep[-1].upper() in ('?', '.', 'ESP', 'COL', 'MED', 'ANT', 'BOG') or (len(keep[-1]) == 1 and len(keep) > 1)):
             extra.append(keep.pop().upper())
         if len(keep) >= 2 and keep[-2].upper() == 'ARMA' and keep[-1].upper() in ('VIEJA', 'VIEJO'):
@@ -118,6 +160,7 @@ for t, v in T.items():
                             father=p['father'], mother=p['mother'], spouse=p['spouse'], ref=p['ref'],
                             none=p['none'], conq=conq))
 occ = {p['oid']: p for p in persons}
+ORD = {o: i for i, o in enumerate(occ)}
 
 # ---- union-find
 par = {p['oid']: p['oid'] for p in persons}
@@ -147,6 +190,21 @@ for p in persons:
             union(best['oid'], p['oid']); print('link', p['name'], '->', p['ref'], best['name'], best['oid'])
         else:
             print('no match for leaf', p['name'], '->', p['ref'], [c['name'] for c in cands])
+
+# cuadros de María Teresa: la raíz de cada cuadro (y sus continuaciones) es una persona que ya aparece en otro cuadro
+if TERESA:
+    for p in persons:
+        if p['tree'] > 100 and p['tree'] != 101 and p['band'] == 0 and p['key']:
+            def ok(q):
+                j = jacc(p['key'], q['key'])
+                a, c = p['key'].split(), q['key'].split()
+                near = j >= 0.5 and a[0] == c[0] and (set(a) <= set(c) or set(c) <= set(a) or a[-1] == c[-1])
+                return j == 1 or (years_ok(p['oid'], q['oid']) and (j >= 0.75 or near))
+            cands = [q for q in persons if q['tree'] > 100 and q['tree'] != p['tree'] and q['key'] and ok(q)]
+            if not cands: print('raíz sin pareja', p['tree'], p['name']); continue
+            c101 = [q for q in cands if q['tree'] == 101]
+            best = max(c101 or cands, key=lambda q: (jacc(p['key'], q['key']), -q['band']))
+            union(best['oid'], p['oid'])
 
 # merge by identical key (>= 2 tokens) with compatible years
 groups = collections.defaultdict(list)
@@ -207,7 +265,7 @@ while changed:
         if p['mother']: rel[(r, 'm')].append(p['mother'])
         if p['spouse']: rel[(r, 's')].append(p['spouse'])
     for (c, role), lst in rel.items():
-        roots = list({find(x) for x in lst})
+        roots = sorted({find(x) for x in lst}, key=ORD.get)
         for i in range(1, len(roots)):
             if find(roots[0]) == find(roots[i]): continue
             a, b = occ[roots[0]], occ[roots[i]]
@@ -224,8 +282,8 @@ def reach():
             if p[k]: cnt[(r, k)][find(p[k])] += 1
     rel = collections.defaultdict(set)
     for (r, k), c in cnt.items(): rel[r].add(c.most_common(1)[0][0])
-    root = find(next(p for p in persons if p['tree'] == 1 and p['band'] == 0)['oid'])
-    seen = {root}; st = [root]
+    roots = [find(p['oid']) for p in persons if p['tree'] in (1, 101) and p['band'] == 0]
+    seen = set(roots); st = list(roots)
     while st:
         x = st.pop()
         for y in rel[x]:
@@ -252,7 +310,7 @@ for it in range(4):
                 if find(q['oid']) == find(c):
                     for k in ('father', 'mother'):
                         if q[k] and find(q[k]) != r: cands.add(find(q[k]))
-        cands = [c for c in cands if c in R and similar(o, occ[c])]
+        cands = sorted((c for c in cands if c in R and similar(o, occ[c])), key=ORD.get)
         if o['key']:
             cands = [c for c in cands if occ[c]['key']] or cands
         if len(cands) >= 1:
@@ -277,7 +335,9 @@ for r in order:
     if named:
         cnt = collections.Counter(o['name'] for o in named)
         top = max(cnt.values())
-        name = max([n for n, c in cnt.items() if c >= max(1, top - 1)], key=len)
+        cand = [n for n, c in cnt.items() if c >= max(1, top - 1)]
+        cand = [n for n in cand if len(n.split()) <= 6] or cand  # los nombres muy largos suelen venir de dos personas pegadas
+        name = max(cand, key=len)
     best = sorted(oc, key=lambda o: (bool(o['year']) and bool(o['place']), bool(o['year']), bool(o['place'])), reverse=True)[0]
     year = best['year'] or next((o['year'] for o in oc if o['year']), None)
     place = best['place'] or next((o['place'] for o in oc if o['place']), None)
@@ -313,17 +373,36 @@ for p in people.values():
     for k in ('father', 'mother'):
         if p[k]: people[p[k]]['children'].append(p['id'])
 root = pid_of(root_occ['oid'])
-# generation = shortest distance from root
-gen = {root: 0}; q = [root]
-while q:
-    x = q.pop(0)
-    for k in ('father', 'mother'):
-        y = people[x][k]
-        if y and y not in gen: gen[y] = gen[x] + 1; q.append(y)
+def dist_from(r):
+    gen = {r: 0}; q = [r]
+    while q:
+        x = q.pop(0)
+        for k in ('father', 'mother'):
+            y = people[x][k]
+            if y and y not in gen: gen[y] = gen[x] + 1; q.append(y)
+    return gen
+gen = dist_from(root)
 for p in people.values(): p['gen'] = gen.get(p['id'])
+root2 = None
+if TERESA:
+    root2 = pid_of(next(p for p in persons if p['tree'] == 101 and p['band'] == 0)['oid'])
+    gen2 = dist_from(root2)
+    for p in people.values():
+        p['genM'] = gen.get(p['id']); p['genT'] = gen2.get(p['id'])
+        g = [x for x in (p['genM'], p['genT']) if x is not None]
+        p['gen'] = min(g) if g else None
+# las páginas medievales de la Parte 2 tienen cadenas que no siempre se pueden enlazar: lo que quede suelto se descarta
+gone = {k for k, p in people.items() if p['gen'] is None and all(t >= 1700 for t in p['trees'])}
+for k in gone: del people[k]
+for p in people.values():
+    p['children'] = [c for c in p['children'] if c not in gone]
+    p['spouses'] = [c for c in p['spouses'] if c not in gone]
+print('descartadas (medievales sueltas):', len(gone))
 orphans = [p['name'] for p in people.values() if p['gen'] is None]
 print('people', len(people), 'occurrences', len(persons), 'not connected to root', len(orphans))
 print(orphans[:40])
 tc = collections.Counter(t for p in people.values() if p['gen'] is None for t in p['trees'])
 print('orphans by tree', tc)
-json.dump(dict(root=root, people=people), open(OUT, 'w', encoding='utf-8'), ensure_ascii=False)
+if root2:
+    print('antepasados de ambos:', sum(1 for p in people.values() if p['genM'] is not None and p['genT'] is not None))
+json.dump(dict(root=root, root2=root2, people=people), open(OUT, 'w', encoding='utf-8'), ensure_ascii=False)

@@ -152,7 +152,7 @@ def render(chart, P, gen_of, gen_title, color, line_name, home):
       <div class="lam-b" style="height:{body_h:.1f}mm"><svg viewBox="0 0 {GUT + CW} {body_h:.2f}" style="width:{GUT + CW}mm;height:{body_h:.2f}mm"><path d="{''.join(paths)}" /></svg>''')
     for d, lv in enumerate(L):
         g = g0 + d
-        lbl = 'Manuel Salvador' if g == 0 else f'{g} · {gen_title(g)}'
+        lbl = 'Los hijos' if g == 0 else f'{g} · {gen_title(g)}'
         h.append(f'<div class="rl" style="top:{d * RH:.2f}mm;height:{BH}mm"><span>{e(lbl)}</span></div>')
         for i, n in enumerate(lv):
             p = P[n['pid']]
@@ -169,7 +169,7 @@ def render(chart, P, gen_of, gen_title, color, line_name, home):
                     if st and home.get(q): nm += f' (↺ lám. {home[q]})'
                     parts.append(nm)
                 tag = f'<span class="pd">Padres: {" y ".join(parts)}</span>'
-            name = e(p['name'])
+            name = ('◆ ' if p.get('both') and not n['stub'] else '') + e(p['name'])
             h.append(f'<div class="{cls}" style="left:{x:.2f}mm;top:{y:.2f}mm;width:{BW:.2f}mm;min-height:{BH}mm;--c:{color(p)}">'
                      f'<span class="nm">{name}</span>{f"<span class=mt>{e(meta)}</span>" if meta and not n["stub"] else ""}{tag}</div>')
     h.append('</div></div>')
