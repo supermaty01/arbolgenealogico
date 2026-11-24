@@ -71,26 +71,39 @@ main { position: fixed; inset: var(--topbar) 0 0 0; }
 .view.page { overflow-y: auto; -webkit-overflow-scrolling: touch; }
 
 /* ---------- gráfico ---------- */
-#chart { width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; user-select: none; -webkit-user-select: none; }
-#chart:active { cursor: grabbing; }
-#chart .link { fill: none; stroke-opacity: .5; stroke-width: 1.2; vector-effect: non-scaling-stroke; }
-#chart .node circle { stroke: var(--bg); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+#chartbox { position: absolute; inset: 0; overflow: hidden; touch-action: none; cursor: grab; user-select: none; -webkit-user-select: none; }
+#chartbox:active { cursor: grabbing; }
+/* zoom con transform CSS: la escala fija va en #chart y el movimiento del gesto en #chartlayer, que va en
+   su propia capa para que moverlo no obligue a pintar de nuevo (ver app.js) */
+#chartlayer { position: absolute; left: 0; top: 0; width: 1px; height: 1px; transform-origin: 0 0; will-change: transform; }
+#chart { position: absolute; display: block; overflow: visible; }
+/* capa transparente encima durante un gesto: el navegador no recorre el SVG buscando el hover */
+#chartbox.moving::after { content: ''; position: absolute; inset: 0; }
+/* fondo bajo el gráfico; la opacidad .99 (mismo color que la página) evita que el navegador lo convierta en
+   una capa de color sólido, que obligaría a componer cada etiqueta por separado */
+#chart .bg { fill: var(--bg); fill-opacity: .99; pointer-events: none; }
+/* los trazos se ven siempre del mismo grosor: --ik es 1/escala (lo ajusta app.js al terminar el zoom) */
+#chart .link { fill: none; stroke-opacity: .5; stroke-width: calc(1.2px * var(--ik)); }
+#chart .node circle { stroke: var(--bg); stroke-width: calc(1.5px * var(--ik)); }
 #chart .node text { font: 500 11.5px var(--sans); fill: var(--ink); paint-order: stroke; stroke: var(--bg); stroke-width: 3px; stroke-linejoin: round; }
 #chart .node text .yr { font-weight: 400; fill: var(--muted); }
 #chart .node { cursor: pointer; }
 #chart .node:hover text { fill: var(--accent); }
 #chart .node.stub text { font-style: italic; fill: var(--faint); font-weight: 400; }
-#chart .node.stub circle { fill: var(--bg) !important; stroke-dasharray: 2 2; stroke-width: 1.3; }
-#chart .node.bio circle { stroke: var(--gold); stroke-width: 3; }
+#chart .node.stub circle { fill: var(--bg) !important; stroke-dasharray: calc(2px * var(--ik)); stroke-width: calc(1.3px * var(--ik)); }
+#chart .node.bio circle { stroke: var(--gold); stroke-width: calc(3px * var(--ik)); }
 #chart .node.root text { font: 600 17px var(--serif); }
-#chart.nolabels .node:not(.big) text { display: none; }
+/* visibility y no display: al volver a mostrarlas no hay que maquetar de nuevo las 1255 etiquetas;
+   al cargar van con display: none (.lazy) para no retrasar el primer dibujo, y se maquetan después */
+#chart.nolabels .node:not(.big) text { visibility: hidden; }
+#chart.nolabels.lazy .node:not(.big) text { display: none; }
 #chart.searching .node:not(.hit) { opacity: .18; }
 #chart.searching .link { stroke-opacity: .12; }
-#chart .node.hit circle { stroke: var(--ink); stroke-width: 2.5; }
-#chart .node.sel circle { stroke: var(--ink); stroke-width: 3; }
+#chart .node.hit circle { stroke: var(--ink); stroke-width: calc(2.5px * var(--ik)); }
+#chart .node.sel circle { stroke: var(--ink); stroke-width: calc(3px * var(--ik)); }
 #chart .pulse { fill: none; stroke: var(--ink); stroke-width: 2; pointer-events: none; animation: pulse 1.6s ease-out 3; }
 @keyframes pulse { from { r: 6; opacity: 1; } to { r: 34; opacity: 0; } }
-#chart .ring { fill: none; stroke: #d9cdb6; stroke-dasharray: 3 5; vector-effect: non-scaling-stroke; }
+#chart .ring { fill: none; stroke: #d9cdb6; stroke-width: calc(1px * var(--ik)); stroke-dasharray: calc(3px * var(--ik)) calc(5px * var(--ik)); }
 #chart .ringlbl { font: 500 10px var(--sans); fill: var(--faint); letter-spacing: .08em; text-transform: uppercase; }
 
 .legend {

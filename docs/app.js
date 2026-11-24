@@ -74,7 +74,7 @@ function route() {
 }
 
 /* ---------------- gráfico ---------------- */
-let svg, gRoot, zoom, nodesSel, linksSel, hier, layout = 'radial', nodeIndex = new Map();
+let svg, zbox, gRoot, zoom, nodesSel, linksSel, hier, layout = 'radial', nodeIndex = new Map();
 function buildHierarchy() {
   const seen = new Set([ROOT]);
   const root = { pid: ROOT, children: [] };
@@ -129,6 +129,15 @@ function buildChart() {
   computeLayouts();
   svg = d3.select('#chart');
   gRoot = svg.append('g');
+  // fondo del color de la página bajo todo el gráfico (las dos vistas): con él, el navegador compone el
+  // gráfico como una sola capa al moverlo; sin él la parte en muchas y cada fotograma cuesta mucho
+  const ext = [Infinity, Infinity, -Infinity, -Infinity];
+  hier.each(d => { for (const p of [d.rad, d.tre]) { ext[0] = Math.min(ext[0], p.x); ext[1] = Math.min(ext[1], p.y); ext[2] = Math.max(ext[2], p.x); ext[3] = Math.max(ext[3], p.y); } });
+  const vb = [ext[0] - 600, ext[1] - 600, ext[2] - ext[0] + 1200, ext[3] - ext[1] + 1200];
+  gRoot.append('rect').attr('class', 'bg').attr('x', vb[0]).attr('y', vb[1]).attr('width', vb[2]).attr('height', vb[3]);
+  // el <svg> abarca todo el gráfico (una unidad = 1px antes del zoom), con el origen en la esquina de #chartlayer
+  svg.attr('viewBox', vb.join(' ')).attr('width', vb[2]).attr('height', vb[3])
+    .style('left', vb[0] + 'px').style('top', vb[1] + 'px').style('transform-origin', `${-vb[0]}px ${-vb[1]}px`);
   const rings = gRoot.append('g').attr('class', 'rings');
   linksSel = gRoot.append('g').selectAll('path').data(hier.links()).join('path')
     .attr('class', 'link').attr('stroke', d => color(P[d.target.data.pid]));
@@ -151,22 +160,53 @@ function buildChart() {
   rings.selectAll('text').data(ringData.filter(d => d <= 13)).join('text').attr('class', 'ringlbl').attr('text-anchor', 'middle')
     .attr('y', d => -(RR(d) + RR(d - 1)) / 2).text(d => genTitle(d));
 
-  let lastS = 1;
+  // El zoom se aplica con transform CSS, sin tocar el contenido del SVG en cada fotograma:
+  //  - durante el gesto solo cambia el transform de #chartlayer, que va en su propia capa
+  //    (el navegador recompone la imagen ya pintada, sin maquetar ni pintar de nuevo; al acercar
+  //    se ve algo borrosa hasta que termina el gesto);
+  //  - al terminar (o de vez en cuando si el gesto es largo) se fija la escala en el <svg>
+  //    (transform CSS: no obliga a maquetar otra vez los textos) y se ajusta lo que depende de
+  //    ella: grosor de los trazos, tamaño de los puntos y etiquetas visibles.
+  zbox = d3.select('#chartbox');
+  const layerEl = $('#chartlayer'), svgEl = svg.node();
+  // grosor de los trazos: --ik = 1/escala, solo en los elementos con trazo (ver style.css)
+  const st = document.head.appendChild(document.createElement('style')).sheet;
+  const ikRule = st.cssRules[st.insertRule('#chart .link, #chart .ring, #chart .node circle { --ik: 1; }')];
+  let lastS = 1, k0 = 0, lastSettle = 0, cur = d3.zoomIdentity, moving = false;
   const baseR = d => (d.depth === 0 ? 10 : d.depth <= 2 ? 7 : 5);
-  zoom = d3.zoom().scaleExtent([0.025, 4]).on('zoom', e => {
-    const k = e.transform.k;
-    gRoot.attr('transform', e.transform);
+  const place = () => { layerEl.style.transform = `translate(${cur.x}px,${cur.y}px) scale(${cur.k / k0})`; };
+  const settle = () => {
+    lastSettle = performance.now();
+    const k = cur.k;
+    if (k === k0) return;
+    k0 = k;
+    svgEl.style.transform = `scale(${k})`;
+    place();
+    ikRule.style.setProperty('--ik', 1 / k);
     svg.classed('nolabels', k < 0.3);
     // los puntos mantienen un tamaño visible al alejarse
     const s = k < 0.6 ? Math.round(Math.min(6, 0.6 / k) * 4) / 4 : 1;
     if (s !== lastS) { lastS = s; nodesSel.select('circle').attr('r', d => baseR(d) * s); }
-  });
-  svg.call(zoom).on('dblclick.zoom', null);
-  svg.on('click', () => { if (!isMobile()) return; });
+  };
+  zoom = d3.zoom().scaleExtent([0.025, 4])
+    .on('zoom', e => {
+      cur = e.transform;
+      // mientras el usuario mueve el gráfico, una capa transparente encima evita el hover (solo si de verdad
+      // hay movimiento: un clic no lo activa; en las animaciones no se pone, para poder tocar un nombre)
+      if (!moving && k0 && e.sourceEvent) { moving = true; zbox.classed('moving', true); }
+      // en un gesto del usuario la escala se fija al terminar (o si cambia mucho); en una animación, más a menudo
+      const user = !!e.sourceEvent, r = Math.abs(Math.log(cur.k / k0));
+      if (!k0 || (user ? r > 1.1 && performance.now() - lastSettle > 500 : r > 0.4 && performance.now() - lastSettle > 250)) settle(); else place();
+    })
+    .on('end', () => { settle(); if (moving) { moving = false; zbox.classed('moving', false); } });
+  zbox.call(zoom).on('dblclick.zoom', null);
+  svg.classed('lazy', true);
   applyLayout(false);
   fit(false);
+  // las etiquetas ocultas se maquetan cuando el navegador está libre, no durante la carga
+  (window.requestIdleCallback || (f => setTimeout(f, 1500)))(() => svg.classed('lazy', false), { timeout: 3000 });
   setTimeout(() => $('#hint').classList.add('gone'), 6000);
-  svg.on('pointerdown.hint', () => $('#hint').classList.add('gone'));
+  zbox.on('pointerdown.hint', () => $('#hint').classList.add('gone'));
 
   $$('.seg button').forEach(b => b.onclick = () => {
     layout = b.dataset.layout;
@@ -174,8 +214,8 @@ function buildChart() {
     applyLayout(true);
     setTimeout(() => (selected ? focusNode(selected, true) : fit(true)), 50);
   });
-  $('#zin').onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1.5);
-  $('#zout').onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.5);
+  $('#zin').onclick = () => zbox.transition().duration(300).call(zoom.scaleBy, 1.5);
+  $('#zout').onclick = () => zbox.transition().duration(300).call(zoom.scaleBy, 1 / 1.5);
   $('#zfit').onclick = () => fit(true);
   addEventListener('resize', () => {});
 }
@@ -193,7 +233,7 @@ function applyLayout(animate) {
 }
 
 function fit(animate) {
-  const el = svg.node(), w = el.clientWidth, h = el.clientHeight;
+  const el = zbox.node(), w = el.clientWidth, h = el.clientHeight;
   if (!w || !h) return;
   // se encuadra la parte central (hasta 13 generaciones); el resto se ve al alejar
   const pts = hier.descendants().filter(d => layout !== 'radial' || d.depth <= 13).map(pos);
@@ -202,20 +242,20 @@ function fit(animate) {
   const pad = 30;
   const k = Math.min((w - pad * 2) / b.width, (h - pad * 2) / b.height, 1.2);
   const t = d3.zoomIdentity.translate(w / 2 - (b.x + b.width / 2) * k, h / 2 - (b.y + b.height / 2) * k).scale(k);
-  (animate ? svg.transition().duration(700) : svg).call(zoom.transform, t);
+  (animate ? zbox.transition().duration(700) : zbox).call(zoom.transform, t);
 }
 
 let selected = null;
 function focusNode(pid, keepScale) {
   const d = nodeIndex.get(pid);
   if (!d || !svg) return;
-  const el = svg.node(), w = el.clientWidth, h = el.clientHeight;
+  const el = zbox.node(), w = el.clientWidth, h = el.clientHeight;
   const cur = d3.zoomTransform(el);
   const k = keepScale ? cur.k : Math.max(cur.k, layout === 'radial' ? 1.3 : 1.15);
   const p = pos(d);
   const cx = isMobile() ? w / 2 : (w - ($('#panel').hidden ? 0 : 420)) / 2;
   const cy = isMobile() ? h * 0.24 : h / 2;
-  svg.transition().duration(800).ease(d3.easeCubicInOut)
+  zbox.transition().duration(800).ease(d3.easeCubicInOut)
     .call(zoom.transform, d3.zoomIdentity.translate(cx - p.x * k, cy - p.y * k).scale(k));
   markSelected(pid);
   gRoot.selectAll('.pulse').remove();
