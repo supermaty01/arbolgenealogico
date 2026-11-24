@@ -15,6 +15,32 @@ D = json.load(open(data_path, encoding='utf-8'))
 H = json.load(open(hist_path, encoding='utf-8'))
 P = D['people']; manuel = D['root']; teresa_id = D.get('root2')
 
+# ---------- capa de investigación (contenido/investigacion.json): correcciones y adiciones con fuentes
+import investigacion
+INV_PATH = os.path.join(os.path.dirname(os.path.abspath(hist_path)), 'investigacion.json')
+INV = json.load(open(INV_PATH, encoding='utf-8')) if os.path.exists(INV_PATH) else None
+if INV:
+    _n = [0]
+    def _nuevo_id():
+        _n[0] += 1; return f'r{_n[0]}'
+    for _p in P.values(): _p.setdefault('color', '#555555')
+    for hid, clas, ap, pid in investigacion.aplicar(P, INV, _nuevo_id):
+        print('investigación', hid, clas, 'aplicado' if ap else 'nota', pid, P[pid]['name'] if pid in P else '')
+    for _p in P.values(): _p.setdefault('color', '#555555')
+    def _dist(r):
+        g = {r: 0}; q = [r]
+        while q:
+            x = q.pop(0)
+            for k in ('father', 'mother'):
+                y = P[x].get(k)
+                if y and y in P and y not in g: g[y] = g[x] + 1; q.append(y)
+        return g
+    _gM, _gT = _dist(manuel), _dist(teresa_id) if teresa_id else {}
+    for _p in P.values():
+        _p['genM'] = _gM.get(_p['id']); _p['genT'] = _gT.get(_p['id'])
+        _p['gen'] = min([x for x in (_p['genM'], _p['genT']) if x is not None], default=None)
+        _p['both'] = _p['genM'] is not None and _p['genT'] is not None
+
 def norm(s):
     s = ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn').upper()
     return [w for w in re.sub(r'[^A-Z ]', ' ', s).split() if w not in ('DE', 'DEL', 'LA', 'LOS', 'Y', 'DON', 'DONA')]
@@ -169,11 +195,13 @@ for src, dst in FOTOS.items():
 
 # ---------- salida compacta
 KEEP = ['id', 'name', 'year', 'place', 'raw', 'unknown', 'conq', 'father', 'mother', 'spouses', 'trees', 'children',
-        'gen', 'genM', 'genT', 'both', 'sex', 'line', 'variants', 'bio', 'extra', 'born', 'nick', 'spouseName', 'note', 'sibling', 'child']
+        'gen', 'genM', 'genT', 'both', 'sex', 'line', 'variants', 'bio', 'extra', 'born', 'nick', 'spouseName', 'note', 'sibling', 'child',
+        'inv', 'orig', 'invAdded', 'merged']
 people = []
 for p in P.values():
     q = {k: p[k] for k in KEEP if k in p and p[k] is not None and p[k] is not False and p[k] != [] and p[k] != ''}
     people.append(q)
 out = dict(root=root, manuel=manuel, teresa=teresa_id, lines=LINES, lineRoots=gp, people=people, trees=trees, historia=H)
+if INV: out['investigacion'] = investigacion.exportar(INV)
 json.dump(out, open(f'{docs}/data/familia.json', 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
 print('ambos', sum(1 for p in P.values() if p.get('both')), 'personas', len(people), 'conectadas', sum(1 for p in P.values() if p.get('gen') is not None))

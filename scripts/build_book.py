@@ -8,6 +8,8 @@ REPO = os.path.abspath(sys.argv[1])
 D = json.load(open(os.path.join(REPO, 'docs/data/familia.json'), encoding='utf-8'))
 H = D['historia']; P = {p['id']: p for p in D['people']}; ROOT = D['root']; LINES = D['lines']
 MANUEL, TERESA = D['manuel'], D['teresa']
+INV = D.get('investigacion')
+HZ = {h['id']: h for h in INV['hallazgos']} if INV else {}
 LCOL = ['#1f6f78', '#a23b48', '#b07a12', '#4d5fa3', '#3f7d3a', '#8a4f9e']; INK = '#2a2622'
 e = lambda s: html.escape(str(s or ''))
 col = lambda p: LCOL[p['line']] if p.get('line', -1) >= 0 else INK
@@ -31,11 +33,22 @@ KB, KS, KWM, KWT = kin()
 KIN = (f'Manuel Salvador y María Teresa eran parientes: {e(KB["name"])}{" y " + e(KS["name"]) if KS else ""} eran {KWM} '
        f'de él y {KWT} de ella. Por eso {both} de los {len(anc)} antepasados aparecen en las dos ramas del árbol.')
 max_gen = max(p['gen'] for p in anc)
-min_year = min(int(p['year'][:4]) for p in anc if p.get('year'))
+min_year = min(int(p['year'][:4]) for p in anc if p.get('year') and p['year'][:4].isdigit())
 by_gen = collections.Counter(p['gen'] for p in anc)
 
 out = []
 w = out.append
+CLS = {'CONFIRMADO': 'ok', 'PROBABLE': 'prob', 'EN CONFLICTO': 'conf'}
+def fuente_txt(k):
+    f = INV['fuentes'][k]
+    u = f['u']
+    if u.startswith('arboles/') or u.startswith('#'): return e(f['t'])
+    return f"{e(f['t'])}. <span class=\"url\">{e(u)}</span>"
+def inv_box(sec):
+    if not INV: return ''
+    hs = [h for h in INV['hallazgos'] if h.get('seccion') == sec]
+    if not hs: return ''
+    return ''.join(f'''<div class="inv-box {CLS[h['c']]}"><b>Nota de la investigación ({e(h['id'])}, {e(h['c'].lower())}).</b> {e(h['titulo'])}. {e(h['t'])} <span class="refs">Fuentes: {'; '.join(e(INV['fuentes'][k]['t']) for k in h['f'])}.</span></div>''' for h in hs)
 
 # ---------------- portada
 w(f'''<section class="cover">
@@ -55,7 +68,7 @@ w(f'''<section class="front">
   <p class="big">Este libro reúne la investigación genealógica de la familia de Manuel Salvador Álvarez Ruiz, arriero de San Cristóbal asentado en San Antonio de Prado, y de su esposa María Teresa Ruiz Maya: la historia del apellido Álvarez del Pino, el linaje que llegó a Antioquia a comienzos del siglo XVII y la ascendencia de los dos, que es la de sus once hijos.</p>
   <p>La información proviene de dos investigaciones: los 28 cuadros de ascendientes de Manuel Salvador, con los textos de su linaje, y los {nT} cuadros de María Teresa, que llegan hasta los linajes medievales de España. Como muchos antepasados aparecen varias veces —algo habitual en las familias antioqueñas de la Colonia, donde los matrimonios entre parientes eran frecuentes—, en este libro cada persona se cuenta una sola vez: en total, <b>{len(anc)} antepasados distintos</b>.</p>
   <p>{KIN}</p>
-  <p>Los nombres, lugares y fechas se transcribieron tal como aparecen en los cuadros originales; el árbol se redibujó en láminas para leerlo de arriba hacia abajo, generación por generación. Cuando un dato aparece escrito de varias maneras, se conservó la forma más completa. Los cuadros originales pueden consultarse en la versión digital.</p>
+  <p>Los nombres, lugares y fechas se transcribieron tal como aparecen en los cuadros originales; las pocas correcciones que aportó la contrastación con fuentes publicadas (errores de la lectura automática, personas repetidas, fechas imposibles) se explican en el último capítulo, «Hallazgos de la investigación», con sus fuentes, y el dato original queda siempre registrado. El árbol se redibujó en láminas para leerlo de arriba hacia abajo, generación por generación. Cuando un dato aparece escrito de varias maneras, se conservó la forma más completa. Los cuadros originales pueden consultarse en la versión digital.</p>
   <h2 class="small-title" style="margin-top:14mm">Contenido</h2>
   <ol class="toc">
     <li><span>Metodología y notas del autor</span></li>
@@ -65,6 +78,7 @@ w(f'''<section class="front">
     <li><span>El árbol de ascendientes</span></li>
     <li><span>Láminas del árbol</span></li>
     <li><span>Índice de personas</span></li>
+    <li><span>Hallazgos de la investigación</span></li>
   </ol>
 </section>''')
 
@@ -74,7 +88,7 @@ w('<!--SP:1-->')
 w(f'''<section class="chapter"><div class="chap-n">Capítulo 1</div><h1>Metodología y notas del autor</h1>
 <p class="lead">La metodología del trabajo fue:</p><ol class="num">{''.join(f'<li>{e(i)}</li>' for i in m['items'])}</ol>
 <h3>Notas para leer los cuadros</h3><ul class="notes">{''.join(f'<li>{e(i)}</li>' for i in m['notas'])}</ul>
-<div class="aside"><b>Cómo leer las fechas.</b> En los cuadros, cada persona lleva debajo un lugar y un año abreviados: <i>ESP.</i> España, <i>MED.</i> Medellín, <i>ANT.</i> Antioquia, <i>SANTA FE</i> Santa Fe de Antioquia, <i>BOG.</i> Bogotá, <i>REM.</i> Remedios, <i>ZARAG.</i> Zaragoza. «X» indica un dato desconocido y «XXX», que no se conoce la ascendencia de esa persona.</div>
+{inv_box('metodologia')}<div class="aside"><b>Cómo leer las fechas.</b> En los cuadros, cada persona lleva debajo un lugar y un año abreviados: <i>ESP.</i> España, <i>MED.</i> Medellín, <i>ANT.</i> Antioquia, <i>SANTA FE</i> Santa Fe de Antioquia, <i>BOG.</i> Bogotá, <i>REM.</i> Remedios, <i>ZARAG.</i> Zaragoza. «X» indica un dato desconocido y «XXX», que no se conoce la ascendencia de esa persona.</div>
 </section>''')
 
 # ---------------- 2. origen
@@ -82,6 +96,7 @@ o = H['origen']
 w('<!--SP:2-->')
 w(f'''<section class="chapter"><div class="chap-n">Capítulo 2</div><h1>{e(o['titulo'])}</h1>
 {''.join(f'<p class="{"lead drop" if i == 0 else ""}">{e(t)}</p>' for i, t in enumerate(o['parrafos']))}
+{inv_box('origen')}
 </section>''')
 
 # ---------------- 3. linaje
@@ -117,6 +132,7 @@ for g in H['linaje']:
         w(f'<p class="kids-t">{e(g["hijos2_titulo"])}</p><ol class="kids">' + ''.join(f'<li>{e(k)}</li>' for k in g['hijos2']) + '</ol>')
     if g['n'] == 10:
         w(f'<p class="kids-t">{e(g["hijos_titulo"])}</p>')
+    w(inv_box(f'linaje-{g["n"]}'))
     w('</article>')
 w('</section>')
 
@@ -168,7 +184,7 @@ w(f'''<section class="chapter"><div class="chap-n">Capítulo 6</div><h1>Láminas
   <div><span class="bx demo stub"><span class="nm">Nombre y apellidos</span><span class="tg">↺ ver lámina 5</span></span><p>Antepasado que aparece más de una vez por matrimonios entre parientes. Sus padres están en la lámina indicada.</p></div>
   <div><span class="bx demo" style="--c:{LCOL[2]}"><span class="nm">Nombre y apellidos</span><span class="mt">1690 · Medellín</span><span class="pd">Padres: Juan… y María…</span></span><p>Cuando los padres no tienen más ascendencia conocida, se escriben dentro de la caja. El año y el lugar son los que figuran en la investigación.</p></div>
 </div>
-<p>A la izquierda de cada fila se indica la generación contada desde los hijos (1 = Manuel Salvador y María Teresa, 2 = abuelos…). El color de cada caja corresponde a su línea; el rombo ◆ marca a los antepasados de ambos.</p>
+<p>Las cajas con borde azul discontinuo son personas que no estaban en los cuadros originales y que añadió la investigación (véase «Hallazgos de la investigación»). A la izquierda de cada fila se indica la generación contada desde los hijos (1 = Manuel Salvador y María Teresa, 2 = abuelos…). El color de cada caja corresponde a su línea; el rombo ◆ marca a los antepasados de ambos.</p>
 </section><section class="laminas">''')
 gen_of = lambda pid: P[pid]['gen']
 def line_name(p):
@@ -185,7 +201,7 @@ w('</section>')
 # ---------------- 7. índice
 w('<!--SP:7-->')
 w('''<section class="chapter index"><div class="chap-n">Capítulo 7</div><h1>Índice de personas</h1>
-<p class="lead">Todos los antepasados identificados, en orden alfabético. Para cada persona se indica la generación (G1 = Manuel Salvador y María Teresa, G2 = sus padres…), el año y el lugar que figuran en la investigación, y la lámina donde aparece con sus padres. El rombo ◆ marca a los antepasados de ambos.</p><div class="idx">''')
+<p class="lead">Todos los antepasados identificados, en orden alfabético. Para cada persona se indica la generación (G1 = Manuel Salvador y María Teresa, G2 = sus padres…), el año y el lugar que figuran en la investigación, y la lámina donde aparece con sus padres. El rombo ◆ marca a los antepasados de ambos, y el asterisco ✱, a las personas con un hallazgo de la investigación, con su número.</p><div class="idx">''')
 letter = None
 import unicodedata
 def key(s): return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn').lower()
@@ -194,8 +210,34 @@ for p in sorted([p for p in anc + [P[MANUEL], P[TERESA]] if not p.get('unknown')
     if L != letter:
         w(f'<h4>{L}</h4>'); letter = L
     lam = home.get(p['id'])
-    w(f'''<div class="ix"><i style="background:{col(p)}"></i><span class="n">{e(p['name'])}{f' <b class="lr">lám. {lam}</b>' if lam else ''}</span><span class="m">{'◆ ' if p.get('both') else ''}G{p['gen']}{' · ' + e(meta(p)) if meta(p) else ''}</span></div>''')
+    w(f'''<div class="ix"><i style="background:{col(p)}"></i><span class="n">{e(p['name'])}{f' <b class="lr">lám. {lam}</b>' if lam else ''}</span><span class="m">{'◆ ' if p.get('both') else ''}{'✱ ' + ', '.join(p['inv']) + ' · ' if p.get('inv') else ''}G{p['gen']}{' · ' + e(meta(p)) if meta(p) else ''}</span></div>''')
 w('</div></section>')
+
+# ---------------- 8. hallazgos de la investigación
+if INV:
+    hs = INV['hallazgos']
+    cnt = lambda c: sum(1 for h in hs if h['c'] == c)
+    aplicados = [h for h in hs if h.get('a')]
+    nuevas = [p for p in D['people'] if p.get('invAdded')]
+    w('<!--SP:8-->')
+    w(f'''<section class="chapter inv"><div class="chap-n">Capítulo 8</div><h1>Hallazgos de la investigación</h1>
+<p class="lead">{e(INV['meta']['resumen'])}</p>
+<p>Se registraron <b>{len(hs)} hallazgos</b>: {cnt('CONFIRMADO')} confirmados, {cnt('PROBABLE')} probables y {cnt('EN CONFLICTO')} en conflicto. {len(aplicados)} de ellos modificaron el árbol de este libro; los demás quedan como notas. Las personas añadidas por la investigación son: {', '.join(e(p['name']) for p in nuevas) or 'ninguna'}.</p>
+<div class="aside"><b>Cómo se clasificó cada hallazgo.</b> {' '.join(f'<i>{e(k.capitalize())}:</i> {e(v)}' for k, v in INV['meta']['clasificaciones'].items())} <i>Corrección de la extracción:</i> {e(INV['meta']['tipos']['extraccion'])}</div>
+<h3>Correcciones aplicadas al árbol</h3><table class="invt"><thead><tr><th>N.º</th><th>Persona</th><th>Dato original</th><th>Corrección</th></tr></thead><tbody>
+{''.join(f"<tr><td>{e(h['id'])}</td><td>{e(P[h['p']]['name']) if h.get('p') in P else ''}</td><td>{e(h.get('o') or '—')}</td><td>{e(h.get('n') or h['titulo'])}</td></tr>" for h in aplicados)}
+</tbody></table>''')
+    groups = list(LINES) + ['General']
+    for g in groups:
+        l = [h for h in hs if (h.get('linea') or 'General') == g]
+        if not l: continue
+        w(f'<h3>{"Historia y apellido" if g == "General" else "Línea " + e(g)}</h3>')
+        for h in l:
+            who = e(P[h['p']]['name']) if h.get('p') in P else ''
+            w(f'''<div class="invh {CLS[h['c']]}"><div class="invh-t"><span class="b">{e(h['c'])}</span> <b>{e(h['id'])}. {e(h['titulo'])}</b>{f' <span class="who">— {who}</span>' if who else ''}</div>
+<p>{e(h['t'])}</p><p class="refs">Fuentes: {'; '.join(fuente_txt(k) for k in h['f'])}.</p></div>''')
+    w('<h3>Fuentes consultadas</h3><ol class="srcl">' + ''.join(f'<li>{fuente_txt(k)}</li>' for k in INV['fuentes']) + '</ol>')
+    w('''<p class="note">El informe completo, con el método, las fuentes que no se pudieron consultar y las dudas abiertas, está en investigacion/HALLAZGOS.md, en el repositorio del proyecto.</p></section>''')
 
 # ---------------- colofón
 w(f'''<section class="colophon"><p>Genealogía de los hijos de Manuel Salvador Álvarez Ruiz y María Teresa Ruiz Maya</p><p class="note">Libro elaborado a partir de la investigación familiar original: textos, fotografías, los 28 cuadros de ascendientes de Manuel Salvador y los {nT} de María Teresa. La versión digital interactiva, con buscador, árbol navegable y los cuadros originales, está en supermaty01.github.io/arbolgenealogico</p></section>''')
@@ -208,7 +250,7 @@ os.makedirs(os.path.join(REPO, 'libro'), exist_ok=True)
 dst = os.path.join(REPO, 'libro/libro.html')
 def write_html(spacers):
     body = '\n'.join(out)
-    for k in range(8):
+    for k in range(9):
         body = body.replace(f'<!--SP:{k}-->', '<div class="spacer"></div>' if k in spacers else '')
     open(dst, 'w', encoding='utf-8').write(tpl.replace('<!--CONTENIDO-->', body).replace('/*DATOS*/', DATA_JS))
 write_html(set())
@@ -218,7 +260,7 @@ if '--pdf' in sys.argv:
     import fitz
     from playwright.sync_api import sync_playwright
     pdf = os.path.join(REPO, 'libro/Genealogia-Alvarez-Ruiz.pdf')
-    MARK = {0: 'PRESENTACIÓN', **{n: f'CAPÍTULO{n}' for n in range(1, 8)}}
+    MARK = {0: 'PRESENTACIÓN', **{n: f'CAPÍTULO{n}' for n in range(1, 9)}}
     spacers = set()
     with sync_playwright() as pw:
         b = pw.chromium.launch(channel='msedge')

@@ -1,0 +1,2169 @@
+{
+  "meta": {
+    "titulo": "Hallazgos de la investigación",
+    "fecha": "2026-11-23",
+    "resumen": "Contraste de los datos de los cuadros originales con fuentes publicadas: la transcripción de las «Genealogías de Antioquia y Caldas» de Gabriel Arango Mejía, artículos genealógicos de la Revista de la Universidad Pontificia Bolivariana, el catálogo de mortuorias del Archivo Histórico de Antioquia digitalizado por la British Library (EAP1531), el Diccionario Biográfico de la Real Academia de la Historia, Wikipedia y árboles genealógicos públicos. Los datos del documento original no se borran: cada corrección guarda el valor original.",
+    "clasificaciones": {
+      "CONFIRMADO": "Una fuente seria, o varias que coinciden. Se aplica al árbol y el valor original queda guardado.",
+      "PROBABLE": "Indicio razonable (árbol de usuario, catálogo de archivo sin leer el documento, coincidencia de nombre y fecha). Queda solo como nota.",
+      "EN CONFLICTO": "Las fuentes difieren. La nota muestra las dos versiones; el árbol conserva la del documento original."
+    },
+    "tipos": {
+      "extraccion": "Error de la lectura automática de los cuadros (nombre partido, persona duplicada, padres mal enlazados), comprobado en el cuadro original. Se corrige siempre.",
+      "correccion": "Dato del cuadro corregido con una fuente externa.",
+      "verificacion": "Dato del cuadro que una fuente externa confirma.",
+      "adicion": "Persona o dato nuevo que aporta la investigación.",
+      "contexto": "Información histórica que complementa al personaje o al texto.",
+      "duda": "Dato dudoso o legendario que conviene tomar con cautela."
+    }
+  },
+  "fuentes": {
+    "AM-J": {
+      "t": "Gabriel Arango Mejía, «Genealogías de Antioquia y Caldas», familia Jaramillo (n.º 182), págs. 493-518. Transcripción en la Biblioteca de Historia Familiar de la Universidad Brigham Young",
+      "u": "https://familyhistory.lib.byu.edu/00000196-59c0-d4e6-a3bf-59cd397c0000/genologya-cj-pdf",
+      "tipo": "obra genealógica publicada"
+    },
+    "UPB-ARANGO": {
+      "t": "Nazario Bernal, «Divagaciones genealógicas sobre los Arangos», Revista Universidad Pontificia Bolivariana (cita a Arango Mejía)",
+      "u": "https://revistas.upb.edu.co/index.php/revista-institucional/article/download/3596/3290/6470",
+      "tipo": "artículo genealógico"
+    },
+    "UPB-ROBLEDO": {
+      "t": "Emilio Robledo, «En memoria de un genealogista» (Gabriel Arango Mejía, 1872-1958), Revista Universidad Pontificia Bolivariana",
+      "u": "https://revistas.upb.edu.co/index.php/revista-institucional/article/download/3369/3076/6038",
+      "tipo": "artículo"
+    },
+    "AGREDO": {
+      "t": "Reinaldo Ágredo Tobar (comp.), «Ancestros de Diego Álvarez de Castrillón» (2014), basado en María Emma Escovar Uribe, el testamento de 1611 y las «Genealogías de Antioquia y Caldas»",
+      "u": "https://groups.google.com/group/Genealogia-Mexico/attach/a189a84a0d539122/ANCESTROS%20DE%20DIEGO%20%C3%81LVAREZ%20DE%20CASTRILL%C3%93N%20por%20Reinaldo%20%C3%81gredo%20T..pdf?part=0.2",
+      "tipo": "compilación genealógica"
+    },
+    "EAP-DIEGO": {
+      "t": "British Library, Endangered Archives Programme EAP1531/1/2/4/6: «Mortuoria de Diego Álvarez del Pino», 1661. Original en el Archivo Histórico de Antioquia, Mortuorias T196 D4828",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-4-6",
+      "tipo": "catálogo de archivo (documento primario digitalizado)"
+    },
+    "EAP-ANGULO": {
+      "t": "British Library EAP1531/1/2/5/16: «Mortuoria de Francisco Angulo Barbarán», 1669 (Archivo Histórico de Antioquia)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-5-16",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-ECHEVERRI": {
+      "t": "British Library EAP1531/1/2/20/2: «Mortuoria de Pedro de Echeverri», 1720 (Archivo Histórico de Antioquia)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-20-2",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-GUERRA": {
+      "t": "British Library EAP1531/1/2/28/7: «Mortuoria de Nicolás Guerra Peláez», 1671 (Archivo Histórico de Antioquia)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-28-7",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-COLMENERO": {
+      "t": "British Library EAP1531/1/2/14/3: «Mortuoria de Pedro Gutiérrez Colmenero», 1685 (Archivo Histórico de Antioquia)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-14-3",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-ACEVEDO": {
+      "t": "British Library EAP1531/1/2/1/1: «Mortuoria de Ambrosio de Acevedo», 1668 (Archivo Histórico de Antioquia)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-1-1",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-PROYECTO": {
+      "t": "British Library, proyecto EAP1531: archivo digital de mortuorias y protocolos notariales del Archivo Histórico de Antioquia (1606-1750)",
+      "u": "https://eap.bl.uk/collection/EAP1531-1-2-4",
+      "tipo": "catálogo de archivo"
+    },
+    "RAH-JUAN": {
+      "t": "Real Academia de la Historia, Diccionario Biográfico: Juan Ponce de León, II conde de Arcos (c. 1400-1471)",
+      "u": "https://historia-hispanica.rah.es/biografias/36466-juan-ponce-de-leon",
+      "tipo": "diccionario académico"
+    },
+    "RAH-PEDRO1": {
+      "t": "Real Academia de la Historia, Diccionario Biográfico: Pedro Ponce de León, V señor de Marchena y I conde de Arcos (c. 1370-1448)",
+      "u": "https://historia-hispanica.rah.es/biografias/36519-pedro-ponce-de-leon",
+      "tipo": "diccionario académico"
+    },
+    "RAH-PEDRO2": {
+      "t": "Real Academia de la Historia, Diccionario Biográfico: Pedro Ponce de León, II señor de Marchena (c. 1305-1352)",
+      "u": "https://historia-hispanica.rah.es/biografias/36518-pedro-ponce-de-leon",
+      "tipo": "diccionario académico"
+    },
+    "RAH-PEDRO3": {
+      "t": "Real Academia de la Historia, Diccionario Biográfico: Pedro Ponce de León, ricohombre leonés (m. después de 1311), hijo de Ferrán Pérez Ponce",
+      "u": "https://historia-hispanica.rah.es/biografias/36522-pedro-ponce-de-leon",
+      "tipo": "diccionario académico"
+    },
+    "JEREZ": {
+      "t": "«Moradas para una estirpe: la familia Ponce de León en Jerez de la Frontera», El Barroco Jerezano (2022), con el testamento de Eutropio Ponce de León (1510) y la obra de Juan Moreno de Guerra",
+      "u": "http://elbarrocojerezano.blogspot.com/2022/06/moradas-para-una-estirpe-la-familia.html",
+      "tipo": "estudio histórico con fuentes de archivo"
+    },
+    "GF-EUTROPIO": {
+      "t": "Genealogía Familiar: Eutropio Ponce de León González de Oviedo (c. 1460-c. 1526)",
+      "u": "http://www.genealogiafamiliar.net/getperson.php?personID=I37064&tree=BVCZ",
+      "tipo": "árbol genealógico de usuario"
+    },
+    "WP-ALDONZA": {
+      "t": "Wikipedia: Aldonza Alfonso de León",
+      "u": "https://es.wikipedia.org/wiki/Aldonza_Alfonso_de_Le%C3%B3n",
+      "tipo": "enciclopedia"
+    },
+    "WP-FERNAN": {
+      "t": "Wikipedia: Fernán Pérez Ponce de León",
+      "u": "https://es.wikipedia.org/wiki/Fern%C3%A1n_P%C3%A9rez_Ponce_de_Le%C3%B3n",
+      "tipo": "enciclopedia"
+    },
+    "WP-PEDROVIEJO": {
+      "t": "Wikipedia: Pedro Ponce de León el Viejo",
+      "u": "https://es.wikipedia.org/wiki/Pedro_Ponce_de_Le%C3%B3n_el_Viejo",
+      "tipo": "enciclopedia"
+    },
+    "WP-CABRERA": {
+      "t": "Wikipedia: Pedro Ponce de Cabrera",
+      "u": "https://es.wikipedia.org/wiki/Pedro_Ponce_de_Cabrera",
+      "tipo": "enciclopedia"
+    },
+    "WP-ALFONSO9": {
+      "t": "Wikipedia: Alfonso IX de León",
+      "u": "https://es.wikipedia.org/wiki/Alfonso_IX_de_Le%C3%B3n",
+      "tipo": "enciclopedia"
+    },
+    "WP-GUZMAN": {
+      "t": "Wikipedia: Guzmán el Bueno (Alonso Pérez de Guzmán)",
+      "u": "https://es.wikipedia.org/wiki/Guzm%C3%A1n_el_Bueno",
+      "tipo": "enciclopedia"
+    },
+    "WP-FRUELA2": {
+      "t": "Wikipedia: Fruela II de León",
+      "u": "https://es.wikipedia.org/wiki/Fruela_II_de_Le%C3%B3n",
+      "tipo": "enciclopedia"
+    },
+    "WP-RAMIRO3": {
+      "t": "Wikipedia: Ramiro III de León",
+      "u": "https://es.wikipedia.org/wiki/Ramiro_III_de_Le%C3%B3n",
+      "tipo": "enciclopedia"
+    },
+    "WP-ORDONO": {
+      "t": "Wikipedia: Ordoño Ramírez el Ciego",
+      "u": "https://es.wikipedia.org/wiki/Ordo%C3%B1o_Ram%C3%ADrez_el_Ciego",
+      "tipo": "enciclopedia"
+    },
+    "WP-HERMENEGILDO": {
+      "t": "Wikipedia: Hermenegildo Gutiérrez",
+      "u": "https://es.wikipedia.org/wiki/Hermenegildo_Guti%C3%A9rrez",
+      "tipo": "enciclopedia"
+    },
+    "WP-OSORIO": {
+      "t": "Wikipedia: Osorio Gutiérrez (conde santo)",
+      "u": "https://es.wikipedia.org/wiki/Osorio_Guti%C3%A9rrez_(conde_santo)",
+      "tipo": "enciclopedia"
+    },
+    "WP-GATON": {
+      "t": "Wikipedia: Gatón del Bierzo",
+      "u": "https://es.wikipedia.org/wiki/Gat%C3%B3n_del_Bierzo",
+      "tipo": "enciclopedia"
+    },
+    "WP-BERMUDO": {
+      "t": "Wikipedia: Bermudo I de Asturias",
+      "u": "https://es.wikipedia.org/wiki/Bermudo_I_de_Asturias",
+      "tipo": "enciclopedia"
+    },
+    "WP-MEDELLIN": {
+      "t": "Wikipedia: Historia de Medellín (erección de la villa en 1675 y primeros cargos)",
+      "u": "https://es.wikipedia.org/wiki/Historia_de_Medell%C3%ADn",
+      "tipo": "enciclopedia"
+    },
+    "WP-APELLIDO": {
+      "t": "Wikipedia: Álvarez (apellido)",
+      "u": "https://es.wikipedia.org/wiki/%C3%81lvarez_(apellido)",
+      "tipo": "enciclopedia"
+    },
+    "WP-ALVARFANEZ": {
+      "t": "Wikipedia: Álvar Fáñez",
+      "u": "https://es.wikipedia.org/wiki/%C3%81lvar_F%C3%A1%C3%B1ez",
+      "tipo": "enciclopedia"
+    },
+    "WP-ALBARES": {
+      "t": "Wikipedia: Albares de la Ribera (El Bierzo, León)",
+      "u": "https://es.wikipedia.org/wiki/Albares_de_la_Ribera",
+      "tipo": "enciclopedia"
+    },
+    "WP-ARMA": {
+      "t": "Wikipedia: Arma (Caldas) — Santiago de Arma, fundada en 1542",
+      "u": "https://es.wikipedia.org/wiki/Arma_(Caldas)",
+      "tipo": "enciclopedia"
+    },
+    "WP-COPACABANA": {
+      "t": "Wikipedia: Copacabana (Antioquia) — antiguo sitio de La Tasajera",
+      "u": "https://es.wikipedia.org/wiki/Copacabana_(Antioquia)",
+      "tipo": "enciclopedia"
+    },
+    "WP-COLTEJER": {
+      "t": "Wikipedia: Coltejer (fundada en 1907)",
+      "u": "https://es.wikipedia.org/wiki/Coltejer",
+      "tipo": "enciclopedia"
+    },
+    "WP-FERROCARRIL": {
+      "t": "Wikipedia: Ferrocarril de Antioquia (El Limón, 1920; túnel de La Quiebra, 1929)",
+      "u": "https://es.wikipedia.org/wiki/Ferrocarril_de_Antioquia",
+      "tipo": "enciclopedia"
+    },
+    "VASCOS": {
+      "t": "John Alejandro Ricaurte Cartagena, «Guía de los vascos en Antioquia, siglos XVI y XVII», Gobierno Vasco",
+      "u": "https://www.euskadi.eus/contenidos/informacion/v2_publicaciones/es_publicac/adjuntos/Los%20vascos%20en%20Antioquia%20durante%20el%20reinado%20de%20los%20Austrias.pdf",
+      "tipo": "estudio histórico"
+    },
+    "BUBER": {
+      "t": "Buber's Basque Page: «Basque Families of Antioquia, Colombia» (familia Arteaga)",
+      "u": "https://www.buber.net/Basque/Diaspora/colombia.a.php",
+      "tipo": "compilación genealógica en línea"
+    },
+    "FS-TORREBLANCA": {
+      "t": "FamilySearch, Recuerdos: biografía de Bartolomé Sánchez Torreblanca (aporte de usuario)",
+      "u": "https://www.familysearch.org/es/memories/memory/92954671",
+      "tipo": "aporte de usuario"
+    },
+    "GENEANET-JARAMILLO": {
+      "t": "Geneanet, árbol «foxorozco»: Alonso Jaramillo de Andrade y Céspedes (leído solo en el extracto del buscador: el sitio bloquea la lectura automática)",
+      "u": "https://gw.geneanet.org/foxorozco?lang=es&n=jaramillo+de+andrade+y+cespedes&oc=0&p=alonso",
+      "tipo": "árbol genealógico de usuario"
+    },
+    "YR-DIEGO": {
+      "t": "YourRoots (Genomelink): Diego Álvarez del Pino Arcos, capitán, 1605-1661 (leído solo en el extracto del buscador: requiere cuenta)",
+      "u": "https://yourroots.com/tree/person/diego-captain-1605-1661--wlnrktsfwtfpz",
+      "tipo": "árbol genealógico de usuario"
+    },
+    "ORIG-HIST": {
+      "t": "Documento original: textos del linaje Álvarez del Pino (contenido/historia.json)",
+      "u": "https://github.com/supermaty01/arbolgenealogico/blob/master/contenido/historia.json",
+      "tipo": "documento original"
+    },
+    "ORIG-T10": {
+      "t": "Documento original: cuadro n.º 10 de María Teresa (páginas 28-29)",
+      "u": "arboles/teresa-10.webp",
+      "tipo": "documento original"
+    },
+    "ORIG-T17B": {
+      "t": "Documento original: cuadros 17B y 17B1 de María Teresa (páginas 57-58)",
+      "u": "arboles/teresa-17b1.webp",
+      "tipo": "documento original"
+    },
+    "ORIG-T17B2A": {
+      "t": "Documento original: cuadro 17B2a de María Teresa (página 60)",
+      "u": "arboles/teresa-17b2a.webp",
+      "tipo": "documento original"
+    },
+    "ORIG-T17A": {
+      "t": "Documento original: cuadro 17A de María Teresa (página 56)",
+      "u": "arboles/teresa-17a.webp",
+      "tipo": "documento original"
+    },
+    "EAP-ORDAZ": {
+      "t": "British Library EAP1531/1/2/30/1 y EAP1531/1/2/28/2: «Mortuoria de Juan García de Ordaz» (1655) y «Mortuoria del alférez Juan García Ordaz» (1656), Archivo Histórico de Antioquia",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-30-1",
+      "tipo": "catálogo de archivo"
+    },
+    "ORIG-CUADROS": {
+      "t": "Documento original: los cuadros en que aparece la persona",
+      "u": "#/originales",
+      "tipo": "documento original"
+    },
+    "EAP-1531-1-2-52-1": {
+      "t": "British Library EAP1531/1/2/52/1: «Mortuoria de Alonso López Paladines», 1627 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T248_D5459/f1r-399v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-52-1",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-56-6": {
+      "t": "British Library EAP1531/1/2/56/6: «Mortuoria de Juan Mejía de Tobar», 1644 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T253_D5519/f148r-291v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-56-6",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-85-9": {
+      "t": "British Library EAP1531/1/2/85/9: «Mortuoria de Andrés Garcés», 1644 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T283_D5779/f375r-401v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-85-9",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-73-3": {
+      "t": "British Library EAP1531/1/2/73/3: «Mortuoria de Andrés de Parias», 1606 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T270_D5662/f489r-506v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-73-3",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-54-4": {
+      "t": "British Library EAP1531/1/2/54/4: «Mortuoria de Francisco Márquez de Fontidueño», 1647 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T251_D5487/f242r-295v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-54-4",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-36-6": {
+      "t": "British Library EAP1531/1/2/36/6: «Mortuoria del capitán Francisco Guzmán», 1665 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T230_D5281/f574r-840v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-36-6",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-61-1": {
+      "t": "British Library EAP1531/1/2/61/1: «Mortuoria del capitán Fernando de Montoya», 1668 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T258_D5569/f68r-161v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-61-1",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-77-1": {
+      "t": "British Library EAP1531/1/2/77/1: «Mortuoria de Juan de Piedrahíta y Saavedra», 1667 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T274_D5703/f1r-54v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-77-1",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-76-1": {
+      "t": "British Library EAP1531/1/2/76/1: «Mortuoria de Laureano de Piedrahíta», 1698 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T273_D5692/f1r-111v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-76-1",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-122-1": {
+      "t": "British Library EAP1531/1/2/122/1: «Mortuoria del capitán Cristóbal Ruiz de la Parra», 1669 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T323_D6173/f20455v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-122-1",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-90-1": {
+      "t": "British Library EAP1531/1/2/90/1: «Mortuoria del capitán Cristóbal Ruiz de la Parra», 1670 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T289_D5842/f1r-162v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-90-1",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-102-3": {
+      "t": "British Library EAP1531/1/2/102/3: «Mortuoria de Catalina Tabares», 1684 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T301_D5970/f223r-282v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-102-3",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-92-6": {
+      "t": "British Library EAP1531/1/2/92/6: «Mortuoria del capitán Domingo Rodríguez del Manzano», 1684 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T291_D5858/f277r-395v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-92-6",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-38-3": {
+      "t": "British Library EAP1531/1/2/38/3: «Mortuoria del capitán Manuel Gómez Sandi», 1706 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T232_D5299a/f101r-117v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-38-3",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-105-1": {
+      "t": "British Library EAP1531/1/2/105/1: «Mortuoria de Ana María de Toro Zapata», 1703 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T304_D6001/f277r-382v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-105-1",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-31-3": {
+      "t": "British Library EAP1531/1/2/31/3: «Mortuoria de Juan Gómez de Salazar», 1624 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T224_D5215/f283r-397v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-31-3",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-31-4": {
+      "t": "British Library EAP1531/1/2/31/4: «Mortuoria de Juan Gómez de Salazar», 1632 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T224_D5216/f398r-513v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-31-4",
+      "tipo": "catálogo de archivo"
+    },
+    "EAP-1531-1-2-31-2": {
+      "t": "British Library EAP1531/1/2/31/2: «Mortuoria del capitán Juan Gómez de Salazar», 1669 (Archivo Histórico de Antioquia, Co.AHA/Mortuorias_T224_D5214/f48r-282v.)",
+      "u": "https://eap.bl.uk/archive-file/EAP1531-1-2-31-2",
+      "tipo": "catálogo de archivo"
+    }
+  },
+  "hallazgos": [
+    {
+      "id": "H01",
+      "linea": "Ruiz",
+      "tipo": "verificacion",
+      "clasificacion": "PROBABLE",
+      "titulo": "El parentesco Ruiz Velásquez entre Manuel Salvador y María Teresa",
+      "persona": {
+        "nombre": "José María Ruiz Moreno"
+      },
+      "tambien": [
+        {
+          "nombre": "María Mercedes Marcelina Velásquez Restrepo"
+        },
+        {
+          "nombre": "Trinidad Ruiz Velásquez Moreno"
+        },
+        {
+          "nombre": "Dolores Ruiz Velásquez"
+        }
+      ],
+      "texto": "Las dos investigaciones originales, hechas por separado para cada rama, coinciden: Trinidad Ruiz Velásquez (madre de Manuel Salvador) y Dolores Ruiz Velásquez (abuela materna de María Teresa) eran hijas de José María Ruiz Moreno y de María Mercedes Velásquez Restrepo, y la ascendencia de la pareja es la misma en los dos documentos hasta los pobladores del siglo XVII. No se encontró en fuentes abiertas un registro parroquial que lo confirme: los libros de Medellín y San Cristóbal del siglo XIX están en FamilySearch, pero solo como imágenes que requieren cuenta. Queda como probable, apoyado en la coincidencia de las dos investigaciones.",
+      "fuentes": [
+        "ORIG-CUADROS"
+      ]
+    },
+    {
+      "id": "H02",
+      "linea": "Álvarez",
+      "tipo": "correccion",
+      "clasificacion": "CONFIRMADO",
+      "seccion": "linaje-4",
+      "titulo": "Juan Manuel Álvarez del Pino nació en 1689, no en 1600",
+      "persona": {
+        "nombre": "Juan Manuel Álvarez del Pino García"
+      },
+      "campo": "year",
+      "original": "1600",
+      "nuevo": "1689",
+      "texto": "El cuadro le pone «1600» (y en otra aparición «1660»), pero el texto del propio linaje dice que nació el 22 de agosto de 1689. 1600 es imposible: sus padres nacieron hacia 1635-1638 y se casaron en el sitio de Aná en 1663. Su hijo Diego José nació en 1723-1724.",
+      "fuentes": [
+        "ORIG-HIST"
+      ],
+      "cambios": [
+        {
+          "op": "campo",
+          "campo": "year",
+          "valor": "1689"
+        }
+      ]
+    },
+    {
+      "id": "H03",
+      "linea": "Álvarez",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Diego Álvarez del Pino (hijo) aparecía dos veces",
+      "persona": {
+        "nombre": "Diego Álvarez del Pino",
+        "año": "1600"
+      },
+      "texto": "La extracción dejó dos personas: «Diego Álvarez del Pino» (1600) y «Diego Álvarez del Pino Arcos» (1661), con los mismos padres (Diego Álvarez del Pino y Justina de los Arcos) y la misma esposa (Beatriz Tabares de Morga). Es una sola persona. El Archivo Histórico de Antioquia conserva su mortuoria (testamento, inventario y avalúo) fechada en 1661, de modo que 1661 es el año de su muerte; un árbol público le da nacimiento en Arma hacia 1605. El año original «1600» se conserva.",
+      "fuentes": [
+        "ORIG-CUADROS",
+        "EAP-DIEGO",
+        "YR-DIEGO"
+      ],
+      "cambios": [
+        {
+          "op": "fusionar",
+          "con": {
+            "nombre": "Diego Álvarez del Pino Arcos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H04",
+      "linea": "Álvarez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "seccion": "linaje-1",
+      "titulo": "Arma, la ciudad de don Diego Álvarez del Pino",
+      "persona": {
+        "nombre": "Diego Álvarez del Pino Fernández"
+      },
+      "texto": "Santiago de Arma («Arma Viejo», hoy corregimiento de Aguadas, Caldas) fue fundada el 25 de julio de 1542 por el capitán Miguel López Muñoz por orden de Belalcázar; llegó a tener cabildo y alcalde mayor y, ya en decadencia, se ordenó su traslado al valle de Rionegro. Por eso los cuadros escriben «Caldas» como lugar de varios Álvarez del Pino y Castrillón nacidos en Arma. La mortuoria de 1661 del archivo de Antioquia es la del hijo; la del fundador (muerto en Arma Vieja en 1670, según el linaje) no aparece en el catálogo revisado.",
+      "fuentes": [
+        "WP-ARMA",
+        "EAP-DIEGO",
+        "ORIG-HIST"
+      ]
+    },
+    {
+      "id": "H05",
+      "linea": "Álvarez",
+      "tipo": "verificacion",
+      "clasificacion": "PROBABLE",
+      "seccion": "linaje-3",
+      "titulo": "Gregorio Álvarez del Pino y Juana Gabriela García de Ordaz",
+      "persona": {
+        "nombre": "Gregorio Álvarez del Pino Arcos Cortés"
+      },
+      "tambien": [
+        {
+          "nombre": "Juana Gabriela García de Ordaz Paladines"
+        }
+      ],
+      "texto": "Una compilación de las familias vascas de Antioquia registra que su hija Alfonsa Álvarez del Pino, «hija de Gregorio Álvarez y Gabriela García de Ordás», se casó en Medellín el 4 de agosto de 1695 con el capitán Luis de Arteaga, de Sanlúcar de Barrameda. Confirma la pareja y su residencia en el Valle de Aburrá. El sitio de Aná, donde el linaje dice que se casaron en 1663, es el núcleo de la futura Medellín: allí se construyó la iglesia de la Candelaria en 1649.",
+      "fuentes": [
+        "BUBER",
+        "WP-MEDELLIN",
+        "ORIG-HIST"
+      ]
+    },
+    {
+      "id": "H06",
+      "linea": "Álvarez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "seccion": "linaje-2",
+      "titulo": "La mortuoria de «Pedro Álvarez» de 1731",
+      "persona": {
+        "nombre": "Pedro Álvarez del Pino Arcos Cortés"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia tiene una «Mortuoria de Pedro Álvarez» fechada en 1731, en el mismo tomo que la de Diego Álvarez del Pino. Por la fecha no puede ser el capitán Pedro Álvarez del Pino (muerto en Cartago en 1700, según el linaje); probablemente es un descendiente homónimo. Se deja como pista para consultar el documento. Sobre el capitán Pedro, el linaje dice que doña Gregoria Cortés testó en La Tasajera (hoy Copacabana) en 1702: ese sitio, llamado San Juan de la Tasajera, es en efecto el origen de Copacabana.",
+      "fuentes": [
+        "EAP-PROYECTO",
+        "WP-COPACABANA",
+        "ORIG-HIST"
+      ]
+    },
+    {
+      "id": "H07",
+      "linea": "Naranjo",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Alonso Jaramillo de Andrade y Céspedes, alcalde de Medellín: una generación inventada por la extracción",
+      "persona": {
+        "nombre": "Alonso Jaramillo"
+      },
+      "campo": "name",
+      "original": "Alonso Jaramillo",
+      "nuevo": "Alonso Jaramillo de Andrade y Céspedes",
+      "texto": "El cuadro n.º 10 dice «ALONSO JARAMILLO DE ANDRADE Y CÉSPEDES, PRIMER ALCALDE MAYOR DE MEDELLÍN», pero la lectura automática partió el texto y creó dos personas falsas («de Andrade Primer Alcalde» y «Céspedes Mayor de») como si fueran sus padres. Se eliminan y se le asignan sus padres verdaderos, que también figuran en el cuadro: Juan Jaramillo de Andrade (bautizado en Santa Fe de Antioquia el 25 de julio de 1611) y Ana de Céspedes y Guzmán (en los cuadros, Ana Guzmán Lezcano). Arango Mejía lo confirma: «Juan Jaramillo de Andrade, nació en la ciudad de Antioquia y fue bautizado el 25 de julio de 1611 […] Casó con doña Ana de Céspedes y Guzmán, hija del capitán don Francisco de Guzmán y de doña Luisa de Lezcano. Nacieron de su matrimonio: 1.—Don Alonso Jaramillo de Andrade […]».",
+      "fuentes": [
+        "ORIG-T10",
+        "AM-J"
+      ],
+      "cambios": [
+        {
+          "op": "campo",
+          "campo": "name",
+          "valor": "Alonso Jaramillo de Andrade y Céspedes"
+        },
+        {
+          "op": "padres",
+          "padre": {
+            "nombre": "Juan Jaramillo de Andrade Centeno"
+          },
+          "madre": {
+            "nombre": "Ana Guzman Lezcano"
+          }
+        },
+        {
+          "op": "eliminar",
+          "persona": {
+            "nombre": "de Andrade Primer Alcalde"
+          }
+        },
+        {
+          "op": "eliminar",
+          "persona": {
+            "nombre": "Céspedes Mayor de"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H08",
+      "linea": "Naranjo",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Jacinta de Molina, hija de Carlos de Molina y Beatriz Beltrán del Castillo",
+      "persona": {
+        "nombre": "Jacinta de Molina"
+      },
+      "campo": "name",
+      "original": "Jacinta de Molina",
+      "nuevo": "Jacinta de Molina y Toledo",
+      "texto": "El cuadro n.º 10 dice «JACINTA DE MOLINA Y TOLEDO BELTRÁN DEL CASTILLO, MED.»; la extracción creó dos personas falsas («Medellín» y «Toledo Beltrán del Castillo») como sus padres. Sus padres son Carlos de Molina (Mariquita, Tolima) y Beatriz Beltrán del Castillo. Arango Mejía: «El alcalde mayor provincial don Alonso Jaramillo de Andrade, primer alcalde de Medellín en 1675, contrajo matrimonio en primeras nupcias en el sitio de Aná, el 8 de mayo de 1672, con doña Jacinta de Molina, hija de don Carlos de Molina y de doña Beatriz Beltrán del Castillo».",
+      "fuentes": [
+        "ORIG-T10",
+        "AM-J"
+      ],
+      "cambios": [
+        {
+          "op": "campo",
+          "campo": "name",
+          "valor": "Jacinta de Molina y Toledo"
+        },
+        {
+          "op": "padres",
+          "padre": {
+            "nombre": "Carlos de Molina Toledo Toro"
+          },
+          "madre": {
+            "nombre": "Beatriz Beltran del Castillo Ordas"
+          }
+        },
+        {
+          "op": "eliminar",
+          "persona": {
+            "nombre": "Medellín"
+          }
+        },
+        {
+          "op": "eliminar",
+          "persona": {
+            "nombre": "Toledo Beltran del Castillo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H09",
+      "linea": "Naranjo",
+      "tipo": "adicion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Matrimonio de Alonso Jaramillo de Andrade y Jacinta de Molina (Aná, 8 de mayo de 1672) y su segunda esposa",
+      "persona": {
+        "nombre": "Alonso Jaramillo de Andrade y Céspedes"
+      },
+      "tambien": [
+        {
+          "nombre": "Jacinta de Molina y Toledo"
+        },
+        {
+          "nombre": "Alonso Jaramillo Molina Molina"
+        }
+      ],
+      "texto": "Según Arango Mejía, se casaron en el sitio de Aná (hoy Medellín) el 8 de mayo de 1672 y fueron padres de Mateo Jaramillo Molina, Juana María (esposa de Juan Zapata), Alonso Jaramillo Molina —el antepasado de María Teresa, nacido en 1679 según el cuadro— y José Urbano, que se fue al Tolima. Viudo, Alonso se casó en segundas nupcias con Catalina de Arango, hija de Antonio Valdés de Arango y Olaya de Zafra (antepasados de ambos), y tuvo a Catalina Gregoria (esposa de Nicolás Atehortúa) y a Nicolás Jaramillo y Arango. Se añade a Catalina de Arango como segunda esposa.",
+      "fuentes": [
+        "AM-J"
+      ],
+      "cambios": [
+        {
+          "op": "nueva",
+          "ref": "CATALINA-ARANGO",
+          "nombre": "Catalina de Arango Zafra",
+          "sexo": "F",
+          "conyuge": {
+            "nombre": "Alonso Jaramillo de Andrade y Céspedes"
+          },
+          "padre": {
+            "nombre": "Antonio Valdes de Arango"
+          },
+          "madre": {
+            "nombre": "Olaya de Zafra Castrillón"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H10",
+      "linea": "Naranjo",
+      "tipo": "contexto",
+      "clasificacion": "EN CONFLICTO",
+      "titulo": "¿Primer alcalde de Medellín?",
+      "persona": {
+        "nombre": "Alonso Jaramillo de Andrade y Céspedes"
+      },
+      "texto": "El cuadro y Arango Mejía lo llaman «primer alcalde (mayor provincial) de Medellín en 1675», y así lo repiten árboles públicos. Pero la lista de los primeros cargos de la Villa de la Candelaria de Medellín (auto del 2 de noviembre de 1675) que recoge Wikipedia nombra como alguacil mayor a Juan Jaramillo de Andrade —su padre— y como alcalde provincial de la Santa Hermandad a Pedro Gutiérrez Colmenero, que se excusó; y el anexo de alcaldes de Medellín llama «primer alcalde» a José Zapata y Múnera. El título exacto del primer cargo de Alonso queda por confirmar en las actas del cabildo.",
+      "fuentes": [
+        "AM-J",
+        "WP-MEDELLIN",
+        "GENEANET-JARAMILLO"
+      ]
+    },
+    {
+      "id": "H11",
+      "linea": "Naranjo",
+      "tipo": "verificacion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Juan Jaramillo de Andrade, fundador de la familia Jaramillo en Antioquia",
+      "persona": {
+        "nombre": "Juan Jaramillo de Andrade",
+        "año": "1579"
+      },
+      "tambien": [
+        {
+          "nombre": "Alonso Jaramillo de Andrade",
+          "año": "1540"
+        },
+        {
+          "nombre": "Isabel Fernández de Toledo Salcedo"
+        },
+        {
+          "nombre": "Juana de Zafra Centeno Taborda"
+        }
+      ],
+      "texto": "Arango Mejía confirma lo que traen los cuadros: «fue el fundador de la extensa familia del mismo apellido». Nació en la villa de Granada (provincia de Zafra, Extremadura) en el último tercio del siglo XVI, hijo de Alonso Jaramillo de Andrade y de Isabel Fernández de Toledo; sirvió casi diez años en la armada de Luis Fajardo en defensa de Cartagena; en Antioquia fue regidor y alcalde ordinario de 1617 a 1630, capitán y justicia mayor, y teniente de gobernador hasta su muerte en 1641. Se casó con Juana de Centeno, hija del capitán Fernando de Zafra Centeno y de Juana Taborda. La probanza de nobleza de la familia nombra como sus antepasados a Francisco Jaramillo e Isabel del Prado, Alonso Jaramillo y Teresa Sánchez, y Francisco Jaramillo y Constanza Hernández, como en el cuadro.",
+      "fuentes": [
+        "AM-J"
+      ]
+    },
+    {
+      "id": "H12",
+      "linea": "Naranjo",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Juan Jaramillo de Andrade (1611) y Ana Guzmán Lezcano aparecían dos veces",
+      "persona": {
+        "nombre": "Juan Jaramillo de Andrade Centeno"
+      },
+      "tambien": [
+        {
+          "nombre": "Ana Guzman Lezcano"
+        },
+        {
+          "nombre": "Juan Esteban Jaramillo Cespedes"
+        }
+      ],
+      "texto": "Los cuadros 10 y 11A traen a la misma pareja con dos grafías: «Juan Jaramillo de Andrade Centeno» y «Juan Jaramillo de Zafra» (ambos de Santa Fe, 1611, hijos de Juan Jaramillo de Andrade y Juana de Zafra), y «Ana Guzmán Lezcano» y «Ana Juan Guzmán Lezcano» (Santa Fe, 1612). Se unen. Así su hijo Juan Esteban Jaramillo de Andrade y Céspedes, que había quedado suelto, se enlaza con el árbol. Arango Mejía la llama Ana de Céspedes y Guzmán, hija del capitán Francisco de Guzmán y de Luisa de Lezcano.",
+      "fuentes": [
+        "ORIG-CUADROS",
+        "AM-J"
+      ],
+      "cambios": [
+        {
+          "op": "fusionar",
+          "con": {
+            "nombre": "Juan Jaramillo de Zafra"
+          }
+        },
+        {
+          "op": "fusionar",
+          "persona": {
+            "nombre": "Ana Guzman Lezcano"
+          },
+          "con": {
+            "nombre": "Ana Juan Guzman Lezcano"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H13",
+      "linea": "Naranjo",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Los padres de María Luisa Jaramillo Rodríguez",
+      "persona": {
+        "nombre": "María Luisa Jaramillo Rodríguez"
+      },
+      "campo": "padres",
+      "original": "Manuel Gómez Sandi y Ana Gómez Castillo",
+      "nuevo": "Juan Esteban Jaramillo Céspedes e Isabel Rodríguez Manzano",
+      "texto": "El cuadro 17B pone como padres de María Luisa Jaramillo Rodríguez (Santa Fe, 1694) a Juan Esteban Jaramillo Céspedes (Santa Fe, 1665) y a Isabel Rodríguez Manzano Martínez (Medellín, 1665), como indica su segundo apellido; la extracción le había asignado por error a Manuel Gómez Sandi y Ana Gómez Castillo, que quedan sin enlazar. Arango Mejía registra al bachiller Esteban Jaramillo de Andrade, «latinista y filólogo, casado con doña Isabel Rodríguez, hija de don Domingo Rodríguez y de doña Gregoria Martínez Vibancos», hijo de Juan Jaramillo de Andrade y Ana de Céspedes y Guzmán. Véase el hallazgo H14.",
+      "fuentes": [
+        "ORIG-T17B",
+        "AM-J"
+      ],
+      "cambios": [
+        {
+          "op": "padres",
+          "padre": {
+            "nombre": "Juan Esteban Jaramillo Cespedes"
+          },
+          "madre": {
+            "nombre": "Isabel Rodríguez Manzano Martínez"
+          }
+        }
+      ],
+      "tambien": [
+        {
+          "nombre": "Juan Esteban Jaramillo Cespedes"
+        },
+        {
+          "nombre": "Isabel Rodríguez Manzano Martínez"
+        }
+      ]
+    },
+    {
+      "id": "H13B",
+      "linea": "Naranjo",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Una generación perdida en el cuadro 17A: Juan García Burgos e Isabel Gómez Gómez",
+      "persona": {
+        "nombre": "Juan García Gómez Santa Fe"
+      },
+      "campo": "padres",
+      "original": "Juan García de Ordás y Faustina Cipriana Burgos Rangel (que son sus abuelos)",
+      "nuevo": "Juan García Burgos e Isabel Gómez Gómez",
+      "texto": "El cuadro 17A pone como padres de Juan García Gómez a Juan García Burgos y a Isabel Gómez Gómez (ambos sin datos, «X»); los padres de él son Juan García de Ordás (F. 1655) y Faustina Cipriana Burgos Rangel, y los de ella, Manuel Gómez Sandi (España) y Ana Gómez Castillo. La extracción se saltó esa generación: le dio a Juan García Gómez sus abuelos paternos como padres y enganchó a Manuel Gómez Sandi y Ana Gómez Castillo a su esposa. Se añaden las dos personas que faltaban y se rehacen los enlaces según el cuadro, con lo que vuelve al árbol la ascendencia Gómez de Salazar. El nombre «Juan García Gómez Santa Fe» lleva pegado el lugar; se corrige. Arango Mejía lo llama Juan García de Ordás y Gómez Sandi.",
+      "fuentes": [
+        "ORIG-T17A",
+        "AM-J"
+      ],
+      "cambios": [
+        {
+          "op": "campo",
+          "campo": "name",
+          "valor": "Juan García Gómez"
+        },
+        {
+          "op": "padres",
+          "padre": null,
+          "madre": null
+        },
+        {
+          "op": "nueva",
+          "ref": "JGB",
+          "nombre": "Juan García Burgos",
+          "sexo": "M",
+          "hijo": {
+            "nombre": "Juan García Gómez"
+          },
+          "padre": {
+            "nombre": "Juan García de Ordas"
+          },
+          "madre": {
+            "nombre": "Faustina Cipriana Burgos Rangel"
+          }
+        },
+        {
+          "op": "nueva",
+          "ref": "IGG",
+          "nombre": "Isabel Gómez Gómez",
+          "sexo": "F",
+          "hijo": {
+            "nombre": "Juan García Gómez"
+          },
+          "conyuge": {
+            "ref": "JGB"
+          },
+          "padre": {
+            "nombre": "Manuel Gómez Sandi"
+          },
+          "madre": {
+            "nombre": "Ana Gómez Castillo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H14",
+      "linea": "Naranjo",
+      "tipo": "duda",
+      "clasificacion": "EN CONFLICTO",
+      "titulo": "¿Hija o nieta de Juan Jaramillo de Andrade?",
+      "persona": {
+        "nombre": "María Luisa Jaramillo Rodríguez"
+      },
+      "tambien": [
+        {
+          "nombre": "Juan García Gómez"
+        }
+      ],
+      "texto": "Arango Mejía cuenta entre los hijos de Juan Jaramillo de Andrade y Ana de Céspedes y Guzmán a «doña María Luisa, esposa de don Juan García de Ordás y Gómez Sandi». El cuadro 17B, en cambio, la hace hija de Juan Esteban (hermano de esa María Luisa) y de Isabel Rodríguez, lo que concuerda con su apellido «Jaramillo Rodríguez». El árbol sigue al cuadro. El apellido «Gómez Sandi» del marido explica por qué la extracción enlazó mal a Manuel Gómez Sandi y Ana Gómez Castillo, que probablemente son antepasados de Juan García por el lado materno.",
+      "fuentes": [
+        "AM-J",
+        "ORIG-T17B"
+      ]
+    },
+    {
+      "id": "H15",
+      "linea": "Velásquez",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Carlos de Molina y Beatriz Beltrán del Castillo: antepasados de los dos",
+      "persona": {
+        "nombre": "Carlos Molina Toro"
+      },
+      "tambien": [
+        {
+          "nombre": "Beatriz Beltran Castillo"
+        },
+        {
+          "nombre": "Ursula Molina Beltran"
+        }
+      ],
+      "texto": "La pareja aparece en el cuadro 27 de Manuel Salvador (padres de Úrsula Molina Beltrán, nacida en Medellín en 1652) y en el cuadro 10 de María Teresa (padres de Jacinta de Molina), con los mismos padres en los dos cuadros: Antonio de Molina Toledo y Antonia de Toro Zapata, y Diego Beltrán del Castillo y Jacinta García de Ordaz. La extracción no los unió. Arango Mejía confirma que Jacinta era hija de Carlos de Molina y Beatriz Beltrán del Castillo. Al unirlos, Carlos y Beatriz pasan a ser antepasados de los dos, por Úrsula en la rama de Manuel Salvador y por Jacinta en la de María Teresa.",
+      "fuentes": [
+        "ORIG-CUADROS",
+        "AM-J"
+      ],
+      "cambios": [
+        {
+          "op": "fusionar",
+          "con": {
+            "nombre": "Carlos de Molina Toledo Toro"
+          }
+        },
+        {
+          "op": "fusionar",
+          "persona": {
+            "nombre": "Beatriz Beltran Castillo"
+          },
+          "con": {
+            "nombre": "Beatriz Beltran del Castillo Ordas"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H16",
+      "linea": "Naranjo",
+      "tipo": "correccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "José Eugenio Arango era hijo de Esteban Arango y Gertrudis Vélez",
+      "persona": {
+        "nombre": "José Eugenio Arango Vélez"
+      },
+      "campo": "padres",
+      "original": "Antonio Valdés de Arango y Olaya de Zafra Castrillón",
+      "nuevo": "Esteban Arango Zafra y Gertrudis Vélez de Rivero",
+      "texto": "La extracción le asignó como padres a Antonio Valdés de Arango y Olaya de Zafra, que eran en realidad sus abuelos (su segundo apellido, Vélez, ya lo indica). Según el padre Nazario Bernal, que cita a Arango Mejía, Antonio Arango Valdés, natural de Villagonzay (San Martín de Arango, Asturias), y Olaya de Zafra se casaron en Antioquia en 1668 y solo tuvieron dos hijos varones, Esteban y Bernardino; «los Arangos de Antioquia descienden todos de Esteban, que nació en 1670 y se casó en Medellín con Gertrudis Vélez de Rivera el 19 de septiembre de 1694». Gertrudis nació en Medellín el 11 de enero de 1674. Entre sus siete hijos está «José Eugenio, nacido en julio de 1697», que se casó en Rionegro el 19 de mayo de 1715 con María del Carmen Echeverri Echagüe, «hija de Jerónimo y de María Gregoria, bautizada el 17 de febrero de 1702», y fue alcalde ordinario de Rionegro en 1722. Con esto José Eugenio queda como hermano de Fernando Antonio Arango Vélez (antepasado de Manuel Salvador), y la ascendencia Arango de María Teresa gana la generación que faltaba.",
+      "fuentes": [
+        "UPB-ARANGO"
+      ],
+      "cambios": [
+        {
+          "op": "padres",
+          "padre": {
+            "nombre": "Esteban Arango Zafra"
+          },
+          "madre": {
+            "nombre": "Gertrudis Vélez de Rivero"
+          }
+        },
+        {
+          "op": "campo",
+          "campo": "year",
+          "valor": "1697"
+        }
+      ]
+    },
+    {
+      "id": "H17",
+      "linea": "Naranjo",
+      "tipo": "verificacion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Antonio Valdés de Arango, tronco de los Arango de Antioquia",
+      "persona": {
+        "nombre": "Antonio Valdes de Arango"
+      },
+      "tambien": [
+        {
+          "nombre": "Olaya de Zafra Castrillón"
+        },
+        {
+          "nombre": "Esteban Arango Zafra"
+        },
+        {
+          "nombre": "Gertrudis Vélez de Rivero"
+        }
+      ],
+      "texto": "Nacido en Villagonzay, feligresía de San Martín de Arango (Asturias). Se casó con Olaya de Zafra en la provincia de Antioquia en 1668, se dedicó a la agricultura y la ganadería, se trasladó al valle de San Nicolás de Rionegro y murió de repente el 2 de diciembre de 1677; fue sepultado en la iglesia de San Nicolás. Su hijo Esteban (1670) se casó en Medellín el 19 de septiembre de 1694 con Gertrudis Vélez de Rivera (Medellín, 11 de enero de 1674), y de ellos descienden todos los Arango de Antioquia. Los años de los cuadros (Esteban 1670, Gertrudis 1674) coinciden.",
+      "fuentes": [
+        "UPB-ARANGO",
+        "AM-J"
+      ]
+    },
+    {
+      "id": "H18",
+      "linea": "Ruiz",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "La esposa de Fernando Antonio Arango Vélez: Jerónima Peláez Echeverri",
+      "persona": {
+        "nombre": "Fernando Antonio Arango Vélez"
+      },
+      "tambien": [
+        {
+          "nombre": "Jerónima Peláez Echeverri"
+        }
+      ],
+      "texto": "La extracción le dejó tres esposas: «Jerónima Peláez Echeverry», «Micaela Jerónima Guerra Peláez Echeverri» y un nombre partido de dos personas («Micaela Jerónima Guerra Peláez Echeverri Gertrudis Vélez Toro»). Es una sola mujer. Nazario Bernal, citando a Arango Mejía: «Hijo de Esteban Arango y de Gertrudis Vélez […] fue Fernando Arango Vélez, casado con Jerónima Peláez Echeverri». Se unen las dos primeras y se elimina el nombre partido. Sus padres, Francisco Guerra Peláez Graciano y Juana María Echeverri Ruiz Peláez, que solo figuraban en la segunda aparición, quedan enlazados.",
+      "fuentes": [
+        "UPB-ARANGO",
+        "ORIG-CUADROS"
+      ],
+      "cambios": [
+        {
+          "op": "fusionar",
+          "persona": {
+            "nombre": "Jerónima Peláez Echeverry"
+          },
+          "con": {
+            "nombre": "Micaela Jerónima Guerra Peláez Echeverri"
+          }
+        },
+        {
+          "op": "eliminar",
+          "persona": {
+            "nombre": "Micaela Jerónima Guerra Peláez Echeverri Gertrudis Vélez Toro"
+          }
+        },
+        {
+          "op": "campo",
+          "persona": {
+            "nombre": "Jerónima Peláez Echeverry"
+          },
+          "campo": "name",
+          "valor": "Jerónima Peláez Echeverri"
+        }
+      ]
+    },
+    {
+      "id": "H19",
+      "linea": "Naranjo",
+      "tipo": "duda",
+      "clasificacion": "EN CONFLICTO",
+      "titulo": "María del Carmen Echeverri: ¿Villa o Echagüe?",
+      "persona": {
+        "nombre": "María del Carmen Echeverri Villa"
+      },
+      "texto": "El cuadro la llama «María del Carmen Echeverri Villa» (N. 1702), pero sus padres, en el mismo cuadro, son el capitán Jerónimo Echeverri y María Gregoria Echagüe. Nazario Bernal la llama «María del Carmen Echeverri Echagüe, hija de Jerónimo y de María Gregoria, bautizada el 17 de febrero de 1702», casada en Rionegro el 19 de mayo de 1715. El segundo apellido de la fuente concuerda con el de su madre. Se conserva el nombre original y se anota la variante.",
+      "fuentes": [
+        "UPB-ARANGO",
+        "ORIG-T10"
+      ]
+    },
+    {
+      "id": "H20",
+      "linea": "Ruiz",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Francisco Peláez Trujillo aparecía dos veces",
+      "persona": {
+        "nombre": "Francisco Peláez Trujillo"
+      },
+      "texto": "En el cuadro n.º 1 de María Teresa el nombre quedó ilegible para la extracción («Francisco G..pelaez Trujillo N Flow Hyx», Medellín 1758) y apareció como un segundo esposo de Juana Tamayo Mesa. Es el mismo Francisco Peláez Trujillo (Medellín, 1758) del cuadro n.º 1 de Manuel Salvador. Se unen.",
+      "fuentes": [
+        "ORIG-CUADROS"
+      ],
+      "cambios": [
+        {
+          "op": "fusionar",
+          "con": {
+            "nombre": "Francisco G..pelaez Trujillo N Flow Hyx"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H21",
+      "linea": "Ruiz",
+      "tipo": "duda",
+      "clasificacion": "PROBABLE",
+      "titulo": "Los años de Francisco Peláez Trujillo y Juana Tamayo Mesa",
+      "persona": {
+        "nombre": "Francisco Peláez Trujillo"
+      },
+      "tambien": [
+        {
+          "nombre": "Juana Tamayo Mesa"
+        }
+      ],
+      "texto": "Los cuadros les dan 1758 y 1759. Su yerno, Antonio Moreno Tamayo, figura con 1729, y su nieto Francisco José Moreno Peláez se casó con María Francisca Velásquez Tamayo, nacida en 1775: la hija de Francisco y Juana tuvo que nacer hacia 1730. Por eso 1758 y 1759 son casi con seguridad años de muerte, no de nacimiento. Los cuadros advierten que no siempre se indica cuál de los dos es.",
+      "fuentes": [
+        "ORIG-CUADROS"
+      ]
+    },
+    {
+      "id": "H22",
+      "linea": "Velásquez",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Alonso Velásquez Mera aparecía dos veces",
+      "persona": {
+        "nombre": "Alonso Velásquez Mera",
+        "año": "1615"
+      },
+      "texto": "Dos apariciones con los mismos padres (Alonso Velásquez Jaramillo Valle y María Magdalena Grajeda de Mera) y la misma esposa (Marcela Ruiz de la Parra) quedaron separadas por tener años distintos (1615 y 1665). Es una sola persona; 1665 es probablemente su año de muerte. En la transcripción de Arango Mejía aparece su hija «doña Lucía Velásquez […] hija de Alonso Velásquez y de doña Marcela de la Parra».",
+      "fuentes": [
+        "ORIG-CUADROS",
+        "AM-J"
+      ],
+      "cambios": [
+        {
+          "op": "fusionar",
+          "con": {
+            "nombre": "Alonso Velásquez Mera",
+            "año": "1665"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H23",
+      "linea": "Velásquez",
+      "tipo": "duda",
+      "clasificacion": "PROBABLE",
+      "titulo": "1734 es el año de muerte de Miguel Jerónimo Velásquez",
+      "persona": {
+        "nombre": "Miguel Jerónimo Velásquez de la Parra"
+      },
+      "texto": "El cuadro le pone 1734, pero su padre nació hacia 1615, su madre hacia 1620 y su esposa, Bárbara Ambrosia Betancur, en 1674. Debió nacer hacia 1650-1660: 1734 tiene que ser su año de muerte.",
+      "fuentes": [
+        "ORIG-CUADROS"
+      ]
+    },
+    {
+      "id": "H24",
+      "linea": "Álvarez",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "José Luis Gómez Poblete aparecía dos veces",
+      "persona": {
+        "nombre": "José Luis Gómez Poblete",
+        "año": "1616"
+      },
+      "texto": "Mismos padres (Domingo Gómez de Ureña y Ana Poblete) y misma esposa (Lucía Arnedo Paladines) en los cuadros 2 y 24, con años distintos (1616 en Medellín y 1637 en Santa Fe). Se unen. El año queda en duda: en 1616 aún no existía la villa de Medellín (el sitio de Aná se pobló hacia 1646) y su esposa nació en 1637, de modo que 1637 es el dato más probable para él.",
+      "fuentes": [
+        "ORIG-CUADROS",
+        "WP-MEDELLIN"
+      ],
+      "cambios": [
+        {
+          "op": "fusionar",
+          "con": {
+            "nombre": "José Luis Gómez Poblete",
+            "año": "1637"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H25",
+      "linea": "Álvarez",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Juan Francisco González de Noriega y María Josefa Gómez de Ureña aparecían dos veces",
+      "persona": {
+        "nombre": "Juan Francisco González de Noriega"
+      },
+      "tambien": [
+        {
+          "nombre": "María Josefa Gómez de Ureña"
+        }
+      ],
+      "texto": "La pareja aparece en el cuadro 2 (padres de Juana Lucía González, esposa de Juan Manuel Álvarez del Pino) y en el 24 (padres de Bernardo José González Gómez), con el mismo año (1659, España) y la esposa con los mismos padres (José Luis Gómez Poblete y Lucía Arnedo). Se unen, y con ellos los padres de él. El nombre de la madre de Juan Francisco difiere entre los cuadros (Toribia o Lucía Fernández de Arnedo): se conservan las dos formas.",
+      "fuentes": [
+        "ORIG-CUADROS"
+      ],
+      "cambios": [
+        {
+          "op": "fusionar",
+          "con": {
+            "nombre": "Juan Francisco González"
+          }
+        },
+        {
+          "op": "fusionar",
+          "persona": {
+            "nombre": "María Josefa Gómez de Ureña"
+          },
+          "con": {
+            "nombre": "María Josefa Gómez"
+          }
+        },
+        {
+          "op": "fusionar",
+          "persona": {
+            "nombre": "Juan González de Teleña"
+          },
+          "con": {
+            "nombre": "Juan González Noriega"
+          }
+        },
+        {
+          "op": "fusionar",
+          "persona": {
+            "nombre": "Toribia Fernández de Arnedo"
+          },
+          "con": {
+            "nombre": "Lucía Fernández de Arnedo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H26",
+      "linea": "Velásquez",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Juan José Maya Acevedo aparecía dos veces",
+      "persona": {
+        "nombre": "Juan José Maya Acevedo",
+        "año": "1670"
+      },
+      "texto": "Mismos padres (Ventura de Amaya y Juana Acevedo) y misma esposa (María Candelaria Álvarez del Pino Lezcano), con años 1670 (Copacabana) y 1760 (Medellín). 1760 es imposible para un hijo de alguien nacido en 1656 y esposo de una mujer nacida en 1681. Se unen. Es el tronco de la línea Maya, antepasado por la rama de María Teresa y también por la de Manuel Salvador.",
+      "fuentes": [
+        "ORIG-CUADROS"
+      ],
+      "cambios": [
+        {
+          "op": "fusionar",
+          "con": {
+            "nombre": "Juan José Maya Acevedo",
+            "año": "1760"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H27",
+      "linea": "Velásquez",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Juan García de Ordaz y sus padres aparecían dos veces",
+      "persona": {
+        "nombre": "Juan García de Ordaz",
+        "año": "1567"
+      },
+      "texto": "Dos apariciones de Juan García de Ordaz (1560 y 1567, España), con los mismos padres (Jorge García Hernández e Inés de Ordaz Mancilla) y la misma esposa (Marina Cortés Figueroa), y dos de su padre, Jorge García Hernández. Se unen. El catálogo del Archivo Histórico de Antioquia tiene mortuorias de un «alférez Juan García Ordaz» (1655-1656) y de un «capitán Juan García de Ordaz» (1728): por las fechas pueden ser descendientes homónimos; quedan como pistas.",
+      "fuentes": [
+        "ORIG-CUADROS",
+        "EAP-PROYECTO"
+      ],
+      "cambios": [
+        {
+          "op": "fusionar",
+          "con": {
+            "nombre": "Juan García de Ordaz",
+            "año": "1560"
+          }
+        },
+        {
+          "op": "fusionar",
+          "persona": {
+            "id": "p111",
+            "nombre": "Jorge García Hernández"
+          },
+          "con": {
+            "id": "p671",
+            "nombre": "Jorge García Hernández"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H28",
+      "linea": "Naranjo",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Un solo Mateo de Castrillón, nacido en Arma en 1600",
+      "persona": {
+        "nombre": "Mateo de Castrillón"
+      },
+      "tambien": [
+        {
+          "nombre": "Diego Álvarez de Castrillón"
+        }
+      ],
+      "texto": "La extracción dejó tres «Mateo» hijos de Diego Álvarez de Castrillón y Catalina de Heredia, los tres de 1600 y «Caldas» (es decir, Arma). Según la compilación de Ágredo Tobar, basada en el testamento de Diego (Arma, 1 de noviembre de 1611) y en Arango Mejía, Diego tuvo siete hijos y un solo Mateo: «Mateo de Castrillón […] capitán, nacido en Arma el 27 de septiembre de 1600; fallecido en el sitio de San Diego del valle de Aburrá. Había casado con María Vásquez Guadramiros, hija del capitán Martín Vásquez Guadramiros y de Jerónima Cortés de Espinosa». Se unen las tres apariciones y las dos de su esposa (María Vásquez Guadramiros y María Vásquez Espinosa, ambas de 1621). La tercera esposa que trae un cuadro, Francisca de los Ríos (madre de Catalina de Heredia Castrillón), se conserva pero no se pudo comprobar.",
+      "fuentes": [
+        "AGREDO",
+        "ORIG-CUADROS"
+      ],
+      "cambios": [
+        {
+          "op": "fusionar",
+          "con": {
+            "nombre": "Mateo Álvarez de Castrillón"
+          }
+        },
+        {
+          "op": "fusionar",
+          "con": {
+            "nombre": "Mateo Castrillón Heredia"
+          }
+        },
+        {
+          "op": "fusionar",
+          "persona": {
+            "nombre": "María Vásquez Guadramiros"
+          },
+          "con": {
+            "nombre": "María Vásquez Espinosa"
+          }
+        },
+        {
+          "op": "campo",
+          "campo": "place",
+          "valor": "Arma (Antioquia)"
+        }
+      ]
+    },
+    {
+      "id": "H29",
+      "linea": "Naranjo",
+      "tipo": "verificacion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Diego Álvarez de Castrillón, conquistador asturiano muerto en Arma en 1611",
+      "persona": {
+        "nombre": "Diego Álvarez de Castrillón"
+      },
+      "tambien": [
+        {
+          "nombre": "Catalina de Heredia",
+          "padre": "Nicolás Blandón"
+        },
+        {
+          "nombre": "María de Castrillón Heredia"
+        }
+      ],
+      "texto": "Nació en Castrillón, concejo de Boal (Asturias), fue el mayor de cuatro hermanos que llegaron a América a fines del siglo XVI, participó con su hermano Pedro en la conquista de La Grita y testó en Arma el 1 de noviembre de 1611. Se casó con Catalina Blandón de Heredia, hija del capitán Nicolás Blandón, «de los conquistadores del Cauca», y de Catalina de Heredia. Su hija póstuma María de Castrillón se casó con Fernando de Zafra Jaramillo, hijo de Juan Jaramillo de Andrade y Juana de Centeno, como en el cuadro. El año 1611 del cuadro es, por tanto, el de su muerte. La misma compilación lleva su ascendencia por los Bernaldo de Quirós hasta los reyes de León, siguiendo a la genealogista María Emma Escovar Uribe.",
+      "fuentes": [
+        "AGREDO",
+        "AM-J"
+      ]
+    },
+    {
+      "id": "H30",
+      "linea": "Velásquez",
+      "tipo": "contexto",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Miguel de Urnieta y Lezcano, teniente de gobernador de Gaspar de Rodas",
+      "persona": {
+        "nombre": "Miguel de Urnieta Lezcano"
+      },
+      "texto": "Guipuzcoano. La guía de los vascos en Antioquia lo registra como teniente de gobernación entre 1599 y 1600, durante el gobierno de Gaspar de Rodas, y menciona a sus hijas Ana y Juana de Lezcano, casadas con el guipuzcoano Juan de Ibargüen y con el vizcaíno Domingo de Elorza. En los cuadros es padre de José Lezcano Taborda y de Luisa Lezcano Taborda, abuela de Alonso Jaramillo de Andrade y Céspedes.",
+      "fuentes": [
+        "VASCOS"
+      ]
+    },
+    {
+      "id": "H31",
+      "linea": "Álvarez",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Bartolomé Sánchez Torreblanca, conquistador de Antioquia: una sola persona",
+      "persona": {
+        "nombre": "Bartolomé Sánchez Torreblanca",
+        "padre": "Bartolomé Sánchez de Quintana"
+      },
+      "texto": "Aparecía dos veces con el mismo año y lugar (1517, España): casado con Mencía Carvajal en unos cuadros y con Luisa Yameci, madre de Juana Sánchez Torreblanca (Santa Fe, 1568), en el cuadro 24. Es la misma persona con dos uniones; se unen, y se elimina un tercer nombre partido («y Ana Bartolomé Ruiz Sánchez Torreblanc»). Una biografía en FamilySearch lo hace nacido en Sevilla en 1517 y muerto en Santa Fe de Antioquia en 1598, conquistador con Pizarro y Belalcázar y compañero de Jorge Robledo en la fundación de Antioquia (1541), encomendero desde 1559 y alcalde ordinario varias veces entre 1566 y 1594. Esa biografía es un aporte de usuario: se toma como probable.",
+      "fuentes": [
+        "ORIG-CUADROS",
+        "FS-TORREBLANCA"
+      ],
+      "cambios": [
+        {
+          "op": "fusionar",
+          "con": {
+            "nombre": "Bartolomé Sánchez Torreblanca",
+            "conyuge": "Luisa Yameci"
+          }
+        },
+        {
+          "op": "eliminar",
+          "persona": {
+            "nombre": "y Ana Bartolomé Ruiz Sánchez Torreblanc"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H32",
+      "linea": "Álvarez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Alonso López de Restrepo, regidor de Medellín en 1675",
+      "persona": {
+        "nombre": "Alonso López de Restrepo Mendez"
+      },
+      "texto": "En la erección de la Villa de la Candelaria de Medellín (auto del 2 de noviembre de 1675) Alonso López de Restrepo figura entre los primeros regidores. La tradición, recogida por Mariano Ospina Rodríguez, lo hace el hidalgo asturiano que llegó a Antioquia hacia 1646 y fundó la familia Restrepo. Por las fechas (1620-1681 en árboles públicos) es probablemente él y no su homónimo del cuadro, pero las fuentes consultadas no lo identifican sin ambigüedad.",
+      "fuentes": [
+        "WP-MEDELLIN"
+      ]
+    },
+    {
+      "id": "H33",
+      "linea": "Naranjo",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "La mortuoria de Francisco de Ángulo Barbarán (1669)",
+      "persona": {
+        "nombre": "Francisco de Ángulo Barbaran"
+      },
+      "texto": "El Archivo Histórico de Antioquia conserva la «Mortuoria de Francisco Angulo Barbarán», fechada en 1669, el mismo año que le da el cuadro. Indica que 1669 es el año de su muerte, no el de su nacimiento (sus hijas nacieron antes de 1650). En el mismo catálogo hay una «Mortuoria de Isabel Angulo» (1695), quizá su hija Isabel Angulo Sotomayor.",
+      "fuentes": [
+        "EAP-ANGULO",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "H34",
+      "linea": "Naranjo",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "La mortuoria de Pedro de Echeverri (1720)",
+      "persona": {
+        "nombre": "Pedro Echeverri Viasi"
+      },
+      "texto": "El catálogo del Archivo Histórico de Antioquia tiene la «Mortuoria de Pedro de Echeverri», de 1720. Si es él (nacido en España hacia 1630, según el cuadro), habría muerto muy anciano. La guía de los vascos en Antioquia cita a un Pedro Echeverri entre los mineros y comerciantes vascos de la provincia. La identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-ECHEVERRI",
+        "VASCOS"
+      ]
+    },
+    {
+      "id": "H35",
+      "linea": "Álvarez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "La mortuoria de Nicolás Guerra Peláez (1671)",
+      "persona": {
+        "nombre": "Nicolás Lorenzo Guerra Peláez Camara"
+      },
+      "texto": "El Archivo Histórico de Antioquia conserva la «Mortuoria de Nicolás Guerra Peláez», fechada en 1671. Coincide con un Nicolás nacido en 1641 si murió joven, o con un homónimo; queda como pista.",
+      "fuentes": [
+        "EAP-GUERRA"
+      ]
+    },
+    {
+      "id": "H36",
+      "linea": "Álvarez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Pedro Gutiérrez Colmenero, en el primer cabildo de Medellín",
+      "persona": {
+        "nombre": "Pedro Gutiérrez Colmenero"
+      },
+      "texto": "En la erección de la villa de Medellín (1675) fue nombrado alcalde provincial de la Santa Hermandad, cargo del que se excusó. El Archivo Histórico de Antioquia conserva su mortuoria, fechada en 1685. Por las fechas, el personaje de 1675 puede ser él o un hijo homónimo.",
+      "fuentes": [
+        "WP-MEDELLIN",
+        "EAP-COLMENERO"
+      ]
+    },
+    {
+      "id": "H37",
+      "linea": "Velásquez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "La mortuoria de Ambrosio de Acevedo (1668)",
+      "persona": {
+        "nombre": "Juan Ambrosio Acevedo Redes"
+      },
+      "texto": "El catálogo del Archivo Histórico de Antioquia tiene la «Mortuoria de Ambrosio de Acevedo», de 1668, que puede ser la de Juan Ambrosio Acevedo (nacido en España en 1625, según el cuadro), abuelo de Juan José Maya Acevedo.",
+      "fuentes": [
+        "EAP-ACEVEDO"
+      ]
+    },
+    {
+      "id": "H38",
+      "linea": "Álvarez",
+      "tipo": "duda",
+      "clasificacion": "PROBABLE",
+      "titulo": "Ignacio y José Ignacio Vélez de Toro: ¿la misma persona?",
+      "persona": {
+        "nombre": "Ignacio Javier Vélez Toro"
+      },
+      "tambien": [
+        {
+          "nombre": "José Ignacio Vélez Toro"
+        },
+        {
+          "nombre": "María Cecilia Peláez Pérez"
+        },
+        {
+          "nombre": "María Cecilia Guerra Peláez Pérez"
+        }
+      ],
+      "texto": "Los cuadros traen a dos hijos de Juan Vélez de Rivero y Manuela de Toro, «Ignacio Javier» (Medellín, 1690) y «José Ignacio» (con un año imposible, 1786), casados ambos con una María Cecilia (Guerra) Peláez Pérez nacida en 1702, hija de Mateo Guerra Peláez y Catalina Pérez de Rivero. Lo más probable es que sean una sola pareja, padres a la vez de Francisco Ángel Vélez Peláez (línea Álvarez) y de José Antonio Vélez Guerra Peláez (línea Ruiz). No se unieron porque los nombres de pila difieren y no se encontró una fuente externa que lo resuelva.",
+      "fuentes": [
+        "ORIG-CUADROS"
+      ]
+    },
+    {
+      "id": "H39",
+      "linea": "Álvarez",
+      "tipo": "duda",
+      "clasificacion": "PROBABLE",
+      "titulo": "Gertrudis Benítez Colmenero y Juan Ruiz de la Parra: ¿dos matrimonios?",
+      "persona": {
+        "nombre": "Gertrudis Benítez Colmenero",
+        "conyuge": "Nicolás Lorenzo Guerra Peláez Camara"
+      },
+      "tambien": [
+        {
+          "nombre": "Gertrudis Benítez Colmenero",
+          "conyuge": "Juan de Toro Peláez"
+        },
+        {
+          "nombre": "Juan Ruiz Parra",
+          "conyuge": "Elvira Martínez Cardenas"
+        },
+        {
+          "nombre": "Juan Ruiz Parra",
+          "conyuge": "Leonor Marquez Fontidueño"
+        }
+      ],
+      "texto": "Gertrudis Benítez Colmenero aparece dos veces con los mismos padres (Mateo Benítez Colmenero y Catalina Tabares de Morga), casada con Nicolás Lorenzo Guerra Peláez en una y con Juan de Toro Peláez en la otra. Lo mismo ocurre con Juan Ruiz de la Parra (casado con Elvira Martínez de Cárdenas y con Leonor Márquez Fontidueño). Pueden ser personas que se casaron dos veces o hermanos homónimos; se mantienen separados hasta encontrar una fuente.",
+      "fuentes": [
+        "ORIG-CUADROS"
+      ]
+    },
+    {
+      "id": "H40",
+      "linea": "Álvarez",
+      "tipo": "duda",
+      "clasificacion": "PROBABLE",
+      "titulo": "Años que parecen de muerte o de matrimonio",
+      "persona": {
+        "nombre": "María Antonia Vélez Restrepo"
+      },
+      "tambien": [
+        {
+          "nombre": "Tomasa Mauris Posada"
+        },
+        {
+          "nombre": "Cristóbal de Toro Zapata"
+        },
+        {
+          "nombre": "Miguel Naranjo Machuca"
+        }
+      ],
+      "texto": "Algunos años de los cuadros no pueden ser de nacimiento: María Antonia Vélez Restrepo (1823) sería solo 12 años mayor que su hijo José Miguel (1835); Tomasa Mauris Posada (1731), 13 años mayor que su hijo José Ignacio (1744); Cristóbal de Toro Zapata (1690) sería hijo de un Juan de Toro nacido en 1550, y Miguel Naranjo Machuca (España, 1772) sería posterior a su hijo Francisco Miguel (Medellín, 1749). Son años de muerte, de matrimonio o de otro documento.",
+      "fuentes": [
+        "ORIG-CUADROS"
+      ]
+    },
+    {
+      "id": "H41",
+      "linea": "Naranjo",
+      "tipo": "verificacion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "De Alfonso IX a los Ponce de León",
+      "persona": {
+        "nombre": "Aldonza Alonso de Leon"
+      },
+      "tambien": [
+        {
+          "nombre": "Alfonso Ix de Borgoña Rey de León"
+        },
+        {
+          "nombre": "Pedro Ponce de Cabrera"
+        },
+        {
+          "nombre": "Fernán Pérez Ponce de León"
+        }
+      ],
+      "texto": "Confirmado por la Real Academia de la Historia y Wikipedia: Aldonza Alfonso de León (c. 1212-1266) era hija natural del rey Alfonso IX de León y de Aldonza Martínez de Silva; se casó antes de 1230 con Pedro Ponce de Cabrera, hijo de Ponce Vela de Cabrera y Teresa Rodríguez Girón. Su hijo Fernán Pérez Ponce de León (m. 1291-1292), ayo de Fernando IV, se casó con Urraca Gutiérrez de Meneses, como en el cuadro. Los padres de Alfonso IX (Fernando II de León y Urraca de Portugal) y de Fernando II (Alfonso VII y Berenguela de Barcelona) también coinciden.",
+      "fuentes": [
+        "WP-ALDONZA",
+        "WP-CABRERA",
+        "WP-FERNAN",
+        "WP-ALFONSO9",
+        "RAH-PEDRO3"
+      ]
+    },
+    {
+      "id": "H42",
+      "linea": "Naranjo",
+      "tipo": "verificacion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Los señores de Marchena y condes de Arcos",
+      "persona": {
+        "nombre": "Pedro Fernández El Viejo Ponce de León"
+      },
+      "tambien": [
+        {
+          "nombre": "Fernando Pérez Ponce de Leon"
+        },
+        {
+          "nombre": "Isabel Pérez de Guzman"
+        },
+        {
+          "nombre": "Beatriz de Aragón Alauria de Xerica"
+        },
+        {
+          "nombre": "Pedro Pérez Ponce de León Xérica"
+        },
+        {
+          "nombre": "Sancha de Haro Baeza"
+        },
+        {
+          "nombre": "Juan Ponce de León Ayala"
+        }
+      ],
+      "texto": "La cadena del cuadro 17B1 coincide con la Real Academia de la Historia: Fernán (Fernando) Pérez Ponce de León, I señor de Marchena, casado con Isabel de Guzmán, hija de Guzmán el Bueno y María Alfonso Coronel → Pedro Ponce de León «el Viejo», II señor de Marchena (Sevilla, c. 1305-1352), casado en 1335 con Beatriz de Jérica, hija de Jaime II de Jérica y Beatriz de Lauria → Pedro Ponce de León (m. 1374), casado con Sancha de Haro → Pedro Ponce de León, V señor de Marchena y I conde de Arcos (c. 1370-1448), casado con María de Ayala → Juan Ponce de León, II conde de Arcos (¿Sevilla?, c. 1400 - Marchena, 1471), que tuvo 26 hijos con Leonor Núñez y otras mujeres, entre ellos Rodrigo, marqués-duque de Cádiz.",
+      "fuentes": [
+        "RAH-PEDRO2",
+        "RAH-PEDRO1",
+        "RAH-JUAN",
+        "WP-PEDROVIEJO",
+        "WP-GUZMAN"
+      ]
+    },
+    {
+      "id": "H43",
+      "linea": "Naranjo",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Pedro Ponce de León y Haro, I conde de Arcos: padres corregidos",
+      "persona": {
+        "nombre": "Pedro Ponce de León",
+        "conyuge": "María de Ayala"
+      },
+      "campo": "padres",
+      "original": "Desconocido/a y «Haro Suárez»",
+      "nuevo": "Pedro Ponce de León (de Jérica) y Sancha de Haro",
+      "texto": "El cuadro 17B1 dice «PEDRO PONCE DE LEÓN Y HARO, ESP. N. 1360», casado con «MARÍA DE AYALA SUÁREZ, ESP. N. 1370». La extracción mezcló las dos líneas de texto y creó una persona falsa, «Haro Suárez», que quedó como su madre, con un padre desconocido. Se corrige: sus padres son Pedro Ponce de León (hijo de Beatriz de Jérica) y Sancha de Haro, como confirma la Real Academia de la Historia («su madre, Sancha de Haro»). La RAH da como fechas c. 1370-1448; el cuadro dice 1360.",
+      "fuentes": [
+        "ORIG-T17B",
+        "RAH-PEDRO1"
+      ],
+      "cambios": [
+        {
+          "op": "campo",
+          "campo": "name",
+          "valor": "Pedro Ponce de León y Haro"
+        },
+        {
+          "op": "campo",
+          "campo": "year",
+          "valor": "1360"
+        },
+        {
+          "op": "padres",
+          "padre": {
+            "nombre": "Pedro Pérez Ponce de León Xérica"
+          },
+          "madre": {
+            "nombre": "Sancha de Haro Baeza"
+          }
+        },
+        {
+          "op": "eliminar",
+          "persona": {
+            "nombre": "Haro Suárez"
+          }
+        },
+        {
+          "op": "eliminar",
+          "persona": {
+            "id": "p864",
+            "nombre": "Desconocido/a"
+          }
+        },
+        {
+          "op": "campo",
+          "persona": {
+            "nombre": "María de Ayala"
+          },
+          "campo": "name",
+          "valor": "María de Ayala Suárez"
+        }
+      ]
+    },
+    {
+      "id": "H44",
+      "linea": "Naranjo",
+      "tipo": "correccion",
+      "clasificacion": "EN CONFLICTO",
+      "titulo": "¿Cuándo murió Pedro Ponce de León, padre del I conde de Arcos?",
+      "persona": {
+        "nombre": "Pedro Pérez Ponce de León Xérica"
+      },
+      "texto": "El cuadro le pone «F. 1387». La Real Academia de la Historia dice que su hijo era «un niño de pocos años» cuando murió su padre, en 1374, y que en 1387 fue la madre, Sancha de Haro, quien vendió la villa de Bornos por dificultades económicas. 1387 parece ser la fecha de esa venta y no la de su muerte. Se conserva el dato original y se anota la otra versión.",
+      "fuentes": [
+        "RAH-PEDRO1",
+        "ORIG-T17B"
+      ]
+    },
+    {
+      "id": "H45",
+      "linea": "Naranjo",
+      "tipo": "verificacion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Eutropio Ponce de León, hijo del II conde de Arcos",
+      "persona": {
+        "nombre": "Eutropio Ponce de León González"
+      },
+      "tambien": [
+        {
+          "nombre": "Catalina de Vera Zurita"
+        },
+        {
+          "nombre": "Francisco Ponce de León Verá"
+        },
+        {
+          "nombre": "Isabel Riquelme"
+        }
+      ],
+      "texto": "Un estudio sobre la casa de los Ponce de León en Jerez de la Frontera, basado en su testamento de 1510 y en la obra de Juan Moreno de Guerra, confirma que «Eutropio Ponce de León, también llamado en los documentos como Estropo, era hijo de Juan Ponce de León, segundo Conde de Arcos y hermano del célebre Rodrigo Ponce de León, Marqués de Cádiz»; que su primera esposa fue Catalina de Vera, hija del comendador Pedro de Vera, y que tuvo un hijo Francisco Ponce de León casado con Isabel Riquel (Riquelme), padres de otro Eutropio. Coincide con el cuadro 17B1 (Eutropio, Catalina de Vera, Francisco Ponce de León y Vera, Isabel Riquelme). La madre de Eutropio, Catalina González de Oviedo, figura en árboles públicos (c. 1440-1487), pero no en las fuentes académicas consultadas, que solo dicen que el conde tuvo hijos con varias mujeres.",
+      "fuentes": [
+        "JEREZ",
+        "RAH-JUAN",
+        "GF-EUTROPIO"
+      ]
+    },
+    {
+      "id": "H46",
+      "linea": "Naranjo",
+      "tipo": "duda",
+      "clasificacion": "EN CONFLICTO",
+      "titulo": "El suegro de Eutropio no es el conquistador de Canarias",
+      "persona": {
+        "nombre": "Pedro de Vera Mendoza"
+      },
+      "texto": "El cuadro llama al padre de Catalina de Vera «Pedro de Vera Mendoza» (España, 1430), el nombre del conquistador y gobernador de Gran Canaria. El estudio sobre los Ponce de León de Jerez advierte que el suegro de Eutropio era otro: el comendador Pedro de Vera «el Bermejo», vecino de Jerez, que testó el 28 de enero de 1479, y que «hay que evitar identificar con el Pedro de Vera conquistador y gobernador de Canarias, confusión en la que se llegó a caer en siglos posteriores» y que provocó un pleito entre los descendientes de ambos.",
+      "fuentes": [
+        "JEREZ",
+        "ORIG-T17B"
+      ]
+    },
+    {
+      "id": "H47",
+      "linea": "Naranjo",
+      "tipo": "duda",
+      "clasificacion": "PROBABLE",
+      "titulo": "El empalme de Antioquia con los Ponce de León: el eslabón más débil",
+      "persona": {
+        "nombre": "Francisco de Guzmán Cespedes"
+      },
+      "tambien": [
+        {
+          "nombre": "Pedro Ponce de León Riquelme"
+        },
+        {
+          "nombre": "Pedro Ponce de León Figueroa"
+        },
+        {
+          "nombre": "Isabel Ponce de León Angulo"
+        },
+        {
+          "nombre": "Constanza de Cardenas Ponce de León"
+        },
+        {
+          "nombre": "Juan de Céspedes Cárdenas"
+        },
+        {
+          "nombre": "María Luisa de Céspedes Osorio"
+        },
+        {
+          "nombre": "Francisco Guzman Ruiz"
+        },
+        {
+          "nombre": "Francisco Guzman Miranda"
+        }
+      ],
+      "texto": "Desde Pedro Ponce de León y Riquelme (1503) hasta el capitán Francisco de Guzmán, padre de Ana de Céspedes y Guzmán, la cadena del cuadro (Ponce de León Figueroa → Isabel Ponce de León y Ángulo → Constanza de Cárdenas → Juan de Céspedes → María Luisa de Céspedes → Francisco de Guzmán y Céspedes) no se encontró en ninguna fuente académica ni en Arango Mejía, que solo nombra al «capitán don Francisco de Guzmán». Además las fechas no cuadran: María Luisa de Céspedes figura con 1570 y su hijo Francisco de Guzmán con 1525, y Francisco Guzmán Ruiz (1563) sería mayor que su hijo Francisco Guzmán Miranda (1584). Este empalme entre los pobladores de Antioquia y la nobleza española es el eslabón más dudoso de la rama medieval.",
+      "fuentes": [
+        "AM-J",
+        "ORIG-T17B"
+      ]
+    },
+    {
+      "id": "H48",
+      "linea": "Naranjo",
+      "tipo": "extraccion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Sancho I el Craso, padre de Ramiro III",
+      "persona": {
+        "nombre": "Sancho El Graso Rey de"
+      },
+      "campo": "name",
+      "original": "Sancho El Graso Rey de",
+      "nuevo": "Sancho I el Craso, rey de León",
+      "texto": "El cuadro 17B2a dice «SANCHO I EL GRASO REY DE LEÓN, N. 935» y «TERESA ANSÚREZ», padres de Ramiro III. La extracción partió el nombre en dos personas («Sancho El Graso Rey de» y «León»), puso a «León» como padre de Ramiro III y a Sancho como esposo de Aznar Fróilaz y madre de Ximeno. Se corrige según el cuadro y Wikipedia: Ramiro III era hijo de Sancho I y Teresa Ansúrez, y Sancho, hijo de Ramiro II y de Urraca Sánchez de Pamplona.",
+      "fuentes": [
+        "ORIG-T17B2A",
+        "WP-RAMIRO3"
+      ],
+      "cambios": [
+        {
+          "op": "campo",
+          "campo": "name",
+          "valor": "Sancho I el Craso, rey de León"
+        },
+        {
+          "op": "quitar_conyuge",
+          "conyuge": {
+            "nombre": "Aznar Froilaz"
+          }
+        },
+        {
+          "op": "padres",
+          "persona": {
+            "nombre": "Ramiro Iii Rey de Leon"
+          },
+          "padre": {
+            "nombre": "Sancho I el Craso, rey de León"
+          }
+        },
+        {
+          "op": "padres",
+          "persona": {
+            "nombre": "Ximeno Fruela Aznarez"
+          },
+          "madre": null
+        },
+        {
+          "op": "eliminar",
+          "persona": {
+            "nombre": "León"
+          }
+        },
+        {
+          "op": "conyuge",
+          "conyuge": {
+            "nombre": "Teresa Ansurez"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H49",
+      "linea": "Naranjo",
+      "tipo": "verificacion",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Ramiro III, Ordoño el Ciego y los condes de Lorenzana",
+      "persona": {
+        "nombre": "Ordoño El Ciego Ramírez"
+      },
+      "tambien": [
+        {
+          "nombre": "Ramiro Iii Rey de Leon"
+        },
+        {
+          "nombre": "Cristina Bermudez"
+        },
+        {
+          "nombre": "Pelayo El Diacono Froilaz"
+        },
+        {
+          "nombre": "Aldonza Ordóñez"
+        }
+      ],
+      "texto": "Wikipedia confirma lo esencial del cuadro 17B2a: Ramiro III de León (hijo de Sancho I y Teresa Ansúrez) se casó con Sancha Gómez, hija del conde de Saldaña; su único hijo, Ordoño Ramírez «el Ciego», se casó con la infanta Cristina Bermúdez, hija de Bermudo II, y su hija Aldonza Ordóñez se casó con el conde Pelayo Fróilaz «el Diácono».",
+      "fuentes": [
+        "WP-RAMIRO3",
+        "WP-ORDONO"
+      ]
+    },
+    {
+      "id": "H50",
+      "linea": "Naranjo",
+      "tipo": "duda",
+      "clasificacion": "EN CONFLICTO",
+      "titulo": "Aznar Fróilaz, ¿hijo de Fruela II?",
+      "persona": {
+        "nombre": "Aznar Froilaz"
+      },
+      "texto": "El cuadro lo hace hijo del rey Fruela II y de Urraca, de la familia Banu Qasi. Wikipedia recoge que Pelayo de Oviedo habla de un hijo ilegítimo «llamado Aznar», pero que «este dato ha sido despreciado por los historiadores», y sugiere que Aznar sería más bien el yerno del rey. Los hijos documentados de Fruela II son Alfonso, Ramiro y Ordoño Fróilaz.",
+      "fuentes": [
+        "WP-FRUELA2",
+        "ORIG-T17B2A"
+      ]
+    },
+    {
+      "id": "H51",
+      "linea": "Naranjo",
+      "tipo": "duda",
+      "clasificacion": "EN CONFLICTO",
+      "titulo": "Los Osorio y los condes gallegos del siglo IX: genealogías tradicionales",
+      "persona": {
+        "nombre": "Hermenegildo Gutiérrez Conde"
+      },
+      "tambien": [
+        {
+          "nombre": "Gatón del Bierzo"
+        },
+        {
+          "nombre": "Osorio Gutiérrez Iv El Santo"
+        },
+        {
+          "nombre": "Elvira Gatonez"
+        },
+        {
+          "nombre": "Gutierre Osorio Iii Ricohombre"
+        }
+      ],
+      "texto": "Lo que está documentado: el conde Hermenegildo Gutiérrez se casó con Ermesinda Gatónez, hija de Gatón del Bierzo, y fue padre de Elvira Menéndez (reina por su matrimonio con Ordoño II en 900) y de Aldonza Menéndez (esposa de Gutierre Osóriz, conde en Lorenzana). Lo que no: Wikipedia advierte que de Hermenegildo «no se conocen los patronímicos de sus padres» (el cuadro le da un padre «Flavio Teudo, señor de Gallaecia»); la filiación de Gatón como hijo de Ramiro I es solo «la línea más aceptada» y lleva interrogantes; entre los hijos de Gatón no aparece la «Elvira Gatónez» del cuadro; y la genealogía de los Osorio de Salazar y Castro es calificada de «legendaria». Además, la lectura automática de esta página dejó relaciones imposibles (Gatón con un hombre como «madre»), que se conservan solo porque así quedaron en el cuadro; consulte la imagen original.",
+      "fuentes": [
+        "WP-HERMENEGILDO",
+        "WP-GATON",
+        "WP-OSORIO",
+        "ORIG-T17B2A"
+      ]
+    },
+    {
+      "id": "H52",
+      "linea": "Naranjo",
+      "tipo": "duda",
+      "clasificacion": "EN CONFLICTO",
+      "titulo": "Los visigodos: eslabones legendarios",
+      "persona": {
+        "nombre": "Flavio Teudo Señor de Gallaecia"
+      },
+      "tambien": [
+        {
+          "nombre": "Flavi Atanarico"
+        },
+        {
+          "nombre": "Arquilona Princesa Goda"
+        },
+        {
+          "nombre": "Atanarico de Coimbra"
+        },
+        {
+          "nombre": "Tello de Coimbra"
+        },
+        {
+          "nombre": "Flavio Ataulfo de"
+        },
+        {
+          "nombre": "Ursinda Munialona Coimbra",
+          "conyuge": "Bermundo Diácono Asturia"
+        }
+      ],
+      "texto": "Los nombres de la parte más alta del cuadro 17B2a (Flavio Teudo «señor de Gallaecia», Flavio Atanarico, Atanarico y Tello de Coimbra, «Arquilona, princesa goda», Flavio Ataúlfo) proceden de genealogías nobiliarias tardías que pretendían enlazar a los condes asturianos y gallegos con los reyes visigodos. Ninguna de las fuentes académicas consultadas los documenta, y las genealogías de este tipo son tenidas por legendarias. Bermudo I de Asturias sí es histórico (hijo de Fruela de Cantabria, casado con Ozenda o Nunilo, padre de Ramiro I), aunque incluso esa filiación tiene dudas por haber sido diácono.",
+      "fuentes": [
+        "WP-BERMUDO",
+        "WP-OSORIO",
+        "WP-HERMENEGILDO"
+      ]
+    },
+    {
+      "id": "H53",
+      "seccion": "origen",
+      "tipo": "contexto",
+      "clasificacion": "EN CONFLICTO",
+      "titulo": "El origen del apellido: patronímico, con muchos troncos distintos",
+      "texto": "Álvarez es un patronímico, «derivado del nombre Álvaro», de origen germánico, y no viene de un único fundador. Wikipedia, siguiendo a los tratadistas de heráldica, advierte que hay muchas familias Álvarez «sin ningún vínculo de parentesco» y que «es gran error suponer como algunos autores, que todos los Álvarez proceden de un mismo y primitivo solar y tronco». La rama más antigua conocida es la de Asturias, con solar en el concejo de Nava; Castropol, que el texto original une a Nava, es un concejo distinto del occidente asturiano. En cuanto al «capitán Alvar compañero del Cid»: el más conocido, Álvar Fáñez «Minaya», no tiene lugar de nacimiento documentado (se le supone burgalés o de la comarca del Pisuerga, no soriano) y su parentesco con el Cid es literario; según Gonzalo Martínez Diez «nunca perteneció a los ejércitos del Cid». La Albares del Bierzo existe: Albares de la Ribera, en el municipio de Torre del Bierzo, partido judicial de Ponferrada.",
+      "fuentes": [
+        "WP-APELLIDO",
+        "WP-ALVARFANEZ",
+        "WP-ALBARES"
+      ]
+    },
+    {
+      "id": "H54",
+      "seccion": "linaje-9",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "La maquinaria de Coltejer y la estación El Limón",
+      "texto": "La tradición familiar dice que los hijos de Manuel Antonio trajeron la primera maquinaria para Coltejer desde la estación Limón, porque aún no se había abierto el túnel de La Quiebra. Las fechas encajan con los años veinte: el Ferrocarril de Antioquia llegó desde Puerto Berrío a El Limón en 1920 y el túnel de La Quiebra se inauguró el 7 de agosto de 1929; antes de esa fecha la carga se trasbordaba por tierra entre El Limón y Santiago. Coltejer, en cambio, se fundó el 22 de octubre de 1907: el transporte que recuerda la familia corresponde probablemente a una ampliación de la fábrica en la década de 1920 y no a su fundación.",
+      "fuentes": [
+        "WP-FERROCARRIL",
+        "WP-COLTEJER",
+        "ORIG-HIST"
+      ]
+    },
+    {
+      "id": "H55",
+      "seccion": "metodologia",
+      "tipo": "contexto",
+      "clasificacion": "CONFIRMADO",
+      "titulo": "Gabriel Arango Mejía y las «Genealogías de Antioquia y Caldas»",
+      "texto": "La fuente de referencia para las familias antioqueñas es la obra de Gabriel Arango Mejía (Abejorral, 1872 - Medellín, 28 de diciembre de 1958), publicada primero como «Genealogías de las familias antioqueñas» y luego como «Genealogías de Antioquia y Caldas». Muchos datos de los cuadros originales coinciden literalmente con ella (por ejemplo, los de los Jaramillo y los Arango), lo que sugiere que fue una de las fuentes de la investigación familiar.",
+      "fuentes": [
+        "UPB-ROBLEDO",
+        "UPB-ARANGO",
+        "AM-J"
+      ]
+    },
+    {
+      "id": "H56",
+      "linea": "Naranjo",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Las mortuorias de Juan García de Ordás (1655-1656)",
+      "persona": {
+        "nombre": "Juan García de Ordas"
+      },
+      "texto": "El cuadro 17A le pone «F. 1655» (muerte en 1655). El catálogo del Archivo Histórico de Antioquia conserva una «Mortuoria de Juan García de Ordaz» de 1655 y otras dos de 1656 (una de ellas del «alférez Juan García Ordaz»), que corresponden probablemente a su sucesión. Los documentos están digitalizados por la British Library; no se leyeron.",
+      "fuentes": [
+        "EAP-ORDAZ",
+        "ORIG-T17A"
+      ]
+    },
+    {
+      "id": "HA01",
+      "linea": "Álvarez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Alonso López Paladines",
+      "persona": {
+        "nombre": "Alonso López Paladines"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria de Alonso López Paladines» (1627). El nombre coincide con el de los cuadros (que le dan el año 1627). Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-52-1",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "HA02",
+      "linea": "Velásquez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Juan Mejía Tobar",
+      "persona": {
+        "nombre": "Juan Mejía Tobar"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria de Juan Mejía de Tobar» (1644). El nombre coincide con el de los cuadros (que le dan el año 1584). Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-56-6",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "HA03",
+      "linea": "Velásquez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Andrés Garces",
+      "persona": {
+        "nombre": "Andrés Garces"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria de Andrés Garcés» (1644). El nombre coincide con el de los cuadros. Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-85-9",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "HA04",
+      "linea": "Naranjo",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Andrés de Parias",
+      "persona": {
+        "nombre": "Andrés de Parias"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria de Andrés de Parias» (1606). El nombre coincide con el de los cuadros (que le dan el año 1552). Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-73-3",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "HA05",
+      "linea": "Velásquez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Francisco Marquez Fontidueño",
+      "persona": {
+        "nombre": "Francisco Marquez Fontidueño"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria de Francisco Márquez de Fontidueño» (1647). El nombre coincide con el de los cuadros. Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-54-4",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "HA06",
+      "linea": "Naranjo",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Francisco Guzman Miranda",
+      "persona": {
+        "nombre": "Francisco Guzman Miranda"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria del capitán Francisco Guzmán» (1665). El nombre coincide con el de los cuadros (que le dan el año 1584). Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-36-6",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "HA07",
+      "linea": "Velásquez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Fernando Antonio Montoya",
+      "persona": {
+        "nombre": "Fernando Antonio Montoya"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria del capitán Fernando de Montoya» (1668). El nombre coincide con el de los cuadros (que le dan el año 1603). Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-61-1",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "HA08",
+      "linea": "Velásquez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Juan Piedrahita Saavedra",
+      "persona": {
+        "nombre": "Juan Piedrahita Saavedra"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria de Juan de Piedrahíta y Saavedra» (1667). El nombre coincide con el de los cuadros (que le dan el año 1613). Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-77-1",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "HA09",
+      "linea": "Velásquez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Laureano Piedrahita Saavedra",
+      "persona": {
+        "nombre": "Laureano Piedrahita Saavedra"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria de Laureano de Piedrahíta» (1698). El nombre coincide con el de los cuadros (que le dan el año 1632). Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-76-1",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "HA10",
+      "linea": "Naranjo",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Cristóbal Ruiz de la Parra",
+      "persona": {
+        "nombre": "Cristóbal Ruiz de la Parra"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria del capitán Cristóbal Ruiz de la Parra» (1669) y «Mortuoria del capitán Cristóbal Ruiz de la Parra» (1670). El nombre coincide con el de los cuadros (que le dan el año 1601). Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-122-1",
+        "EAP-1531-1-2-90-1",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "HA11",
+      "linea": "Álvarez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Catalina Tabares de Morga",
+      "persona": {
+        "nombre": "Catalina Tabares de Morga"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria de Catalina Tabares» (1684). El nombre coincide con el de los cuadros (que le dan el año 1619). Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-102-3",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "HA12",
+      "linea": "Naranjo",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Domingo Rodríguez Manzano",
+      "persona": {
+        "nombre": "Domingo Rodríguez Manzano"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria del capitán Domingo Rodríguez del Manzano» (1684). El nombre coincide con el de los cuadros (que le dan el año 1621). Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-92-6",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "HA13",
+      "linea": "Naranjo",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Manuel Gómez Sandi",
+      "persona": {
+        "nombre": "Manuel Gómez Sandi"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria del capitán Manuel Gómez Sandi» (1706). El nombre coincide con el de los cuadros. Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-38-3",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "HA14",
+      "linea": "Velásquez",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Ana María de Toro Zapata",
+      "persona": {
+        "nombre": "Ana María de Toro Zapata"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria de Ana María de Toro Zapata» (1703). El nombre coincide con el de los cuadros. Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-105-1",
+        "EAP-PROYECTO"
+      ]
+    },
+    {
+      "id": "HA15",
+      "linea": "Naranjo",
+      "tipo": "contexto",
+      "clasificacion": "PROBABLE",
+      "titulo": "Mortuoria en el Archivo Histórico de Antioquia: Juan Gómez de Salazar Vargas",
+      "persona": {
+        "nombre": "Juan Gómez de Salazar Vargas"
+      },
+      "texto": "El catálogo de mortuorias del Archivo Histórico de Antioquia (proyecto EAP1531 de la British Library) contiene «Mortuoria de Juan Gómez de Salazar» (1624) y «Mortuoria de Juan Gómez de Salazar» (1632) y «Mortuoria del capitán Juan Gómez de Salazar» (1669). El nombre coincide con el de los cuadros (que le dan el año 1583). Si se trata de la misma persona, la fecha del expediente es la de su muerte o la de la apertura de su sucesión, y el documento —digitalizado, con testamento e inventario de bienes— puede confirmar sus padres, su cónyuge y sus hijos. No se leyó el documento: la identificación es probable, no segura.",
+      "fuentes": [
+        "EAP-1531-1-2-31-3",
+        "EAP-1531-1-2-31-4",
+        "EAP-1531-1-2-31-2",
+        "EAP-PROYECTO"
+      ]
+    }
+  ]
+}

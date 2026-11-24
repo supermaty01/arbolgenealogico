@@ -14,7 +14,16 @@ Hay dos formatos:
 | Formato | Dónde | Qué tiene |
 |---|---|---|
 | **Página web** | `docs/` (GitHub Pages) | Árbol interactivo en abanico o en árbol, que parte de los hijos, con zoom, buscador y ficha de cada persona (incluye si es antepasado de ambos). También tiene la historia de la familia, el índice con filtros por lado y por línea, y los cuadros originales ampliables (65 cuadros, más 7 páginas medievales solo como imagen). Funciona en celular. |
-| **Libro** | `libro/Genealogia-Alvarez-Ruiz.pdf` | Páginas A4 verticales, listo para imprimir (márgenes en espejo, capítulos en página impar). Incluye portada, metodología, origen del apellido, el linaje Álvarez del Pino, la familia de Manuel Salvador y María Teresa, el árbol en abanico, las láminas verticales del árbol completo y el índice de personas con su lámina. |
+| **Libro** | `libro/Genealogia-Alvarez-Ruiz.pdf` | Páginas A4 verticales, listo para imprimir (márgenes en espejo, capítulos en página impar). Incluye portada, metodología, origen del apellido, el linaje Álvarez del Pino, la familia de Manuel Salvador y María Teresa, el árbol en abanico, las láminas verticales del árbol completo el índice de personas con su lámina y los hallazgos de la investigación con sus fuentes. |
+
+## Capa de investigación
+
+Los datos de los cuadros se contrastaron con fuentes publicadas: las *Genealogías de Antioquia y Caldas* de Arango Mejía, el catálogo de mortuorias del Archivo Histórico de Antioquia (British Library, EAP1531), el Diccionario Biográfico de la Real Academia de la Historia, Wikipedia y otras. Lo hallado no reemplaza al documento original: vive aparte, en `contenido/investigacion.json`. Cada hallazgo indica la persona, el dato original, el dato nuevo, una clasificación (**CONFIRMADO**, **PROBABLE** o **EN CONFLICTO**) y sus fuentes con URL.
+
+- `scripts/build_site.py` aplica la capa con `scripts/investigacion.py`. Solo modifica el árbol lo confirmado y las correcciones de errores de la extracción comprobadas en el cuadro original; lo probable y lo que está en conflicto quedan como notas.
+- Cada cambio guarda el valor original en la persona (`orig`). Las personas unidas por estar duplicadas conservan sus otros nombres como variantes.
+- En la web, cada ficha afectada tiene una sección «Investigación» separada de los datos del cuadro. La pestaña **Investigación** reúne todos los hallazgos, y las personas añadidas llevan una marca. En el libro, el capítulo 8 recoge los hallazgos y sus fuentes.
+- El informe completo está en [`investigacion/HALLAZGOS.md`](investigacion/HALLAZGOS.md). Se genera con `python scripts/informe_investigacion.py .` a partir de `investigacion/informe_cabecera.md` y del JSON.
 
 ## Publicar la web en GitHub Pages
 
@@ -33,7 +42,7 @@ Los cuadros originales están hechos con espacios y colores en Word, no con tabl
 1. **Word → PDF** con Word, para conservar la posición exacta de cada palabra. Para María Teresa se unen en un solo PDF los dos documentos: `# 1 - MARIA TERESA RUIZ MAYA` (págs. 1-55) y `MARIA TERESA RUIZ MAYA PARTE 2` (págs. 56-79).
 2. **`scripts/tree.py`**: lee las palabras con sus coordenadas (PyMuPDF) y reconstruye cada cuadro por franjas de generación. Usa la «Y» que une a cada pareja y las marcas `|` y `XXX` para saber quién es hijo de quién. Los cuadros de Manuel Salvador tienen sus páginas fijas en el script. Los de María Teresa se describen en `datos/teresa-cuadros.json`, con las páginas y franjas de cada cuadro. Salida: `datos/arboles-parseados.json` y `datos/teresa-parseados.json`.
 3. **`scripts/build_data.py`**: limpia los nombres y los lugares (ESP → España, MED → Medellín…). Enlaza los cuadros entre sí y une a la misma persona cuando aparece en varios cuadros, también entre las dos ramas. El cuadro n.º 1 de María Teresa pone la última generación en un bloque aparte, numerado por persona, y se enlaza a mano en `fix_teresa1`. Salida: `datos/personas.json`.
-4. **`scripts/build_site.py`**: añade la raíz (los hijos), las seis líneas, la narrativa (`contenido/historia.json`), las fotos, los hijos y hermanos de Manuel Salvador y las imágenes de los cuadros. Genera `docs/data/familia.json`. Con `SKIP_IMG=1` no vuelve a dibujar las imágenes de los cuadros.
+4. **`scripts/build_site.py`**: aplica la capa de investigación (`contenido/investigacion.json`), añade la raíz (los hijos), las seis líneas, la narrativa (`contenido/historia.json`), las fotos, los hijos y hermanos de Manuel Salvador y las imágenes de los cuadros. Genera `docs/data/familia.json`. Con `SKIP_IMG=1` no vuelve a dibujar las imágenes de los cuadros.
 5. **`scripts/build_book.py . --pdf`**: genera `libro/libro.html` y lo imprime a PDF con Edge (Playwright). `scripts/laminas.py` reparte el árbol en láminas verticales: cada una tiene como máximo 7 columnas y 10 generaciones, y lo que no cabe continúa en otra lámina. El script añade páginas en blanco para que cada capítulo empiece en página impar.
 
 ```bash
