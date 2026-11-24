@@ -26,6 +26,8 @@ Hay dos formatos:
 
 Para verla en tu computador: `cd docs && python -m http.server` y abrir <http://localhost:8000>. Si abres `index.html` con doble clic no carga los datos, porque el navegador bloquea la lectura del JSON.
 
+Para medir el rendimiento (carga, número de nodos y tiempo por fotograma al hacer zoom y arrastrar, en escritorio y en celular con la CPU limitada 4x): `python -P scripts/perf.py --check`. Necesita Playwright y Edge; `--docs` mide otra copia de la web, `--out` guarda las cifras en JSON y `--shots` guarda capturas para comparar el aspecto.
+
 ## Cómo se construyó (y cómo regenerarlo)
 
 Los cuadros originales están hechos con espacios y colores en Word, no con tablas. Para extraerlos:
