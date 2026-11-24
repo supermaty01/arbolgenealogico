@@ -5,7 +5,8 @@
 Árbol genealógico de los hijos de **Manuel Salvador Álvarez Ruiz** y **María Teresa Ruiz Maya**, a partir de dos investigaciones familiares originales:
 
 - la de Manuel Salvador: 14 documentos de Word con textos, fotos y 28 cuadros de ascendientes;
-- la de María Teresa: dos documentos de Word con sus cuadros n.º 1 a 11 y 16 a 19 y sus continuaciones (3A, 3B…, 17A…17G), que llegan hasta los linajes medievales de España.
+- la de María Teresa: dos documentos de Word con sus cuadros n.º 1 a 11 y 16 a 19 y sus continuaciones (3A, 3B…, 17A…17G), que llegan hasta los linajes medievales de España;
+- documentos complementarios: el árbol de la línea directa del apellido (con los años de vida de cada generación), el texto «Genealogía Álvarez del Pino» (fechas de matrimonios y testamentos, ramas colaterales) y dos cuadros sueltos, de Fermín Álvarez Velásquez y de Fernando Antonio Arango Vélez.
 
 Manuel Salvador y María Teresa eran parientes: la madre de él (Trinidad Ruiz Velásquez) y la abuela materna de ella (Dolores Ruiz Velásquez) eran hermanas. Por eso más de 500 antepasados aparecen en las dos ramas.
 
@@ -31,17 +32,18 @@ Para verla en tu computador: `cd docs && python -m http.server` y abrir <http://
 Los cuadros originales están hechos con espacios y colores en Word, no con tablas. Para extraerlos:
 
 1. **Word → PDF** con Word, para conservar la posición exacta de cada palabra. Para María Teresa se unen en un solo PDF los dos documentos: `# 1 - MARIA TERESA RUIZ MAYA` (págs. 1-55) y `MARIA TERESA RUIZ MAYA PARTE 2` (págs. 56-79).
-2. **`scripts/tree.py`**: lee las palabras con sus coordenadas (PyMuPDF) y reconstruye cada cuadro por franjas de generación. Usa la «Y» que une a cada pareja y las marcas `|` y `XXX` para saber quién es hijo de quién. Los cuadros de Manuel Salvador tienen sus páginas fijas en el script. Los de María Teresa se describen en `datos/teresa-cuadros.json`, con las páginas y franjas de cada cuadro. Salida: `datos/arboles-parseados.json` y `datos/teresa-parseados.json`.
-3. **`scripts/build_data.py`**: limpia los nombres y los lugares (ESP → España, MED → Medellín…). Enlaza los cuadros entre sí y une a la misma persona cuando aparece en varios cuadros, también entre las dos ramas. El cuadro n.º 1 de María Teresa pone la última generación en un bloque aparte, numerado por persona, y se enlaza a mano en `fix_teresa1`. Salida: `datos/personas.json`.
-4. **`scripts/build_site.py`**: añade la raíz (los hijos), las seis líneas, la narrativa (`contenido/historia.json`), las fotos, los hijos y hermanos de Manuel Salvador y las imágenes de los cuadros. Genera `docs/data/familia.json`. Con `SKIP_IMG=1` no vuelve a dibujar las imágenes de los cuadros.
+2. **`scripts/tree.py`**: lee las palabras con sus coordenadas (PyMuPDF) y reconstruye cada cuadro por franjas de generación. Usa la «Y» que une a cada pareja y las marcas `|` y `XXX` para saber quién es hijo de quién. Los cuadros de Manuel Salvador tienen sus páginas fijas en el script. Los de María Teresa se describen en `datos/teresa-cuadros.json`, con las páginas y franjas de cada cuadro. Los cuadros sueltos se describen igual en `datos/complementos-cuadros.json` (claves 201+). Salida: `datos/arboles-parseados.json`, `datos/teresa-parseados.json` y `datos/complementos-parseados.json`.
+3. **`scripts/build_data.py`**: limpia los nombres y los lugares (ESP → España, MED → Medellín…). Enlaza los cuadros entre sí y une a la misma persona cuando aparece en varios cuadros, también entre las dos ramas. El cuadro n.º 1 de María Teresa pone la última generación en un bloque aparte, numerado por persona, y se enlaza a mano en `fix_teresa1`. Los cuadros complementarios solo completan: el nombre, la fecha y los padres de cada persona salen de los cuadros principales cuando estos los traen. Salida: `datos/personas.json`.
+4. **`scripts/build_site.py`**: añade la raíz (los hijos), las seis líneas, la narrativa (`contenido/historia.json`, con los años de vida del árbol de línea directa en la clave `vida`), las fotos, los hijos y hermanos de Manuel Salvador y las imágenes de los cuadros. Genera `docs/data/familia.json`. Con `SKIP_IMG=1` no vuelve a dibujar las imágenes de los cuadros.
 5. **`scripts/build_book.py . --pdf`**: genera `libro/libro.html` y lo imprime a PDF con Edge (Playwright). `scripts/laminas.py` reparte el árbol en láminas verticales: cada una tiene como máximo 7 columnas y 10 generaciones, y lo que no cabe continúa en otra lámina. El script añade páginas en blanco para que cada capítulo empiece en página impar.
 
 ```bash
 pip install pymupdf pillow playwright
 python -P scripts/tree.py cuadros.pdf "12:1,13:2,...,39:28" datos/arboles-parseados.json
 python -P scripts/tree.py teresa.pdf datos/teresa-cuadros.json datos/teresa-parseados.json
-python scripts/build_data.py datos/arboles-parseados.json datos/personas.json datos/teresa-parseados.json
-python -P scripts/build_site.py datos/personas.json contenido/historia.json cuadros.pdf <carpeta_fotos> docs teresa.pdf datos/teresa-cuadros.json
+python -P scripts/tree.py complementos.pdf datos/complementos-cuadros.json datos/complementos-parseados.json
+python scripts/build_data.py datos/arboles-parseados.json datos/personas.json datos/teresa-parseados.json datos/complementos-parseados.json
+python -P scripts/build_site.py datos/personas.json contenido/historia.json cuadros.pdf <carpeta_fotos> docs teresa.pdf datos/teresa-cuadros.json complementos.pdf datos/complementos-cuadros.json
 python scripts/build_book.py . --pdf
 ```
 

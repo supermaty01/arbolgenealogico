@@ -478,7 +478,7 @@ function renderOriginales() {
   el.innerHTML = `<div class="wrap wide"><span class="kicker">Facsímil</span><h1 class="display" style="font-size:44px">Los cuadros originales</h1>
     <p class="lede" style="font-size:18px">Los cuadros de ascendientes tal como fueron elaborados en la investigación original. Toca un cuadro para verlo en grande y hacer zoom.</p>
     <h2 class="sec">Manuel Salvador Álvarez Ruiz</h2>
-    <p class="note">28 cuadros. En el cuadro n.º 1, cada integrante de la última fila lleva el número del cuadro en el que continúa su ascendencia.</p>
+    <p class="note">${D.trees.filter(t => t.side === 'M' && !t.name).length} cuadros. En el cuadro n.º 1, cada integrante de la última fila lleva el número del cuadro en el que continúa su ascendencia.</p>
     <div class="grid">${D.trees.filter(t => t.side === 'M').map(card).join('')}</div>
     <h2 class="sec">María Teresa Ruiz Maya</h2>
     <p class="note">Cuadros n.º 1 a 11 y 16 a 19, con sus continuaciones (3A, 3B…). Los cuadros 17A a 17G llegan a los linajes medievales de España (Ponce de León, Guzmán, reyes de León, Castilla y Navarra, visigodos). Al final están, solo como imagen, las páginas de la parte 2 que no se pudieron leer automáticamente.</p>
