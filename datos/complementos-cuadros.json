@@ -1,0 +1,22 @@
+{
+ "comment": "Cuadros sueltos enviados después de las dos investigaciones principales. Páginas del PDF combinado 'complementos.pdf': 1 = 'FERMIN ALVAREZ VELASQUEZ.docx', 2 = '# 14 - 77. ASCENDIENTES FERNANDO ARANGO VÉLEZ.docx'. Claves 201+; cada raíz se empalma con la misma persona en los demás cuadros.",
+ "drop_lines": [],
+ "keep_title": [],
+ "labels": {
+  "201": "Fermín",
+  "202": "Fernando Arango"
+ },
+ "names": {
+  "201": "Cuadro de Fermín Álvarez Velásquez",
+  "202": "Cuadro de Fernando Antonio Arango Vélez"
+ },
+ "sides": {
+  "201": "M",
+  "202": "T"
+ },
+ "titles": {},
+ "trees": {
+  "201": [[1, 0, 2000]],
+  "202": [[2, 0, 2000]]
+ }
+}

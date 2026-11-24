@@ -1,0 +1,4633 @@
+{
+"201": {
+"page": 1,
+"people": [
+{
+"name": "FERMÍN ALVAREZ VELASQUEZ",
+"rows": [
+"FERMÍN ALVAREZ VELASQUEZ"
+],
+"bbox": [
+721.1500244140625,
+45.07885694503784,
+873.3186645507812,
+55.038856983184814
+],
+"page": 1,
+"date": "",
+"color": "#ff0000",
+"x": 801.4,
+"y": 50.1,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-0",
+"band": 1,
+"father": "T201-2",
+"mother": "T201-3",
+"spouse": "T201-1"
+},
+{
+"name": "",
+"rows": [],
+"bbox": null,
+"page": null,
+"date": "",
+"color": "#000000",
+"x": 500000499.5,
+"y": 0,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-1",
+"band": 1,
+"father": null,
+"mother": null,
+"spouse": "T201-0"
+},
+{
+"name": "JOSÉ IGNACIO ALVAREZ DE PINO MAURIS",
+"rows": [
+"JOSÉ IGNACIO",
+"ALVAREZ DE",
+"PINO MAURIS"
+],
+"bbox": [
+606.530029296875,
+77.688560962677,
+642.0015869140625,
+95.94859266281128
+],
+"page": 1,
+"date": "",
+"color": "#1155cc",
+"x": 623.9,
+"y": 80.2,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-2",
+"band": 2,
+"father": "T201-4",
+"mother": "T201-5",
+"spouse": "T201-3"
+},
+{
+"name": "ROSALÍA VELÁSQUEZ GONZALEZ",
+"rows": [
+"ROSALÍA",
+"VELÁSQUEZ",
+"GONZALEZ"
+],
+"bbox": [
+922.4199829101562,
+77.688560962677,
+952.498779296875,
+102.54856824874878
+],
+"page": 1,
+"date": "XXXXX",
+"color": "#1155cc",
+"x": 936.9,
+"y": 80.2,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-3",
+"band": 2,
+"father": null,
+"mother": null,
+"spouse": "T201-2"
+},
+{
+"name": "DIEGO JOSÉ ALVAREZ DEL PINO GONZÁLEZ",
+"rows": [
+"DIEGO JOSÉ",
+"ALVAREZ DEL",
+"PINO GONZÁLEZ"
+],
+"bbox": [
+398.92999267578125,
+110.708580493927,
+440.87725830078125,
+135.5485644340515
+],
+"page": 1,
+"date": "1723",
+"color": "#ff0000",
+"x": 416.3,
+"y": 113.2,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-4",
+"band": 3,
+"father": "T201-6",
+"mother": "T201-7",
+"spouse": "T201-5"
+},
+{
+"name": "TOMASA MAURIS POSADA",
+"rows": [
+"TOMASA",
+"MAURIS",
+"POSADA"
+],
+"bbox": [
+844.030029296875,
+110.708580493927,
+866.7086181640625,
+135.5485644340515
+],
+"page": 1,
+"date": "1725",
+"color": "#ff0000",
+"x": 855.2,
+"y": 113.2,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-5",
+"band": 3,
+"father": "T201-8",
+"mother": "T201-9",
+"spouse": "T201-4"
+},
+{
+"name": "JUAN MANUEL ALVAREZ DEL PINO GARCIA",
+"rows": [
+"JUAN MANUEL",
+"ALVAREZ DEL",
+"PINO GARCIA"
+],
+"bbox": [
+257.17999267578125,
+143.82857179641724,
+292.50042724609375,
+168.668559551239
+],
+"page": 1,
+"date": "COL.1689",
+"color": "#b45f06",
+"x": 274.5,
+"y": 146.3,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-6",
+"band": 4,
+"father": "T201-10",
+"mother": "T201-11",
+"spouse": "T201-7"
+},
+{
+"name": "JUANA LUCIA GONZALEZ GOMEZ",
+"rows": [
+"JUANA LUCIA",
+"GONZALEZ",
+"GOMEZ"
+],
+"bbox": [
+551.1490478515625,
+143.82857179641724,
+583.6619262695312,
+168.668559551239
+],
+"page": 1,
+"date": "1703",
+"color": "#b45f06",
+"x": 566.3,
+"y": 146.3,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-7",
+"band": 4,
+"father": "T201-12",
+"mother": "T201-13",
+"spouse": "T201-6"
+},
+{
+"name": "MANUEL MAURIS LOPEZ",
+"rows": [
+"MANUEL",
+"MAURIS",
+"LOPEZ"
+],
+"bbox": [
+754.75,
+143.82857179641724,
+775.6709594726562,
+168.668559551239
+],
+"page": 1,
+"date": "ESP.",
+"color": "#1155cc",
+"x": 763.4,
+"y": 146.3,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-8",
+"band": 4,
+"father": "T201-14",
+"mother": "T201-15",
+"spouse": "T201-9"
+},
+{
+"name": "LIBERATA POSADA ALVAREZ COL",
+"rows": [
+"LIBERATA",
+"POSADA",
+"ALVAREZ",
+"COL"
+],
+"bbox": [
+923.1471557617188,
+143.82857179641724,
+948.7832641601562,
+168.668559551239
+],
+"page": 1,
+"date": "",
+"color": "#1155cc",
+"x": 938.4,
+"y": 146.3,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-9",
+"band": 4,
+"father": "T201-16",
+"mother": "T201-17",
+"spouse": "T201-8"
+},
+{
+"name": "GREGORIO ALVAREZ DEL PINO CORTÉS",
+"rows": [
+"GREGORIO",
+"ALVAREZ DEL",
+"PINO CORTÉS"
+],
+"bbox": [
+140.4199981689453,
+176.82857179641724,
+175.73385620117188,
+201.668559551239
+],
+"page": 1,
+"date": "1635",
+"color": "#b45f06",
+"x": 153.7,
+"y": 179.3,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-10",
+"band": 5,
+"father": "T201-18",
+"mother": "T201-19",
+"spouse": "T201-11"
+},
+{
+"name": "JUANA GABRIELA GARCÍA LOPEZ",
+"rows": [
+"JUANA",
+"GABRIELA",
+"GARCÍA LOPEZ"
+],
+"bbox": [
+359.5400085449219,
+176.82857179641724,
+396.60943603515625,
+201.668559551239
+],
+"page": 1,
+"date": "COL 1638",
+"color": "#b45f06",
+"x": 377.3,
+"y": 179.3,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-11",
+"band": 5,
+"father": "T201-20",
+"mother": "T201-21",
+"spouse": "T201-10"
+},
+{
+"name": "JUAN FRANCISCO GONZALEZ FERNÁNDEZ",
+"rows": [
+"JUAN FRANCISCO",
+"GONZALEZ",
+"FERNÁNDEZ"
+],
+"bbox": [
+459.8900146484375,
+176.82857179641724,
+506.5151672363281,
+201.668559551239
+],
+"page": 1,
+"date": "ESP.1685",
+"color": "#ff0000",
+"x": 481.2,
+"y": 179.3,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-12",
+"band": 5,
+"father": "T201-22",
+"mother": "T201-23",
+"spouse": "T201-13"
+},
+{
+"name": "MARIA JOSEFA GÓMEZ ARNEDO COL",
+"rows": [
+"MARIA",
+"JOSEFA GÓMEZ",
+"ARNEDO",
+"COL"
+],
+"bbox": [
+645.6753540039062,
+176.82857179641724,
+686.4254150390625,
+201.668559551239
+],
+"page": 1,
+"date": "",
+"color": "#ff0000",
+"x": 665.6,
+"y": 179.3,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-13",
+"band": 5,
+"father": "T201-24",
+"mother": "T201-25",
+"spouse": "T201-12"
+},
+{
+"name": "DOMINGO MAURIS LLANES ESP",
+"rows": [
+"DOMINGO",
+"MAURIS",
+"LLANES",
+"ESP"
+],
+"bbox": [
+733.989990234375,
+176.82857179641724,
+762.9176025390625,
+208.26859617233276
+],
+"page": 1,
+"date": "XXXXXXXX",
+"color": "#38761d",
+"x": 745.2,
+"y": 179.3,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-14",
+"band": 5,
+"father": null,
+"mother": null,
+"spouse": "T201-15"
+},
+{
+"name": "DOMINGA LÓPEZ YAÑEZ ESP.",
+"rows": [
+"DOMINGA",
+"LÓPEZ",
+"YAÑEZ",
+"ESP."
+],
+"bbox": [
+770.072998046875,
+176.82857179641724,
+794.076904296875,
+208.26859617233276
+],
+"page": 1,
+"date": "XXXXXX",
+"color": "#38761d",
+"x": 780.3,
+"y": 179.3,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-15",
+"band": 5,
+"father": null,
+"mother": null,
+"spouse": "T201-14"
+},
+{
+"name": "MANUEL POSADA BERDAYES",
+"rows": [
+"MANUEL",
+"POSADA",
+"BERDAYES"
+],
+"bbox": [
+831.6699829101562,
+176.82857179641724,
+858.7902221679688,
+201.668559551239
+],
+"page": 1,
+"date": "ESP. 1664",
+"color": "#ff0000",
+"x": 845.3,
+"y": 179.3,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-16",
+"band": 5,
+"father": "T201-26",
+"mother": "T201-27",
+"spouse": "T201-17"
+},
+{
+"name": "JERÓNIMA ÁLVAREZ DEL GARCIA COL",
+"rows": [
+"JERÓNIMA",
+"ÁLVAREZ DEL",
+"GARCIA",
+"COL"
+],
+"bbox": [
+1013.736083984375,
+176.82857179641724,
+1049.294921875,
+201.668559551239
+],
+"page": 1,
+"date": "",
+"color": "#ff0000",
+"x": 1032.2,
+"y": 179.3,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-17",
+"band": 5,
+"father": "T201-28",
+"mother": "T201-29",
+"spouse": "T201-16"
+},
+{
+"name": "PEDRO ALVAREZ DEL PINO ARCOS CORTÉS",
+"rows": [
+"PEDRO",
+"ALVAREZ DEL PINO",
+"ARCOS CORTÉS"
+],
+"bbox": [
+66.83999633789062,
+209.94856691360474,
+114.30670166015625,
+234.7885546684265
+],
+"page": 1,
+"date": "COL.1617",
+"color": "#b45f06",
+"x": 86.9,
+"y": 212.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-18",
+"band": 6,
+"father": "T201-30",
+"mother": "T201-31",
+"spouse": "T201-19"
+},
+{
+"name": "GREGORIA CORTES RODRIGUEZ",
+"rows": [
+"GREGORIA",
+"CORTES",
+"RODRIGUEZ"
+],
+"bbox": [
+199.82000732421875,
+209.94856691360474,
+229.7677459716797,
+234.7885546684265
+],
+"page": 1,
+"date": "COL. 1616",
+"color": "#b45f06",
+"x": 214.4,
+"y": 212.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-19",
+"band": 6,
+"father": "T201-32",
+"mother": "T201-33",
+"spouse": "T201-18"
+},
+{
+"name": "FELIPE GARCIA DE ORDAZ COL",
+"rows": [
+"FELIPE",
+"GARCIA",
+"DE ORDAZ",
+"COL"
+],
+"bbox": [
+310.4599914550781,
+209.94856691360474,
+336.2093811035156,
+234.7885546684265
+],
+"page": 1,
+"date": "",
+"color": "#ff0000",
+"x": 325.6,
+"y": 212.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-20",
+"band": 6,
+"father": "T201-34",
+"mother": "T201-35",
+"spouse": "T201-21"
+},
+{
+"name": "JERÓNIMA LOPEZ PALADINES",
+"rows": [
+"JERÓNIMA",
+"LOPEZ",
+"PALADINES"
+],
+"bbox": [
+415.3377990722656,
+209.94856691360474,
+443.4157409667969,
+234.7885546684265
+],
+"page": 1,
+"date": "COL .1615",
+"color": "#ff0000",
+"x": 429.4,
+"y": 212.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-21",
+"band": 6,
+"father": "T201-36",
+"mother": "T201-37",
+"spouse": "T201-20"
+},
+{
+"name": "JUAN GONZÁLEZ NORIEGA ESP.",
+"rows": [
+"JUAN",
+"GONZÁLEZ",
+"NORIEGA",
+"ESP."
+],
+"bbox": [
+451.25,
+209.94856691360474,
+478.19384765625,
+241.38859128952026
+],
+"page": 1,
+"date": "XXXXX",
+"color": "#1155cc",
+"x": 466.1,
+"y": 212.5,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-22",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T201-23"
+},
+{
+"name": "LUCÍA TORIBIA FERNÁNDEZ DE ARNEDO",
+"rows": [
+"LUCÍA TORIBIA",
+"FERNÁNDEZ",
+"DE ARNEDO"
+],
+"bbox": [
+491.4283142089844,
+209.94856691360474,
+528.9662475585938,
+234.7885546684265
+],
+"page": 1,
+"date": "ESP 1708.",
+"color": "#1155cc",
+"x": 513.1,
+"y": 212.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-23",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T201-22"
+},
+{
+"name": "JOSE GÓMEZ POBLETE",
+"rows": [
+"JOSE",
+"GÓMEZ",
+"POBLETE"
+],
+"bbox": [
+605.8099975585938,
+209.94856691360474,
+629.0879516601562,
+234.7885546684265
+],
+"page": 1,
+"date": "COL.1616",
+"color": "#38761d",
+"x": 615.7,
+"y": 212.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-24",
+"band": 6,
+"father": "T201-38",
+"mother": "T201-39",
+"spouse": "T201-25"
+},
+{
+"name": "ISABEL LUCIA ARNEDO PALADINES COL.",
+"rows": [
+"ISABEL LUCIA",
+"ARNEDO",
+"PALADINES",
+"COL."
+],
+"bbox": [
+689.7213134765625,
+209.94856691360474,
+723.4288330078125,
+234.7885546684265
+],
+"page": 1,
+"date": "",
+"color": "#38761d",
+"x": 708.7,
+"y": 212.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-25",
+"band": 6,
+"father": "T201-40",
+"mother": "T201-41",
+"spouse": "T201-24"
+},
+{
+"name": "MANUEL BERDALLES POSADA",
+"rows": [
+"MANUEL",
+"BERDALLES",
+"POSADA"
+],
+"bbox": [
+791.7100219726562,
+209.94856691360474,
+821.1133422851562,
+234.7885546684265
+],
+"page": 1,
+"date": "ESP.",
+"color": "#1155cc",
+"x": 803.0,
+"y": 212.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-26",
+"band": 6,
+"father": "T201-42",
+"mother": "T201-43",
+"spouse": "T201-27"
+},
+{
+"name": "CATALINA SANCHEZ QUINTANA",
+"rows": [
+"CATALINA",
+"SANCHEZ",
+"QUINTANA"
+],
+"bbox": [
+876.8253173828125,
+209.94856691360474,
+903.8107299804688,
+234.7885546684265
+],
+"page": 1,
+"date": "ESP.",
+"color": "#1155cc",
+"x": 890.6,
+"y": 212.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-27",
+"band": 6,
+"father": "T201-44",
+"mother": "T201-45",
+"spouse": "T201-26"
+},
+{
+"name": "GREGORIO ALVAREZ CORTÉS",
+"rows": [
+"GREGORIO",
+"ALVAREZ",
+"CORTÉS"
+],
+"bbox": [
+962.3800048828125,
+209.94856691360474,
+989.9337158203125,
+234.7885546684265
+],
+"page": 1,
+"date": "1634",
+"color": "#f1c232",
+"x": 976.5,
+"y": 212.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-28",
+"band": 6,
+"father": "T201-46",
+"mother": "T201-47",
+"spouse": "T201-29"
+},
+{
+"name": "JUANA GABRIELA GARCIA LOPEZ",
+"rows": [
+"JUANA",
+"GABRIELA",
+"GARCIA LOPEZ"
+],
+"bbox": [
+1069.1798095703125,
+209.94856691360474,
+1107.4134521484375,
+234.7885546684265
+],
+"page": 1,
+"date": "1630",
+"color": "#f1c232",
+"x": 1089.0,
+"y": 212.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-29",
+"band": 6,
+"father": "T201-48",
+"mother": "T201-49",
+"spouse": "T201-28"
+},
+{
+"name": "DIEGO ÁLVAREZ DEL PINO FERNANDEZ",
+"rows": [
+"DIEGO",
+"ÁLVAREZ DEL",
+"PINO FERNANDEZ"
+],
+"bbox": [
+25.079999923706055,
+242.94856691360474,
+69.30095672607422,
+267.8185992240906
+],
+"page": 1,
+"date": "COL 1584",
+"color": "#f1c232",
+"x": 41.1,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-30",
+"band": 7,
+"father": "T201-50",
+"mother": "T201-51",
+"spouse": "T201-31"
+},
+{
+"name": "JUSTINA ARCOS CORTES",
+"rows": [
+"JUSTINA",
+"ARCOS",
+"CORTES"
+],
+"bbox": [
+106.12847900390625,
+242.94856691360474,
+129.9727325439453,
+267.8185992240906
+],
+"page": 1,
+"date": "ESP 1585.",
+"color": "#f1c232",
+"x": 114.4,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-31",
+"band": 7,
+"father": "T201-52",
+"mother": "T201-53",
+"spouse": "T201-30"
+},
+{
+"name": "CAPITÁN ÁLVARO DE LOS ARCOS CORTES OSORIO",
+"rows": [
+"CAPITÁN ÁLVARO",
+"DE LOS ARCOS",
+"CORTES OSORIO"
+],
+"bbox": [
+156.86000061035156,
+242.94856691360474,
+206.58973693847656,
+267.8185992240906
+],
+"page": 1,
+"date": "ESP.1575",
+"color": "#1155cc",
+"x": 176.8,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-32",
+"band": 7,
+"father": "T201-54",
+"mother": "T201-55",
+"spouse": "T201-33"
+},
+{
+"name": "ISABEL RODRIGUEZ DE LOS RÍOS COL-",
+"rows": [
+"ISABEL",
+"RODRIGUEZ",
+"DE LOS RÍOS",
+"COL-"
+],
+"bbox": [
+221.8458251953125,
+242.94856691360474,
+253.7490692138672,
+267.8185992240906
+],
+"page": 1,
+"date": "",
+"color": "#1155cc",
+"x": 236.6,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-33",
+"band": 7,
+"father": "T201-56",
+"mother": "T201-57",
+"spouse": "T201-32"
+},
+{
+"name": "JUAN GARCIA DE ORDAZ",
+"rows": [
+"JUAN",
+"GARCIA",
+"DE ORDAZ"
+],
+"bbox": [
+284.29998779296875,
+242.94856691360474,
+310.1754150390625,
+267.8185992240906
+],
+"page": 1,
+"date": "ESP.1567",
+"color": "#ff0000",
+"x": 296.2,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-34",
+"band": 7,
+"father": "T201-58",
+"mother": "T201-59",
+"spouse": "T201-35"
+},
+{
+"name": "MARINA CORTES FIGUEROA",
+"rows": [
+"MARINA",
+"CORTES",
+"FIGUEROA"
+],
+"bbox": [
+339.216064453125,
+242.94856691360474,
+365.4845886230469,
+267.8185992240906
+],
+"page": 1,
+"date": "ESP.",
+"color": "#ff0000",
+"x": 351.6,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-35",
+"band": 7,
+"father": "T201-60",
+"mother": "T201-61",
+"spouse": "T201-34"
+},
+{
+"name": "ALONSO LOPEZ PALADINES",
+"rows": [
+"ALONSO",
+"LOPEZ",
+"PALADINES"
+],
+"bbox": [
+393.2900085449219,
+242.94856691360474,
+421.3679504394531,
+267.8185992240906
+],
+"page": 1,
+"date": "ESP.",
+"color": "#bf9000",
+"x": 407.3,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-36",
+"band": 7,
+"father": "T201-62",
+"mother": "T201-63",
+"spouse": "T201-37"
+},
+{
+"name": "ISABEL PEDRO PEREZ FERNANDEZ GALEANO VELARDE",
+"rows": [
+"ISABEL PEDRO",
+"PEREZ FERNANDEZ",
+"GALEANO VELARDE"
+],
+"bbox": [
+443.5339660644531,
+242.94856691360474,
+510.4825439453125,
+267.8185992240906
+],
+"page": 1,
+"date": "ESP.",
+"color": "#f1c232",
+"x": 452.9,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-37",
+"band": 7,
+"father": "T201-64",
+"mother": "T201-65",
+"spouse": "T201-36"
+},
+{
+"name": "ANA MARIA DOMINGO GOMEZ GOMEZ ARNEDO DE UREÑA",
+"rows": [
+"ANA MARIA DOMINGO",
+"GOMEZ GOMEZ",
+"ARNEDO DE UREÑA"
+],
+"bbox": [
+518.9061279296875,
+242.94856691360474,
+601.9238891601562,
+267.8185992240906
+],
+"page": 1,
+"date": "ESP. ESP. 1575",
+"color": "#ff0000",
+"x": 584.6,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-38",
+"band": 7,
+"father": "T201-66",
+"mother": "T201-67",
+"spouse": "T201-39"
+},
+{
+"name": "ANA POBLETE PEREZ DE UREÑA COL.",
+"rows": [
+"ANA POBLETE",
+"PEREZ",
+"DE UREÑA",
+"COL."
+],
+"bbox": [
+631.6852416992188,
+242.94856691360474,
+666.3605346679688,
+267.8185992240906
+],
+"page": 1,
+"date": "",
+"color": "#ff0000",
+"x": 645.6,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-39",
+"band": 7,
+"father": "T201-68",
+"mother": "T201-69",
+"spouse": "T201-38"
+},
+{
+"name": "ALONSO TIBURCIO DE ARNEDO",
+"rows": [
+"ALONSO",
+"TIBURCIO",
+"DE ARNEDO"
+],
+"bbox": [
+672.5499877929688,
+242.94856691360474,
+702.2606811523438,
+267.8185992240906
+],
+"page": 1,
+"date": "ESP..",
+"color": "#134f5c",
+"x": 684.5,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-40",
+"band": 7,
+"father": null,
+"mother": null,
+"spouse": "T201-41"
+},
+{
+"name": "MARIA PALADINES DE LA FUENTE",
+"rows": [
+"MARIA",
+"PALADINES",
+"DE LA FUENTE"
+],
+"bbox": [
+709.2461547851562,
+242.94856691360474,
+745.1157836914062,
+267.8185992240906
+],
+"page": 1,
+"date": "COL.1618",
+"color": "#134f5c",
+"x": 723.4,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-41",
+"band": 7,
+"father": "T201-70",
+"mother": "T201-71",
+"spouse": "T201-40"
+},
+{
+"name": "TORIBIO BERDAYES POSADA",
+"rows": [
+"TORIBIO",
+"BERDAYES",
+"POSADA"
+],
+"bbox": [
+768.6699829101562,
+242.94856691360474,
+795.9161987304688,
+267.8185992240906
+],
+"page": 1,
+"date": "ESP.",
+"color": "#ff0000",
+"x": 778.9,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-42",
+"band": 7,
+"father": "T201-72",
+"mother": "T201-73",
+"spouse": "T201-43"
+},
+{
+"name": "CATALINA DE POSADA",
+"rows": [
+"CATALINA",
+"DE",
+"POSADA"
+],
+"bbox": [
+813.7445678710938,
+242.94856691360474,
+838.2137451171875,
+267.8185992240906
+],
+"page": 1,
+"date": "ESP.",
+"color": "#ff0000",
+"x": 823.2,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-43",
+"band": 7,
+"father": null,
+"mother": null,
+"spouse": "T201-42"
+},
+{
+"name": "PEDRO SANCHEZ QUINTANA",
+"rows": [
+"PEDRO",
+"SANCHEZ",
+"QUINTANA"
+],
+"bbox": [
+856.27001953125,
+242.94856691360474,
+882.2700805664062,
+267.8185992240906
+],
+"page": 1,
+"date": "ESP.",
+"color": "#00ffff",
+"x": 867.4,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-44",
+"band": 7,
+"father": "T201-74",
+"mother": "T201-75",
+"spouse": "T201-45"
+},
+{
+"name": "MARÍA GOMEZ DE LA TORRE",
+"rows": [
+"MARÍA",
+"GOMEZ",
+"DE LA TORRE"
+],
+"bbox": [
+897.3864135742188,
+242.94856691360474,
+930.7360229492188,
+267.8185992240906
+],
+"page": 1,
+"date": "ESP.",
+"color": "#00ffff",
+"x": 910.6,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-45",
+"band": 7,
+"father": null,
+"mother": null,
+"spouse": "T201-44"
+},
+{
+"name": "PEDRO ALVAREZ DEL PINO",
+"rows": [
+"PEDRO",
+"ALVAREZ",
+"DEL PINO"
+],
+"bbox": [
+937.780029296875,
+242.94856691360474,
+966.8612060546875,
+267.8185992240906
+],
+"page": 1,
+"date": "COL 1610",
+"color": "#b7b7b7",
+"x": 948.0,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-46",
+"band": 7,
+"father": "T201-76",
+"mother": "T201-77",
+"spouse": "T201-47"
+},
+{
+"name": "GREGORIA ARCOS CORTES",
+"rows": [
+"GREGORIA",
+"ARCOS",
+"CORTES"
+],
+"bbox": [
+997.6076049804688,
+242.94856691360474,
+1027.169921875,
+267.8185992240906
+],
+"page": 1,
+"date": "COL.1616",
+"color": "#b7b7b7",
+"x": 1009.0,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-47",
+"band": 7,
+"father": "T201-78",
+"mother": "T201-79",
+"spouse": "T201-46"
+},
+{
+"name": "FELIPE GARCIA DE ORDAZ COL.",
+"rows": [
+"FELIPE",
+"GARCIA",
+"DE ORDAZ",
+"COL."
+],
+"bbox": [
+1047.0999755859375,
+242.94856691360474,
+1072.9755859375,
+267.8185992240906
+],
+"page": 1,
+"date": "",
+"color": "#1155cc",
+"x": 1057.5,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-48",
+"band": 7,
+"father": "T201-80",
+"mother": "T201-81",
+"spouse": "T201-49"
+},
+{
+"name": "JERÓNIMA LOPEZ PALADINES",
+"rows": [
+"JERÓNIMA",
+"LOPEZ",
+"PALADINES"
+],
+"bbox": [
+1108.9656982421875,
+242.94856691360474,
+1139.350341796875,
+267.8185992240906
+],
+"page": 1,
+"date": "COL.1615",
+"color": "#1155cc",
+"x": 1120.0,
+"y": 245.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T201-49",
+"band": 7,
+"father": "T201-82",
+"mother": "T201-83",
+"spouse": "T201-48"
+},
+{
+"name": "DIEGO ALVAREZ MALDONADO",
+"rows": [
+"DIEGO",
+"ALVAREZ",
+"MALDONADO"
+],
+"bbox": [
+11.15999984741211,
+276.0986065864563,
+43.39583969116211,
+300.9385943412781
+],
+"page": 1,
+"date": "1564",
+"color": "#1155cc",
+"x": 23.2,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-50",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-51"
+},
+{
+"name": "ANA MARÍA DEL PINO FERNÁNDEZ",
+"rows": [
+"ANA MARÍA",
+"DEL PINO",
+"FERNÁNDEZ"
+],
+"bbox": [
+46.18799591064453,
+276.0986065864563,
+76.74047088623047,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP.",
+"color": "#1155cc",
+"x": 62.1,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-51",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-50"
+},
+{
+"name": "ALONSO DE LOS ARCO CORTES",
+"rows": [
+"ALONSO",
+"DE LOS ARCO",
+"CORTES"
+],
+"bbox": [
+81.0,
+276.0986065864563,
+116.4609603881836,
+300.9385943412781
+],
+"page": 1,
+"date": "COL.1575",
+"color": "#ff0000",
+"x": 94.7,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-52",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-53"
+},
+{
+"name": "ISABEL RODRÍGUEZ DE LOS RÍOS",
+"rows": [
+"ISABEL",
+"RODRÍGUEZ",
+"DE LOS RÍOS"
+],
+"bbox": [
+117.08136749267578,
+276.0986065864563,
+149.19578552246094,
+294.3386187553406
+],
+"page": 1,
+"date": "",
+"color": "#ff0000",
+"x": 133.5,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-53",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-52"
+},
+{
+"name": "GOMEZ ARCOS CORTES",
+"rows": [
+"GOMEZ",
+"ARCOS",
+"CORTES"
+],
+"bbox": [
+153.97999572753906,
+276.0986065864563,
+175.45472717285156,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP.",
+"color": "#f1c232",
+"x": 164.2,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-54",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-55"
+},
+{
+"name": "CATALINA GOMEZ OSORIO",
+"rows": [
+"CATALINA",
+"GOMEZ",
+"OSORIO"
+],
+"bbox": [
+181.3169708251953,
+276.0986065864563,
+205.66522216796875,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP.",
+"color": "#f1c232",
+"x": 196.1,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-55",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-54"
+},
+{
+"name": "ALONSO GOMEZ",
+"rows": [
+"ALONSO",
+"GOMEZ"
+],
+"bbox": [
+210.3800048828125,
+276.0986065864563,
+232.05538940429688,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP.",
+"color": "#38761d",
+"x": 221.2,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-56",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-57"
+},
+{
+"name": "ISABEL RODRIGUEZ DÍAZ",
+"rows": [
+"ISABEL",
+"RODRIGUEZ",
+"DÍAZ"
+],
+"bbox": [
+231.48753356933594,
+276.0986065864563,
+261.4302062988281,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP",
+"color": "#38761d",
+"x": 249.3,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-57",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-56"
+},
+{
+"name": "JORGE GARCÍA HERNÁNDEZ",
+"rows": [
+"JORGE",
+"GARCÍA",
+"HERNÁNDEZ"
+],
+"bbox": [
+265.4599914550781,
+276.0986065864563,
+297.576416015625,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP.",
+"color": "#f1c232",
+"x": 278.2,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-58",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-59"
+},
+{
+"name": "INES DE ORDAZ MANCILLA",
+"rows": [
+"INES",
+"DE ORDAZ",
+"MANCILLA"
+],
+"bbox": [
+298.7927551269531,
+276.0986065864563,
+325.4477233886719,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP.",
+"color": "#f1c232",
+"x": 312.8,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-59",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-58"
+},
+{
+"name": "MARTIN ALONSO FIGUEROA",
+"rows": [
+"MARTIN",
+"ALONSO",
+"FIGUEROA"
+],
+"bbox": [
+329.5400085449219,
+276.0986065864563,
+355.692626953125,
+294.3386187553406
+],
+"page": 1,
+"date": "",
+"color": "#bf9000",
+"x": 340.8,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-60",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-61"
+},
+{
+"name": "MARIA CORTES",
+"rows": [
+"MARIA",
+"CORTES"
+],
+"bbox": [
+353.767578125,
+276.0986065864563,
+374.63824462890625,
+287.7385821342468
+],
+"page": 1,
+"date": "",
+"color": "#bf9000",
+"x": 364.9,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-61",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-60"
+},
+{
+"name": "GONZALO LOPEZ PALADINES",
+"rows": [
+"GONZALO",
+"LOPEZ",
+"PALADINES"
+],
+"bbox": [
+379.010009765625,
+276.0986065864563,
+408.7679443359375,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP.",
+"color": "#134f5c",
+"x": 392.9,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-62",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-63"
+},
+{
+"name": "MARIA FRANCISCO GOMEZ PEREZ HOLGUIN COL",
+"rows": [
+"MARIA FRANCISCO",
+"GOMEZ PEREZ",
+"HOLGUIN",
+"COL"
+],
+"bbox": [
+410.429931640625,
+276.0986065864563,
+463.1989440917969,
+300.9385943412781
+],
+"page": 1,
+"date": "",
+"color": "#ff0000",
+"x": 471.0,
+"y": 278.6,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T201-63",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-62"
+},
+{
+"name": "JOSE GOMEZ POBLETE COL",
+"rows": [
+"JOSE",
+"GOMEZ",
+"POBLETE",
+"COL"
+],
+"bbox": [
+508.1905822753906,
+276.0986065864563,
+531.8828735351562,
+300.9385943412781
+],
+"page": 1,
+"date": "",
+"color": "#ff0000",
+"x": 499.4,
+"y": 278.6,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T201-64",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-65"
+},
+{
+"name": "ISABEL LUCIA ARNEDO COL",
+"rows": [
+"ISABEL",
+"LUCIA",
+"ARNEDO",
+"COL"
+],
+"bbox": [
+534.6397705078125,
+276.0986065864563,
+559.2567749023438,
+300.9385943412781
+],
+"page": 1,
+"date": "",
+"color": "#ff0000",
+"x": 548.7,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-65",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-64"
+},
+{
+"name": "ANTONIO PEREZ DE UREÑA COL.",
+"rows": [
+"ANTONIO",
+"PEREZ",
+"DE UREÑA",
+"COL."
+],
+"bbox": [
+560.2100219726562,
+276.0986065864563,
+586.1204833984375,
+300.9385943412781
+],
+"page": 1,
+"date": "",
+"color": "#38761d",
+"x": 571.9,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-66",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-67"
+},
+{
+"name": "CATALINA GOMEZ",
+"rows": [
+"CATALINA",
+"GOMEZ"
+],
+"bbox": [
+589.4644165039062,
+276.0986065864563,
+613.8176879882812,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP.",
+"color": "#38761d",
+"x": 603.5,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-67",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-66"
+},
+{
+"name": "ALFONSO PEREZ",
+"rows": [
+"ALFONSO",
+"PEREZ"
+],
+"bbox": [
+619.3699951171875,
+276.0986065864563,
+643.32421875,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP.",
+"color": "#f1c232",
+"x": 630.9,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-68",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-69"
+},
+{
+"name": "MARÍA VALERO",
+"rows": [
+"MARÍA",
+"VALERO"
+],
+"bbox": [
+647.1908569335938,
+276.0986065864563,
+668.07568359375,
+287.7385821342468
+],
+"page": 1,
+"date": "",
+"color": "#f1c232",
+"x": 678.1,
+"y": 278.6,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T201-69",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-68"
+},
+{
+"name": "ALONSO LOPEZ PALADINES",
+"rows": [
+"ALONSO",
+"LOPEZ",
+"PALADINES"
+],
+"bbox": [
+691.6300048828125,
+276.0986065864563,
+723.0302124023438,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP.",
+"color": "#ff0000",
+"x": 690.8,
+"y": 278.6,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T201-70",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-71"
+},
+{
+"name": "ISABEL PEREZ GALEANO COL.",
+"rows": [
+"ISABEL",
+"PEREZ",
+"GALEANO",
+"COL."
+],
+"bbox": [
+722.459716796875,
+276.0986065864563,
+750.0043334960938,
+300.9385943412781
+],
+"page": 1,
+"date": "",
+"color": "#ff0000",
+"x": 738.4,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-71",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-70"
+},
+{
+"name": "PEDRO BERDALLES DE POSADA",
+"rows": [
+"PEDRO",
+"BERDALLES",
+"DE POSADA"
+],
+"bbox": [
+749.3499755859375,
+276.0986065864563,
+779.2343139648438,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP.",
+"color": "#1155cc",
+"x": 762.7,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-72",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-73"
+},
+{
+"name": "MARIA GONZALEZ",
+"rows": [
+"MARIA",
+"GONZALEZ"
+],
+"bbox": [
+781.9861450195312,
+276.0986065864563,
+812.9905395507812,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP.",
+"color": "#1155cc",
+"x": 819.1,
+"y": 278.6,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T201-73",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-72"
+},
+{
+"name": "GARCIA SANCHEZ QUINTANA",
+"rows": [
+"GARCIA",
+"SANCHEZ",
+"QUINTANA"
+],
+"bbox": [
+842.3499755859375,
+276.0986065864563,
+868.2596435546875,
+294.3386187553406
+],
+"page": 1,
+"date": "",
+"color": "#6aa84f",
+"x": 831.8,
+"y": 278.6,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T201-74",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-75"
+},
+{
+"name": "MARIA GONZALEZ CORTINES",
+"rows": [
+"MARIA",
+"GONZALEZ",
+"CORTINES"
+],
+"bbox": [
+869.4613037109375,
+276.0986065864563,
+896.922119140625,
+294.3386187553406
+],
+"page": 1,
+"date": "",
+"color": "#6aa84f",
+"x": 905.7,
+"y": 278.6,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T201-75",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-74"
+},
+{
+"name": "DIEGO ALVAREZ DEL PINO",
+"rows": [
+"DIEGO",
+"ALVAREZ",
+"DEL PINO"
+],
+"bbox": [
+929.02001953125,
+276.0986065864563,
+952.7243041992188,
+294.3386187553406
+],
+"page": 1,
+"date": "",
+"color": "#1155cc",
+"x": 918.5,
+"y": 278.6,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T201-76",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-77"
+},
+{
+"name": "JUSTINS ARCOS CORTES",
+"rows": [
+"JUSTINS",
+"ARCOS",
+"CORTES"
+],
+"bbox": [
+954.9229736328125,
+276.0986065864563,
+976.5220947265625,
+294.3386187553406
+],
+"page": 1,
+"date": "",
+"color": "#1155cc",
+"x": 966.3,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-77",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-76"
+},
+{
+"name": "GENERAL ALONSO CORTES",
+"rows": [
+"GENERAL",
+"ALONSO",
+"CORTES"
+],
+"bbox": [
+980.6199951171875,
+276.0986065864563,
+1005.264892578125,
+300.9385943412781
+],
+"page": 1,
+"date": "1575",
+"color": "#ff0000",
+"x": 994.0,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-78",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-79"
+},
+{
+"name": "ISABEL RODRIGUEZ",
+"rows": [
+"ISABEL",
+"RODRIGUEZ"
+],
+"bbox": [
+1007.1239624023438,
+276.0986065864563,
+1037.1632080078125,
+287.7385821342468
+],
+"page": 1,
+"date": "",
+"color": "#ff0000",
+"x": 1025.2,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-79",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-78"
+},
+{
+"name": "JUAN GARCIA ORDAZ",
+"rows": [
+"JUAN",
+"GARCIA",
+"ORDAZ"
+],
+"bbox": [
+1041.219970703125,
+276.0986065864563,
+1070.423583984375,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP.1567",
+"color": "#38761d",
+"x": 1052.1,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-80",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-81"
+},
+{
+"name": "MARINA CORTES FIGUEROA",
+"rows": [
+"MARINA",
+"CORTES",
+"FIGUEROA"
+],
+"bbox": [
+1061.8509521484375,
+276.0986065864563,
+1091.606689453125,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP",
+"color": "#38761d",
+"x": 1079.2,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-81",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-80"
+},
+{
+"name": "ALONSO LOPEZ PALADINES",
+"rows": [
+"ALONSO",
+"LOPEZ",
+"PALADINES"
+],
+"bbox": [
+1092.3399658203125,
+276.0986065864563,
+1121.739013671875,
+300.9385943412781
+],
+"page": 1,
+"date": "ESP.",
+"color": "#ff0000",
+"x": 1107.0,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-82",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-83"
+},
+{
+"name": "ISABEL PEREZ GALEANO",
+"rows": [
+"ISABEL",
+"PEREZ",
+"GALEANO"
+],
+"bbox": [
+1124.3748779296875,
+276.0986065864563,
+1148.6929931640625,
+294.3386187553406
+],
+"page": 1,
+"date": "",
+"color": "#ff0000",
+"x": 1137.9,
+"y": 278.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T201-83",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T201-82"
+}
+],
+"warn": [
+"band1 empty person T201-1 x=500000499.5",
+"band1 couple FERMÍN ALVAREZ VELASQUEZ &  has no child",
+"band6 LUCÍA TORIBIA FERNÁNDEZ DE ARNEDO marked | but no parents",
+"band7 ALONSO TIBURCIO DE ARNEDO marked | but no parents",
+"band7 CATALINA DE POSADA marked | but no parents",
+"band7 MARÍA GOMEZ DE LA TORRE marked | but no parents"
+]
+},
+"202": {
+"page": 2,
+"people": [
+{
+"name": "FERNANDO ARANGO VÉLEZ 1198",
+"rows": [
+"FERNANDO ARANGO VÉLEZ 1198"
+],
+"bbox": [
+257.8999938964844,
+120.72109270095825,
+627.4144897460938,
+153.241069316864
+],
+"page": 2,
+"date": "RIO NEGRO 1705",
+"color": "#000000",
+"x": 395.5,
+"y": 127.7,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-0",
+"band": 0,
+"father": "T202-1",
+"mother": "T202-2",
+"spouse": null
+},
+{
+"name": "ESTEBAN ARANGO ZAFRA",
+"rows": [
+"ESTEBAN",
+"ARANGO",
+"ZAFRA"
+],
+"bbox": [
+145.6999969482422,
+170.37496185302734,
+174.14598083496094,
+200.13497161865234
+],
+"page": 2,
+"date": "X",
+"color": "#000000",
+"x": 160.9,
+"y": 173.4,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-1",
+"band": 1,
+"father": "T202-3",
+"mother": "T202-4",
+"spouse": "T202-2"
+},
+{
+"name": "GERTRUDIS VELEZ TORO",
+"rows": [
+"GERTRUDIS",
+"VELEZ",
+"TORO"
+],
+"bbox": [
+486.7699890136719,
+170.37496185302734,
+521.9660034179688,
+200.13497161865234
+],
+"page": 2,
+"date": "X",
+"color": "#000000",
+"x": 506.1,
+"y": 173.4,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-2",
+"band": 1,
+"father": "T202-5",
+"mother": "T202-6",
+"spouse": "T202-1"
+},
+{
+"name": "ANTONIO VALDES DE ARANGO",
+"rows": [
+"ANTONIO",
+"VALDES",
+"DE ARANGO"
+],
+"bbox": [
+38.400001525878906,
+210.0949935913086,
+74.98799896240234,
+239.8550033569336
+],
+"page": 2,
+"date": "X",
+"color": "#000000",
+"x": 56.1,
+"y": 213.1,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-3",
+"band": 2,
+"father": null,
+"mother": null,
+"spouse": "T202-4"
+},
+{
+"name": "OLAYA DE ZAFRA CASTRILLON",
+"rows": [
+"OLAYA",
+"DE ZAFRA",
+"CASTRILLON"
+],
+"bbox": [
+208.22402954101562,
+210.0949935913086,
+246.86404418945312,
+239.8550033569336
+],
+"page": 2,
+"date": "X",
+"color": "#000000",
+"x": 226.3,
+"y": 213.1,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-4",
+"band": 2,
+"father": "T202-7",
+"mother": "T202-8",
+"spouse": "T202-3"
+},
+{
+"name": "JUAN VÉLEZ DE RIVERO",
+"rows": [
+"JUAN",
+"VÉLEZ",
+"DE RIVERO"
+],
+"bbox": [
+347.17999267578125,
+210.0949935913086,
+380.06005859375,
+239.8550033569336
+],
+"page": 2,
+"date": "X",
+"color": "#38761d",
+"x": 364.5,
+"y": 213.1,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-5",
+"band": 2,
+"father": "T202-9",
+"mother": "T202-10",
+"spouse": "T202-6"
+},
+{
+"name": "MANUELA DE TORO PELÁEZ",
+"rows": [
+"MANUELA",
+"DE TORO",
+"PELÁEZ"
+],
+"bbox": [
+640.75,
+210.0949935913086,
+671.3558349609375,
+239.8550033569336
+],
+"page": 2,
+"date": "X",
+"color": "#38761d",
+"x": 653.8,
+"y": 213.1,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-6",
+"band": 2,
+"father": "T202-11",
+"mother": "T202-12",
+"spouse": "T202-5"
+},
+{
+"name": "FERNANDO DE ZAFRA JARAMILLO",
+"rows": [
+"FERNANDO",
+"DE ZAFRA",
+"JARAMILLO"
+],
+"bbox": [
+108.4800033569336,
+249.69497680664062,
+143.99398803710938,
+279.6050109863281
+],
+"page": 2,
+"date": "X",
+"color": "#000000",
+"x": 124.3,
+"y": 252.7,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-7",
+"band": 3,
+"father": "T202-13",
+"mother": "T202-14",
+"spouse": "T202-8"
+},
+{
+"name": "MARIA ÁLVAREZ HEREDIA",
+"rows": [
+"MARIA",
+"ÁLVAREZ",
+"HEREDIA"
+],
+"bbox": [
+284.8861389160156,
+249.69497680664062,
+313.7600402832031,
+279.6050109863281
+],
+"page": 2,
+"date": "X",
+"color": "#000000",
+"x": 297.4,
+"y": 252.7,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-8",
+"band": 3,
+"father": "T202-15",
+"mother": "T202-16",
+"spouse": "T202-7"
+},
+{
+"name": "DOMINGO DIEGO VÉLEZ FRANQUIN",
+"rows": [
+"DOMINGO",
+"DIEGO VÉLEZ",
+"FRANQUIN"
+],
+"bbox": [
+320.8819885253906,
+249.69497680664062,
+366.4160461425781,
+279.6050109863281
+],
+"page": 2,
+"date": "X",
+"color": "#674ea7",
+"x": 339.5,
+"y": 252.7,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-9",
+"band": 3,
+"father": null,
+"mother": null,
+"spouse": "T202-10"
+},
+{
+"name": "MARIA DE RIVERO",
+"rows": [
+"MARIA",
+"DE",
+"RIVERO"
+],
+"bbox": [
+370.4360046386719,
+249.69497680664062,
+393.3560485839844,
+279.6050109863281
+],
+"page": 2,
+"date": "ESP",
+"color": "#674ea7",
+"x": 381.4,
+"y": 252.7,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-10",
+"band": 3,
+"father": "T202-17",
+"mother": "T202-18",
+"spouse": "T202-9"
+},
+{
+"name": "CRISTOBAL DE TORO ZAPATA",
+"rows": [
+"CRISTOBAL",
+"DE TORO",
+"ZAPATA"
+],
+"bbox": [
+489.2900085449219,
+249.69497680664062,
+524.1619873046875,
+279.6050109863281
+],
+"page": 2,
+"date": "X",
+"color": "#0000ff",
+"x": 503.1,
+"y": 252.7,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-11",
+"band": 3,
+"father": "T202-19",
+"mother": "T202-20",
+"spouse": "T202-12"
+},
+{
+"name": "ANDREA GUERRA PELAEZ RUIZ",
+"rows": [
+"ANDREA",
+"GUERRA",
+"PELAEZ",
+"RUIZ"
+],
+"bbox": [
+790.030029296875,
+249.69497680664062,
+816.5619506835938,
+279.6050109863281
+],
+"page": 2,
+"date": "",
+"color": "#0000ff",
+"x": 806.5,
+"y": 252.7,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-12",
+"band": 3,
+"father": "T202-21",
+"mother": "T202-22",
+"spouse": "T202-11"
+},
+{
+"name": "JUAN JARAMILLO DE ANDRADE",
+"rows": [
+"JUAN",
+"JARAMILLO",
+"DE ANDRADE"
+],
+"bbox": [
+50.15999984741211,
+289.4449768066406,
+90.05399322509766,
+319.2049865722656
+],
+"page": 2,
+"date": "ESP.1579",
+"color": "#000000",
+"x": 67.7,
+"y": 292.4,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-13",
+"band": 4,
+"father": "T202-23",
+"mother": "T202-24",
+"spouse": "T202-14"
+},
+{
+"name": "JUANA DE ZAFRA CENTENO",
+"rows": [
+"JUANA",
+"DE ZAFRA",
+"CENTENO"
+],
+"bbox": [
+151.90196228027344,
+289.4449768066406,
+187.0199737548828,
+319.2049865722656
+],
+"page": 2,
+"date": "TUNJA.1572",
+"color": "#000000",
+"x": 169.2,
+"y": 292.4,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-14",
+"band": 4,
+"father": "T202-25",
+"mother": "T202-26",
+"spouse": "T202-13"
+},
+{
+"name": "DIEGO ALVAREZ CASTRILLÓN",
+"rows": [
+"DIEGO",
+"ALVAREZ",
+"CASTRILLÓN"
+],
+"bbox": [
+243.4879913330078,
+289.4449768066406,
+282.1279602050781,
+319.2049865722656
+],
+"page": 2,
+"date": "ESP",
+"color": "#4c1130",
+"x": 260.7,
+"y": 292.4,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-15",
+"band": 4,
+"father": "T202-27",
+"mother": "T202-28",
+"spouse": "T202-16"
+},
+{
+"name": "CATALINA DE HEREDIA",
+"rows": [
+"CATALINA",
+"DE",
+"HEREDIA"
+],
+"bbox": [
+317.8160705566406,
+289.4449768066406,
+348.4280700683594,
+319.2049865722656
+],
+"page": 2,
+"date": "X",
+"color": "#4c1130",
+"x": 332.7,
+"y": 292.4,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-16",
+"band": 4,
+"father": "T202-29",
+"mother": "T202-30",
+"spouse": "T202-15"
+},
+{
+"name": "TORIBIO DE RIVERO",
+"rows": [
+"TORIBIO",
+"DE",
+"RIVERO"
+],
+"bbox": [
+350.7799987792969,
+289.4449768066406,
+376.79595947265625,
+319.2049865722656
+],
+"page": 2,
+"date": "X",
+"color": "#45818e",
+"x": 362.9,
+"y": 292.4,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-17",
+"band": 4,
+"father": null,
+"mother": null,
+"spouse": "T202-18"
+},
+{
+"name": "FRANCISCA DE SANTIBAÑEZ",
+"rows": [
+"FRANCISCA",
+"DE",
+"SANTIBAÑEZ"
+],
+"bbox": [
+383.7620544433594,
+289.4449768066406,
+422.666015625,
+319.2049865722656
+],
+"page": 2,
+"date": "X",
+"color": "#45818e",
+"x": 403.0,
+"y": 292.4,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-18",
+"band": 4,
+"father": null,
+"mother": null,
+"spouse": "T202-17"
+},
+{
+"name": "JUAN DE TORO",
+"rows": [
+"JUAN",
+"DE",
+"TORO"
+],
+"bbox": [
+426.2900085449219,
+289.4449768066406,
+453.4939880371094,
+319.2049865722656
+],
+"page": 2,
+"date": "ESP-1550",
+"color": "#783f04",
+"x": 438.4,
+"y": 292.4,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-19",
+"band": 4,
+"father": "T202-31",
+"mother": "T202-32",
+"spouse": "T202-20"
+},
+{
+"name": "CATALINA ZAPATA CARDENAS VALERO",
+"rows": [
+"CATALINA",
+"ZAPATA",
+"CARDENAS",
+"VALERO"
+],
+"bbox": [
+544.688720703125,
+289.4449768066406,
+580.460693359375,
+319.2049865722656
+],
+"page": 2,
+"date": "",
+"color": "#783f04",
+"x": 561.6,
+"y": 292.4,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-20",
+"band": 4,
+"father": "T202-33",
+"mother": "T202-34",
+"spouse": "T202-19"
+},
+{
+"name": "JUAN PELAEZ HERNANDEZ",
+"rows": [
+"JUAN",
+"PELAEZ",
+"HERNANDEZ"
+],
+"bbox": [
+672.3099975585938,
+289.4449768066406,
+709.8158569335938,
+319.2049865722656
+],
+"page": 2,
+"date": "BOG.1601",
+"color": "#00ffff",
+"x": 693.4,
+"y": 292.4,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-21",
+"band": 4,
+"father": "T202-35",
+"mother": "T202-36",
+"spouse": "T202-22"
+},
+{
+"name": "JUANA JOSEFA RUIZ",
+"rows": [
+"JUANA",
+"JOSEFA",
+"RUIZ"
+],
+"bbox": [
+899.9899291992188,
+289.4449768066406,
+924.3460083007812,
+319.2049865722656
+],
+"page": 2,
+"date": "1608",
+"color": "#00ffff",
+"x": 910.2,
+"y": 292.4,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-22",
+"band": 4,
+"father": "T202-37",
+"mother": "T202-38",
+"spouse": "T202-21"
+},
+{
+"name": "ALONSO JARAMILLO ANDRADE",
+"rows": [
+"ALONSO",
+"JARAMILLO",
+"ANDRADE"
+],
+"bbox": [
+28.31999969482422,
+329.04498291015625,
+63.33000564575195,
+358.92498779296875
+],
+"page": 2,
+"date": "ESP-",
+"color": "#000000",
+"x": 42.7,
+"y": 332.0,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-23",
+"band": 5,
+"father": null,
+"mother": null,
+"spouse": "T202-24"
+},
+{
+"name": "ISABEL FERNÁNDEZ SALCEDO",
+"rows": [
+"ISABEL",
+"FERNÁNDEZ",
+"SALCEDO"
+],
+"bbox": [
+70.03800201416016,
+329.04498291015625,
+106.94999694824219,
+358.92498779296875
+],
+"page": 2,
+"date": "X",
+"color": "#000000",
+"x": 84.7,
+"y": 332.0,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-24",
+"band": 5,
+"father": null,
+"mother": null,
+"spouse": "T202-23"
+},
+{
+"name": "FERNANDO DE ZAFRA CENTENO",
+"rows": [
+"FERNANDO",
+"DE ZAFRA",
+"CENTENO"
+],
+"bbox": [
+110.04000091552734,
+329.04498291015625,
+143.99398803710938,
+358.92498779296875
+],
+"page": 2,
+"date": "ESP.",
+"color": "#000000",
+"x": 124.9,
+"y": 332.0,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-25",
+"band": 5,
+"father": "T202-39",
+"mother": "T202-40",
+"spouse": "T202-26"
+},
+{
+"name": "JUANA TABORDA LOPEZ",
+"rows": [
+"JUANA",
+"TABORDA",
+"LOPEZ"
+],
+"bbox": [
+185.63401794433594,
+329.04498291015625,
+215.6520233154297,
+358.92498779296875
+],
+"page": 2,
+"date": "ESP.1536",
+"color": "#000000",
+"x": 201.6,
+"y": 332.0,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-26",
+"band": 5,
+"father": "T202-41",
+"mother": "T202-42",
+"spouse": "T202-25"
+},
+{
+"name": "RODRIGO ALVAREZ CASTRILLÓN",
+"rows": [
+"RODRIGO",
+"ALVAREZ",
+"CASTRILLÓN"
+],
+"bbox": [
+217.22000122070312,
+329.04498291015625,
+255.84201049804688,
+358.92498779296875
+],
+"page": 2,
+"date": "ESP",
+"color": "#85200c",
+"x": 236.9,
+"y": 332.0,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-27",
+"band": 5,
+"father": null,
+"mother": null,
+"spouse": "T202-28"
+},
+{
+"name": "MARÍA BERNALDO DE QUIRÓS",
+"rows": [
+"MARÍA",
+"BERNALDO",
+"DE QUIRÓS"
+],
+"bbox": [
+260.864013671875,
+329.04498291015625,
+296.41400146484375,
+358.92498779296875
+],
+"page": 2,
+"date": "ESP",
+"color": "#85200c",
+"x": 275.3,
+"y": 332.0,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-28",
+"band": 5,
+"father": "T202-43",
+"mother": "T202-44",
+"spouse": "T202-27"
+},
+{
+"name": "NICOLÁS BLANDÓN X",
+"rows": [
+"NICOLÁS",
+"BLANDÓN",
+"X"
+],
+"bbox": [
+299.5400085449219,
+329.04498291015625,
+331.46600341796875,
+358.92498779296875
+],
+"page": 2,
+"date": "X",
+"color": "#073763",
+"x": 315.6,
+"y": 332.0,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-29",
+"band": 5,
+"father": null,
+"mother": null,
+"spouse": "T202-30"
+},
+{
+"name": "CATALINA DE HEREDIA",
+"rows": [
+"CATALINA",
+"DE",
+"HEREDIA"
+],
+"bbox": [
+337.2020568847656,
+329.04498291015625,
+367.92205810546875,
+358.92498779296875
+],
+"page": 2,
+"date": "X",
+"color": "#073763",
+"x": 350.8,
+"y": 332.0,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-30",
+"band": 5,
+"father": null,
+"mother": null,
+"spouse": "T202-29"
+},
+{
+"name": "CRISTOBAL SEVERO BERNAL",
+"rows": [
+"CRISTOBAL",
+"SEVERO",
+"BERNAL"
+],
+"bbox": [
+374.69000244140625,
+329.04498291015625,
+409.5679931640625,
+358.92498779296875
+],
+"page": 2,
+"date": "ESP",
+"color": "#f9cb9c",
+"x": 391.1,
+"y": 332.0,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-31",
+"band": 5,
+"father": "T202-45",
+"mother": "T202-46",
+"spouse": "T202-32"
+},
+{
+"name": "ANA DE TORO RODRIGUEZ",
+"rows": [
+"ANA",
+"DE TORO",
+"RODRIGUEZ"
+],
+"bbox": [
+445.5380859375,
+329.04498291015625,
+481.4781188964844,
+358.92498779296875
+],
+"page": 2,
+"date": "ESP",
+"color": "#f9cb9c",
+"x": 462.8,
+"y": 332.0,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-32",
+"band": 5,
+"father": "T202-47",
+"mother": "T202-48",
+"spouse": "T202-31"
+},
+{
+"name": "LUIS ZAPATA CARDENAS",
+"rows": [
+"LUIS",
+"ZAPATA",
+"CARDENAS"
+],
+"bbox": [
+514.8499755859375,
+329.04498291015625,
+548.7318725585938,
+358.92498779296875
+],
+"page": 2,
+"date": "ESP",
+"color": "#1c4587",
+"x": 532.6,
+"y": 332.0,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-33",
+"band": 5,
+"father": "T202-49",
+"mother": "T202-50",
+"spouse": "T202-34"
+},
+{
+"name": "MARIANA VALERO VELASCO REMED.ANT",
+"rows": [
+"MARIANA",
+"VALERO",
+"VELASCO",
+"REMED.ANT"
+],
+"bbox": [
+578.6248168945312,
+329.04498291015625,
+614.0907592773438,
+358.92498779296875
+],
+"page": 2,
+"date": "",
+"color": "#1c4587",
+"x": 592.5,
+"y": 332.0,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-34",
+"band": 5,
+"father": "T202-51",
+"mother": "T202-52",
+"spouse": "T202-33"
+},
+{
+"name": "JUAN PELAEZ ABEU",
+"rows": [
+"JUAN",
+"PELAEZ",
+"ABEU"
+],
+"bbox": [
+637.510009765625,
+329.04498291015625,
+666.2081298828125,
+358.92498779296875
+],
+"page": 2,
+"date": ".1570 ESP",
+"color": "#6aa84f",
+"x": 652.9,
+"y": 332.0,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-35",
+"band": 5,
+"father": "T202-53",
+"mother": "T202-54",
+"spouse": "T202-36"
+},
+{
+"name": "MARÍA HERNANDEZ DE LA VERA",
+"rows": [
+"MARÍA",
+"HERNANDEZ",
+"DE LA VERA"
+],
+"bbox": [
+708.2268676757812,
+329.04498291015625,
+747.7728271484375,
+358.92498779296875
+],
+"page": 2,
+"date": "X",
+"color": "#6aa84f",
+"x": 726.3,
+"y": 332.0,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-36",
+"band": 5,
+"father": "T202-55",
+"mother": "T202-56",
+"spouse": "T202-35"
+},
+{
+"name": "DIEGO RUIZ CAMARA",
+"rows": [
+"DIEGO",
+"RUIZ",
+"CAMARA"
+],
+"bbox": [
+823.75,
+329.04498291015625,
+859.9899291992188,
+358.92498779296875
+],
+"page": 2,
+"date": "VENEZUELA",
+"color": "#00ff00",
+"x": 839.4,
+"y": 332.0,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-37",
+"band": 5,
+"father": "T202-57",
+"mother": "T202-58",
+"spouse": "T202-38"
+},
+{
+"name": "MENCÍA CARVAJAL MARTINEZ",
+"rows": [
+"MENCÍA",
+"CARVAJAL",
+"MARTINEZ"
+],
+"bbox": [
+972.8462524414062,
+329.04498291015625,
+1007.71240234375,
+358.92498779296875
+],
+"page": 2,
+"date": "X",
+"color": "#00ff00",
+"x": 989.6,
+"y": 332.0,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-38",
+"band": 5,
+"father": "T202-59",
+"mother": "T202-60",
+"spouse": "T202-37"
+},
+{
+"name": "HERNANDO DE ZAFRA CENTENO",
+"rows": [
+"HERNANDO",
+"DE ZAFRA",
+"CENTENO"
+],
+"bbox": [
+86.76000213623047,
+368.7649841308594,
+121.31999969482422,
+398.5249938964844
+],
+"page": 2,
+"date": "X",
+"color": "#000000",
+"x": 102.8,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-39",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-40"
+},
+{
+"name": "CATARINA FERNANDEZ X",
+"rows": [
+"CATARINA",
+"FERNANDEZ",
+"X"
+],
+"bbox": [
+125.3699951171875,
+368.7649841308594,
+162.281982421875,
+398.5249938964844
+],
+"page": 2,
+"date": "X",
+"color": "#000000",
+"x": 141.4,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-40",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-39"
+},
+{
+"name": "JUAN TABORDA DE RIVERO",
+"rows": [
+"JUAN",
+"TABORDA",
+"DE RIVERO"
+],
+"bbox": [
+163.4600067138672,
+368.7649841308594,
+196.33999633789062,
+398.5249938964844
+],
+"page": 2,
+"date": "ESP.1515",
+"color": "#f1c232",
+"x": 179.9,
+"y": 371.8,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-41",
+"band": 6,
+"father": "T202-61",
+"mother": "T202-62",
+"spouse": "T202-42"
+},
+{
+"name": "LEONOR LÓPEZ SANTOFIMIA",
+"rows": [
+"LEONOR",
+"LÓPEZ",
+"SANTOFIMIA"
+],
+"bbox": [
+201.36199951171875,
+368.7649841308594,
+238.6820068359375,
+398.5249938964844
+],
+"page": 2,
+"date": "ESP",
+"color": "#f1c232",
+"x": 218.5,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-42",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-41"
+},
+{
+"name": "JUAN GARCÍA DE TINEO",
+"rows": [
+"JUAN",
+"GARCÍA",
+"DE TINEO"
+],
+"bbox": [
+248.77999877929688,
+368.7649841308594,
+277.08203125,
+398.5249938964844
+],
+"page": 2,
+"date": "X",
+"color": "#274e13",
+"x": 262.2,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-43",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-44"
+},
+{
+"name": "CATALINA BERNALDO DE QUIRÓS",
+"rows": [
+"CATALINA",
+"BERNALDO",
+"DE QUIRÓS"
+],
+"bbox": [
+282.72802734375,
+368.7649841308594,
+317.4380798339844,
+398.5249938964844
+],
+"page": 2,
+"date": "X",
+"color": "#274e13",
+"x": 299.2,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-44",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-43"
+},
+{
+"name": "JUAN SEVERO VILLALBA",
+"rows": [
+"JUAN",
+"SEVERO",
+"VILLALBA"
+],
+"bbox": [
+362.5400085449219,
+368.7649841308594,
+392.1860046386719,
+398.5249938964844
+],
+"page": 2,
+"date": "ESP",
+"color": "#f6b26b",
+"x": 379.6,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-45",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-46"
+},
+{
+"name": "ISABEL BERNAL X",
+"rows": [
+"ISABEL",
+"BERNAL",
+"X"
+],
+"bbox": [
+395.048095703125,
+368.7649841308594,
+419.96612548828125,
+398.5249938964844
+],
+"page": 2,
+"date": "ESP",
+"color": "#f6b26b",
+"x": 408.2,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-46",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-45"
+},
+{
+"name": "HERNANDO DE TORO",
+"rows": [
+"HERNANDO",
+"DE",
+"TORO"
+],
+"bbox": [
+422.69000244140625,
+368.7649841308594,
+457.25006103515625,
+398.5249938964844
+],
+"page": 2,
+"date": "X",
+"color": "#cc0000",
+"x": 438.6,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-47",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-48"
+},
+{
+"name": "INÉS RODRIGUEZ X",
+"rows": [
+"INÉS",
+"RODRIGUEZ",
+"X"
+],
+"bbox": [
+458.5400390625,
+368.7649841308594,
+494.4800720214844,
+398.5249938964844
+],
+"page": 2,
+"date": "X",
+"color": "#cc0000",
+"x": 475.6,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-48",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-47"
+},
+{
+"name": "GONZALO DE PALENCIA",
+"rows": [
+"GONZALO",
+"DE",
+"PALENCIA"
+],
+"bbox": [
+497.57000732421875,
+368.7649841308594,
+528.7400512695312,
+398.5249938964844
+],
+"page": 2,
+"date": "X",
+"color": "#d9ead3",
+"x": 510.9,
+"y": 371.8,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-49",
+"band": 6,
+"father": "T202-63",
+"mother": "T202-64",
+"spouse": "T202-50"
+},
+{
+"name": "LEONOR ALVAREZ DE ALZA",
+"rows": [
+"LEONOR",
+"ALVAREZ",
+"DE ALZA"
+],
+"bbox": [
+536.2100219726562,
+368.7649841308594,
+565.826171875,
+398.5249938964844
+],
+"page": 2,
+"date": "X",
+"color": "#d9ead3",
+"x": 551.0,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-50",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-49"
+},
+{
+"name": "MARTÍN GARCIA VALERO",
+"rows": [
+"MARTÍN",
+"GARCIA",
+"VALERO"
+],
+"bbox": [
+566.0900268554688,
+368.7649841308594,
+594.1640625,
+398.5249938964844
+],
+"page": 2,
+"date": "ESP1526",
+"color": "#f4cccc",
+"x": 581.4,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-51",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-52"
+},
+{
+"name": "ISABEL BLASCO VELASCO",
+"rows": [
+"ISABEL",
+"BLASCO",
+"VELASCO"
+],
+"bbox": [
+593.0840454101562,
+368.7649841308594,
+624.758056640625,
+398.5249938964844
+],
+"page": 2,
+"date": "ESP",
+"color": "#f4cccc",
+"x": 606.7,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-52",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-51"
+},
+{
+"name": "JUAN GUERRA PELAEZ",
+"rows": [
+"JUAN",
+"GUERRA",
+"PELAEZ"
+],
+"bbox": [
+626.1099853515625,
+368.7649841308594,
+653.068115234375,
+398.5249938964844
+],
+"page": 2,
+"date": "ESP.1536",
+"color": "#b4a7d6",
+"x": 638.8,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-53",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-54"
+},
+{
+"name": "MARIA ABEO ARACO",
+"rows": [
+"MARIA",
+"ABEO",
+"ARACO"
+],
+"bbox": [
+659.6920776367188,
+368.7649841308594,
+682.1260986328125,
+398.5249938964844
+],
+"page": 2,
+"date": "X",
+"color": "#b4a7d6",
+"x": 667.4,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-54",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-53"
+},
+{
+"name": "JUAN CORREA X",
+"rows": [
+"JUAN",
+"CORREA",
+"X"
+],
+"bbox": [
+685.030029296875,
+368.7649841308594,
+710.9619750976562,
+398.5249938964844
+],
+"page": 2,
+"date": "ESP",
+"color": "#ffe599",
+"x": 696.1,
+"y": 371.8,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-55",
+"band": 6,
+"father": "T202-65",
+"mother": "T202-66",
+"spouse": "T202-56"
+},
+{
+"name": "MARIA HERNANDEZ DE LA VERA",
+"rows": [
+"MARIA",
+"HERNANDEZ",
+"DE LA VERA"
+],
+"bbox": [
+742.7928466796875,
+368.7649841308594,
+780.2024536132812,
+398.5249938964844
+],
+"page": 2,
+"date": "ESP",
+"color": "#ffe599",
+"x": 762.8,
+"y": 371.8,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-56",
+"band": 6,
+"father": "T202-67",
+"mother": "T202-68",
+"spouse": "T202-55"
+},
+{
+"name": "JUAN RUIZ PARRA",
+"rows": [
+"JUAN",
+"RUIZ",
+"PARRA"
+],
+"bbox": [
+817.510009765625,
+368.7649841308594,
+838.77392578125,
+398.5249938964844
+],
+"page": 2,
+"date": "ESP",
+"color": "#ff9900",
+"x": 829.4,
+"y": 371.8,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-57",
+"band": 6,
+"father": "T202-69",
+"mother": "T202-70",
+"spouse": "T202-58"
+},
+{
+"name": "ELVIRA MARTINEZ CARDENAS",
+"rows": [
+"ELVIRA",
+"MARTINEZ",
+"CARDENAS"
+],
+"bbox": [
+842.10400390625,
+368.7649841308594,
+875.9859008789062,
+398.5249938964844
+],
+"page": 2,
+"date": "ESP.",
+"color": "#ff9900",
+"x": 857.9,
+"y": 371.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-58",
+"band": 6,
+"father": null,
+"mother": null,
+"spouse": "T202-57"
+},
+{
+"name": "RODRIGO CARVAJAL SANCHEZ",
+"rows": [
+"RODRIGO",
+"CARVAJAL",
+"SANCHEZ"
+],
+"bbox": [
+893.8599853515625,
+368.7649841308594,
+926.4458618164062,
+398.5249938964844
+],
+"page": 2,
+"date": "1569",
+"color": "#ff00ff",
+"x": 909.8,
+"y": 371.8,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-59",
+"band": 6,
+"father": "T202-71",
+"mother": "T202-72",
+"spouse": "T202-60"
+},
+{
+"name": "JUANA MARTINEZ X",
+"rows": [
+"JUANA",
+"MARTINEZ",
+"X"
+],
+"bbox": [
+1041.28125,
+368.7649841308594,
+1072.1812744140625,
+398.5249938964844
+],
+"page": 2,
+"date": "X",
+"color": "#ff00ff",
+"x": 1056.4,
+"y": 371.8,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-60",
+"band": 6,
+"father": "T202-73",
+"mother": "T202-74",
+"spouse": "T202-59"
+},
+{
+"name": "ALONSO TABORDA DÍAZ",
+"rows": [
+"ALONSO",
+"TABORDA",
+"DÍAZ"
+],
+"bbox": [
+163.4600067138672,
+408.4849853515625,
+193.47801208496094,
+438.2449951171875
+],
+"page": 2,
+"date": "ESP",
+"color": "#20124d",
+"x": 179.3,
+"y": 411.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-61",
+"band": 7,
+"father": "T202-75",
+"mother": "T202-76",
+"spouse": "T202-62"
+},
+{
+"name": "?",
+"rows": [
+"?"
+],
+"bbox": [
+201.3679962158203,
+408.4849853515625,
+205.83201599121094,
+422.4049987792969
+],
+"page": 2,
+"date": "X",
+"color": "#20124d",
+"x": 203.5,
+"y": 411.5,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T202-62",
+"band": 7,
+"father": null,
+"mother": null,
+"spouse": "T202-61"
+},
+{
+"name": "GONZALO DE AVILA",
+"rows": [
+"GONZALO",
+"DE",
+"AVILA"
+],
+"bbox": [
+491.92999267578125,
+408.4849853515625,
+521.7859497070312,
+438.2449951171875
+],
+"page": 2,
+"date": "X",
+"color": "#a64d79",
+"x": 509.5,
+"y": 411.5,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-63",
+"band": 7,
+"father": null,
+"mother": null,
+"spouse": "T202-64"
+},
+{
+"name": "?",
+"rows": [
+"?"
+],
+"bbox": [
+529.1000366210938,
+408.4849853515625,
+533.2283325195312,
+422.4049987792969
+],
+"page": 2,
+"date": "X",
+"color": "#a64d79",
+"x": 531.1,
+"y": 411.5,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T202-64",
+"band": 7,
+"father": null,
+"mother": null,
+"spouse": "T202-63"
+},
+{
+"name": "JUAN FERNÁNDEZ PESCOZO",
+"rows": [
+"JUAN",
+"FERNÁNDEZ",
+"PESCOZO"
+],
+"bbox": [
+661.6300048828125,
+408.4849853515625,
+698.5299072265625,
+438.2449951171875
+],
+"page": 2,
+"date": "ESP",
+"color": "#9900ff",
+"x": 680.5,
+"y": 411.5,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-65",
+"band": 7,
+"father": null,
+"mother": null,
+"spouse": "T202-66"
+},
+{
+"name": "JUANA CORREA X",
+"rows": [
+"JUANA",
+"CORREA",
+"X"
+],
+"bbox": [
+700.2459106445312,
+408.4849853515625,
+726.1898193359375,
+438.2449951171875
+],
+"page": 2,
+"date": "ESP",
+"color": "#9900ff",
+"x": 712.0,
+"y": 411.5,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-66",
+"band": 7,
+"father": null,
+"mother": null,
+"spouse": "T202-65"
+},
+{
+"name": "GONZALO GOMEZ CRESPO",
+"rows": [
+"GONZALO",
+"GOMEZ",
+"CRESPO"
+],
+"bbox": [
+728.8300170898438,
+408.4849853515625,
+758.8060913085938,
+438.2449951171875
+],
+"page": 2,
+"date": "ESP",
+"color": "#b6d7a8",
+"x": 744.0,
+"y": 411.5,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-67",
+"band": 7,
+"father": null,
+"mother": null,
+"spouse": "T202-68"
+},
+{
+"name": "MARIA HERNANDEZ BARRAGAN",
+"rows": [
+"MARIA",
+"HERNANDEZ",
+"BARRAGAN"
+],
+"bbox": [
+756.5260620117188,
+408.4849853515625,
+794.115966796875,
+438.2449951171875
+],
+"page": 2,
+"date": "ESP",
+"color": "#b6d7a8",
+"x": 776.0,
+"y": 411.5,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-68",
+"band": 7,
+"father": null,
+"mother": null,
+"spouse": "T202-67"
+},
+{
+"name": "JERÓNIMO DE LA PARRA",
+"rows": [
+"JERÓNIMO",
+"DE LA",
+"PARRA"
+],
+"bbox": [
+792.3099975585938,
+408.4849853515625,
+824.2120361328125,
+438.2449951171875
+],
+"page": 2,
+"date": "ESP",
+"color": "#d9d9d9",
+"x": 808.1,
+"y": 411.5,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-69",
+"band": 7,
+"father": null,
+"mother": null,
+"spouse": "T202-70"
+},
+{
+"name": "ANA RUIZ X",
+"rows": [
+"ANA",
+"RUIZ",
+"X"
+],
+"bbox": [
+832.2402954101562,
+408.4849853515625,
+846.3160400390625,
+438.2449951171875
+],
+"page": 2,
+"date": "ESP",
+"color": "#d9d9d9",
+"x": 838.4,
+"y": 411.5,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-70",
+"band": 7,
+"father": null,
+"mother": null,
+"spouse": "T202-69"
+},
+{
+"name": "BARTOLOMÉ SÁNCHEZ TORREBLANCA",
+"rows": [
+"BARTOLOMÉ",
+"SÁNCHEZ",
+"TORREBLANCA"
+],
+"bbox": [
+852.9099731445312,
+408.4849853515625,
+899.1278076171875,
+438.2449951171875
+],
+"page": 2,
+"date": "ESP.1517",
+"color": "#ead1dc",
+"x": 873.8,
+"y": 411.5,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-71",
+"band": 7,
+"father": null,
+"mother": null,
+"spouse": "T202-72"
+},
+{
+"name": "MENCÍA CARVAJAL VÁSQUEZ",
+"rows": [
+"MENCÍA",
+"CARVAJAL",
+"VÁSQUEZ"
+],
+"bbox": [
+918.6045532226562,
+408.4849853515625,
+951.2024536132812,
+438.2449951171875
+],
+"page": 2,
+"date": "ESP.1562",
+"color": "#ead1dc",
+"x": 932.5,
+"y": 411.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-72",
+"band": 7,
+"father": "T202-77",
+"mother": "T202-78",
+"spouse": "T202-71"
+},
+{
+"name": "PEDRO MARTIN DE ÁVILA",
+"rows": [
+"PEDRO",
+"MARTIN",
+"DE ÁVILA"
+],
+"bbox": [
+1029.93994140625,
+408.4849853515625,
+1059.5380859375,
+438.2449951171875
+],
+"page": 2,
+"date": "BOG.1557",
+"color": "#c27ba0",
+"x": 1045.8,
+"y": 411.5,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-73",
+"band": 7,
+"father": "T202-79",
+"mother": "T202-80",
+"spouse": "T202-74"
+},
+{
+"name": "FRANCISCA MARTINEZ X",
+"rows": [
+"FRANCISCA",
+"MARTINEZ",
+"X"
+],
+"bbox": [
+1061.36767578125,
+408.4849853515625,
+1096.6656494140625,
+438.2449951171875
+],
+"page": 2,
+"date": "X",
+"color": "#c27ba0",
+"x": 1080.2,
+"y": 411.5,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T202-74",
+"band": 7,
+"father": null,
+"mother": null,
+"spouse": "T202-73"
+},
+{
+"name": "ALONSO TABORDA DE RIVERA",
+"rows": [
+"ALONSO",
+"TABORDA",
+"DE RIVERA"
+],
+"bbox": [
+146.77999877929688,
+448.10498046875,
+179.2039794921875,
+477.9849853515625
+],
+"page": 2,
+"date": "ESP",
+"color": "#f1c232",
+"x": 162.7,
+"y": 451.1,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-75",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T202-76"
+},
+{
+"name": "ISABEL DIAZ X",
+"rows": [
+"ISABEL",
+"DIAZ",
+"X"
+],
+"bbox": [
+184.68199157714844,
+448.10498046875,
+206.58798217773438,
+477.9849853515625
+],
+"page": 2,
+"date": "ESP.",
+"color": "#f1c232",
+"x": 193.0,
+"y": 451.1,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-76",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T202-75"
+},
+{
+"name": "RODRIGO CARVAJAL JARAMILLO",
+"rows": [
+"RODRIGO",
+"CARVAJAL",
+"JARAMILLO"
+],
+"bbox": [
+878.6199951171875,
+448.10498046875,
+913.5159301757812,
+477.9849853515625
+],
+"page": 2,
+"date": "ESP.1538",
+"color": "#dd7e6b",
+"x": 895.2,
+"y": 451.1,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-77",
+"band": 8,
+"father": "T202-81",
+"mother": "T202-82",
+"spouse": "T202-78"
+},
+{
+"name": "MAYOR VASQUEZ NUÑEZ",
+"rows": [
+"MAYOR",
+"VASQUEZ",
+"NUÑEZ"
+],
+"bbox": [
+956.9027099609375,
+448.10498046875,
+985.7687377929688,
+477.9849853515625
+],
+"page": 2,
+"date": "X",
+"color": "#dd7e6b",
+"x": 970.1,
+"y": 451.1,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-78",
+"band": 8,
+"father": "T202-83",
+"mother": "T202-84",
+"spouse": "T202-77"
+},
+{
+"name": "PEDRO 1 MARTIN X",
+"rows": [
+"PEDRO 1",
+"MARTIN",
+"X"
+],
+"bbox": [
+1013.6199951171875,
+448.10498046875,
+1042.378173828125,
+477.9849853515625
+],
+"page": 2,
+"date": "ESP.1515",
+"color": "#b7b7b7",
+"x": 1030.0,
+"y": 451.1,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T202-79",
+"band": 8,
+"father": "T202-85",
+"mother": "T202-86",
+"spouse": "T202-80"
+},
+{
+"name": "CATALINA DE BARRIONUEVO",
+"rows": [
+"CATALINA",
+"DE",
+"BARRIONUEVO"
+],
+"bbox": [
+1045.029541015625,
+448.10498046875,
+1089.9095458984375,
+477.9849853515625
+],
+"page": 2,
+"date": "X",
+"color": "#b7b7b7",
+"x": 1065.3,
+"y": 451.1,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-80",
+"band": 8,
+"father": null,
+"mother": null,
+"spouse": "T202-79"
+},
+{
+"name": "GONZALO DE CARVAJAL",
+"rows": [
+"GONZALO",
+"DE",
+"CARVAJAL"
+],
+"bbox": [
+858.5499877929688,
+487.8249816894531,
+891.141845703125,
+517.5849914550781
+],
+"page": 2,
+"date": "X",
+"color": "#e6b8af",
+"x": 872.9,
+"y": 490.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-81",
+"band": 9,
+"father": null,
+"mother": null,
+"spouse": "T202-82"
+},
+{
+"name": "MENCÍA HERNANDEZ X",
+"rows": [
+"MENCÍA",
+"HERNANDEZ",
+"X"
+],
+"bbox": [
+895.2343139648438,
+487.8249816894531,
+932.752197265625,
+517.5849914550781
+],
+"page": 2,
+"date": "X",
+"color": "#e6b8af",
+"x": 914.9,
+"y": 490.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-82",
+"band": 9,
+"father": null,
+"mother": null,
+"spouse": "T202-81"
+},
+{
+"name": "PEDRO HERNANDEZ BAQUERO",
+"rows": [
+"PEDRO",
+"HERNANDEZ",
+"BAQUERO"
+],
+"bbox": [
+936.219970703125,
+487.8249816894531,
+973.725830078125,
+517.5849914550781
+],
+"page": 2,
+"date": "ESP",
+"color": "#93c47d",
+"x": 955.3,
+"y": 490.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-83",
+"band": 9,
+"father": null,
+"mother": null,
+"spouse": "T202-84"
+},
+{
+"name": "BLANCA NUÑEZ X",
+"rows": [
+"BLANCA",
+"NUÑEZ",
+"X"
+],
+"bbox": [
+978.1902465820312,
+487.8249816894531,
+1003.5401000976562,
+517.5849914550781
+],
+"page": 2,
+"date": "ESP",
+"color": "#93c47d",
+"x": 988.9,
+"y": 490.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-84",
+"band": 9,
+"father": null,
+"mother": null,
+"spouse": "T202-83"
+},
+{
+"name": "JUAN MARTIN AVILA",
+"rows": [
+"JUAN",
+"MARTIN",
+"AVILA"
+],
+"bbox": [
+1004.5,
+487.8249816894531,
+1027.906005859375,
+517.5849914550781
+],
+"page": 2,
+"date": "ESP",
+"color": "#a4c2f4",
+"x": 1021.0,
+"y": 490.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-85",
+"band": 9,
+"father": null,
+"mother": null,
+"spouse": "T202-86"
+},
+{
+"name": "CATALINA HERNANDEZ X",
+"rows": [
+"CATALINA",
+"HERNANDEZ",
+"X"
+],
+"bbox": [
+1034.481689453125,
+487.8249816894531,
+1071.98779296875,
+517.5849914550781
+],
+"page": 2,
+"date": "ESP",
+"color": "#a4c2f4",
+"x": 1053.0,
+"y": 490.8,
+"more": false,
+"none": true,
+"ref": null,
+"id": "T202-86",
+"band": 9,
+"father": null,
+"mother": null,
+"spouse": "T202-85"
+}
+],
+"warn": []
+}
+}

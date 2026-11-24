@@ -84,6 +84,8 @@ def get_bands(pdf, tree):
         twoSided = hasY and any(k == 'T' and w['x'] < min(yx) for w, k in zip(l, ks)) and any(k == 'T' and w['x'] > max(yx) for w, k in zip(l, ks))
         if CFG and cur is not None and twoSided and cur['text'] and not cur['ys']:
             newband = True  # la raíz (sin pareja) seguida directamente por la línea de sus padres
+        if CFG and cur is not None and twoSided and cur['ys'] and l[0]['y'] - min(w['y'] for w in cur['ys']) >= 36:
+            newband = True  # una pareja que empieza bajo la anterior sin línea de enlace '|' intermedia
         if newband:
             cur = dict(text=[], anchors=[], ys=list(pendingY), refs=[]); bands.append(cur); pendingY = []
         for w, k in zip(l, ks):

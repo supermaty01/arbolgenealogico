@@ -11,6 +11,8 @@ from tree import SEGS
 
 data_path, hist_path, pdf_path, media_dir, docs = sys.argv[1:6]
 T_PDF, T_CFG = (sys.argv[6], json.load(open(sys.argv[7], encoding='utf-8'))) if len(sys.argv) > 7 else (None, None)
+# pares opcionales <pdf> <config> de cuadros complementarios (claves 201+), p. ej. complementos.pdf datos/complementos-cuadros.json
+EXTRA = [(sys.argv[i], json.load(open(sys.argv[i + 1], encoding='utf-8'))) for i in range(8, len(sys.argv) - 1, 2)]
 D = json.load(open(data_path, encoding='utf-8'))
 H = json.load(open(hist_path, encoding='utf-8'))
 P = D['people']; manuel = D['root']; teresa_id = D.get('root2')
@@ -66,6 +68,17 @@ while queue:
             line[y] = i; queue.append((y, i))
 for p in P.values(): p['line'] = line.get(p['id'])
 for i, n in enumerate(LINES): print('línea', n, sum(1 for p in P.values() if p['line'] == i))
+
+# ---------- años de vida que da el árbol de línea directa (contenido/historia.json → «vida»)
+for nombre, anos in H.get('vida', {}).items():
+    target = norm(nombre)
+    best = max((p for p in P.values() if p['gen'] is not None), key=lambda p: (jacc(norm(p['name']), target), -(p['gen'] or 99)))
+    if jacc(norm(best['name']), target) < 0.6:
+        print('WARN vida sin persona:', nombre, '->', best['name']); continue
+    if best.get('year') and best['year'][:4] != anos[:4]:
+        best.setdefault('raw', []).append(f'árbol de línea directa: {anos}')
+    best['year'] = anos
+    print('vida', nombre, anos, '->', best['id'], best['name'])
 
 # ---------- biografías del linaje
 bios = {}
@@ -156,6 +169,13 @@ if T_PDF:
         W, Hh = render_tree(tdoc, segs, fn)
         trees.append(dict(n=2000 + int(k), label=f'P2-{pg}', side='T', img=fn + '.webp', w=W, h=Hh, roots=[], count=0,
                           name=f'Parte 2, página {pg}', title='Página medieval (solo imagen)'))
+
+for x_pdf, x_cfg in EXTRA:
+    xdoc = fitz.open(x_pdf)
+    for k in sorted(x_cfg['trees'], key=int):
+        fn = f'complemento-{k}'
+        W, Hh = render_tree(xdoc, x_cfg['trees'][k], fn)
+        trees.append(dict(tree_entry(int(k), fn, W, Hh, x_cfg['labels'][k], x_cfg.get('sides', {}).get(k, 'T')), name=x_cfg['names'][k]))
 
 # ---------- fotos
 os.makedirs(f'{docs}/img', exist_ok=True)

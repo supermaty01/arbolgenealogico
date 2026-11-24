@@ -3,7 +3,7 @@ import sys, json, re, unicodedata, collections
 sys.stdout.reconfigure(encoding='utf-8')
 T = json.load(open(sys.argv[1], encoding='utf-8'))
 OUT = sys.argv[2]
-for extra in sys.argv[3:]:  # cuadros de otras ramas (p. ej. la de María Teresa Ruiz Maya, claves 101+)
+for extra in sys.argv[3:]:  # cuadros de otras ramas: María Teresa Ruiz Maya (claves 101+) y complementarios (201+)
     T.update(json.load(open(extra, encoding='utf-8')))
 TERESA = '101' in T
 
@@ -66,6 +66,25 @@ def fixups(T):
                 new = dict(n); new['id'] = 'T12-x1'; new['name'] = 'ANTONIO VELEZ PELAEZ'; new['spouse'] = None
                 n['name'] = 'NICOLASA MONTOYA'; n['father'] = n['mother'] = None
                 P.append(new)
+        if t == '110' and by.get('T110-5', {}).get('name') == 'DE ANDRADE PRIMER ALCALDE':
+            # «Alonso Jaramillo de Andrade y Céspedes, primer alcalde mayor de Medellín» y «Jacinta de Molina
+            # y Toledo Beltrán del Castillo»: la «Y» dentro de los nombres partió la franja en dos generaciones
+            a, j = by['T110-3'], by['T110-4']
+            a.update(name='ALONSO JARAMILLO DE ANDRADE Y CÉSPEDES', date='ANT.', father='T110-9', mother='T110-10')
+            j.update(name='JACINTA DE MOLINA Y TOLEDO BELTRÁN DEL CASTILLO', date='MED', father='T110-11', mother='T110-12')
+            for k in ('T110-9', 'T110-10', 'T110-11', 'T110-12'): by[k]['band'] = 3
+            v['people'] = P = [x for x in P if x['id'] not in ('T110-5', 'T110-6', 'T110-7', 'T110-8')]
+        if 200 <= int(t) < 300:
+            # en la última fila de los cuadros complementarios, muy apretada, algunas casillas quedan mezcladas
+            # (dos personas en una): se descartan para que no completen el árbol con enlaces falsos
+            MEZCLA = {'ISABEL PEDRO PEREZ FERNANDEZ GALEANO VELARDE', 'ANA MARIA DOMINGO GOMEZ GOMEZ ARNEDO DE UREÑA',
+                      'MARIA FRANCISCO GOMEZ PEREZ HOLGUIN COL'}
+            bad = {x['id'] for x in P if x['name'] in MEZCLA or len([w for w in x['name'].split() if w not in ('DE', 'DEL', 'LA', 'LOS', 'Y')]) > 6}
+            for x in P:
+                for k in ('father', 'mother', 'spouse'):
+                    if x.get(k) in bad: x[k] = None
+            v['people'] = P = [x for x in P if x['id'] not in bad]
+            by[f'T{t}-0']['band'] = 0  # la raíz del cuadro (encima pueden quedar números sueltos de la página)
         lasso_needed = False
         for p in list(P):
             toks = p['name'].split()
@@ -200,7 +219,8 @@ if TERESA:
                 a, c = p['key'].split(), q['key'].split()
                 near = j >= 0.5 and a[0] == c[0] and (set(a) <= set(c) or set(c) <= set(a) or a[-1] == c[-1])
                 return j == 1 or (years_ok(p['oid'], q['oid']) and (j >= 0.75 or near))
-            cands = [q for q in persons if q['tree'] > 100 and q['tree'] != p['tree'] and q['key'] and ok(q)]
+            # los cuadros complementarios (200-299) pueden empalmar con cualquier cuadro, también con los de Manuel Salvador
+            cands = [q for q in persons if (q['tree'] > 100 or 200 <= p['tree'] < 300) and q['tree'] != p['tree'] and q['key'] and ok(q)]
             if not cands: print('raíz sin pareja', p['tree'], p['name']); continue
             c101 = [q for q in cands if q['tree'] == 101]
             best = max(c101 or cands, key=lambda q: (jacc(p['key'], q['key']), -q['band']))
@@ -327,8 +347,12 @@ def pid_of(oid): return ids[find(oid)]
 order = sorted(clusters, key=lambda r: (min(o['tree'] for o in clusters[r]), min(o['band'] for o in clusters[r])))
 for n, r in enumerate(order): ids[r] = f'p{n}'
 people = {}
+def complement(o): return 200 <= o['tree'] < 300
 for r in order:
-    oc = clusters[r]
+    oc_all = clusters[r]
+    # los cuadros complementarios (201+) solo completan: nombre, fecha y padres salen de los cuadros principales
+    # cuando estos los traen; si no, del cuadro complementario
+    oc = [o for o in oc_all if not complement(o)] or oc_all
     named = [o for o in oc if not o['unknown']]
     name = collections.Counter(o['name'] for o in named).most_common(1)[0][0] if named else 'Desconocido/a'
     # prefer the longest variant among the most common ones
@@ -339,19 +363,19 @@ for r in order:
         cand = [n for n in cand if len(n.split()) <= 6] or cand  # los nombres muy largos suelen venir de dos personas pegadas
         name = max(cand, key=len)
     best = sorted(oc, key=lambda o: (bool(o['year']) and bool(o['place']), bool(o['year']), bool(o['place'])), reverse=True)[0]
-    year = best['year'] or next((o['year'] for o in oc if o['year']), None)
-    place = best['place'] or next((o['place'] for o in oc if o['place']), None)
-    fcnt = collections.Counter(find(o['father']) for o in oc if o['father'])
-    mcnt = collections.Counter(find(o['mother']) for o in oc if o['mother'])
-    spouses = sorted({ids[find(o['spouse'])] for o in oc if o['spouse']} - {ids[r]})
+    year = best['year'] or next((o['year'] for o in oc_all if o['year']), None)
+    place = best['place'] or next((o['place'] for o in oc_all if o['place']), None)
+    fcnt = collections.Counter(find(o['father']) for o in oc if o['father']) or collections.Counter(find(o['father']) for o in oc_all if o['father'])
+    mcnt = collections.Counter(find(o['mother']) for o in oc if o['mother']) or collections.Counter(find(o['mother']) for o in oc_all if o['mother'])
+    spouses = sorted({ids[find(o['spouse'])] for o in oc_all if o['spouse']} - {ids[r]})
     people[ids[r]] = dict(id=ids[r], name=name, year=year, place=place,
-                          raw=sorted({o['date_raw'] for o in oc if o['date_raw']}),
-                          unknown=not named, conq=any(o['conq'] for o in oc),
+                          raw=sorted({o['date_raw'] for o in oc_all if o['date_raw']}),
+                          unknown=not named, conq=any(o['conq'] for o in oc_all),
                           father=ids[fcnt.most_common(1)[0][0]] if fcnt else None,
                           mother=ids[mcnt.most_common(1)[0][0]] if mcnt else None,
-                          spouses=spouses, trees=sorted({o['tree'] for o in oc}), rootOf=sorted({o['tree'] for o in oc if o['band'] == 0}),
+                          spouses=spouses, trees=sorted({o['tree'] for o in oc_all}), rootOf=sorted({o['tree'] for o in oc_all if o['band'] == 0}),
                           color=collections.Counter(o['color'] for o in oc).most_common(1)[0][0],
-                          variants=sorted({o['name'] for o in named} - {name}))
+                          variants=sorted({o['name'] for o in oc_all if not o['unknown']} - {name}))
 # guard against cycles (a person being their own ancestor)
 def anc_has(pid, target, seen=None):
     seen = seen or set()

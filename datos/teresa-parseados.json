@@ -11264,27 +11264,23 @@
 "spouse": null
 },
 {
-"name": "FERNANDO ANTONIO ARANGO VELEZ RIONEGRO 1705 ESTEBAN DE ARANGO ZAFRA",
+"name": "FERNANDO ANTONIO ARANGO VELEZ",
 "rows": [
 "FERNANDO ANTONIO",
-"ARANGO VELEZ",
-"RIONEGRO 1705",
-"ESTEBAN",
-"DE ARANGO",
-"ZAFRA"
+"ARANGO VELEZ"
 ],
 "bbox": [
-125.77999877929688,
+302.4200134277344,
 151.12998962402344,
 428.947998046875,
-258.40995025634766
+194.9299774169922
 ],
 "page": 16,
-"date": "X",
+"date": "RIONEGRO 1705",
 "color": "#000000",
-"x": 162.5,
+"x": 369.6,
 "y": 157.1,
-"more": true,
+"more": false,
 "none": false,
 "ref": null,
 "id": "T104-1",
@@ -11294,34 +11290,84 @@
 "spouse": "T104-2"
 },
 {
-"name": "MICAELA JERÓNIMA GUERRA PELÁEZ ECHEVERRI MED. N.1710 GERTRUDIS VELEZ TORO",
+"name": "MICAELA JERÓNIMA GUERRA PELÁEZ ECHEVERRI",
 "rows": [
 "MICAELA JERÓNIMA",
-"GUERRA PELÁEZ ECHEVERRI",
-"MED. N.1710",
-"GERTRUDIS",
-"VELEZ",
-"TORO"
+"GUERRA PELÁEZ ECHEVERRI"
 ],
 "bbox": [
-523.8681030273438,
+637.2799682617188,
 151.12998962402344,
 813.2120971679688,
-258.40995025634766
+194.9299774169922
 ],
 "page": 16,
-"date": "X",
+"date": "MED. N.1710",
 "color": "#000000",
-"x": 662.8,
+"x": 721.5,
 "y": 157.1,
 "more": false,
 "none": false,
 "ref": null,
 "id": "T104-2",
 "band": 1,
+"father": null,
+"mother": null,
+"spouse": "T104-1"
+},
+{
+"name": "ESTEBAN DE ARANGO ZAFRA",
+"rows": [
+"ESTEBAN",
+"DE ARANGO",
+"ZAFRA"
+],
+"bbox": [
+125.77999877929688,
+198.77000427246094,
+202.1840057373047,
+258.40995025634766
+],
+"page": 16,
+"date": "X",
+"color": "#000000",
+"x": 162.5,
+"y": 204.8,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T104-3",
+"band": 2,
 "father": "T104-5",
 "mother": "T104-6",
-"spouse": "T104-1"
+"spouse": "T104-4"
+},
+{
+"name": "GERTRUDIS VELEZ TORO",
+"rows": [
+"GERTRUDIS",
+"VELEZ",
+"TORO"
+],
+"bbox": [
+523.8681030273438,
+198.77000427246094,
+594.4881591796875,
+258.40995025634766
+],
+"page": 16,
+"date": "X",
+"color": "#000000",
+"x": 560.2,
+"y": 204.8,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T104-4",
+"band": 2,
+"father": "T104-7",
+"mother": "T104-8",
+"spouse": "T104-3"
 },
 {
 "name": "ANTONIO VALDES DE ARANGO",
@@ -11344,11 +11390,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-3",
-"band": 2,
+"id": "T104-5",
+"band": 3,
 "father": null,
 "mother": null,
-"spouse": "T104-4"
+"spouse": "T104-6"
 },
 {
 "name": "OLAYA DE ZAFRA CASTRILLON",
@@ -11371,11 +11417,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-4",
-"band": 2,
-"father": "T104-7",
-"mother": "T104-8",
-"spouse": "T104-3"
+"id": "T104-6",
+"band": 3,
+"father": "T104-9",
+"mother": "T104-10",
+"spouse": "T104-5"
 },
 {
 "name": "JUAN VÉLEZ DE RIVERO",
@@ -11398,11 +11444,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-5",
-"band": 2,
-"father": "T104-9",
-"mother": "T104-10",
-"spouse": "T104-6"
+"id": "T104-7",
+"band": 3,
+"father": "T104-11",
+"mother": "T104-12",
+"spouse": "T104-8"
 },
 {
 "name": "MANUELA DE TORO PELÁEZ",
@@ -11425,11 +11471,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-6",
-"band": 2,
-"father": "T104-11",
-"mother": "T104-12",
-"spouse": "T104-5"
+"id": "T104-8",
+"band": 3,
+"father": "T104-13",
+"mother": "T104-14",
+"spouse": "T104-7"
 },
 {
 "name": "FERNANDO DE ZAFRA JARAMILLO",
@@ -11452,11 +11498,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-7",
-"band": 3,
-"father": "T104-13",
-"mother": "T104-14",
-"spouse": "T104-8"
+"id": "T104-9",
+"band": 4,
+"father": "T104-15",
+"mother": "T104-16",
+"spouse": "T104-10"
 },
 {
 "name": "MARIA ÁLVAREZ DE CASTRILLÓN HEREDIA",
@@ -11480,11 +11526,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-8",
-"band": 3,
-"father": "T104-15",
-"mother": "T104-16",
-"spouse": "T104-7"
+"id": "T104-10",
+"band": 4,
+"father": "T104-17",
+"mother": "T104-18",
+"spouse": "T104-9"
 },
 {
 "name": "DOMINGO DIEGO VÉLEZ FRANQUIN",
@@ -11507,11 +11553,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-9",
-"band": 3,
+"id": "T104-11",
+"band": 4,
 "father": null,
 "mother": null,
-"spouse": "T104-10"
+"spouse": "T104-12"
 },
 {
 "name": "MARIA DE RIVERO SANTIBAÑEZ",
@@ -11534,11 +11580,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-10",
-"band": 3,
-"father": "T104-17",
-"mother": "T104-18",
-"spouse": "T104-9"
+"id": "T104-12",
+"band": 4,
+"father": "T104-19",
+"mother": "T104-20",
+"spouse": "T104-11"
 },
 {
 "name": "CRISTOBAL DE TORO ZAPATA",
@@ -11561,11 +11607,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-11",
-"band": 3,
-"father": "T104-19",
-"mother": "T104-20",
-"spouse": "T104-12"
+"id": "T104-13",
+"band": 4,
+"father": "T104-21",
+"mother": "T104-22",
+"spouse": "T104-14"
 },
 {
 "name": "ANDREA GUERRA PELAEZ RUIZ DE LA CÁMARA",
@@ -11589,11 +11635,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-12",
-"band": 3,
-"father": "T104-21",
-"mother": "T104-22",
-"spouse": "T104-11"
+"id": "T104-14",
+"band": 4,
+"father": "T104-23",
+"mother": "T104-24",
+"spouse": "T104-13"
 },
 {
 "name": "JUAN JARAMILLO DE ANDRADE FERNANDEZ",
@@ -11616,11 +11662,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-13",
-"band": 4,
-"father": "T104-23",
-"mother": "T104-24",
-"spouse": "T104-14"
+"id": "T104-15",
+"band": 5,
+"father": "T104-25",
+"mother": "T104-26",
+"spouse": "T104-16"
 },
 {
 "name": "JUANA DE ZAFRA CENTENO",
@@ -11643,11 +11689,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-14",
-"band": 4,
-"father": "T104-25",
-"mother": "T104-26",
-"spouse": "T104-13"
+"id": "T104-16",
+"band": 5,
+"father": "T104-27",
+"mother": "T104-28",
+"spouse": "T104-15"
 },
 {
 "name": "DIEGO ALVAREZ DE CASTRILLÓN",
@@ -11670,11 +11716,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-15",
-"band": 4,
-"father": "T104-27",
-"mother": "T104-28",
-"spouse": "T104-16"
+"id": "T104-17",
+"band": 5,
+"father": "T104-29",
+"mother": "T104-30",
+"spouse": "T104-18"
 },
 {
 "name": "CATALINA DE HEREDIA BLANDON",
@@ -11697,11 +11743,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-16",
-"band": 4,
-"father": "T104-29",
-"mother": "T104-30",
-"spouse": "T104-15"
+"id": "T104-18",
+"band": 5,
+"father": "T104-31",
+"mother": "T104-32",
+"spouse": "T104-17"
 },
 {
 "name": "TORIBIO DE RIVERO",
@@ -11724,11 +11770,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-17",
-"band": 4,
+"id": "T104-19",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T104-18"
+"spouse": "T104-20"
 },
 {
 "name": "FRANCISCA DE SANTIBAÑEZ",
@@ -11751,11 +11797,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-18",
-"band": 4,
+"id": "T104-20",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T104-17"
+"spouse": "T104-19"
 },
 {
 "name": "JUAN DE TORO RODRIGUEZ",
@@ -11778,11 +11824,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-19",
-"band": 4,
-"father": "T104-31",
-"mother": "T104-32",
-"spouse": "T104-20"
+"id": "T104-21",
+"band": 5,
+"father": "T104-33",
+"mother": "T104-34",
+"spouse": "T104-22"
 },
 {
 "name": "CATALINA ZAPATA CARDENAS VALERO",
@@ -11806,11 +11852,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-20",
-"band": 4,
-"father": "T104-33",
-"mother": "T104-34",
-"spouse": "T104-19"
+"id": "T104-22",
+"band": 5,
+"father": "T104-35",
+"mother": "T104-36",
+"spouse": "T104-21"
 },
 {
 "name": "JUAN GUERRA PELAEZ HERNÁNDEZ VERA",
@@ -11833,11 +11879,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-21",
-"band": 4,
-"father": "T104-35",
-"mother": "T104-36",
-"spouse": "T104-22"
+"id": "T104-23",
+"band": 5,
+"father": "T104-37",
+"mother": "T104-38",
+"spouse": "T104-24"
 },
 {
 "name": "JUANA JOSEFA RUIZ DE LA CÁMARA DE CARVAJAL",
@@ -11860,11 +11906,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-22",
-"band": 4,
-"father": "T104-37",
-"mother": "T104-38",
-"spouse": "T104-21"
+"id": "T104-24",
+"band": 5,
+"father": "T104-39",
+"mother": "T104-40",
+"spouse": "T104-23"
 },
 {
 "name": "ALONSO JARAMILLO ANDRADE",
@@ -11887,11 +11933,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-23",
-"band": 5,
+"id": "T104-25",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T104-24"
+"spouse": "T104-26"
 },
 {
 "name": "ISABEL FERNÁNDEZ DE TOLEDO SALCEDO",
@@ -11915,11 +11961,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-24",
-"band": 5,
-"father": "T104-39",
-"mother": "T104-40",
-"spouse": "T104-23"
+"id": "T104-26",
+"band": 6,
+"father": "T104-41",
+"mother": "T104-42",
+"spouse": "T104-25"
 },
 {
 "name": "FERNANDO DE ZAFRA CENTENO FERNANDEZ",
@@ -11942,11 +11988,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-25",
-"band": 5,
-"father": "T104-41",
-"mother": "T104-42",
-"spouse": "T104-26"
+"id": "T104-27",
+"band": 6,
+"father": "T104-43",
+"mother": "T104-44",
+"spouse": "T104-28"
 },
 {
 "name": "JUANA TABORDA LOPEZ",
@@ -11969,11 +12015,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-26",
-"band": 5,
-"father": "T104-43",
-"mother": "T104-44",
-"spouse": "T104-25"
+"id": "T104-28",
+"band": 6,
+"father": "T104-45",
+"mother": "T104-46",
+"spouse": "T104-27"
 },
 {
 "name": "RODRIGO ALVAREZ CASTRILLÓN",
@@ -11996,11 +12042,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-27",
-"band": 5,
+"id": "T104-29",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T104-28"
+"spouse": "T104-30"
 },
 {
 "name": "MARÍA BERNALDO DE QUIRÓS",
@@ -12023,11 +12069,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-28",
-"band": 5,
-"father": "T104-45",
-"mother": "T104-46",
-"spouse": "T104-27"
+"id": "T104-30",
+"band": 6,
+"father": "T104-47",
+"mother": "T104-48",
+"spouse": "T104-29"
 },
 {
 "name": "NICOLÁS BLANDÓN X",
@@ -12050,11 +12096,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-29",
-"band": 5,
+"id": "T104-31",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T104-30"
+"spouse": "T104-32"
 },
 {
 "name": "CATALINA DE HEREDIA",
@@ -12077,11 +12123,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-30",
-"band": 5,
+"id": "T104-32",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T104-29"
+"spouse": "T104-31"
 },
 {
 "name": "CRISTOBAL SEVERO BERNAL",
@@ -12104,11 +12150,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-31",
-"band": 5,
-"father": "T104-47",
-"mother": "T104-48",
-"spouse": "T104-32"
+"id": "T104-33",
+"band": 6,
+"father": "T104-49",
+"mother": "T104-50",
+"spouse": "T104-34"
 },
 {
 "name": "ANA DE TORO RODRIGUEZ",
@@ -12131,11 +12177,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-32",
-"band": 5,
-"father": "T104-49",
-"mother": "T104-50",
-"spouse": "T104-31"
+"id": "T104-34",
+"band": 6,
+"father": "T104-51",
+"mother": "T104-52",
+"spouse": "T104-33"
 },
 {
 "name": "LUIS ZAPATA CARDENAS",
@@ -12158,11 +12204,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-33",
-"band": 5,
-"father": "T104-51",
-"mother": "T104-52",
-"spouse": "T104-34"
+"id": "T104-35",
+"band": 6,
+"father": "T104-53",
+"mother": "T104-54",
+"spouse": "T104-36"
 },
 {
 "name": "MARIANA VALERO VELASCO REMED.ANT",
@@ -12186,11 +12232,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-34",
-"band": 5,
-"father": "T104-53",
-"mother": "T104-54",
-"spouse": "T104-33"
+"id": "T104-36",
+"band": 6,
+"father": "T104-55",
+"mother": "T104-56",
+"spouse": "T104-35"
 },
 {
 "name": "JUAN GUERRA PELAEZ ABEO",
@@ -12213,11 +12259,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-35",
-"band": 5,
-"father": "T104-55",
-"mother": "T104-56",
-"spouse": "T104-36"
+"id": "T104-37",
+"band": 6,
+"father": "T104-57",
+"mother": "T104-58",
+"spouse": "T104-38"
 },
 {
 "name": "MARÍA HERNANDEZ DE LA VERA CORREA",
@@ -12241,11 +12287,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-36",
-"band": 5,
-"father": "T104-57",
-"mother": "T104-58",
-"spouse": "T104-35"
+"id": "T104-38",
+"band": 6,
+"father": "T104-59",
+"mother": "T104-60",
+"spouse": "T104-37"
 },
 {
 "name": "DIEGO RUIZ CAMARA",
@@ -12268,11 +12314,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-37",
-"band": 5,
-"father": "T104-59",
-"mother": "T104-60",
-"spouse": "T104-38"
+"id": "T104-39",
+"band": 6,
+"father": "T104-61",
+"mother": "T104-62",
+"spouse": "T104-40"
 },
 {
 "name": "MENCÍA CARVAJAL MARTINEZ",
@@ -12295,11 +12341,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-38",
-"band": 5,
-"father": "T104-61",
-"mother": "T104-62",
-"spouse": "T104-37"
+"id": "T104-40",
+"band": 6,
+"father": "T104-63",
+"mother": "T104-64",
+"spouse": "T104-39"
 },
 {
 "name": "ANTONIO DE TOLEDO BARCELOS",
@@ -12322,11 +12368,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-39",
-"band": 6,
-"father": "T104-63",
-"mother": "T104-64",
-"spouse": "T104-40"
+"id": "T104-41",
+"band": 7,
+"father": "T104-65",
+"mother": "T104-66",
+"spouse": "T104-42"
 },
 {
 "name": "MARÍA DE ACEVEDO",
@@ -12349,11 +12395,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-40",
-"band": 6,
+"id": "T104-42",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-39"
+"spouse": "T104-41"
 },
 {
 "name": "HERNANDO DE ZAFRA CENTENO",
@@ -12376,11 +12422,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-41",
-"band": 6,
+"id": "T104-43",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-42"
+"spouse": "T104-44"
 },
 {
 "name": "CATALINA FERNANDEZ X",
@@ -12403,11 +12449,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-42",
-"band": 6,
+"id": "T104-44",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-41"
+"spouse": "T104-43"
 },
 {
 "name": "JUAN TABORDA DE RIVERO",
@@ -12430,11 +12476,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-43",
-"band": 6,
-"father": "T104-65",
-"mother": "T104-66",
-"spouse": "T104-44"
+"id": "T104-45",
+"band": 7,
+"father": "T104-67",
+"mother": "T104-68",
+"spouse": "T104-46"
 },
 {
 "name": "LEONOR LÓPEZ SANTOFIMIA",
@@ -12457,11 +12503,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-44",
-"band": 6,
+"id": "T104-46",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-43"
+"spouse": "T104-45"
 },
 {
 "name": "JUAN GARCÍA DE TINEO",
@@ -12484,11 +12530,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-45",
-"band": 6,
+"id": "T104-47",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-46"
+"spouse": "T104-48"
 },
 {
 "name": "CATALINA BERNALDO DE QUIRÓS",
@@ -12511,11 +12557,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-46",
-"band": 6,
+"id": "T104-48",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-45"
+"spouse": "T104-47"
 },
 {
 "name": "JUAN SEVERO VILLALBA",
@@ -12538,11 +12584,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-47",
-"band": 6,
+"id": "T104-49",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-48"
+"spouse": "T104-50"
 },
 {
 "name": "ISABEL BERNAL X",
@@ -12565,11 +12611,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-48",
-"band": 6,
+"id": "T104-50",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-47"
+"spouse": "T104-49"
 },
 {
 "name": "HERNANDO DE TORO",
@@ -12592,11 +12638,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-49",
-"band": 6,
+"id": "T104-51",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-50"
+"spouse": "T104-52"
 },
 {
 "name": "INÉS RODRIGUEZ X",
@@ -12619,11 +12665,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-50",
-"band": 6,
+"id": "T104-52",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-49"
+"spouse": "T104-51"
 },
 {
 "name": "GONZALO DE PALENCIA",
@@ -12646,11 +12692,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-51",
-"band": 6,
-"father": "T104-67",
-"mother": "T104-68",
-"spouse": "T104-52"
+"id": "T104-53",
+"band": 7,
+"father": "T104-69",
+"mother": "T104-70",
+"spouse": "T104-54"
 },
 {
 "name": "LEONOR ALVAREZ DE ALZA",
@@ -12673,11 +12719,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-52",
-"band": 6,
+"id": "T104-54",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-51"
+"spouse": "T104-53"
 },
 {
 "name": "MARTÍN GARCIA VALERO",
@@ -12700,11 +12746,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-53",
-"band": 6,
+"id": "T104-55",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-54"
+"spouse": "T104-56"
 },
 {
 "name": "ISABEL BLASCO VELASCO",
@@ -12727,11 +12773,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-54",
-"band": 6,
+"id": "T104-56",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-53"
+"spouse": "T104-55"
 },
 {
 "name": "JUAN GUERRA PELAEZ",
@@ -12754,11 +12800,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-55",
-"band": 6,
+"id": "T104-57",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-56"
+"spouse": "T104-58"
 },
 {
 "name": "MARIA ABEO ARACO JUNCOS",
@@ -12782,11 +12828,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-56",
-"band": 6,
+"id": "T104-58",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-55"
+"spouse": "T104-57"
 },
 {
 "name": "JUAN CORREA FERNANDEZ",
@@ -12809,11 +12855,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-57",
-"band": 6,
-"father": "T104-69",
-"mother": "T104-70",
-"spouse": "T104-58"
+"id": "T104-59",
+"band": 7,
+"father": "T104-71",
+"mother": "T104-72",
+"spouse": "T104-60"
 },
 {
 "name": "MARIA HERNANDEZ DE LA VERA",
@@ -12836,11 +12882,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-58",
-"band": 6,
-"father": "T104-71",
-"mother": "T104-72",
-"spouse": "T104-57"
+"id": "T104-60",
+"band": 7,
+"father": "T104-73",
+"mother": "T104-74",
+"spouse": "T104-59"
 },
 {
 "name": "JUAN RUIZ PARRA",
@@ -12863,11 +12909,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-59",
-"band": 6,
-"father": "T104-73",
-"mother": "T104-74",
-"spouse": "T104-60"
+"id": "T104-61",
+"band": 7,
+"father": "T104-75",
+"mother": "T104-76",
+"spouse": "T104-62"
 },
 {
 "name": "ELVIRA MARTINEZ CARDENAS",
@@ -12890,11 +12936,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-60",
-"band": 6,
+"id": "T104-62",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T104-59"
+"spouse": "T104-61"
 },
 {
 "name": "RODRIGO CARVAJAL SANCHEZ",
@@ -12917,11 +12963,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-61",
-"band": 6,
-"father": "T104-75",
-"mother": "T104-76",
-"spouse": "T104-62"
+"id": "T104-63",
+"band": 7,
+"father": "T104-77",
+"mother": "T104-78",
+"spouse": "T104-64"
 },
 {
 "name": "JUANA MARTIN MARTINEZ",
@@ -12944,11 +12990,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-62",
-"band": 6,
-"father": "T104-77",
-"mother": "T104-78",
-"spouse": "T104-61"
+"id": "T104-64",
+"band": 7,
+"father": "T104-79",
+"mother": "T104-80",
+"spouse": "T104-63"
 },
 {
 "name": "RODOLF0 REMIGIO BARCELOS DE TOLEDO",
@@ -12972,11 +13018,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-63",
-"band": 7,
+"id": "T104-65",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T104-64"
+"spouse": "T104-66"
 },
 {
 "name": "ALEJANDRINA DE PAIVA ACEVEDO",
@@ -12999,11 +13045,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-64",
-"band": 7,
+"id": "T104-66",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T104-63"
+"spouse": "T104-65"
 },
 {
 "name": "ALONSO TABORDA DÍAZ",
@@ -13026,11 +13072,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-65",
-"band": 7,
-"father": "T104-79",
-"mother": "T104-80",
-"spouse": "T104-66"
+"id": "T104-67",
+"band": 8,
+"father": "T104-81",
+"mother": "T104-82",
+"spouse": "T104-68"
 },
 {
 "name": "?",
@@ -13051,11 +13097,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T104-66",
-"band": 7,
+"id": "T104-68",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T104-65"
+"spouse": "T104-67"
 },
 {
 "name": "GONZALO DE AVILA",
@@ -13078,11 +13124,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-67",
-"band": 7,
+"id": "T104-69",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T104-68"
+"spouse": "T104-70"
 },
 {
 "name": "?",
@@ -13103,11 +13149,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T104-68",
-"band": 7,
+"id": "T104-70",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T104-67"
+"spouse": "T104-69"
 },
 {
 "name": "JUAN FERNÁNDEZ PESCOZO",
@@ -13130,11 +13176,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-69",
-"band": 7,
+"id": "T104-71",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T104-70"
+"spouse": "T104-72"
 },
 {
 "name": "JUANA CORREA X",
@@ -13157,11 +13203,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-70",
-"band": 7,
+"id": "T104-72",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T104-69"
+"spouse": "T104-71"
 },
 {
 "name": "GONZALO GOMEZ CRESPO",
@@ -13184,11 +13230,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-71",
-"band": 7,
+"id": "T104-73",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T104-72"
+"spouse": "T104-74"
 },
 {
 "name": "MARIA HERNANDEZ BARRAGAN",
@@ -13211,11 +13257,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-72",
-"band": 7,
+"id": "T104-74",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T104-71"
+"spouse": "T104-73"
 },
 {
 "name": "JERÓNIMO DE LA PARRA",
@@ -13238,11 +13284,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-73",
-"band": 7,
+"id": "T104-75",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T104-74"
+"spouse": "T104-76"
 },
 {
 "name": "ANA RUIZ X",
@@ -13265,11 +13311,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-74",
-"band": 7,
+"id": "T104-76",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T104-73"
+"spouse": "T104-75"
 },
 {
 "name": "BARTOLOMÉ SÁNCHEZ TORREBLANCA",
@@ -13292,11 +13338,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-75",
-"band": 7,
-"father": "T104-81",
-"mother": "T104-82",
-"spouse": "T104-76"
+"id": "T104-77",
+"band": 8,
+"father": "T104-83",
+"mother": "T104-84",
+"spouse": "T104-78"
 },
 {
 "name": "MENCÍA CARVAJAL VÁSQUEZ",
@@ -13319,11 +13365,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-76",
-"band": 7,
-"father": "T104-83",
-"mother": "T104-84",
-"spouse": "T104-75"
+"id": "T104-78",
+"band": 8,
+"father": "T104-85",
+"mother": "T104-86",
+"spouse": "T104-77"
 },
 {
 "name": "PEDRO MARTIN DE ÁVILA",
@@ -13346,11 +13392,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-77",
-"band": 7,
-"father": "T104-85",
-"mother": "T104-86",
-"spouse": "T104-78"
+"id": "T104-79",
+"band": 8,
+"father": "T104-87",
+"mother": "T104-88",
+"spouse": "T104-80"
 },
 {
 "name": "FRANCISCA MARTINEZ DE ÁNGULO",
@@ -13373,11 +13419,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-78",
-"band": 7,
+"id": "T104-80",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T104-77"
+"spouse": "T104-79"
 },
 {
 "name": "ALONSO TABORDA DE RIVERA",
@@ -13400,11 +13446,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-79",
-"band": 8,
+"id": "T104-81",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T104-80"
+"spouse": "T104-82"
 },
 {
 "name": "ISABEL DIAZ X",
@@ -13427,11 +13473,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-80",
-"band": 8,
+"id": "T104-82",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T104-79"
+"spouse": "T104-81"
 },
 {
 "name": "BARTOLOMÉ SANCHEZ DE QUINTANA",
@@ -13454,11 +13500,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-81",
-"band": 8,
+"id": "T104-83",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T104-82"
+"spouse": "T104-84"
 },
 {
 "name": "CONSTANZA LOPEZ X",
@@ -13481,11 +13527,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-82",
-"band": 8,
+"id": "T104-84",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T104-81"
+"spouse": "T104-83"
 },
 {
 "name": "RODRIGO CARVAJAL JARAMILLO",
@@ -13508,11 +13554,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-83",
-"band": 8,
-"father": "T104-87",
-"mother": "T104-88",
-"spouse": "T104-84"
+"id": "T104-85",
+"band": 9,
+"father": "T104-89",
+"mother": "T104-90",
+"spouse": "T104-86"
 },
 {
 "name": "MAYOR VASQUEZ NUÑEZ",
@@ -13535,11 +13581,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-84",
-"band": 8,
-"father": "T104-89",
-"mother": "T104-90",
-"spouse": "T104-83"
+"id": "T104-86",
+"band": 9,
+"father": "T104-91",
+"mother": "T104-92",
+"spouse": "T104-85"
 },
 {
 "name": "PEDRO 1 MARTIN HERNANDEZ",
@@ -13562,11 +13608,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T104-85",
-"band": 8,
-"father": "T104-91",
-"mother": "T104-92",
-"spouse": "T104-86"
+"id": "T104-87",
+"band": 9,
+"father": "T104-93",
+"mother": "T104-94",
+"spouse": "T104-88"
 },
 {
 "name": "CATALINA DE BARRIONUEVO",
@@ -13589,11 +13635,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-86",
-"band": 8,
+"id": "T104-88",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T104-85"
+"spouse": "T104-87"
 },
 {
 "name": "GONZALO DE CARVAJAL",
@@ -13616,11 +13662,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-87",
-"band": 9,
+"id": "T104-89",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T104-88"
+"spouse": "T104-90"
 },
 {
 "name": "MENCÍA HERNANDEZ X",
@@ -13643,11 +13689,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-88",
-"band": 9,
+"id": "T104-90",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T104-87"
+"spouse": "T104-89"
 },
 {
 "name": "PEDRO HERNANDEZ BAQUERO",
@@ -13670,11 +13716,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-89",
-"band": 9,
+"id": "T104-91",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T104-90"
+"spouse": "T104-92"
 },
 {
 "name": "BLANCA NUÑEZ X",
@@ -13697,11 +13743,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-90",
-"band": 9,
+"id": "T104-92",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T104-89"
+"spouse": "T104-91"
 },
 {
 "name": "JUAN MARTIN AVILA",
@@ -13724,11 +13770,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-91",
-"band": 9,
+"id": "T104-93",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T104-92"
+"spouse": "T104-94"
 },
 {
 "name": "CATALINA HERNANDEZ X",
@@ -13751,11 +13797,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T104-92",
-"band": 9,
+"id": "T104-94",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T104-91"
+"spouse": "T104-93"
 }
 ],
 "warn": []
@@ -16194,27 +16240,23 @@
 "spouse": null
 },
 {
-"name": "JOSE VELASQUEZ BETANCUR X MIGUEL JERÓNIMO VELASQUEZ AMBROSIA RUIZ DE LA PARRA",
+"name": "JOSE VELASQUEZ BETANCUR",
 "rows": [
 "JOSE VELASQUEZ",
-"BETANCUR",
-"X",
-"MIGUEL JERÓNIMO",
-"VELASQUEZ AMBROSIA",
-"RUIZ DE LA PARRA"
+"BETANCUR"
 ],
 "bbox": [
-109.08000183105469,
+255.74000549316406,
 136.60997009277344,
-470.8520812988281,
-243.77000427246094
+367.75994873046875,
+180.2899627685547
 ],
 "page": 18,
 "date": "X",
 "color": "#000000",
-"x": 159.7,
+"x": 308.0,
 "y": 142.6,
-"more": true,
+"more": false,
 "none": false,
 "ref": null,
 "id": "T105-1",
@@ -16224,34 +16266,85 @@
 "spouse": "T105-2"
 },
 {
-"name": "MARIA TERESA DE LA CALLE VÉLEZ N.1715 BÁRBARA BETANCUR ALVAREZ",
+"name": "MARIA TERESA DE LA CALLE VÉLEZ",
 "rows": [
 "MARIA TERESA",
-"DE LA CALLE VÉLEZ",
-"N.1715",
+"DE LA CALLE VÉLEZ"
+],
+"bbox": [
+509.4320983886719,
+136.60997009277344,
+630.739990234375,
+180.2899627685547
+],
+"page": 18,
+"date": "N.1715",
+"color": "#000000",
+"x": 561.3,
+"y": 142.6,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T105-2",
+"band": 1,
+"father": null,
+"mother": null,
+"spouse": "T105-1"
+},
+{
+"name": "MIGUEL JERÓNIMO VELASQUEZ RUIZ DE LA PARRA",
+"rows": [
+"MIGUEL JERÓNIMO",
+"VELASQUEZ",
+"RUIZ DE LA PARRA"
+],
+"bbox": [
+109.08000183105469,
+184.24998474121094,
+225.6240234375,
+243.77000427246094
+],
+"page": 18,
+"date": "X",
+"color": "#000000",
+"x": 159.7,
+"y": 190.2,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T105-3",
+"band": 2,
+"father": "T105-5",
+"mother": "T105-6",
+"spouse": "T105-4"
+},
+{
+"name": "BÁRBARA AMBROSIA BETANCUR ALVAREZ",
+"rows": [
 "BÁRBARA",
+"AMBROSIA",
 "BETANCUR",
 "ALVAREZ"
 ],
 "bbox": [
-405.5881042480469,
-136.60997009277344,
-630.739990234375,
+405.5600891113281,
+184.24998474121094,
+472.80010986328125,
 243.77000427246094
 ],
 "page": 18,
 "date": "",
 "color": "#000000",
-"x": 524.6,
-"y": 142.6,
+"x": 438.8,
+"y": 190.2,
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-2",
-"band": 1,
-"father": "T105-5",
-"mother": "T105-6",
-"spouse": "T105-1"
+"id": "T105-4",
+"band": 2,
+"father": "T105-7",
+"mother": "T105-8",
+"spouse": "T105-3"
 },
 {
 "name": "ALONSO VELASQUEZ MERA",
@@ -16274,11 +16367,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-3",
-"band": 2,
-"father": "T105-7",
-"mother": "T105-8",
-"spouse": "T105-4"
+"id": "T105-5",
+"band": 3,
+"father": "T105-9",
+"mother": "T105-10",
+"spouse": "T105-6"
 },
 {
 "name": "MARCELA RUIZ DE LA PARRA MÁRQUEZ",
@@ -16301,11 +16394,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-4",
-"band": 2,
-"father": "T105-9",
-"mother": "T105-10",
-"spouse": "T105-3"
+"id": "T105-6",
+"band": 3,
+"father": "T105-11",
+"mother": "T105-12",
+"spouse": "T105-5"
 },
 {
 "name": "MANUEL BETANCUR VELASCO",
@@ -16328,11 +16421,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-5",
-"band": 2,
-"father": "T105-11",
-"mother": "T105-12",
-"spouse": "T105-6"
+"id": "T105-7",
+"band": 3,
+"father": "T105-13",
+"mother": "T105-14",
+"spouse": "T105-8"
 },
 {
 "name": "ANTONIA ALVAREZ DEL PINO TABARES",
@@ -16356,11 +16449,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-6",
-"band": 2,
-"father": "T105-13",
-"mother": "T105-14",
-"spouse": "T105-5"
+"id": "T105-8",
+"band": 3,
+"father": "T105-15",
+"mother": "T105-16",
+"spouse": "T105-7"
 },
 {
 "name": "ALONSO VELASQUEZ JARAMILLO VALLE",
@@ -16384,11 +16477,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-7",
-"band": 3,
+"id": "T105-9",
+"band": 4,
 "father": null,
 "mother": null,
-"spouse": "T105-8"
+"spouse": "T105-10"
 },
 {
 "name": "MARIA MAGDALENA GRAJEDA DE MERA",
@@ -16412,11 +16505,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-8",
-"band": 3,
+"id": "T105-10",
+"band": 4,
 "father": null,
 "mother": null,
-"spouse": "T105-7"
+"spouse": "T105-9"
 },
 {
 "name": "JUAN RUIZ PARRA",
@@ -16439,11 +16532,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-9",
-"band": 3,
-"father": "T105-15",
-"mother": "T105-16",
-"spouse": "T105-10"
+"id": "T105-11",
+"band": 4,
+"father": "T105-17",
+"mother": "T105-18",
+"spouse": "T105-12"
 },
 {
 "name": "LEONOR MARQUEZ FONTIDUEÑO",
@@ -16466,11 +16559,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-10",
-"band": 3,
+"id": "T105-12",
+"band": 4,
 "father": null,
 "mother": null,
-"spouse": "T105-9"
+"spouse": "T105-11"
 },
 {
 "name": "LUIS DE BETANCUR",
@@ -16493,11 +16586,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-11",
-"band": 3,
+"id": "T105-13",
+"band": 4,
 "father": null,
 "mother": null,
-"spouse": "T105-12"
+"spouse": "T105-14"
 },
 {
 "name": "JUANA VELASCO X",
@@ -16520,11 +16613,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-12",
-"band": 3,
+"id": "T105-14",
+"band": 4,
 "father": null,
 "mother": null,
-"spouse": "T105-11"
+"spouse": "T105-13"
 },
 {
 "name": "DIEGO 2 ALVAREZ DEL PINO DE LOS ARCOS",
@@ -16548,11 +16641,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-13",
-"band": 3,
-"father": "T105-17",
-"mother": "T105-18",
-"spouse": "T105-14"
+"id": "T105-15",
+"band": 4,
+"father": "T105-19",
+"mother": "T105-20",
+"spouse": "T105-16"
 },
 {
 "name": "BEATRIZ TABARES MORGA",
@@ -16575,11 +16668,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-14",
-"band": 3,
-"father": "T105-19",
-"mother": "T105-20",
-"spouse": "T105-13"
+"id": "T105-16",
+"band": 4,
+"father": "T105-21",
+"mother": "T105-22",
+"spouse": "T105-15"
 },
 {
 "name": "JERONIMO DE LA PARRA",
@@ -16602,11 +16695,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-15",
-"band": 4,
+"id": "T105-17",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T105-16"
+"spouse": "T105-18"
 },
 {
 "name": "ANA RUIZ X",
@@ -16629,11 +16722,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-16",
-"band": 4,
+"id": "T105-18",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T105-15"
+"spouse": "T105-17"
 },
 {
 "name": "DIEGO 1 ALVAREZ DEL PINO FERNANDEZ",
@@ -16656,11 +16749,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-17",
-"band": 4,
-"father": "T105-21",
-"mother": "T105-22",
-"spouse": "T105-18"
+"id": "T105-19",
+"band": 5,
+"father": "T105-23",
+"mother": "T105-24",
+"spouse": "T105-20"
 },
 {
 "name": "JUSTINA ARCOS CORTES",
@@ -16683,11 +16776,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-18",
-"band": 4,
-"father": "T105-23",
-"mother": "T105-24",
-"spouse": "T105-17"
+"id": "T105-20",
+"band": 5,
+"father": "T105-25",
+"mother": "T105-26",
+"spouse": "T105-19"
 },
 {
 "name": "MARTÍN DE TABARES",
@@ -16710,11 +16803,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-19",
-"band": 4,
-"father": "T105-25",
-"mother": "T105-26",
-"spouse": "T105-20"
+"id": "T105-21",
+"band": 5,
+"father": "T105-27",
+"mother": "T105-28",
+"spouse": "T105-22"
 },
 {
 "name": "JUANA DE MORGA",
@@ -16737,11 +16830,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-20",
-"band": 4,
-"father": "T105-27",
-"mother": "T105-28",
-"spouse": "T105-19"
+"id": "T105-22",
+"band": 5,
+"father": "T105-29",
+"mother": "T105-30",
+"spouse": "T105-21"
 },
 {
 "name": "DIEGO ALVAREZ MALDONADO",
@@ -16764,11 +16857,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-21",
-"band": 5,
-"father": "T105-29",
-"mother": "T105-30",
-"spouse": "T105-22"
+"id": "T105-23",
+"band": 6,
+"father": "T105-31",
+"mother": "T105-32",
+"spouse": "T105-24"
 },
 {
 "name": "ANA MARIA DEL PINO FERNANDEZ",
@@ -16791,11 +16884,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-22",
-"band": 5,
+"id": "T105-24",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T105-21"
+"spouse": "T105-23"
 },
 {
 "name": "CAPITAN GOMEZ ARCOS CORTÉS",
@@ -16819,11 +16912,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-23",
-"band": 5,
-"father": "T105-31",
-"mother": "T105-32",
-"spouse": "T105-24"
+"id": "T105-25",
+"band": 6,
+"father": "T105-33",
+"mother": "T105-34",
+"spouse": "T105-26"
 },
 {
 "name": "CATALINA GOMEZ DE OSORIO",
@@ -16847,11 +16940,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-24",
-"band": 5,
+"id": "T105-26",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T105-23"
+"spouse": "T105-25"
 },
 {
 "name": "FRANCISCO FERNANDEZ CASSERERO",
@@ -16874,11 +16967,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-25",
-"band": 5,
+"id": "T105-27",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T105-26"
+"spouse": "T105-28"
 },
 {
 "name": "BEATRIZ RODRIGUEZ TABARES",
@@ -16901,11 +16994,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-26",
-"band": 5,
+"id": "T105-28",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T105-25"
+"spouse": "T105-27"
 },
 {
 "name": "FRANCISCO DE MORGA",
@@ -16928,11 +17021,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-27",
-"band": 5,
+"id": "T105-29",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T105-28"
+"spouse": "T105-30"
 },
 {
 "name": "MARIA ORTIZ X",
@@ -16955,11 +17048,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-28",
-"band": 5,
+"id": "T105-30",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T105-27"
+"spouse": "T105-29"
 },
 {
 "name": "DIEGO ALVAREZ LOAIZA",
@@ -16982,11 +17075,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-29",
-"band": 6,
-"father": "T105-33",
-"mother": "T105-34",
-"spouse": "T105-30"
+"id": "T105-31",
+"band": 7,
+"father": "T105-35",
+"mother": "T105-36",
+"spouse": "T105-32"
 },
 {
 "name": "LUCÍA MALDONADO X",
@@ -17009,11 +17102,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-30",
-"band": 6,
+"id": "T105-32",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T105-29"
+"spouse": "T105-31"
 },
 {
 "name": "ALONSO ARCOS CORTÉS",
@@ -17036,11 +17129,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-31",
-"band": 6,
-"father": "T105-35",
-"mother": "T105-36",
-"spouse": "T105-32"
+"id": "T105-33",
+"band": 7,
+"father": "T105-37",
+"mother": "T105-38",
+"spouse": "T105-34"
 },
 {
 "name": "JUANA ISABEL RÍOS",
@@ -17063,11 +17156,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-32",
-"band": 6,
+"id": "T105-34",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T105-31"
+"spouse": "T105-33"
 },
 {
 "name": "GARCÍA ALVAREZ DE TOLEDO",
@@ -17090,11 +17183,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-33",
-"band": 7,
+"id": "T105-35",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T105-34"
+"spouse": "T105-36"
 },
 {
 "name": "MARÍA LOAIZA X",
@@ -17117,11 +17210,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-34",
-"band": 7,
+"id": "T105-36",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T105-33"
+"spouse": "T105-35"
 },
 {
 "name": "GÓMEZ DE LOS ARCOS",
@@ -17144,11 +17237,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T105-35",
-"band": 7,
-"father": "T105-37",
-"mother": "T105-38",
-"spouse": "T105-36"
+"id": "T105-37",
+"band": 8,
+"father": "T105-39",
+"mother": "T105-40",
+"spouse": "T105-38"
 },
 {
 "name": "CATALINA CATALINA REDONDO LASSO MATEOS DE LA VEGA",
@@ -17171,11 +17264,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-36",
-"band": 7,
+"id": "T105-38",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T105-35"
+"spouse": "T105-37"
 },
 {
 "name": "ALONSO ARCOS CORTES",
@@ -17198,11 +17291,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-37",
-"band": 8,
+"id": "T105-39",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T105-38"
+"spouse": "T105-40"
 },
 {
 "name": "ISABEL LLOSNOS X",
@@ -17225,15 +17318,15 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T105-38",
-"band": 8,
+"id": "T105-40",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T105-37"
+"spouse": "T105-39"
 }
 ],
 "warn": [
-"band6 JUANA ISABEL RÍOS marked | but no parents"
+"band7 JUANA ISABEL RÍOS marked | but no parents"
 ]
 },
 "1051": {
@@ -25461,27 +25554,23 @@
 "spouse": null
 },
 {
-"name": "JOSÉ EUGENIO ARANGO VÉLEZ RIONEGRO ANT.1697 ESTEBAN ARANGO ZAFRA",
+"name": "JOSÉ EUGENIO ARANGO VÉLEZ",
 "rows": [
 "JOSÉ EUGENIO",
-"ARANGO VÉLEZ",
-"RIONEGRO ANT.1697",
-"ESTEBAN",
-"ARANGO",
-"ZAFRA"
+"ARANGO VÉLEZ"
 ],
 "bbox": [
-352.3399963378906,
+512.3300170898438,
 73.10996627807617,
 635.593994140625,
 767.5260009765625
 ],
 "page": 24,
-"date": "MED.1670",
+"date": "RIONEGRO ANT.1697",
 "color": "#000000",
-"x": 384.8,
+"x": 574.3,
 "y": 761.5,
-"more": true,
+"more": false,
 "none": false,
 "ref": null,
 "id": "T109-1",
@@ -25491,25 +25580,21 @@
 "spouse": "T109-2"
 },
 {
-"name": "MARÍA DEL CARMEN ECHEVERRI VILLA N.1702 GERTRUDIS VELEZ DE RIVERO",
+"name": "MARÍA DEL CARMEN ECHEVERRI VILLA",
 "rows": [
 "MARÍA DEL CARMEN",
-"ECHEVERRI VILLA",
-"N.1702",
-"GERTRUDIS",
-"VELEZ",
-"DE RIVERO"
+"ECHEVERRI VILLA"
 ],
 "bbox": [
-737.3480224609375,
+858.1700439453125,
 73.10996627807617,
 980.5700073242188,
 767.5260009765625
 ],
 "page": 24,
-"date": "MED.1674",
+"date": "N.1702",
 "color": "#000000",
-"x": 851.6,
+"x": 920.6,
 "y": 761.5,
 "more": false,
 "none": false,
@@ -25519,6 +25604,60 @@
 "father": null,
 "mother": null,
 "spouse": "T109-1"
+},
+{
+"name": "ESTEBAN ARANGO ZAFRA",
+"rows": [
+"ESTEBAN",
+"ARANGO",
+"ZAFRA"
+],
+"bbox": [
+352.3399963378906,
+104.80997848510742,
+412.9399719238281,
+164.4499969482422
+],
+"page": 25,
+"date": "MED.1670",
+"color": "#000000",
+"x": 384.8,
+"y": 1110.8,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T109-3",
+"band": 2,
+"father": "T109-5",
+"mother": "T109-6",
+"spouse": "T109-4"
+},
+{
+"name": "GERTRUDIS VELEZ DE RIVERO",
+"rows": [
+"GERTRUDIS",
+"VELEZ",
+"DE RIVERO"
+],
+"bbox": [
+737.3480224609375,
+104.80997848510742,
+807.9680786132812,
+164.4499969482422
+],
+"page": 25,
+"date": "MED.1674",
+"color": "#000000",
+"x": 768.8,
+"y": 1110.8,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T109-4",
+"band": 2,
+"father": null,
+"mother": null,
+"spouse": "T109-3"
 },
 {
 "name": "DOMINGO ANTONIO ARANGO VALDÉS",
@@ -25541,11 +25680,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-3",
-"band": 2,
-"father": "T109-5",
-"mother": "T109-6",
-"spouse": "T109-4"
+"id": "T109-5",
+"band": 3,
+"father": "T109-7",
+"mother": "T109-8",
+"spouse": "T109-6"
 },
 {
 "name": "OLAYA DE ZAFRA DE CASTRILLÓN",
@@ -25568,11 +25707,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-4",
-"band": 2,
-"father": "T109-7",
-"mother": "T109-8",
-"spouse": "T109-3"
+"id": "T109-6",
+"band": 3,
+"father": "T109-9",
+"mother": "T109-10",
+"spouse": "T109-5"
 },
 {
 "name": "JUAN DEL CAMPO GONZALEZ",
@@ -25595,11 +25734,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-5",
-"band": 3,
-"father": "T109-9",
-"mother": "T109-10",
-"spouse": "T109-6"
+"id": "T109-7",
+"band": 4,
+"father": "T109-11",
+"mother": "T109-12",
+"spouse": "T109-8"
 },
 {
 "name": "MARIA DIEZ DE ARANGO ALVAREZ",
@@ -25622,11 +25761,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-6",
-"band": 3,
-"father": "T109-11",
-"mother": "T109-12",
-"spouse": "T109-5"
+"id": "T109-8",
+"band": 4,
+"father": "T109-13",
+"mother": "T109-14",
+"spouse": "T109-7"
 },
 {
 "name": "FERNANDO JARAMILLO DE ZAFRA",
@@ -25649,11 +25788,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-7",
-"band": 3,
-"father": "T109-13",
-"mother": "T109-14",
-"spouse": "T109-8"
+"id": "T109-9",
+"band": 4,
+"father": "T109-15",
+"mother": "T109-16",
+"spouse": "T109-10"
 },
 {
 "name": "MARIA DE CASTRILLÓN HEREDIA",
@@ -25676,11 +25815,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-8",
-"band": 3,
-"father": "T109-15",
-"mother": "T109-16",
-"spouse": "T109-7"
+"id": "T109-10",
+"band": 4,
+"father": "T109-17",
+"mother": "T109-18",
+"spouse": "T109-9"
 },
 {
 "name": "DIEGO DEL CAMPO VALDÉS",
@@ -25703,11 +25842,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-9",
-"band": 4,
+"id": "T109-11",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T109-10"
+"spouse": "T109-12"
 },
 {
 "name": "VALESQUIDA GONZALEZ X",
@@ -25730,11 +25869,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-10",
-"band": 4,
+"id": "T109-12",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T109-9"
+"spouse": "T109-11"
 },
 {
 "name": "DIEGO SUAREZ DE ARANGO",
@@ -25757,11 +25896,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-11",
-"band": 4,
+"id": "T109-13",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T109-12"
+"spouse": "T109-14"
 },
 {
 "name": "ALDONZA ALVAREZ DE ARANGO",
@@ -25784,11 +25923,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-12",
-"band": 4,
+"id": "T109-14",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T109-11"
+"spouse": "T109-13"
 },
 {
 "name": "JUAN JARAMILLO DE ANDRADE",
@@ -25811,11 +25950,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-13",
-"band": 4,
-"father": "T109-17",
-"mother": "T109-18",
-"spouse": "T109-14"
+"id": "T109-15",
+"band": 5,
+"father": "T109-19",
+"mother": "T109-20",
+"spouse": "T109-16"
 },
 {
 "name": "JUANA DE ZAFRA TABORDA",
@@ -25838,11 +25977,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-14",
-"band": 4,
-"father": "T109-19",
-"mother": "T109-20",
-"spouse": "T109-13"
+"id": "T109-16",
+"band": 5,
+"father": "T109-21",
+"mother": "T109-22",
+"spouse": "T109-15"
 },
 {
 "name": "DIEGO ALVAREZ DE CASTRILLÓN",
@@ -25865,11 +26004,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-15",
-"band": 4,
-"father": "T109-21",
-"mother": "T109-22",
-"spouse": "T109-16"
+"id": "T109-17",
+"band": 5,
+"father": "T109-23",
+"mother": "T109-24",
+"spouse": "T109-18"
 },
 {
 "name": "CATALINA BLANDON HEREDIA CAUCA",
@@ -25893,11 +26032,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-16",
-"band": 4,
-"father": "T109-23",
-"mother": "T109-24",
-"spouse": "T109-15"
+"id": "T109-18",
+"band": 5,
+"father": "T109-25",
+"mother": "T109-26",
+"spouse": "T109-17"
 },
 {
 "name": "ALONSO JARAMILLO DE ANDRADE",
@@ -25920,11 +26059,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-17",
-"band": 5,
-"father": "T109-25",
-"mother": "T109-26",
-"spouse": "T109-18"
+"id": "T109-19",
+"band": 6,
+"father": "T109-27",
+"mother": "T109-28",
+"spouse": "T109-20"
 },
 {
 "name": "ISABEL DE TOLEDO SALCEDO",
@@ -25947,11 +26086,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-18",
-"band": 5,
-"father": "T109-27",
-"mother": "T109-28",
-"spouse": "T109-17"
+"id": "T109-20",
+"band": 6,
+"father": "T109-29",
+"mother": "T109-30",
+"spouse": "T109-19"
 },
 {
 "name": "FERNANDO DE ZAFRA FERNANDEZ",
@@ -25974,11 +26113,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-19",
-"band": 5,
-"father": "T109-29",
-"mother": "T109-30",
-"spouse": "T109-20"
+"id": "T109-21",
+"band": 6,
+"father": "T109-31",
+"mother": "T109-32",
+"spouse": "T109-22"
 },
 {
 "name": "JUANA TABORDA LOPEZ",
@@ -26001,11 +26140,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-20",
-"band": 5,
-"father": "T109-31",
-"mother": "T109-32",
-"spouse": "T109-19"
+"id": "T109-22",
+"band": 6,
+"father": "T109-33",
+"mother": "T109-34",
+"spouse": "T109-21"
 },
 {
 "name": "RODRIGO ALVAREZ DE CASTRILLÓN",
@@ -26028,11 +26167,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-21",
-"band": 5,
+"id": "T109-23",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T109-22"
+"spouse": "T109-24"
 },
 {
 "name": "MARIA CATALINA BERNALDO DE QUIROZ",
@@ -26055,11 +26194,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-22",
-"band": 5,
-"father": "T109-33",
-"mother": "T109-34",
-"spouse": "T109-21"
+"id": "T109-24",
+"band": 6,
+"father": "T109-35",
+"mother": "T109-36",
+"spouse": "T109-23"
 },
 {
 "name": "NICOLÁS BLANDÓN X",
@@ -26082,11 +26221,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-23",
-"band": 5,
+"id": "T109-25",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T109-24"
+"spouse": "T109-26"
 },
 {
 "name": "CATALINA DE HEREDIA",
@@ -26109,11 +26248,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-24",
-"band": 5,
-"father": "T109-35",
-"mother": "T109-36",
-"spouse": "T109-23"
+"id": "T109-26",
+"band": 6,
+"father": "T109-37",
+"mother": "T109-38",
+"spouse": "T109-25"
 },
 {
 "name": "FRANCISCO JARAMILLO SANCHEZ",
@@ -26136,11 +26275,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-25",
-"band": 6,
-"father": "T109-37",
-"mother": "T109-38",
-"spouse": "T109-26"
+"id": "T109-27",
+"band": 7,
+"father": "T109-39",
+"mother": "T109-40",
+"spouse": "T109-28"
 },
 {
 "name": "CONSTANZA HERNANDEZ X",
@@ -26163,11 +26302,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-26",
-"band": 6,
-"father": "T109-39",
-"mother": "T109-40",
-"spouse": "T109-25"
+"id": "T109-28",
+"band": 7,
+"father": "T109-41",
+"mother": "T109-42",
+"spouse": "T109-27"
 },
 {
 "name": "ANTONIO DE TOLEDO",
@@ -26190,11 +26329,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-27",
-"band": 6,
+"id": "T109-29",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T109-28"
+"spouse": "T109-30"
 },
 {
 "name": "MARIA DE ACEVEDO",
@@ -26217,11 +26356,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-28",
-"band": 6,
+"id": "T109-30",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T109-27"
+"spouse": "T109-29"
 },
 {
 "name": "FERNANDO DE ZAFRA CENTENO",
@@ -26244,11 +26383,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-29",
-"band": 6,
+"id": "T109-31",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T109-30"
+"spouse": "T109-32"
 },
 {
 "name": "CATALINA O CATARINA FERNÁNDEZ",
@@ -26271,11 +26410,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-30",
-"band": 6,
+"id": "T109-32",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T109-29"
+"spouse": "T109-31"
 },
 {
 "name": "JUAN TABORDA X",
@@ -26298,11 +26437,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-31",
-"band": 6,
-"father": "T109-41",
-"mother": "T109-42",
-"spouse": "T109-32"
+"id": "T109-33",
+"band": 7,
+"father": "T109-43",
+"mother": "T109-44",
+"spouse": "T109-34"
 },
 {
 "name": "LEONOR LÓPEZ SANTOFIMIA",
@@ -26325,11 +26464,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-32",
-"band": 6,
-"father": "T109-43",
-"mother": "T109-44",
-"spouse": "T109-31"
+"id": "T109-34",
+"band": 7,
+"father": "T109-45",
+"mother": "T109-46",
+"spouse": "T109-33"
 },
 {
 "name": "JUAN GARCÍA DE TINEO ALVAREZ",
@@ -26353,11 +26492,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-33",
-"band": 6,
-"father": "T109-45",
-"mother": "T109-46",
-"spouse": "T109-34"
+"id": "T109-35",
+"band": 7,
+"father": "T109-47",
+"mother": "T109-48",
+"spouse": "T109-36"
 },
 {
 "name": "CATALINA BERNALDO DE QUIROZ",
@@ -26380,11 +26519,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-34",
-"band": 6,
-"father": "T109-47",
-"mother": "T109-48",
-"spouse": "T109-33"
+"id": "T109-36",
+"band": 7,
+"father": "T109-49",
+"mother": "T109-50",
+"spouse": "T109-35"
 },
 {
 "name": "JUAN RUIZ X",
@@ -26407,11 +26546,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-35",
-"band": 6,
+"id": "T109-37",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T109-36"
+"spouse": "T109-38"
 },
 {
 "name": "? X X",
@@ -26434,11 +26573,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-36",
-"band": 6,
+"id": "T109-38",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T109-35"
+"spouse": "T109-37"
 },
 {
 "name": "ALONSO JARAMILLO DEL PRADO",
@@ -26461,11 +26600,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-37",
-"band": 7,
-"father": "T109-49",
-"mother": "T109-50",
-"spouse": "T109-38"
+"id": "T109-39",
+"band": 8,
+"father": "T109-51",
+"mother": "T109-52",
+"spouse": "T109-40"
 },
 {
 "name": "TERESA SANCHEZ X",
@@ -26488,11 +26627,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-38",
-"band": 7,
+"id": "T109-40",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T109-37"
+"spouse": "T109-39"
 },
 {
 "name": "DIEGO SANCHEZ X",
@@ -26515,11 +26654,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-39",
-"band": 7,
+"id": "T109-41",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T109-40"
+"spouse": "T109-42"
 },
 {
 "name": "? X X",
@@ -26542,11 +26681,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T109-40",
-"band": 7,
+"id": "T109-42",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T109-39"
+"spouse": "T109-41"
 },
 {
 "name": "ALONSO TABORDA DÍAZ",
@@ -26569,11 +26708,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-41",
-"band": 7,
-"father": "T109-51",
-"mother": "T109-52",
-"spouse": "T109-42"
+"id": "T109-43",
+"band": 8,
+"father": "T109-53",
+"mother": "T109-54",
+"spouse": "T109-44"
 },
 {
 "name": "? X X",
@@ -26596,11 +26735,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T109-42",
-"band": 7,
+"id": "T109-44",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T109-41"
+"spouse": "T109-43"
 },
 {
 "name": "DIEGO LÓPEZ SANTOFIMIA",
@@ -26623,11 +26762,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-43",
-"band": 7,
+"id": "T109-45",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T109-44"
+"spouse": "T109-46"
 },
 {
 "name": "X X X",
@@ -26650,11 +26789,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-44",
-"band": 7,
+"id": "T109-46",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T109-43"
+"spouse": "T109-45"
 },
 {
 "name": "JUAN GARCIA DE TINEO",
@@ -26677,11 +26816,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-45",
-"band": 7,
-"father": "T109-53",
-"mother": "T109-54",
-"spouse": "T109-46"
+"id": "T109-47",
+"band": 8,
+"father": "T109-55",
+"mother": "T109-56",
+"spouse": "T109-48"
 },
 {
 "name": "MAYOR ALVAREZ DE LLANO VALDEZ",
@@ -26704,11 +26843,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-46",
-"band": 7,
+"id": "T109-48",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T109-45"
+"spouse": "T109-47"
 },
 {
 "name": "GUTIERRE BERNALDO DE QUIROZ",
@@ -26731,11 +26870,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-47",
-"band": 7,
-"father": "T109-55",
-"mother": "T109-56",
-"spouse": "T109-48"
+"id": "T109-49",
+"band": 8,
+"father": "T109-57",
+"mother": "T109-58",
+"spouse": "T109-50"
 },
 {
 "name": "GUIOMAR DEL PRADO QUIÑONES",
@@ -26758,11 +26897,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-48",
-"band": 7,
+"id": "T109-50",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T109-47"
+"spouse": "T109-49"
 },
 {
 "name": "FRANCISCO JARAMILLO X",
@@ -26785,11 +26924,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-49",
-"band": 8,
+"id": "T109-51",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T109-50"
+"spouse": "T109-52"
 },
 {
 "name": "ISABEL DEL PRADO",
@@ -26812,11 +26951,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-50",
-"band": 8,
+"id": "T109-52",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T109-49"
+"spouse": "T109-51"
 },
 {
 "name": "ALONSO TABORDA X",
@@ -26839,11 +26978,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-51",
-"band": 8,
+"id": "T109-53",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T109-52"
+"spouse": "T109-54"
 },
 {
 "name": "ISABEL DIAZ X",
@@ -26866,11 +27005,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-52",
-"band": 8,
+"id": "T109-54",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T109-51"
+"spouse": "T109-53"
 },
 {
 "name": "GUTIERRE DE MIRANDA",
@@ -26893,11 +27032,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-53",
-"band": 8,
-"father": "T109-57",
-"mother": "T109-58",
-"spouse": "T109-54"
+"id": "T109-55",
+"band": 9,
+"father": "T109-59",
+"mother": "T109-60",
+"spouse": "T109-56"
 },
 {
 "name": "IRENE DIAZ DE TINEO",
@@ -26920,11 +27059,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-54",
-"band": 8,
+"id": "T109-56",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T109-53"
+"spouse": "T109-55"
 },
 {
 "name": "GONZALO BERNALDO DE QUIROZ",
@@ -26947,11 +27086,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-55",
-"band": 8,
-"father": "T109-59",
-"mother": "T109-60",
-"spouse": "T109-56"
+"id": "T109-57",
+"band": 9,
+"father": "T109-61",
+"mother": "T109-62",
+"spouse": "T109-58"
 },
 {
 "name": "EMILIA GONZÁLEZ DEL RON",
@@ -26974,11 +27113,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-56",
-"band": 8,
+"id": "T109-58",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T109-55"
+"spouse": "T109-57"
 },
 {
 "name": "DIEGO DE MIRANDA",
@@ -27001,11 +27140,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T109-57",
-"band": 9,
+"id": "T109-59",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T109-58"
+"spouse": "T109-60"
 },
 {
 "name": "?",
@@ -27026,11 +27165,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T109-58",
-"band": 9,
+"id": "T109-60",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T109-57"
+"spouse": "T109-59"
 },
 {
 "name": "JUAN BERNALDO DE QUIROZ",
@@ -27053,11 +27192,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T109-59",
-"band": 9,
+"id": "T109-61",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T109-60"
+"spouse": "T109-62"
 },
 {
 "name": "BEATRIZ CABEZA DE VACA",
@@ -27080,14 +27219,16 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T109-60",
-"band": 9,
+"id": "T109-62",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T109-59"
+"spouse": "T109-61"
 }
 ],
-"warn": []
+"warn": [
+"band2 GERTRUDIS VELEZ DE RIVERO marked | but no parents"
+]
 },
 "1091": {
 "page": 25,
@@ -35239,26 +35380,24 @@
 "spouse": "T111-1"
 },
 {
-"name": "JUAN GARCIA GOMEZ SANTA FE DE ANT. JUAN GARCIA BURGOS",
+"name": "JUAN GARCIA GOMEZ SANTA FE DE ANT.",
 "rows": [
 "JUAN GARCIA",
 "GOMEZ",
-"SANTA FE DE ANT.",
-"JUAN",
-"GARCIA BURGOS"
+"SANTA FE DE ANT."
 ],
 "bbox": [
-214.4600067138672,
+364.5799865722656,
 101.97888135910034,
 458.1596374511719,
-178.05888032913208
+138.45890092849731
 ],
 "page": 32,
-"date": "X",
+"date": "",
 "color": "#000000",
-"x": 261.4,
+"x": 409.1,
 "y": 1107.0,
-"more": true,
+"more": false,
 "none": false,
 "ref": null,
 "id": "T111-3",
@@ -35268,33 +35407,82 @@
 "spouse": "T111-4"
 },
 {
-"name": "MARIA LUISA JARAMILLO RODRIGUEZ SANTA FE.1694 ISABEL GOMEZ GOMEZ",
+"name": "MARIA LUISA JARAMILLO RODRIGUEZ",
 "rows": [
 "MARIA LUISA",
-"JARAMILLO RODRIGUEZ",
-"SANTA FE.1694",
+"JARAMILLO RODRIGUEZ"
+],
+"bbox": [
+578.9299926757812,
+101.97888135910034,
+702.6829223632812,
+138.45890092849731
+],
+"page": 32,
+"date": "SANTA FE.1694",
+"color": "#0000ff",
+"x": 643.4,
+"y": 1107.0,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T111-4",
+"band": 2,
+"father": null,
+"mother": null,
+"spouse": "T111-3"
+},
+{
+"name": "JUAN GARCIA BURGOS",
+"rows": [
+"JUAN",
+"GARCIA BURGOS"
+],
+"bbox": [
+214.4600067138672,
+141.6988558769226,
+303.3729248046875,
+178.05888032913208
+],
+"page": 32,
+"date": "X",
+"color": "#000000",
+"x": 261.4,
+"y": 1146.7,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T111-5",
+"band": 3,
+"father": "T111-7",
+"mother": "T111-8",
+"spouse": "T111-6"
+},
+{
+"name": "ISABEL GOMEZ GOMEZ",
+"rows": [
 "ISABEL",
 "GOMEZ GOMEZ"
 ],
 "bbox": [
 505.9403381347656,
-101.97888135910034,
-702.6829223632812,
+141.6988558769226,
+587.4530029296875,
 178.05888032913208
 ],
 "page": 32,
 "date": "X",
-"color": "#0000ff",
-"x": 604.9,
-"y": 1107.0,
+"color": "#000000",
+"x": 547.2,
+"y": 1146.7,
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-4",
-"band": 2,
-"father": "T111-7",
-"mother": "T111-8",
-"spouse": "T111-3"
+"id": "T111-6",
+"band": 3,
+"father": "T111-9",
+"mother": "T111-10",
+"spouse": "T111-5"
 },
 {
 "name": "JUAN GARCIA DE ORDAS",
@@ -35317,11 +35505,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-5",
-"band": 3,
-"father": "T111-9",
-"mother": "T111-10",
-"spouse": "T111-6"
+"id": "T111-7",
+"band": 4,
+"father": "T111-11",
+"mother": "T111-12",
+"spouse": "T111-8"
 },
 {
 "name": "FAUSTINA CIPRIANA BURGOS RANGEL",
@@ -35344,11 +35532,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-6",
-"band": 3,
-"father": "T111-11",
-"mother": "T111-12",
-"spouse": "T111-5"
+"id": "T111-8",
+"band": 4,
+"father": "T111-13",
+"mother": "T111-14",
+"spouse": "T111-7"
 },
 {
 "name": "MANUEL GÓMEZ SANDI",
@@ -35371,11 +35559,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-7",
-"band": 3,
-"father": "T111-13",
-"mother": "T111-14",
-"spouse": "T111-8"
+"id": "T111-9",
+"band": 4,
+"father": "T111-15",
+"mother": "T111-16",
+"spouse": "T111-10"
 },
 {
 "name": "ANA GÓMEZ CASTILLO",
@@ -35398,11 +35586,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-8",
-"band": 3,
-"father": "T111-15",
-"mother": "T111-16",
-"spouse": "T111-7"
+"id": "T111-10",
+"band": 4,
+"father": "T111-17",
+"mother": "T111-18",
+"spouse": "T111-9"
 },
 {
 "name": "JUAN GARCIA DE ORDAS MANCILLA",
@@ -35425,11 +35613,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-9",
-"band": 4,
-"father": "T111-17",
-"mother": "T111-18",
-"spouse": "T111-10"
+"id": "T111-11",
+"band": 5,
+"father": "T111-19",
+"mother": "T111-20",
+"spouse": "T111-12"
 },
 {
 "name": "MARIA CORTES DE FIGUEROA",
@@ -35452,11 +35640,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-10",
-"band": 4,
-"father": "T111-19",
-"mother": "T111-20",
-"spouse": "T111-9"
+"id": "T111-12",
+"band": 5,
+"father": "T111-21",
+"mother": "T111-22",
+"spouse": "T111-11"
 },
 {
 "name": "AGUSTIN BURGOS HERRERA",
@@ -35479,11 +35667,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-11",
-"band": 4,
-"father": "T111-21",
-"mother": "T111-22",
-"spouse": "T111-12"
+"id": "T111-13",
+"band": 5,
+"father": "T111-23",
+"mother": "T111-24",
+"spouse": "T111-14"
 },
 {
 "name": "ANDREA RANGEL DE MENDOZA REM.ANT",
@@ -35507,11 +35695,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-12",
-"band": 4,
-"father": "T111-23",
-"mother": "T111-24",
-"spouse": "T111-11"
+"id": "T111-14",
+"band": 5,
+"father": "T111-25",
+"mother": "T111-26",
+"spouse": "T111-13"
 },
 {
 "name": "JUAN GÓMEZ X",
@@ -35534,11 +35722,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-13",
-"band": 4,
+"id": "T111-15",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T111-14"
+"spouse": "T111-16"
 },
 {
 "name": "LEONOR GUTIÉRREZ X",
@@ -35561,11 +35749,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-14",
-"band": 4,
+"id": "T111-16",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T111-13"
+"spouse": "T111-15"
 },
 {
 "name": "JUAN GOMEZ PARIAS",
@@ -35588,11 +35776,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-15",
-"band": 4,
-"father": "T111-25",
-"mother": "T111-26",
-"spouse": "T111-16"
+"id": "T111-17",
+"band": 5,
+"father": "T111-27",
+"mother": "T111-28",
+"spouse": "T111-18"
 },
 {
 "name": "ANA CASTRILLON VASQUEZ",
@@ -35615,11 +35803,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-16",
-"band": 4,
-"father": "T111-27",
-"mother": "T111-28",
-"spouse": "T111-15"
+"id": "T111-18",
+"band": 5,
+"father": "T111-29",
+"mother": "T111-30",
+"spouse": "T111-17"
 },
 {
 "name": "JORGE GARCÍA HERNANDEZ",
@@ -35642,11 +35830,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-17",
-"band": 5,
-"father": "T111-29",
-"mother": "T111-30",
-"spouse": "T111-18"
+"id": "T111-19",
+"band": 6,
+"father": "T111-31",
+"mother": "T111-32",
+"spouse": "T111-20"
 },
 {
 "name": "INÉS DE ORDÁS MANCILLA",
@@ -35669,11 +35857,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-18",
-"band": 5,
-"father": "T111-31",
-"mother": "T111-32",
-"spouse": "T111-17"
+"id": "T111-20",
+"band": 6,
+"father": "T111-33",
+"mother": "T111-34",
+"spouse": "T111-19"
 },
 {
 "name": "MARTÍN ALONSO DE FIGUEROA",
@@ -35696,11 +35884,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-19",
-"band": 5,
-"father": "T111-33",
-"mother": "T111-34",
-"spouse": "T111-20"
+"id": "T111-21",
+"band": 6,
+"father": "T111-35",
+"mother": "T111-36",
+"spouse": "T111-22"
 },
 {
 "name": "MARIA CORTÉS X",
@@ -35723,11 +35911,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-20",
-"band": 5,
+"id": "T111-22",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T111-19"
+"spouse": "T111-21"
 },
 {
 "name": "BALTASAR DE BURGOS ANTOLINES",
@@ -35750,11 +35938,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-21",
-"band": 5,
-"father": "T111-35",
-"mother": "T111-36",
-"spouse": "T111-22"
+"id": "T111-23",
+"band": 6,
+"father": "T111-37",
+"mother": "T111-38",
+"spouse": "T111-24"
 },
 {
 "name": "MARÍA TERESA DE HERRERA ZAPATA REMED. ANT.",
@@ -35778,11 +35966,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-22",
-"band": 5,
-"father": "T111-37",
-"mother": "T111-38",
-"spouse": "T111-21"
+"id": "T111-24",
+"band": 6,
+"father": "T111-39",
+"mother": "T111-40",
+"spouse": "T111-23"
 },
 {
 "name": "RODRIGO HIDALGO RANGEL",
@@ -35805,11 +35993,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-23",
-"band": 5,
+"id": "T111-25",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T111-24"
+"spouse": "T111-26"
 },
 {
 "name": "ISABEL DE MENDOZA",
@@ -35832,11 +36020,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-24",
-"band": 5,
+"id": "T111-26",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T111-23"
+"spouse": "T111-25"
 },
 {
 "name": "JUAN GÓMEZ DE SALAZAR VARGAS",
@@ -35859,11 +36047,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-25",
-"band": 5,
-"father": "T111-39",
-"mother": "T111-40",
-"spouse": "T111-26"
+"id": "T111-27",
+"band": 6,
+"father": "T111-41",
+"mother": "T111-42",
+"spouse": "T111-28"
 },
 {
 "name": "LEONOR DE PARIAS CENTENO",
@@ -35886,11 +36074,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-26",
-"band": 5,
-"father": "T111-41",
-"mother": "T111-42",
-"spouse": "T111-25"
+"id": "T111-28",
+"band": 6,
+"father": "T111-43",
+"mother": "T111-44",
+"spouse": "T111-27"
 },
 {
 "name": "MATEO CASTRILLON HEREDIA",
@@ -35913,11 +36101,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-27",
-"band": 5,
-"father": "T111-43",
-"mother": "T111-44",
-"spouse": "T111-28"
+"id": "T111-29",
+"band": 6,
+"father": "T111-45",
+"mother": "T111-46",
+"spouse": "T111-30"
 },
 {
 "name": "MARIA VASQUEZ ESPINOSA",
@@ -35940,11 +36128,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-28",
-"band": 5,
-"father": "T111-45",
-"mother": "T111-46",
-"spouse": "T111-27"
+"id": "T111-30",
+"band": 6,
+"father": "T111-47",
+"mother": "T111-48",
+"spouse": "T111-29"
 },
 {
 "name": "LORENZO GARCIA X",
@@ -35967,11 +36155,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-29",
-"band": 6,
+"id": "T111-31",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T111-30"
+"spouse": "T111-32"
 },
 {
 "name": "TERESA HERNANDEZ X",
@@ -35994,11 +36182,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-30",
-"band": 6,
+"id": "T111-32",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T111-29"
+"spouse": "T111-31"
 },
 {
 "name": "JUAN DE MANCILLA",
@@ -36021,11 +36209,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-31",
-"band": 6,
+"id": "T111-33",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T111-32"
+"spouse": "T111-34"
 },
 {
 "name": "TERESA DE ORDAS",
@@ -36048,11 +36236,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-32",
-"band": 6,
+"id": "T111-34",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T111-31"
+"spouse": "T111-33"
 },
 {
 "name": "JUAN ESTEBAN GARCIA",
@@ -36075,11 +36263,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-33",
-"band": 6,
+"id": "T111-35",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T111-34"
+"spouse": "T111-36"
 },
 {
 "name": "JUANA BLASQUEZ X",
@@ -36102,11 +36290,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-34",
-"band": 6,
+"id": "T111-36",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T111-33"
+"spouse": "T111-35"
 },
 {
 "name": "FRANCISCO DE BURGOS ANTOLINES",
@@ -36129,11 +36317,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-35",
-"band": 6,
+"id": "T111-37",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T111-36"
+"spouse": "T111-38"
 },
 {
 "name": "? X X DE",
@@ -36156,11 +36344,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T111-36",
-"band": 6,
+"id": "T111-38",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T111-35"
+"spouse": "T111-37"
 },
 {
 "name": "LUIS ZAPATA CÁRDENAS REMED.ANT",
@@ -36184,11 +36372,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-37",
-"band": 6,
-"father": "T111-47",
-"mother": "T111-48",
-"spouse": "T111-38"
+"id": "T111-39",
+"band": 7,
+"father": "T111-49",
+"mother": "T111-50",
+"spouse": "T111-40"
 },
 {
 "name": "MARIANA VALERO DE VELASCO REM.ANT",
@@ -36212,11 +36400,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-38",
-"band": 6,
-"father": "T111-49",
-"mother": "T111-50",
-"spouse": "T111-37"
+"id": "T111-40",
+"band": 7,
+"father": "T111-51",
+"mother": "T111-52",
+"spouse": "T111-39"
 },
 {
 "name": "PEDRO GÓMEZ DE SALAZAR",
@@ -36239,11 +36427,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-39",
-"band": 6,
-"father": "T111-51",
-"mother": "T111-52",
-"spouse": "T111-40"
+"id": "T111-41",
+"band": 7,
+"father": "T111-53",
+"mother": "T111-54",
+"spouse": "T111-42"
 },
 {
 "name": "JUANA DE VARGAS",
@@ -36266,11 +36454,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-40",
-"band": 6,
+"id": "T111-42",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T111-39"
+"spouse": "T111-41"
 },
 {
 "name": "ANDRÉS DE PARIAS",
@@ -36293,11 +36481,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-41",
-"band": 6,
+"id": "T111-43",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T111-42"
+"spouse": "T111-44"
 },
 {
 "name": "CATALINA DE ZAFRA TABORDA",
@@ -36320,11 +36508,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-42",
-"band": 6,
-"father": "T111-53",
-"mother": "T111-54",
-"spouse": "T111-41"
+"id": "T111-44",
+"band": 7,
+"father": "T111-55",
+"mother": "T111-56",
+"spouse": "T111-43"
 },
 {
 "name": "DIEGO ALVAREZ CASTRILLÓN",
@@ -36347,11 +36535,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-43",
-"band": 6,
-"father": "T111-55",
-"mother": "T111-56",
-"spouse": "T111-44"
+"id": "T111-45",
+"band": 7,
+"father": "T111-57",
+"mother": "T111-58",
+"spouse": "T111-46"
 },
 {
 "name": "CATALINA BLANDON HEREDIA CAUCA",
@@ -36375,11 +36563,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-44",
-"band": 6,
-"father": "T111-57",
-"mother": "T111-58",
-"spouse": "T111-43"
+"id": "T111-46",
+"band": 7,
+"father": "T111-59",
+"mother": "T111-60",
+"spouse": "T111-45"
 },
 {
 "name": "MARTÍN VASQUEZ GUADRAMIROS",
@@ -36402,11 +36590,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-45",
-"band": 6,
-"father": "T111-59",
-"mother": "T111-60",
-"spouse": "T111-46"
+"id": "T111-47",
+"band": 7,
+"father": "T111-61",
+"mother": "T111-62",
+"spouse": "T111-48"
 },
 {
 "name": "JERÓNIMA CORTES DE ESPINOSA",
@@ -36429,11 +36617,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-46",
-"band": 6,
-"father": "T111-61",
-"mother": "T111-62",
-"spouse": "T111-45"
+"id": "T111-48",
+"band": 7,
+"father": "T111-63",
+"mother": "T111-64",
+"spouse": "T111-47"
 },
 {
 "name": "GONZALO DE PALENCIA",
@@ -36456,11 +36644,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-47",
-"band": 7,
-"father": "T111-63",
-"mother": "T111-64",
-"spouse": "T111-48"
+"id": "T111-49",
+"band": 8,
+"father": "T111-65",
+"mother": "T111-66",
+"spouse": "T111-50"
 },
 {
 "name": "LEONOR ALVAREZ DE ALZA",
@@ -36483,11 +36671,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-48",
-"band": 7,
+"id": "T111-50",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T111-47"
+"spouse": "T111-49"
 },
 {
 "name": "MARTÍN GARCIA VALERO",
@@ -36510,11 +36698,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-49",
-"band": 7,
+"id": "T111-51",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T111-50"
+"spouse": "T111-52"
 },
 {
 "name": "ISABEL BLASCO DE VELASCO",
@@ -36537,11 +36725,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-50",
-"band": 7,
+"id": "T111-52",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T111-49"
+"spouse": "T111-51"
 },
 {
 "name": "OCHOA GÓMEZ SALAZAR",
@@ -36564,11 +36752,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-51",
-"band": 7,
-"father": "T111-65",
-"mother": "T111-66",
-"spouse": "T111-52"
+"id": "T111-53",
+"band": 8,
+"father": "T111-67",
+"mother": "T111-68",
+"spouse": "T111-54"
 },
 {
 "name": "ISABEL DE SALCEDO",
@@ -36591,11 +36779,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-52",
-"band": 7,
+"id": "T111-54",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T111-51"
+"spouse": "T111-53"
 },
 {
 "name": "FERNANDO DE ZAFRA FERNANDEZ",
@@ -36618,11 +36806,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-53",
-"band": 7,
-"father": "T111-67",
-"mother": "T111-68",
-"spouse": "T111-54"
+"id": "T111-55",
+"band": 8,
+"father": "T111-69",
+"mother": "T111-70",
+"spouse": "T111-56"
 },
 {
 "name": "JUANA TABORDA LOPEZ",
@@ -36645,11 +36833,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-54",
-"band": 7,
-"father": "T111-69",
-"mother": "T111-70",
-"spouse": "T111-53"
+"id": "T111-56",
+"band": 8,
+"father": "T111-71",
+"mother": "T111-72",
+"spouse": "T111-55"
 },
 {
 "name": "RODRIGO ALVAREZ DE CASTRILLÓN",
@@ -36672,11 +36860,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-55",
-"band": 7,
-"father": "T111-71",
-"mother": "T111-72",
-"spouse": "T111-56"
+"id": "T111-57",
+"band": 8,
+"father": "T111-73",
+"mother": "T111-74",
+"spouse": "T111-58"
 },
 {
 "name": "MARIA CATALINA BERNALDO DE QUIROZ",
@@ -36699,11 +36887,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-56",
-"band": 7,
-"father": "T111-73",
-"mother": "T111-74",
-"spouse": "T111-55"
+"id": "T111-58",
+"band": 8,
+"father": "T111-75",
+"mother": "T111-76",
+"spouse": "T111-57"
 },
 {
 "name": "NICOLÁS BLANDÓN X",
@@ -36726,11 +36914,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-57",
-"band": 7,
+"id": "T111-59",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T111-58"
+"spouse": "T111-60"
 },
 {
 "name": "CATALINA DE HEREDIA",
@@ -36753,11 +36941,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-58",
-"band": 7,
-"father": "T111-75",
-"mother": "T111-76",
-"spouse": "T111-57"
+"id": "T111-60",
+"band": 8,
+"father": "T111-77",
+"mother": "T111-78",
+"spouse": "T111-59"
 },
 {
 "name": "PEDRO FERNÁNDEZ VASQUEZ",
@@ -36780,11 +36968,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-59",
-"band": 7,
-"father": "T111-77",
-"mother": "T111-78",
-"spouse": "T111-60"
+"id": "T111-61",
+"band": 8,
+"father": "T111-79",
+"mother": "T111-80",
+"spouse": "T111-62"
 },
 {
 "name": "MARIA SÁNCHEZ GUADRAMIROS",
@@ -36807,11 +36995,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-60",
-"band": 7,
-"father": "T111-79",
-"mother": "T111-80",
-"spouse": "T111-59"
+"id": "T111-62",
+"band": 8,
+"father": "T111-81",
+"mother": "T111-82",
+"spouse": "T111-61"
 },
 {
 "name": "CRISTOBAL SÁNCHEZ CORTES",
@@ -36834,11 +37022,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-61",
-"band": 7,
-"father": "T111-81",
-"mother": "T111-82",
-"spouse": "T111-62"
+"id": "T111-63",
+"band": 8,
+"father": "T111-83",
+"mother": "T111-84",
+"spouse": "T111-64"
 },
 {
 "name": "ANDREA ESPINOSA SALAZAR",
@@ -36861,11 +37049,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-62",
-"band": 7,
-"father": "T111-83",
-"mother": "T111-84",
-"spouse": "T111-61"
+"id": "T111-64",
+"band": 8,
+"father": "T111-85",
+"mother": "T111-86",
+"spouse": "T111-63"
 },
 {
 "name": "GONZALO DE ÁVILA",
@@ -36888,11 +37076,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T111-63",
-"band": 8,
+"id": "T111-65",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-64"
+"spouse": "T111-66"
 },
 {
 "name": "? X X",
@@ -36915,11 +37103,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T111-64",
-"band": 8,
+"id": "T111-66",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-63"
+"spouse": "T111-65"
 },
 {
 "name": "LOPE GÓMEZ DE SALAZAR",
@@ -36942,11 +37130,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-65",
-"band": 8,
-"father": "T111-85",
-"mother": "T111-86",
-"spouse": "T111-66"
+"id": "T111-67",
+"band": 9,
+"father": "T111-87",
+"mother": "T111-88",
+"spouse": "T111-68"
 },
 {
 "name": "ANDREA DE LA FUENTE",
@@ -36969,11 +37157,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-66",
-"band": 8,
+"id": "T111-68",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-65"
+"spouse": "T111-67"
 },
 {
 "name": "FERNANDO DE ZAFRA CENTENO",
@@ -36996,11 +37184,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-67",
-"band": 8,
+"id": "T111-69",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-68"
+"spouse": "T111-70"
 },
 {
 "name": "CATALINA “ CATARINA” FERNANDEZ",
@@ -37023,11 +37211,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-68",
-"band": 8,
+"id": "T111-70",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-67"
+"spouse": "T111-69"
 },
 {
 "name": "JUAN TABORDA X",
@@ -37050,11 +37238,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-69",
-"band": 8,
-"father": "T111-87",
-"mother": "T111-88",
-"spouse": "T111-70"
+"id": "T111-71",
+"band": 9,
+"father": "T111-89",
+"mother": "T111-90",
+"spouse": "T111-72"
 },
 {
 "name": "LEONOR LOPEZ SANTOFIMIA",
@@ -37077,11 +37265,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-70",
-"band": 8,
-"father": "T111-89",
-"mother": "T111-90",
-"spouse": "T111-69"
+"id": "T111-72",
+"band": 9,
+"father": "T111-91",
+"mother": "T111-92",
+"spouse": "T111-71"
 },
 {
 "name": "CATALINA GARCIA DE TINEO ALVAREZ LLANO VALDEZ",
@@ -37105,11 +37293,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-71",
-"band": 8,
-"father": "T111-91",
-"mother": "T111-92",
-"spouse": "T111-72"
+"id": "T111-73",
+"band": 9,
+"father": "T111-93",
+"mother": "T111-94",
+"spouse": "T111-74"
 },
 {
 "name": "?",
@@ -37130,11 +37318,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T111-72",
-"band": 8,
+"id": "T111-74",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-71"
+"spouse": "T111-73"
 },
 {
 "name": "JUAN GARCÍA DE ALVAREZ LLANO VALDEZ",
@@ -37158,11 +37346,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-73",
-"band": 8,
-"father": "T111-93",
-"mother": "T111-94",
-"spouse": "T111-74"
+"id": "T111-75",
+"band": 9,
+"father": "T111-95",
+"mother": "T111-96",
+"spouse": "T111-76"
 },
 {
 "name": "CATALINA TINEO BERNALDO DE QUIROZ",
@@ -37185,11 +37373,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-74",
-"band": 8,
+"id": "T111-76",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-73"
+"spouse": "T111-75"
 },
 {
 "name": "JUAN RUIZ X",
@@ -37212,11 +37400,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-75",
-"band": 8,
+"id": "T111-77",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-76"
+"spouse": "T111-78"
 },
 {
 "name": "? X",
@@ -37238,11 +37426,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-76",
-"band": 8,
+"id": "T111-78",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-75"
+"spouse": "T111-77"
 },
 {
 "name": "ALONSO FERNANDEZ URRACO",
@@ -37265,11 +37453,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-77",
-"band": 8,
+"id": "T111-79",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-78"
+"spouse": "T111-80"
 },
 {
 "name": "CATALINA ALONSO X",
@@ -37292,11 +37480,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-78",
-"band": 8,
+"id": "T111-80",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-77"
+"spouse": "T111-79"
 },
 {
 "name": "MARTÍN VASQUEZ BARQUERO",
@@ -37319,11 +37507,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-79",
-"band": 8,
+"id": "T111-81",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-80"
+"spouse": "T111-82"
 },
 {
 "name": "ISABEL GARCIA GUADRAMIROS",
@@ -37346,11 +37534,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-80",
-"band": 8,
+"id": "T111-82",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-79"
+"spouse": "T111-81"
 },
 {
 "name": "PEDRO CORTES X",
@@ -37373,11 +37561,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-81",
-"band": 8,
+"id": "T111-83",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-82"
+"spouse": "T111-84"
 },
 {
 "name": "MARIA GONZALEZ X",
@@ -37400,11 +37588,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-82",
-"band": 8,
+"id": "T111-84",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T111-81"
+"spouse": "T111-83"
 },
 {
 "name": "JUAN DE ESPINOSA VILLADIEGO",
@@ -37427,11 +37615,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-83",
-"band": 8,
-"father": "T111-95",
-"mother": "T111-96",
-"spouse": "T111-84"
+"id": "T111-85",
+"band": 9,
+"father": "T111-97",
+"mother": "T111-98",
+"spouse": "T111-86"
 },
 {
 "name": "MARIA DE SALAZAR",
@@ -37454,11 +37642,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-84",
-"band": 8,
-"father": "T111-97",
-"mother": "T111-98",
-"spouse": "T111-83"
+"id": "T111-86",
+"band": 9,
+"father": "T111-99",
+"mother": "T111-100",
+"spouse": "T111-85"
 },
 {
 "name": "GARCÍA GOMEZ DE SALAZAR",
@@ -37481,11 +37669,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-85",
-"band": 9,
-"father": "T111-99",
-"mother": "T111-100",
-"spouse": "T111-86"
+"id": "T111-87",
+"band": 10,
+"father": "T111-101",
+"mother": "T111-102",
+"spouse": "T111-88"
 },
 {
 "name": "JUANA ZURBARÁN X",
@@ -37508,11 +37696,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-86",
-"band": 9,
+"id": "T111-88",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T111-85"
+"spouse": "T111-87"
 },
 {
 "name": "ALONSO TABORDA DÍAS",
@@ -37535,11 +37723,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-87",
-"band": 9,
-"father": "T111-101",
-"mother": "T111-102",
-"spouse": "T111-88"
+"id": "T111-89",
+"band": 10,
+"father": "T111-103",
+"mother": "T111-104",
+"spouse": "T111-90"
 },
 {
 "name": "? X X",
@@ -37562,11 +37750,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-88",
-"band": 9,
+"id": "T111-90",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T111-87"
+"spouse": "T111-89"
 },
 {
 "name": "DIEGO LÓPEZ SANTOFIMIA",
@@ -37589,11 +37777,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-89",
-"band": 9,
+"id": "T111-91",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T111-90"
+"spouse": "T111-92"
 },
 {
 "name": "?",
@@ -37614,11 +37802,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T111-90",
-"band": 9,
+"id": "T111-92",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T111-89"
+"spouse": "T111-91"
 },
 {
 "name": "JUAN GARCIA DE TINEO DIAZ",
@@ -37642,11 +37830,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-91",
-"band": 9,
-"father": "T111-103",
-"mother": "T111-104",
-"spouse": "T111-92"
+"id": "T111-93",
+"band": 10,
+"father": "T111-105",
+"mother": "T111-106",
+"spouse": "T111-94"
 },
 {
 "name": "MAYOR ÁLVAREZ LLANO VALDEZ",
@@ -37669,11 +37857,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-92",
-"band": 9,
+"id": "T111-94",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T111-91"
+"spouse": "T111-93"
 },
 {
 "name": "JUAN GARCÍA DE TINEO DIAZ",
@@ -37697,11 +37885,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-93",
-"band": 9,
-"father": "T111-105",
-"mother": "T111-106",
-"spouse": "T111-94"
+"id": "T111-95",
+"band": 10,
+"father": "T111-107",
+"mother": "T111-108",
+"spouse": "T111-96"
 },
 {
 "name": "MAYOR ALVAREZ LLANO VALDEZ",
@@ -37724,11 +37912,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-94",
-"band": 9,
+"id": "T111-96",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T111-93"
+"spouse": "T111-95"
 },
 {
 "name": "JUAN DE ESPINOSA",
@@ -37751,11 +37939,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-95",
-"band": 9,
+"id": "T111-97",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T111-96"
+"spouse": "T111-98"
 },
 {
 "name": "ANA DE VILLADIEGO",
@@ -37778,11 +37966,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-96",
-"band": 9,
+"id": "T111-98",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T111-95"
+"spouse": "T111-97"
 },
 {
 "name": "FABIÁN DE SALAZAR",
@@ -37805,11 +37993,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-97",
-"band": 9,
+"id": "T111-99",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T111-98"
+"spouse": "T111-100"
 },
 {
 "name": "? X X",
@@ -37832,11 +38020,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-98",
-"band": 9,
+"id": "T111-100",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T111-97"
+"spouse": "T111-99"
 },
 {
 "name": "FORTUN GOMEZ DE SALAZAR",
@@ -37859,11 +38047,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-99",
-"band": 10,
+"id": "T111-101",
+"band": 11,
 "father": null,
 "mother": null,
-"spouse": "T111-100"
+"spouse": "T111-102"
 },
 {
 "name": "ANA ORTIZ X",
@@ -37886,11 +38074,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-100",
-"band": 10,
+"id": "T111-102",
+"band": 11,
 "father": null,
 "mother": null,
-"spouse": "T111-99"
+"spouse": "T111-101"
 },
 {
 "name": "ALONSO TABORDA X",
@@ -37913,11 +38101,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-101",
-"band": 10,
+"id": "T111-103",
+"band": 11,
 "father": null,
 "mother": null,
-"spouse": "T111-102"
+"spouse": "T111-104"
 },
 {
 "name": "ISABEL DIAZ X",
@@ -37940,11 +38128,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-102",
-"band": 10,
+"id": "T111-104",
+"band": 11,
 "father": null,
 "mother": null,
-"spouse": "T111-101"
+"spouse": "T111-103"
 },
 {
 "name": "GUTIERRE DE MIRANDA X",
@@ -37967,11 +38155,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-103",
-"band": 10,
-"father": "T111-107",
-"mother": "T111-108",
-"spouse": "T111-104"
+"id": "T111-105",
+"band": 11,
+"father": "T111-109",
+"mother": "T111-110",
+"spouse": "T111-106"
 },
 {
 "name": "INÉS DIAZ DE TINEO",
@@ -37994,11 +38182,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-104",
-"band": 10,
-"father": "T111-109",
-"mother": "T111-110",
-"spouse": "T111-103"
+"id": "T111-106",
+"band": 11,
+"father": "T111-111",
+"mother": "T111-112",
+"spouse": "T111-105"
 },
 {
 "name": "GUTIERRE DE MIRANDA X",
@@ -38021,11 +38209,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-105",
-"band": 10,
-"father": "T111-111",
-"mother": "T111-112",
-"spouse": "T111-106"
+"id": "T111-107",
+"band": 11,
+"father": "T111-113",
+"mother": "T111-114",
+"spouse": "T111-108"
 },
 {
 "name": "INÉS DIAZ DE TINEO",
@@ -38048,11 +38236,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-106",
-"band": 10,
-"father": "T111-113",
-"mother": "T111-114",
-"spouse": "T111-105"
+"id": "T111-108",
+"band": 11,
+"father": "T111-115",
+"mother": "T111-116",
+"spouse": "T111-107"
 },
 {
 "name": "DIEGO DE MIRANDA",
@@ -38075,11 +38263,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-107",
-"band": 11,
+"id": "T111-109",
+"band": 12,
 "father": null,
 "mother": null,
-"spouse": "T111-108"
+"spouse": "T111-110"
 },
 {
 "name": "?",
@@ -38100,11 +38288,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T111-108",
-"band": 11,
+"id": "T111-110",
+"band": 12,
 "father": null,
 "mother": null,
-"spouse": "T111-107"
+"spouse": "T111-109"
 },
 {
 "name": "DIEGO GARCÍA DE TINEO",
@@ -38127,11 +38315,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-109",
-"band": 11,
-"father": "T111-115",
-"mother": "T111-116",
-"spouse": "T111-110"
+"id": "T111-111",
+"band": 12,
+"father": "T111-117",
+"mother": "T111-118",
+"spouse": "T111-112"
 },
 {
 "name": "ALDONZA DE QUIROZ",
@@ -38154,11 +38342,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-110",
-"band": 11,
-"father": "T111-117",
-"mother": "T111-118",
-"spouse": "T111-109"
+"id": "T111-112",
+"band": 12,
+"father": "T111-119",
+"mother": "T111-120",
+"spouse": "T111-111"
 },
 {
 "name": "DIEGO DE MIRANDA",
@@ -38181,11 +38369,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-111",
-"band": 11,
+"id": "T111-113",
+"band": 12,
 "father": null,
 "mother": null,
-"spouse": "T111-112"
+"spouse": "T111-114"
 },
 {
 "name": "?",
@@ -38206,11 +38394,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T111-112",
-"band": 11,
+"id": "T111-114",
+"band": 12,
 "father": null,
 "mother": null,
-"spouse": "T111-111"
+"spouse": "T111-113"
 },
 {
 "name": "DIEGO GARCÍA DE TINEO",
@@ -38233,11 +38421,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-113",
-"band": 11,
-"father": "T111-119",
-"mother": "T111-120",
-"spouse": "T111-114"
+"id": "T111-115",
+"band": 12,
+"father": "T111-121",
+"mother": "T111-122",
+"spouse": "T111-116"
 },
 {
 "name": "ALDONZA DE QUIROZ",
@@ -38260,11 +38448,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-114",
-"band": 11,
-"father": "T111-121",
-"mother": "T111-122",
-"spouse": "T111-113"
+"id": "T111-116",
+"band": 12,
+"father": "T111-123",
+"mother": "T111-124",
+"spouse": "T111-115"
 },
 {
 "name": "JUAN GARCÍA DE TINEO",
@@ -38287,11 +38475,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T111-115",
-"band": 12,
-"father": "T111-123",
-"mother": "T111-124",
-"spouse": "T111-116"
+"id": "T111-117",
+"band": 13,
+"father": "T111-125",
+"mother": "T111-126",
+"spouse": "T111-118"
 },
 {
 "name": "CATALINA BERNALDO DE QUIROZ",
@@ -38314,11 +38502,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-116",
-"band": 12,
+"id": "T111-118",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T111-115"
+"spouse": "T111-117"
 },
 {
 "name": "GUTIERRE GONZÁLEZ DE QUIROZ",
@@ -38341,11 +38529,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-117",
-"band": 12,
+"id": "T111-119",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T111-118"
+"spouse": "T111-120"
 },
 {
 "name": "SANCHA DE QUIJANO",
@@ -38368,11 +38556,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-118",
-"band": 12,
+"id": "T111-120",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T111-117"
+"spouse": "T111-119"
 },
 {
 "name": "JUAN GARCIA DE TINEO",
@@ -38395,11 +38583,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-119",
-"band": 12,
+"id": "T111-121",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T111-120"
+"spouse": "T111-122"
 },
 {
 "name": "CATALINA BERNALDO DE QUIROZ",
@@ -38422,11 +38610,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-120",
-"band": 12,
+"id": "T111-122",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T111-119"
+"spouse": "T111-121"
 },
 {
 "name": "GUTIERRE GONZALEZ DE QUIROZ",
@@ -38449,11 +38637,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-121",
-"band": 12,
+"id": "T111-123",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T111-122"
+"spouse": "T111-124"
 },
 {
 "name": "SANCHA DE QUIJANO",
@@ -38476,11 +38664,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-122",
-"band": 12,
+"id": "T111-124",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T111-121"
+"spouse": "T111-123"
 },
 {
 "name": "GARCÍA ORDOÑEZ DE TINEO",
@@ -38503,11 +38691,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T111-123",
-"band": 13,
+"id": "T111-125",
+"band": 14,
 "father": null,
 "mother": null,
-"spouse": "T111-124"
+"spouse": "T111-126"
 },
 {
 "name": "? X",
@@ -38529,11 +38717,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T111-124",
-"band": 13,
+"id": "T111-126",
+"band": 14,
 "father": null,
 "mother": null,
-"spouse": "T111-123"
+"spouse": "T111-125"
 }
 ],
 "warn": []
@@ -38568,26 +38756,23 @@
 "spouse": null
 },
 {
-"name": "JOSÉ IGNACIO GARCIA JARAMILLO MED. JUAN GARCIA MARIA GOMEZ JARAMILLO",
+"name": "JOSÉ IGNACIO GARCIA JARAMILLO",
 "rows": [
 "JOSÉ IGNACIO",
-"GARCIA JARAMILLO",
-"MED.",
-"JUAN GARCIA MARIA",
-"GOMEZ JARAMILLO"
+"GARCIA JARAMILLO"
 ],
 "bbox": [
-225.6199951171875,
+348.5,
 73.20107698440552,
-609.06201171875,
+489.2929992675781,
 763.0371203422546
 ],
 "page": 32,
-"date": "SANTA FE SANTA FE.1694",
+"date": "MED.",
 "color": "#0000ff",
-"x": 571.8,
+"x": 415.0,
 "y": 756.0,
-"more": true,
+"more": false,
 "none": false,
 "ref": null,
 "id": "T1111-1",
@@ -38597,24 +38782,21 @@
 "spouse": "T1111-2"
 },
 {
-"name": "BARBARA MOLINA VILLA MED. LUISA RODRIGUEZ",
+"name": "BARBARA MOLINA VILLA",
 "rows": [
 "BARBARA",
-"MOLINA VILLA",
-"MED.",
-"LUISA",
-"RODRIGUEZ"
+"MOLINA VILLA"
 ],
 "bbox": [
-562.9219360351562,
+691.6300048828125,
 73.20107698440552,
 791.1456298828125,
 763.0371203422546
 ],
 "page": 32,
-"date": "",
+"date": "MED.",
 "color": "#000000",
-"x": 694.4,
+"x": 743.2,
 "y": 756.0,
 "more": false,
 "none": false,
@@ -38624,6 +38806,58 @@
 "father": null,
 "mother": null,
 "spouse": "T1111-1"
+},
+{
+"name": "JUAN GARCIA GOMEZ",
+"rows": [
+"JUAN GARCIA",
+"GOMEZ"
+],
+"bbox": [
+225.6199951171875,
+110.21000289916992,
+312.2599792480469,
+153.88999938964844
+],
+"page": 33,
+"date": "SANTA FE",
+"color": "#000000",
+"x": 267.8,
+"y": 1116.2,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T1111-3",
+"band": 2,
+"father": null,
+"mother": null,
+"spouse": "T1111-4"
+},
+{
+"name": "MARIA LUISA JARAMILLO RODRIGUEZ",
+"rows": [
+"MARIA LUISA",
+"JARAMILLO RODRIGUEZ"
+],
+"bbox": [
+486.4100036621094,
+110.21000289916992,
+634.9219360351562,
+153.88999938964844
+],
+"page": 33,
+"date": "SANTA FE.1694",
+"color": "#0000ff",
+"x": 571.8,
+"y": 1116.2,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T1111-4",
+"band": 2,
+"father": "T1111-5",
+"mother": "T1111-6",
+"spouse": "T1111-3"
 },
 {
 "name": "JUAN ESTEBAN JARAMILLO CESPEDES",
@@ -38646,11 +38880,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-3",
-"band": 2,
-"father": "T1111-5",
-"mother": "T1111-6",
-"spouse": "T1111-4"
+"id": "T1111-5",
+"band": 3,
+"father": "T1111-7",
+"mother": "T1111-8",
+"spouse": "T1111-6"
 },
 {
 "name": "ISABEL RODRIGUEZ MANZANO MARTINEZ MED. N. |665",
@@ -38674,11 +38908,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-4",
-"band": 2,
-"father": "T1111-7",
-"mother": "T1111-8",
-"spouse": "T1111-3"
+"id": "T1111-6",
+"band": 3,
+"father": "T1111-9",
+"mother": "T1111-10",
+"spouse": "T1111-5"
 },
 {
 "name": "JUAN JARAMILLO DE ZAFRA",
@@ -38701,11 +38935,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-5",
-"band": 3,
-"father": "T1111-9",
-"mother": "T1111-10",
-"spouse": "T1111-6"
+"id": "T1111-7",
+"band": 4,
+"father": "T1111-11",
+"mother": "T1111-12",
+"spouse": "T1111-8"
 },
 {
 "name": "ANA JUAN GUZMAN LEZCANO",
@@ -38728,11 +38962,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-6",
-"band": 3,
-"father": "T1111-11",
-"mother": "T1111-12",
-"spouse": "T1111-5"
+"id": "T1111-8",
+"band": 4,
+"father": "T1111-13",
+"mother": "T1111-14",
+"spouse": "T1111-7"
 },
 {
 "name": "DOMINGO RODRIGUEZ MANZANO",
@@ -38755,11 +38989,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-7",
-"band": 3,
-"father": "T1111-13",
-"mother": "T1111-14",
-"spouse": "T1111-8"
+"id": "T1111-9",
+"band": 4,
+"father": "T1111-15",
+"mother": "T1111-16",
+"spouse": "T1111-10"
 },
 {
 "name": "GREGORIA JERONIMA MARTINEZ URNIETA",
@@ -38782,11 +39016,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-8",
-"band": 3,
-"father": "T1111-15",
-"mother": "T1111-16",
-"spouse": "T1111-7"
+"id": "T1111-10",
+"band": 4,
+"father": "T1111-17",
+"mother": "T1111-18",
+"spouse": "T1111-9"
 },
 {
 "name": "JUAN JARAMILLO DE ANDRADE",
@@ -38809,11 +39043,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-9",
-"band": 4,
-"father": "T1111-17",
-"mother": "T1111-18",
-"spouse": "T1111-10"
+"id": "T1111-11",
+"band": 5,
+"father": "T1111-19",
+"mother": "T1111-20",
+"spouse": "T1111-12"
 },
 {
 "name": "JUANA DE ZAFRA TABORDA",
@@ -38836,11 +39070,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-10",
-"band": 4,
-"father": "T1111-19",
-"mother": "T1111-20",
-"spouse": "T1111-9"
+"id": "T1111-12",
+"band": 5,
+"father": "T1111-21",
+"mother": "T1111-22",
+"spouse": "T1111-11"
 },
 {
 "name": "FRANCISCO GUZMAN MIRANDA",
@@ -38863,11 +39097,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-11",
-"band": 4,
-"father": "T1111-21",
-"mother": "T1111-22",
-"spouse": "T1111-12"
+"id": "T1111-13",
+"band": 5,
+"father": "T1111-23",
+"mother": "T1111-24",
+"spouse": "T1111-14"
 },
 {
 "name": "LUISA LEZCANO TABORDA",
@@ -38890,11 +39124,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-12",
-"band": 4,
-"father": "T1111-23",
-"mother": "T1111-24",
-"spouse": "T1111-11"
+"id": "T1111-14",
+"band": 5,
+"father": "T1111-25",
+"mother": "T1111-26",
+"spouse": "T1111-13"
 },
 {
 "name": "CRISTOBAL RODRIGUEZ MANZANO",
@@ -38917,11 +39151,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-13",
-"band": 4,
-"father": "T1111-25",
-"mother": "T1111-26",
-"spouse": "T1111-14"
+"id": "T1111-15",
+"band": 5,
+"father": "T1111-27",
+"mother": "T1111-28",
+"spouse": "T1111-16"
 },
 {
 "name": "JUANA RODRIGUEZ DE GUZMÁN",
@@ -38944,11 +39178,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-14",
-"band": 4,
+"id": "T1111-16",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T1111-13"
+"spouse": "T1111-15"
 },
 {
 "name": "FRANCISCO MARTINEZ VIVANCOS",
@@ -38971,11 +39205,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-15",
-"band": 4,
+"id": "T1111-17",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T1111-16"
+"spouse": "T1111-18"
 },
 {
 "name": "FRANCISCA LEZCANO TABORDA",
@@ -38998,11 +39232,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-16",
-"band": 4,
-"father": "T1111-27",
-"mother": "T1111-28",
-"spouse": "T1111-15"
+"id": "T1111-18",
+"band": 5,
+"father": "T1111-29",
+"mother": "T1111-30",
+"spouse": "T1111-17"
 },
 {
 "name": "ALONSO JARAMILLO DE ANDRADE",
@@ -39025,11 +39259,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-17",
-"band": 5,
-"father": "T1111-29",
-"mother": "T1111-30",
-"spouse": "T1111-18"
+"id": "T1111-19",
+"band": 6,
+"father": "T1111-31",
+"mother": "T1111-32",
+"spouse": "T1111-20"
 },
 {
 "name": "ISABEL DE TOLEDO SALCEDO",
@@ -39052,11 +39286,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-18",
-"band": 5,
-"father": "T1111-31",
-"mother": "T1111-32",
-"spouse": "T1111-17"
+"id": "T1111-20",
+"band": 6,
+"father": "T1111-33",
+"mother": "T1111-34",
+"spouse": "T1111-19"
 },
 {
 "name": "FERNANDO DE ZAFRA FERNANDEZ",
@@ -39079,11 +39313,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-19",
-"band": 5,
-"father": "T1111-33",
-"mother": "T1111-34",
-"spouse": "T1111-20"
+"id": "T1111-21",
+"band": 6,
+"father": "T1111-35",
+"mother": "T1111-36",
+"spouse": "T1111-22"
 },
 {
 "name": "JUANA TABORDA LOPEZ SANTOFIMIA",
@@ -39106,11 +39340,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-20",
-"band": 5,
-"father": "T1111-35",
-"mother": "T1111-36",
-"spouse": "T1111-19"
+"id": "T1111-22",
+"band": 6,
+"father": "T1111-37",
+"mother": "T1111-38",
+"spouse": "T1111-21"
 },
 {
 "name": "FRANCISCO GUZMAN RUIZ",
@@ -39133,11 +39367,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-21",
-"band": 5,
-"father": "T1111-37",
-"mother": "T1111-38",
-"spouse": "T1111-22"
+"id": "T1111-23",
+"band": 6,
+"father": "T1111-39",
+"mother": "T1111-40",
+"spouse": "T1111-24"
 },
 {
 "name": "ANA MARIA LUISA DE MIRANDA",
@@ -39160,11 +39394,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-22",
-"band": 5,
+"id": "T1111-24",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1111-21"
+"spouse": "T1111-23"
 },
 {
 "name": "MIGUEL DE URNIETA LEZCANO",
@@ -39187,11 +39421,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-23",
-"band": 5,
+"id": "T1111-25",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1111-24"
+"spouse": "T1111-26"
 },
 {
 "name": "ANA TABORDA TORRES",
@@ -39214,11 +39448,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-24",
-"band": 5,
-"father": "T1111-39",
-"mother": "T1111-40",
-"spouse": "T1111-23"
+"id": "T1111-26",
+"band": 6,
+"father": "T1111-41",
+"mother": "T1111-42",
+"spouse": "T1111-25"
 },
 {
 "name": "CRISTÓBAL RUIZ RODRÍGUEZ",
@@ -39241,11 +39475,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-25",
-"band": 5,
+"id": "T1111-27",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1111-26"
+"spouse": "T1111-28"
 },
 {
 "name": "ELVIRA RAMIREZ GUZMÁN",
@@ -39268,11 +39502,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-26",
-"band": 5,
+"id": "T1111-28",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1111-25"
+"spouse": "T1111-27"
 },
 {
 "name": "MIGUEL DE URNIETA LEZCANO",
@@ -39295,11 +39529,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-27",
-"band": 5,
+"id": "T1111-29",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1111-28"
+"spouse": "T1111-30"
 },
 {
 "name": "ANA TABORDA TORRES",
@@ -39322,11 +39556,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-28",
-"band": 5,
-"father": "T1111-41",
-"mother": "T1111-42",
-"spouse": "T1111-27"
+"id": "T1111-30",
+"band": 6,
+"father": "T1111-43",
+"mother": "T1111-44",
+"spouse": "T1111-29"
 },
 {
 "name": "FRANCISCO JARAMILLO SÁNCHEZ",
@@ -39349,11 +39583,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-29",
-"band": 6,
-"father": "T1111-43",
-"mother": "T1111-44",
-"spouse": "T1111-30"
+"id": "T1111-31",
+"band": 7,
+"father": "T1111-45",
+"mother": "T1111-46",
+"spouse": "T1111-32"
 },
 {
 "name": "CONSTANZA HERNANDEZ X",
@@ -39376,11 +39610,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-30",
-"band": 6,
-"father": "T1111-45",
-"mother": "T1111-46",
-"spouse": "T1111-29"
+"id": "T1111-32",
+"band": 7,
+"father": "T1111-47",
+"mother": "T1111-48",
+"spouse": "T1111-31"
 },
 {
 "name": "ANTONIO DE TOLEDO",
@@ -39403,11 +39637,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-31",
-"band": 6,
+"id": "T1111-33",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T1111-32"
+"spouse": "T1111-34"
 },
 {
 "name": "MARÍA DE ACEVEDO",
@@ -39430,11 +39664,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-32",
-"band": 6,
-"father": "T1111-47",
-"mother": "T1111-48",
-"spouse": "T1111-31"
+"id": "T1111-34",
+"band": 7,
+"father": "T1111-49",
+"mother": "T1111-50",
+"spouse": "T1111-33"
 },
 {
 "name": "FERNANDO DE ZAFRA CENTENO",
@@ -39457,11 +39691,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-33",
-"band": 6,
+"id": "T1111-35",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T1111-34"
+"spouse": "T1111-36"
 },
 {
 "name": "CATARINA CATARINA) FERNANDEZ",
@@ -39484,11 +39718,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-34",
-"band": 6,
+"id": "T1111-36",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T1111-33"
+"spouse": "T1111-35"
 },
 {
 "name": "JUAN TABORDA X",
@@ -39511,11 +39745,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-35",
-"band": 6,
-"father": "T1111-49",
-"mother": "T1111-50",
-"spouse": "T1111-36"
+"id": "T1111-37",
+"band": 7,
+"father": "T1111-51",
+"mother": "T1111-52",
+"spouse": "T1111-38"
 },
 {
 "name": "LEONOR LOPEZ SANTOFIMIA",
@@ -39538,11 +39772,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-36",
-"band": 6,
-"father": "T1111-51",
-"mother": "T1111-52",
-"spouse": "T1111-35"
+"id": "T1111-38",
+"band": 7,
+"father": "T1111-53",
+"mother": "T1111-54",
+"spouse": "T1111-37"
 },
 {
 "name": "FRANCISCO DE GUZMÁN CESPEDES",
@@ -39565,11 +39799,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-37",
-"band": 6,
-"father": "T1111-53",
-"mother": "T1111-54",
-"spouse": "T1111-38"
+"id": "T1111-39",
+"band": 7,
+"father": "T1111-55",
+"mother": "T1111-56",
+"spouse": "T1111-40"
 },
 {
 "name": "FRANCISCA RUIZ ZURITA",
@@ -39592,11 +39826,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-38",
-"band": 6,
-"father": "T1111-55",
-"mother": "T1111-56",
-"spouse": "T1111-37"
+"id": "T1111-40",
+"band": 7,
+"father": "T1111-57",
+"mother": "T1111-58",
+"spouse": "T1111-39"
 },
 {
 "name": "JUAN TABORDA LOPEZ",
@@ -39619,11 +39853,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-39",
-"band": 6,
-"father": "T1111-57",
-"mother": "T1111-58",
-"spouse": "T1111-40"
+"id": "T1111-41",
+"band": 7,
+"father": "T1111-59",
+"mother": "T1111-60",
+"spouse": "T1111-42"
 },
 {
 "name": "JERÓNIMA DE TORRES",
@@ -39646,11 +39880,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-40",
-"band": 6,
-"father": "T1111-59",
-"mother": "T1111-60",
-"spouse": "T1111-39"
+"id": "T1111-42",
+"band": 7,
+"father": "T1111-61",
+"mother": "T1111-62",
+"spouse": "T1111-41"
 },
 {
 "name": "JUAN TABORDA LÓPEZ",
@@ -39673,11 +39907,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-41",
-"band": 6,
-"father": "T1111-61",
-"mother": "T1111-62",
-"spouse": "T1111-42"
+"id": "T1111-43",
+"band": 7,
+"father": "T1111-63",
+"mother": "T1111-64",
+"spouse": "T1111-44"
 },
 {
 "name": "JERÓNIMA DE TORRES",
@@ -39700,11 +39934,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-42",
-"band": 6,
-"father": "T1111-63",
-"mother": "T1111-64",
-"spouse": "T1111-41"
+"id": "T1111-44",
+"band": 7,
+"father": "T1111-65",
+"mother": "T1111-66",
+"spouse": "T1111-43"
 },
 {
 "name": "ALONSO JARAMILLO DEL PRADO",
@@ -39727,11 +39961,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-43",
-"band": 7,
-"father": "T1111-65",
-"mother": "T1111-66",
-"spouse": "T1111-44"
+"id": "T1111-45",
+"band": 8,
+"father": "T1111-67",
+"mother": "T1111-68",
+"spouse": "T1111-46"
 },
 {
 "name": "TERESA SANCHEZ X",
@@ -39754,11 +39988,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-44",
-"band": 7,
+"id": "T1111-46",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-43"
+"spouse": "T1111-45"
 },
 {
 "name": "DIEGO SANCHEZ X",
@@ -39781,11 +40015,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-45",
-"band": 7,
+"id": "T1111-47",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-46"
+"spouse": "T1111-48"
 },
 {
 "name": "? X X",
@@ -39808,11 +40042,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1111-46",
-"band": 7,
+"id": "T1111-48",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-45"
+"spouse": "T1111-47"
 },
 {
 "name": "JOSE ANTONIO ACEVEDO",
@@ -39835,11 +40069,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-47",
-"band": 7,
+"id": "T1111-49",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-48"
+"spouse": "T1111-50"
 },
 {
 "name": "DAMA VILLAFAÑE X",
@@ -39862,11 +40096,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-48",
-"band": 7,
+"id": "T1111-50",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-47"
+"spouse": "T1111-49"
 },
 {
 "name": "ALONSO TABORDA DÍAZ",
@@ -39889,11 +40123,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-49",
-"band": 7,
-"father": "T1111-67",
-"mother": "T1111-68",
-"spouse": "T1111-50"
+"id": "T1111-51",
+"band": 8,
+"father": "T1111-69",
+"mother": "T1111-70",
+"spouse": "T1111-52"
 },
 {
 "name": "? X X",
@@ -39916,11 +40150,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1111-50",
-"band": 7,
+"id": "T1111-52",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-49"
+"spouse": "T1111-51"
 },
 {
 "name": "DIEGO LÓPEZ SANTOFIMIA",
@@ -39943,11 +40177,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-51",
-"band": 7,
+"id": "T1111-53",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-52"
+"spouse": "T1111-54"
 },
 {
 "name": "?",
@@ -39968,11 +40202,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1111-52",
-"band": 7,
+"id": "T1111-54",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-51"
+"spouse": "T1111-53"
 },
 {
 "name": "PEDRO JUAN GUZMAN ESP",
@@ -39996,11 +40230,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1111-53",
-"band": 7,
+"id": "T1111-55",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-54"
+"spouse": "T1111-56"
 },
 {
 "name": "MARÍA LUISA DE CÉSPEDES OSORIO",
@@ -40023,11 +40257,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-54",
-"band": 7,
-"father": "T1111-69",
-"mother": "T1111-70",
-"spouse": "T1111-53"
+"id": "T1111-56",
+"band": 8,
+"father": "T1111-71",
+"mother": "T1111-72",
+"spouse": "T1111-55"
 },
 {
 "name": "FRANCISCO RUIZ X",
@@ -40050,11 +40284,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-55",
-"band": 7,
+"id": "T1111-57",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-56"
+"spouse": "T1111-58"
 },
 {
 "name": "MARIANA DE ZURITA ESO",
@@ -40078,11 +40312,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-56",
-"band": 7,
+"id": "T1111-58",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-55"
+"spouse": "T1111-57"
 },
 {
 "name": "JUAN TABORDA DE SILVA",
@@ -40105,11 +40339,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-57",
-"band": 7,
-"father": "T1111-71",
-"mother": "T1111-72",
-"spouse": "T1111-58"
+"id": "T1111-59",
+"band": 8,
+"father": "T1111-73",
+"mother": "T1111-74",
+"spouse": "T1111-60"
 },
 {
 "name": "LEONOR LOPEZ SANTOFIMIA",
@@ -40132,11 +40366,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-58",
-"band": 7,
-"father": "T1111-73",
-"mother": "T1111-74",
-"spouse": "T1111-57"
+"id": "T1111-60",
+"band": 8,
+"father": "T1111-75",
+"mother": "T1111-76",
+"spouse": "T1111-59"
 },
 {
 "name": "JERÓNIMO DE TORRES",
@@ -40159,11 +40393,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-59",
-"band": 7,
+"id": "T1111-61",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-60"
+"spouse": "T1111-62"
 },
 {
 "name": "ANA MARIA DE BELALCÁZAR SANCHEZ",
@@ -40186,11 +40420,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-60",
-"band": 7,
+"id": "T1111-62",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-59"
+"spouse": "T1111-61"
 },
 {
 "name": "JUAN TABORDA X",
@@ -40213,11 +40447,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-61",
-"band": 7,
-"father": "T1111-75",
-"mother": "T1111-76",
-"spouse": "T1111-62"
+"id": "T1111-63",
+"band": 8,
+"father": "T1111-77",
+"mother": "T1111-78",
+"spouse": "T1111-64"
 },
 {
 "name": "LEONOR LOPEZ SANTOFIMIA",
@@ -40240,11 +40474,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-62",
-"band": 7,
-"father": "T1111-77",
-"mother": "T1111-78",
-"spouse": "T1111-61"
+"id": "T1111-64",
+"band": 8,
+"father": "T1111-79",
+"mother": "T1111-80",
+"spouse": "T1111-63"
 },
 {
 "name": "JERÓNIMO DE TORRES",
@@ -40267,11 +40501,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-63",
-"band": 7,
+"id": "T1111-65",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-64"
+"spouse": "T1111-66"
 },
 {
 "name": "?",
@@ -40292,11 +40526,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1111-64",
-"band": 7,
+"id": "T1111-66",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1111-63"
+"spouse": "T1111-65"
 },
 {
 "name": "FRANCISCO JARAMILLO X",
@@ -40319,11 +40553,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-65",
-"band": 8,
+"id": "T1111-67",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1111-66"
+"spouse": "T1111-68"
 },
 {
 "name": "ISABEL DEL PRADO",
@@ -40346,11 +40580,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-66",
-"band": 8,
+"id": "T1111-68",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1111-65"
+"spouse": "T1111-67"
 },
 {
 "name": "ALONSO TABORDA X",
@@ -40373,11 +40607,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-67",
-"band": 8,
+"id": "T1111-69",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1111-68"
+"spouse": "T1111-70"
 },
 {
 "name": "ISABEL DÍAZ X",
@@ -40400,11 +40634,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-68",
-"band": 8,
+"id": "T1111-70",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1111-67"
+"spouse": "T1111-69"
 },
 {
 "name": "JUAN DE CÉSPEDES CÁRDENAS",
@@ -40427,11 +40661,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-69",
-"band": 8,
-"father": "T1111-79",
-"mother": "T1111-80",
-"spouse": "T1111-70"
+"id": "T1111-71",
+"band": 9,
+"father": "T1111-81",
+"mother": "T1111-82",
+"spouse": "T1111-72"
 },
 {
 "name": "TERESA OSORIO X ESP",
@@ -40455,11 +40689,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1111-70",
-"band": 8,
+"id": "T1111-72",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1111-69"
+"spouse": "T1111-71"
 },
 {
 "name": "ALONSO TABORDA DIAZ",
@@ -40482,11 +40716,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-71",
-"band": 8,
-"father": "T1111-81",
-"mother": "T1111-82",
-"spouse": "T1111-72"
+"id": "T1111-73",
+"band": 9,
+"father": "T1111-83",
+"mother": "T1111-84",
+"spouse": "T1111-74"
 },
 {
 "name": "ÚRSULA DE SILVA",
@@ -40509,11 +40743,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-72",
-"band": 8,
+"id": "T1111-74",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1111-71"
+"spouse": "T1111-73"
 },
 {
 "name": "DIEGO LÓPEZ SANTOFIMIA",
@@ -40536,11 +40770,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-73",
-"band": 8,
+"id": "T1111-75",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1111-74"
+"spouse": "T1111-76"
 },
 {
 "name": "MAYOR ALVAREZ DE LLANO VALDEZ",
@@ -40563,11 +40797,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-74",
-"band": 8,
+"id": "T1111-76",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1111-73"
+"spouse": "T1111-75"
 },
 {
 "name": "ALONSO TABORDA DIAZ",
@@ -40590,11 +40824,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-75",
-"band": 8,
-"father": "T1111-83",
-"mother": "T1111-84",
-"spouse": "T1111-76"
+"id": "T1111-77",
+"band": 9,
+"father": "T1111-85",
+"mother": "T1111-86",
+"spouse": "T1111-78"
 },
 {
 "name": "?",
@@ -40615,11 +40849,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1111-76",
-"band": 8,
+"id": "T1111-78",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1111-75"
+"spouse": "T1111-77"
 },
 {
 "name": "DIEGO LÓPEZ SANTOFIMIA",
@@ -40642,11 +40876,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-77",
-"band": 8,
+"id": "T1111-79",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1111-78"
+"spouse": "T1111-80"
 },
 {
 "name": "?",
@@ -40667,11 +40901,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1111-78",
-"band": 8,
+"id": "T1111-80",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1111-77"
+"spouse": "T1111-79"
 },
 {
 "name": "GUTIERRE MARTINEZ CESPEDES",
@@ -40694,11 +40928,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-79",
-"band": 9,
-"father": "T1111-85",
-"mother": "T1111-86",
-"spouse": "T1111-80"
+"id": "T1111-81",
+"band": 10,
+"father": "T1111-87",
+"mother": "T1111-88",
+"spouse": "T1111-82"
 },
 {
 "name": "CONSTANZA DE CARDENAS PONCE DE LEÓN",
@@ -40721,11 +40955,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-80",
-"band": 9,
-"father": "T1111-87",
-"mother": "T1111-88",
-"spouse": "T1111-79"
+"id": "T1111-82",
+"band": 10,
+"father": "T1111-89",
+"mother": "T1111-90",
+"spouse": "T1111-81"
 },
 {
 "name": "ALONSO TABORDA RIVERA",
@@ -40748,11 +40982,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-81",
-"band": 9,
+"id": "T1111-83",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T1111-82"
+"spouse": "T1111-84"
 },
 {
 "name": "ISABEL DIAZ X",
@@ -40775,11 +41009,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-82",
-"band": 9,
+"id": "T1111-84",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T1111-81"
+"spouse": "T1111-83"
 },
 {
 "name": "ALONSO TABORDA X",
@@ -40802,11 +41036,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-83",
-"band": 9,
+"id": "T1111-85",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T1111-84"
+"spouse": "T1111-86"
 },
 {
 "name": "ISABEL DIAZ X",
@@ -40829,11 +41063,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-84",
-"band": 9,
+"id": "T1111-86",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T1111-83"
+"spouse": "T1111-85"
 },
 {
 "name": "GUTIERRE DE CÉSPEDES ARIAS",
@@ -40856,11 +41090,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-85",
-"band": 10,
-"father": "T1111-89",
-"mother": "T1111-90",
-"spouse": "T1111-86"
+"id": "T1111-87",
+"band": 11,
+"father": "T1111-91",
+"mother": "T1111-92",
+"spouse": "T1111-88"
 },
 {
 "name": "ALDOSA OSORIO X",
@@ -40883,11 +41117,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-86",
-"band": 10,
+"id": "T1111-88",
+"band": 11,
 "father": null,
 "mother": null,
-"spouse": "T1111-85"
+"spouse": "T1111-87"
 },
 {
 "name": "DIEGO DE CÁRDENAS",
@@ -40910,11 +41144,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-87",
-"band": 10,
+"id": "T1111-89",
+"band": 11,
 "father": null,
 "mother": null,
-"spouse": "T1111-88"
+"spouse": "T1111-90"
 },
 {
 "name": "ISABEL PONCE DE LEÓN ANGULO",
@@ -40937,11 +41171,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-88",
-"band": 10,
-"father": "T1111-91",
-"mother": "T1111-92",
-"spouse": "T1111-87"
+"id": "T1111-90",
+"band": 11,
+"father": "T1111-93",
+"mother": "T1111-94",
+"spouse": "T1111-89"
 },
 {
 "name": "GUTIERRE CESPEDES DE LOZADA",
@@ -40964,11 +41198,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-89",
-"band": 11,
+"id": "T1111-91",
+"band": 12,
 "father": null,
 "mother": null,
-"spouse": "T1111-90"
+"spouse": "T1111-92"
 },
 {
 "name": "MARÍA ARIAS X",
@@ -40991,11 +41225,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-90",
-"band": 11,
-"father": "T1111-93",
-"mother": "T1111-94",
-"spouse": "T1111-89"
+"id": "T1111-92",
+"band": 12,
+"father": "T1111-95",
+"mother": "T1111-96",
+"spouse": "T1111-91"
 },
 {
 "name": "PEDRO PONCE DE LEÓN FIGUEROA",
@@ -41018,11 +41252,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-91",
-"band": 11,
-"father": "T1111-95",
-"mother": "T1111-96",
-"spouse": "T1111-92"
+"id": "T1111-93",
+"band": 12,
+"father": "T1111-97",
+"mother": "T1111-98",
+"spouse": "T1111-94"
 },
 {
 "name": "CONSTANZA DE ÁNGULO TABERA",
@@ -41045,11 +41279,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-92",
-"band": 11,
-"father": "T1111-97",
-"mother": "T1111-98",
-"spouse": "T1111-91"
+"id": "T1111-94",
+"band": 12,
+"father": "T1111-99",
+"mother": "T1111-100",
+"spouse": "T1111-93"
 },
 {
 "name": "PEDRO ARIAS X",
@@ -41072,11 +41306,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-93",
-"band": 12,
+"id": "T1111-95",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T1111-94"
+"spouse": "T1111-96"
 },
 {
 "name": "? X X",
@@ -41099,11 +41333,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-94",
-"band": 12,
+"id": "T1111-96",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T1111-93"
+"spouse": "T1111-95"
 },
 {
 "name": "PEDRO PONCE DE RIQUELME",
@@ -41126,11 +41360,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1111-95",
-"band": 12,
+"id": "T1111-97",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T1111-96"
+"spouse": "T1111-98"
 },
 {
 "name": "MARIA LEÓN DE FIGUEROA ESP",
@@ -41154,11 +41388,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-96",
-"band": 12,
+"id": "T1111-98",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T1111-95"
+"spouse": "T1111-97"
 },
 {
 "name": "GASPAR TABERA X",
@@ -41181,11 +41415,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-97",
-"band": 12,
+"id": "T1111-99",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T1111-98"
+"spouse": "T1111-100"
 },
 {
 "name": "MARÍA DE ÁNGULO DE CASTEJÓN",
@@ -41208,11 +41442,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1111-98",
-"band": 12,
+"id": "T1111-100",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T1111-97"
+"spouse": "T1111-99"
 }
 ],
 "warn": []
@@ -41246,26 +41480,24 @@
 "spouse": null
 },
 {
-"name": "JUAN GARCIA GOMEZ SANTA FE DE ANT. JUAN GARCIA BURGOS GOMEZ",
+"name": "JUAN GARCIA GOMEZ SANTA FE DE ANT.",
 "rows": [
 "JUAN GARCIA",
 "GOMEZ",
-"SANTA FE DE ANT.",
-"JUAN",
-"GARCIA BURGOS GOMEZ"
+"SANTA FE DE ANT."
 ],
 "bbox": [
-208.6999969482422,
+358.94000244140625,
 124.72996520996094,
-536.7235717773438,
-208.53886079788208
+472.364013671875,
+168.4099578857422
 ],
 "page": 56,
-"date": "X",
+"date": "",
 "color": "#000000",
-"x": 255.6,
+"x": 412.6,
 "y": 130.7,
-"more": true,
+"more": false,
 "none": false,
 "ref": null,
 "id": "T1701-1",
@@ -41275,33 +41507,82 @@
 "spouse": "T1701-2"
 },
 {
-"name": "MARIA LUISA JARAMILLO RODRIGUEZ SANTA FE.1694 ISABEL GOMEZ",
+"name": "MARIA LUISA JARAMILLO RODRIGUEZ",
 "rows": [
 "MARIA LUISA",
-"JARAMILLO RODRIGUEZ",
-"SANTA FE.1694",
-"ISABEL",
-"GOMEZ"
+"JARAMILLO RODRIGUEZ"
 ],
 "bbox": [
-521.9226684570312,
+590.4620361328125,
 124.72996520996094,
 738.9739990234375,
+168.4099578857422
+],
+"page": 56,
+"date": "SANTA FE.1694",
+"color": "#000000",
+"x": 665.0,
+"y": 130.7,
+"more": false,
+"none": false,
+"ref": null,
+"id": "T1701-2",
+"band": 1,
+"father": null,
+"mother": null,
+"spouse": "T1701-1"
+},
+{
+"name": "JUAN GARCIA BURGOS",
+"rows": [
+"JUAN",
+"GARCIA BURGOS"
+],
+"bbox": [
+208.6999969482422,
+172.05890226364136,
+297.6128845214844,
 208.53886079788208
 ],
 "page": 56,
 "date": "X",
 "color": "#000000",
-"x": 626.3,
-"y": 130.7,
+"x": 255.6,
+"y": 177.0,
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-2",
-"band": 1,
+"id": "T1701-3",
+"band": 2,
 "father": "T1701-5",
 "mother": "T1701-6",
-"spouse": "T1701-1"
+"spouse": "T1701-4"
+},
+{
+"name": "ISABEL GOMEZ GOMEZ",
+"rows": [
+"ISABEL",
+"GOMEZ GOMEZ"
+],
+"bbox": [
+500.1802978515625,
+172.05890226364136,
+581.6929321289062,
+208.53886079788208
+],
+"page": 56,
+"date": "X",
+"color": "#000000",
+"x": 541.4,
+"y": 177.0,
+"more": true,
+"none": false,
+"ref": null,
+"id": "T1701-4",
+"band": 2,
+"father": "T1701-7",
+"mother": "T1701-8",
+"spouse": "T1701-3"
 },
 {
 "name": "JUAN GARCIA DE ORDAS",
@@ -41324,11 +41605,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-3",
-"band": 2,
-"father": "T1701-7",
-"mother": "T1701-8",
-"spouse": "T1701-4"
+"id": "T1701-5",
+"band": 3,
+"father": "T1701-9",
+"mother": "T1701-10",
+"spouse": "T1701-6"
 },
 {
 "name": "FAUSTINA CIPRIANA BURGOS RANGEL",
@@ -41351,11 +41632,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-4",
-"band": 2,
-"father": "T1701-9",
-"mother": "T1701-10",
-"spouse": "T1701-3"
+"id": "T1701-6",
+"band": 3,
+"father": "T1701-11",
+"mother": "T1701-12",
+"spouse": "T1701-5"
 },
 {
 "name": "MANUEL GÓMEZ SANDI",
@@ -41378,11 +41659,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-5",
-"band": 2,
-"father": "T1701-11",
-"mother": "T1701-12",
-"spouse": "T1701-6"
+"id": "T1701-7",
+"band": 3,
+"father": "T1701-13",
+"mother": "T1701-14",
+"spouse": "T1701-8"
 },
 {
 "name": "ANA GÓMEZ CASTILLO",
@@ -41405,11 +41686,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-6",
-"band": 2,
-"father": "T1701-13",
-"mother": "T1701-14",
-"spouse": "T1701-5"
+"id": "T1701-8",
+"band": 3,
+"father": "T1701-15",
+"mother": "T1701-16",
+"spouse": "T1701-7"
 },
 {
 "name": "JUAN GARCIA DE ORDAS MANCILLA",
@@ -41432,11 +41713,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-7",
-"band": 3,
-"father": "T1701-15",
-"mother": "T1701-16",
-"spouse": "T1701-8"
+"id": "T1701-9",
+"band": 4,
+"father": "T1701-17",
+"mother": "T1701-18",
+"spouse": "T1701-10"
 },
 {
 "name": "MARIA CORTES DE FIGUEROA",
@@ -41459,11 +41740,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-8",
-"band": 3,
-"father": "T1701-17",
-"mother": "T1701-18",
-"spouse": "T1701-7"
+"id": "T1701-10",
+"band": 4,
+"father": "T1701-19",
+"mother": "T1701-20",
+"spouse": "T1701-9"
 },
 {
 "name": "AGUSTIN BURGOS HERRERA",
@@ -41486,11 +41767,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-9",
-"band": 3,
-"father": "T1701-19",
-"mother": "T1701-20",
-"spouse": "T1701-10"
+"id": "T1701-11",
+"band": 4,
+"father": "T1701-21",
+"mother": "T1701-22",
+"spouse": "T1701-12"
 },
 {
 "name": "ANDREA RANGEL DE MENDOZA REM.ANT",
@@ -41514,11 +41795,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-10",
-"band": 3,
-"father": "T1701-21",
-"mother": "T1701-22",
-"spouse": "T1701-9"
+"id": "T1701-12",
+"band": 4,
+"father": "T1701-23",
+"mother": "T1701-24",
+"spouse": "T1701-11"
 },
 {
 "name": "JUAN GÓMEZ X",
@@ -41541,11 +41822,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-11",
-"band": 3,
+"id": "T1701-13",
+"band": 4,
 "father": null,
 "mother": null,
-"spouse": "T1701-12"
+"spouse": "T1701-14"
 },
 {
 "name": "LEONOR GUTIÉRREZ X",
@@ -41568,11 +41849,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-12",
-"band": 3,
+"id": "T1701-14",
+"band": 4,
 "father": null,
 "mother": null,
-"spouse": "T1701-11"
+"spouse": "T1701-13"
 },
 {
 "name": "JUAN GOMEZ PARIAS",
@@ -41595,11 +41876,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-13",
-"band": 3,
-"father": "T1701-23",
-"mother": "T1701-24",
-"spouse": "T1701-14"
+"id": "T1701-15",
+"band": 4,
+"father": "T1701-25",
+"mother": "T1701-26",
+"spouse": "T1701-16"
 },
 {
 "name": "ANA CASTRILLON VASQUEZ",
@@ -41622,11 +41903,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-14",
-"band": 3,
-"father": "T1701-25",
-"mother": "T1701-26",
-"spouse": "T1701-13"
+"id": "T1701-16",
+"band": 4,
+"father": "T1701-27",
+"mother": "T1701-28",
+"spouse": "T1701-15"
 },
 {
 "name": "JORGE GARCÍA HERNANDEZ",
@@ -41649,11 +41930,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-15",
-"band": 4,
-"father": "T1701-27",
-"mother": "T1701-28",
-"spouse": "T1701-16"
+"id": "T1701-17",
+"band": 5,
+"father": "T1701-29",
+"mother": "T1701-30",
+"spouse": "T1701-18"
 },
 {
 "name": "INÉS DE ORDÁS MANCILLA",
@@ -41676,11 +41957,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-16",
-"band": 4,
-"father": "T1701-29",
-"mother": "T1701-30",
-"spouse": "T1701-15"
+"id": "T1701-18",
+"band": 5,
+"father": "T1701-31",
+"mother": "T1701-32",
+"spouse": "T1701-17"
 },
 {
 "name": "MARTÍN ALONSO DE FIGUEROA",
@@ -41703,11 +41984,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-17",
-"band": 4,
-"father": "T1701-31",
-"mother": "T1701-32",
-"spouse": "T1701-18"
+"id": "T1701-19",
+"band": 5,
+"father": "T1701-33",
+"mother": "T1701-34",
+"spouse": "T1701-20"
 },
 {
 "name": "MARIA CORTÉS X",
@@ -41730,11 +42011,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-18",
-"band": 4,
+"id": "T1701-20",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T1701-17"
+"spouse": "T1701-19"
 },
 {
 "name": "BALTASAR DE BURGOS ANTOLINES",
@@ -41757,11 +42038,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-19",
-"band": 4,
-"father": "T1701-33",
-"mother": "T1701-34",
-"spouse": "T1701-20"
+"id": "T1701-21",
+"band": 5,
+"father": "T1701-35",
+"mother": "T1701-36",
+"spouse": "T1701-22"
 },
 {
 "name": "MARÍA TERESA DE HERRERA ZAPATA REMED. ANT.",
@@ -41785,11 +42066,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-20",
-"band": 4,
-"father": "T1701-35",
-"mother": "T1701-36",
-"spouse": "T1701-19"
+"id": "T1701-22",
+"band": 5,
+"father": "T1701-37",
+"mother": "T1701-38",
+"spouse": "T1701-21"
 },
 {
 "name": "RODRIGO HIDALGO RANGEL",
@@ -41812,11 +42093,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-21",
-"band": 4,
+"id": "T1701-23",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T1701-22"
+"spouse": "T1701-24"
 },
 {
 "name": "ISABEL DE MENDOZA",
@@ -41839,11 +42120,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-22",
-"band": 4,
+"id": "T1701-24",
+"band": 5,
 "father": null,
 "mother": null,
-"spouse": "T1701-21"
+"spouse": "T1701-23"
 },
 {
 "name": "JUAN GÓMEZ DE SALAZAR VARGAS",
@@ -41866,11 +42147,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-23",
-"band": 4,
-"father": "T1701-37",
-"mother": "T1701-38",
-"spouse": "T1701-24"
+"id": "T1701-25",
+"band": 5,
+"father": "T1701-39",
+"mother": "T1701-40",
+"spouse": "T1701-26"
 },
 {
 "name": "LEONOR DE PARIAS CENTENO",
@@ -41893,11 +42174,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-24",
-"band": 4,
-"father": "T1701-39",
-"mother": "T1701-40",
-"spouse": "T1701-23"
+"id": "T1701-26",
+"band": 5,
+"father": "T1701-41",
+"mother": "T1701-42",
+"spouse": "T1701-25"
 },
 {
 "name": "MATEO CASTRILLON HEREDIA",
@@ -41920,11 +42201,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-25",
-"band": 4,
-"father": "T1701-41",
-"mother": "T1701-42",
-"spouse": "T1701-26"
+"id": "T1701-27",
+"band": 5,
+"father": "T1701-43",
+"mother": "T1701-44",
+"spouse": "T1701-28"
 },
 {
 "name": "MARIA VASQUEZ ESPINOSA",
@@ -41947,11 +42228,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-26",
-"band": 4,
-"father": "T1701-43",
-"mother": "T1701-44",
-"spouse": "T1701-25"
+"id": "T1701-28",
+"band": 5,
+"father": "T1701-45",
+"mother": "T1701-46",
+"spouse": "T1701-27"
 },
 {
 "name": "LORENZO GARCIA X",
@@ -41974,11 +42255,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-27",
-"band": 5,
+"id": "T1701-29",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1701-28"
+"spouse": "T1701-30"
 },
 {
 "name": "TERESA HERNANDEZ X",
@@ -42001,11 +42282,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-28",
-"band": 5,
+"id": "T1701-30",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1701-27"
+"spouse": "T1701-29"
 },
 {
 "name": "JUAN DE MANCILLA",
@@ -42028,11 +42309,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-29",
-"band": 5,
+"id": "T1701-31",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1701-30"
+"spouse": "T1701-32"
 },
 {
 "name": "TERESA DE ORDAS",
@@ -42055,11 +42336,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-30",
-"band": 5,
+"id": "T1701-32",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1701-29"
+"spouse": "T1701-31"
 },
 {
 "name": "JUAN ESTEBAN GARCIA",
@@ -42082,11 +42363,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-31",
-"band": 5,
+"id": "T1701-33",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1701-32"
+"spouse": "T1701-34"
 },
 {
 "name": "JUANA BLASQUEZ X",
@@ -42109,11 +42390,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-32",
-"band": 5,
+"id": "T1701-34",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1701-31"
+"spouse": "T1701-33"
 },
 {
 "name": "FRANCISCO DE BURGOS ANTOLINES",
@@ -42136,11 +42417,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-33",
-"band": 5,
+"id": "T1701-35",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1701-34"
+"spouse": "T1701-36"
 },
 {
 "name": "? X X DE",
@@ -42163,11 +42444,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1701-34",
-"band": 5,
+"id": "T1701-36",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1701-33"
+"spouse": "T1701-35"
 },
 {
 "name": "LUIS ZAPATA CÁRDENAS REMED.ANT",
@@ -42191,11 +42472,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-35",
-"band": 5,
-"father": "T1701-45",
-"mother": "T1701-46",
-"spouse": "T1701-36"
+"id": "T1701-37",
+"band": 6,
+"father": "T1701-47",
+"mother": "T1701-48",
+"spouse": "T1701-38"
 },
 {
 "name": "MARIANA VALERO DE VELASCO REM.ANT",
@@ -42219,11 +42500,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-36",
-"band": 5,
-"father": "T1701-47",
-"mother": "T1701-48",
-"spouse": "T1701-35"
+"id": "T1701-38",
+"band": 6,
+"father": "T1701-49",
+"mother": "T1701-50",
+"spouse": "T1701-37"
 },
 {
 "name": "PEDRO GÓMEZ DE SALAZAR",
@@ -42246,11 +42527,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-37",
-"band": 5,
-"father": "T1701-49",
-"mother": "T1701-50",
-"spouse": "T1701-38"
+"id": "T1701-39",
+"band": 6,
+"father": "T1701-51",
+"mother": "T1701-52",
+"spouse": "T1701-40"
 },
 {
 "name": "JUANA DE VARGAS",
@@ -42273,11 +42554,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-38",
-"band": 5,
+"id": "T1701-40",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1701-37"
+"spouse": "T1701-39"
 },
 {
 "name": "ANDRÉS DE PARIAS",
@@ -42300,11 +42581,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-39",
-"band": 5,
+"id": "T1701-41",
+"band": 6,
 "father": null,
 "mother": null,
-"spouse": "T1701-40"
+"spouse": "T1701-42"
 },
 {
 "name": "CATALINA DE ZAFRA TABORDA",
@@ -42327,11 +42608,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-40",
-"band": 5,
-"father": "T1701-51",
-"mother": "T1701-52",
-"spouse": "T1701-39"
+"id": "T1701-42",
+"band": 6,
+"father": "T1701-53",
+"mother": "T1701-54",
+"spouse": "T1701-41"
 },
 {
 "name": "DIEGO ALVAREZ CASTRILLÓN",
@@ -42354,11 +42635,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-41",
-"band": 5,
-"father": "T1701-53",
-"mother": "T1701-54",
-"spouse": "T1701-42"
+"id": "T1701-43",
+"band": 6,
+"father": "T1701-55",
+"mother": "T1701-56",
+"spouse": "T1701-44"
 },
 {
 "name": "CATALINA BLANDON HEREDIA CAUCA",
@@ -42382,11 +42663,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-42",
-"band": 5,
-"father": "T1701-55",
-"mother": "T1701-56",
-"spouse": "T1701-41"
+"id": "T1701-44",
+"band": 6,
+"father": "T1701-57",
+"mother": "T1701-58",
+"spouse": "T1701-43"
 },
 {
 "name": "MARTÍN VASQUEZ GUADRAMIROS",
@@ -42409,11 +42690,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-43",
-"band": 5,
-"father": "T1701-57",
-"mother": "T1701-58",
-"spouse": "T1701-44"
+"id": "T1701-45",
+"band": 6,
+"father": "T1701-59",
+"mother": "T1701-60",
+"spouse": "T1701-46"
 },
 {
 "name": "JERÓNIMA CORTES DE ESPINOSA",
@@ -42436,11 +42717,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-44",
-"band": 5,
-"father": "T1701-59",
-"mother": "T1701-60",
-"spouse": "T1701-43"
+"id": "T1701-46",
+"band": 6,
+"father": "T1701-61",
+"mother": "T1701-62",
+"spouse": "T1701-45"
 },
 {
 "name": "GONZALO DE PALENCIA",
@@ -42463,11 +42744,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-45",
-"band": 6,
-"father": "T1701-61",
-"mother": "T1701-62",
-"spouse": "T1701-46"
+"id": "T1701-47",
+"band": 7,
+"father": "T1701-63",
+"mother": "T1701-64",
+"spouse": "T1701-48"
 },
 {
 "name": "LEONOR ALVAREZ DE ALZA",
@@ -42490,11 +42771,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-46",
-"band": 6,
+"id": "T1701-48",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T1701-45"
+"spouse": "T1701-47"
 },
 {
 "name": "MARTÍN GARCIA VALERO",
@@ -42517,11 +42798,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-47",
-"band": 6,
+"id": "T1701-49",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T1701-48"
+"spouse": "T1701-50"
 },
 {
 "name": "ISABEL BLASCO DE VELASCO",
@@ -42544,11 +42825,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-48",
-"band": 6,
+"id": "T1701-50",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T1701-47"
+"spouse": "T1701-49"
 },
 {
 "name": "OCHOA GÓMEZ SALAZAR",
@@ -42571,11 +42852,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-49",
-"band": 6,
-"father": "T1701-63",
-"mother": "T1701-64",
-"spouse": "T1701-50"
+"id": "T1701-51",
+"band": 7,
+"father": "T1701-65",
+"mother": "T1701-66",
+"spouse": "T1701-52"
 },
 {
 "name": "ISABEL DE SALCEDO",
@@ -42598,11 +42879,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-50",
-"band": 6,
+"id": "T1701-52",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T1701-49"
+"spouse": "T1701-51"
 },
 {
 "name": "FERNANDO DE ZAFRA FERNANDEZ",
@@ -42625,11 +42906,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-51",
-"band": 6,
-"father": "T1701-65",
-"mother": "T1701-66",
-"spouse": "T1701-52"
+"id": "T1701-53",
+"band": 7,
+"father": "T1701-67",
+"mother": "T1701-68",
+"spouse": "T1701-54"
 },
 {
 "name": "JUANA TABORDA LOPEZ",
@@ -42652,11 +42933,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-52",
-"band": 6,
-"father": "T1701-67",
-"mother": "T1701-68",
-"spouse": "T1701-51"
+"id": "T1701-54",
+"band": 7,
+"father": "T1701-69",
+"mother": "T1701-70",
+"spouse": "T1701-53"
 },
 {
 "name": "RODRIGO ALVAREZ DE CASTRILLÓN",
@@ -42679,11 +42960,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-53",
-"band": 6,
-"father": "T1701-69",
-"mother": "T1701-70",
-"spouse": "T1701-54"
+"id": "T1701-55",
+"band": 7,
+"father": "T1701-71",
+"mother": "T1701-72",
+"spouse": "T1701-56"
 },
 {
 "name": "MARIA CATALINA BERNALDO DE QUIROZ",
@@ -42706,11 +42987,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-54",
-"band": 6,
-"father": "T1701-71",
-"mother": "T1701-72",
-"spouse": "T1701-53"
+"id": "T1701-56",
+"band": 7,
+"father": "T1701-73",
+"mother": "T1701-74",
+"spouse": "T1701-55"
 },
 {
 "name": "NICOLÁS BLANDÓN X",
@@ -42733,11 +43014,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-55",
-"band": 6,
+"id": "T1701-57",
+"band": 7,
 "father": null,
 "mother": null,
-"spouse": "T1701-56"
+"spouse": "T1701-58"
 },
 {
 "name": "CATALINA DE HEREDIA",
@@ -42760,11 +43041,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-56",
-"band": 6,
-"father": "T1701-73",
-"mother": "T1701-74",
-"spouse": "T1701-55"
+"id": "T1701-58",
+"band": 7,
+"father": "T1701-75",
+"mother": "T1701-76",
+"spouse": "T1701-57"
 },
 {
 "name": "PEDRO FERNÁNDEZ VASQUEZ",
@@ -42787,11 +43068,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-57",
-"band": 6,
-"father": "T1701-75",
-"mother": "T1701-76",
-"spouse": "T1701-58"
+"id": "T1701-59",
+"band": 7,
+"father": "T1701-77",
+"mother": "T1701-78",
+"spouse": "T1701-60"
 },
 {
 "name": "MARIA SÁNCHEZ GUADRAMIROS",
@@ -42814,11 +43095,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-58",
-"band": 6,
-"father": "T1701-77",
-"mother": "T1701-78",
-"spouse": "T1701-57"
+"id": "T1701-60",
+"band": 7,
+"father": "T1701-79",
+"mother": "T1701-80",
+"spouse": "T1701-59"
 },
 {
 "name": "CRISTOBAL SÁNCHEZ CORTES",
@@ -42841,11 +43122,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-59",
-"band": 6,
-"father": "T1701-79",
-"mother": "T1701-80",
-"spouse": "T1701-60"
+"id": "T1701-61",
+"band": 7,
+"father": "T1701-81",
+"mother": "T1701-82",
+"spouse": "T1701-62"
 },
 {
 "name": "ANDREA ESPINOSA SALAZAR",
@@ -42868,11 +43149,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-60",
-"band": 6,
-"father": "T1701-81",
-"mother": "T1701-82",
-"spouse": "T1701-59"
+"id": "T1701-62",
+"band": 7,
+"father": "T1701-83",
+"mother": "T1701-84",
+"spouse": "T1701-61"
 },
 {
 "name": "GONZALO DE ÁVILA",
@@ -42895,11 +43176,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1701-61",
-"band": 7,
+"id": "T1701-63",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-62"
+"spouse": "T1701-64"
 },
 {
 "name": "? X X",
@@ -42922,11 +43203,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1701-62",
-"band": 7,
+"id": "T1701-64",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-61"
+"spouse": "T1701-63"
 },
 {
 "name": "LOPE GÓMEZ DE SALAZAR",
@@ -42949,11 +43230,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-63",
-"band": 7,
-"father": "T1701-83",
-"mother": "T1701-84",
-"spouse": "T1701-64"
+"id": "T1701-65",
+"band": 8,
+"father": "T1701-85",
+"mother": "T1701-86",
+"spouse": "T1701-66"
 },
 {
 "name": "ANDREA DE LA FUENTE",
@@ -42976,11 +43257,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-64",
-"band": 7,
+"id": "T1701-66",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-63"
+"spouse": "T1701-65"
 },
 {
 "name": "FERNANDO DE ZAFRA CENTENO",
@@ -43003,11 +43284,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-65",
-"band": 7,
+"id": "T1701-67",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-66"
+"spouse": "T1701-68"
 },
 {
 "name": "CATALINA “ CATARINA” FERNANDEZ",
@@ -43030,11 +43311,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-66",
-"band": 7,
+"id": "T1701-68",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-65"
+"spouse": "T1701-67"
 },
 {
 "name": "JUAN TABORDA X",
@@ -43057,11 +43338,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-67",
-"band": 7,
-"father": "T1701-85",
-"mother": "T1701-86",
-"spouse": "T1701-68"
+"id": "T1701-69",
+"band": 8,
+"father": "T1701-87",
+"mother": "T1701-88",
+"spouse": "T1701-70"
 },
 {
 "name": "LEONOR LOPEZ SANTOFIMIA",
@@ -43084,11 +43365,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-68",
-"band": 7,
-"father": "T1701-87",
-"mother": "T1701-88",
-"spouse": "T1701-67"
+"id": "T1701-70",
+"band": 8,
+"father": "T1701-89",
+"mother": "T1701-90",
+"spouse": "T1701-69"
 },
 {
 "name": "CATALINA GARCIA DE TINEO ALVAREZ LLANO VALDEZ",
@@ -43112,11 +43393,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-69",
-"band": 7,
-"father": "T1701-89",
-"mother": "T1701-90",
-"spouse": "T1701-70"
+"id": "T1701-71",
+"band": 8,
+"father": "T1701-91",
+"mother": "T1701-92",
+"spouse": "T1701-72"
 },
 {
 "name": "?",
@@ -43137,11 +43418,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1701-70",
-"band": 7,
+"id": "T1701-72",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-69"
+"spouse": "T1701-71"
 },
 {
 "name": "JUAN GARCÍA DE ALVAREZ LLANO VALDEZ",
@@ -43165,11 +43446,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-71",
-"band": 7,
-"father": "T1701-91",
-"mother": "T1701-92",
-"spouse": "T1701-72"
+"id": "T1701-73",
+"band": 8,
+"father": "T1701-93",
+"mother": "T1701-94",
+"spouse": "T1701-74"
 },
 {
 "name": "CATALINA TINEO BERNALDO DE QUIROZ",
@@ -43192,11 +43473,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-72",
-"band": 7,
+"id": "T1701-74",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-71"
+"spouse": "T1701-73"
 },
 {
 "name": "JUAN RUIZ X",
@@ -43219,11 +43500,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-73",
-"band": 7,
+"id": "T1701-75",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-74"
+"spouse": "T1701-76"
 },
 {
 "name": "? X",
@@ -43245,11 +43526,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-74",
-"band": 7,
+"id": "T1701-76",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-73"
+"spouse": "T1701-75"
 },
 {
 "name": "ALONSO FERNANDEZ URRACO",
@@ -43272,11 +43553,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-75",
-"band": 7,
+"id": "T1701-77",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-76"
+"spouse": "T1701-78"
 },
 {
 "name": "CATALINA ALONSO X",
@@ -43299,11 +43580,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-76",
-"band": 7,
+"id": "T1701-78",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-75"
+"spouse": "T1701-77"
 },
 {
 "name": "MARTÍN VASQUEZ BARQUERO",
@@ -43326,11 +43607,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-77",
-"band": 7,
+"id": "T1701-79",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-78"
+"spouse": "T1701-80"
 },
 {
 "name": "ISABEL GARCIA GUADRAMIROS",
@@ -43353,11 +43634,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-78",
-"band": 7,
+"id": "T1701-80",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-77"
+"spouse": "T1701-79"
 },
 {
 "name": "PEDRO CORTES X",
@@ -43380,11 +43661,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-79",
-"band": 7,
+"id": "T1701-81",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-80"
+"spouse": "T1701-82"
 },
 {
 "name": "MARIA GONZALEZ X",
@@ -43407,11 +43688,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-80",
-"band": 7,
+"id": "T1701-82",
+"band": 8,
 "father": null,
 "mother": null,
-"spouse": "T1701-79"
+"spouse": "T1701-81"
 },
 {
 "name": "JUAN DE ESPINOSA VILLADIEGO",
@@ -43434,11 +43715,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-81",
-"band": 7,
-"father": "T1701-93",
-"mother": "T1701-94",
-"spouse": "T1701-82"
+"id": "T1701-83",
+"band": 8,
+"father": "T1701-95",
+"mother": "T1701-96",
+"spouse": "T1701-84"
 },
 {
 "name": "MARIA DE SALAZAR",
@@ -43461,11 +43742,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-82",
-"band": 7,
-"father": "T1701-95",
-"mother": "T1701-96",
-"spouse": "T1701-81"
+"id": "T1701-84",
+"band": 8,
+"father": "T1701-97",
+"mother": "T1701-98",
+"spouse": "T1701-83"
 },
 {
 "name": "GARCÍA GOMEZ DE SALAZAR",
@@ -43488,11 +43769,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-83",
-"band": 8,
-"father": "T1701-97",
-"mother": "T1701-98",
-"spouse": "T1701-84"
+"id": "T1701-85",
+"band": 9,
+"father": "T1701-99",
+"mother": "T1701-100",
+"spouse": "T1701-86"
 },
 {
 "name": "JUANA ZURBARÁN X",
@@ -43515,11 +43796,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-84",
-"band": 8,
+"id": "T1701-86",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1701-83"
+"spouse": "T1701-85"
 },
 {
 "name": "ALONSO TABORDA DÍAS",
@@ -43542,11 +43823,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-85",
-"band": 8,
-"father": "T1701-99",
-"mother": "T1701-100",
-"spouse": "T1701-86"
+"id": "T1701-87",
+"band": 9,
+"father": "T1701-101",
+"mother": "T1701-102",
+"spouse": "T1701-88"
 },
 {
 "name": "? X X",
@@ -43569,11 +43850,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-86",
-"band": 8,
+"id": "T1701-88",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1701-85"
+"spouse": "T1701-87"
 },
 {
 "name": "DIEGO LÓPEZ SANTOFIMIA",
@@ -43596,11 +43877,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-87",
-"band": 8,
+"id": "T1701-89",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1701-88"
+"spouse": "T1701-90"
 },
 {
 "name": "?",
@@ -43621,11 +43902,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1701-88",
-"band": 8,
+"id": "T1701-90",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1701-87"
+"spouse": "T1701-89"
 },
 {
 "name": "JUAN GARCIA DE TINEO DIAZ",
@@ -43649,11 +43930,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-89",
-"band": 8,
-"father": "T1701-101",
-"mother": "T1701-102",
-"spouse": "T1701-90"
+"id": "T1701-91",
+"band": 9,
+"father": "T1701-103",
+"mother": "T1701-104",
+"spouse": "T1701-92"
 },
 {
 "name": "MAYOR ÁLVAREZ LLANO VALDEZ",
@@ -43676,11 +43957,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-90",
-"band": 8,
+"id": "T1701-92",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1701-89"
+"spouse": "T1701-91"
 },
 {
 "name": "JUAN GARCÍA DE TINEO DIAZ",
@@ -43704,11 +43985,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-91",
-"band": 8,
-"father": "T1701-103",
-"mother": "T1701-104",
-"spouse": "T1701-92"
+"id": "T1701-93",
+"band": 9,
+"father": "T1701-105",
+"mother": "T1701-106",
+"spouse": "T1701-94"
 },
 {
 "name": "MAYOR ALVAREZ LLANO VALDEZ",
@@ -43731,11 +44012,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-92",
-"band": 8,
+"id": "T1701-94",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1701-91"
+"spouse": "T1701-93"
 },
 {
 "name": "JUAN DE ESPINOSA",
@@ -43758,11 +44039,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-93",
-"band": 8,
+"id": "T1701-95",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1701-94"
+"spouse": "T1701-96"
 },
 {
 "name": "ANA DE VILLADIEGO",
@@ -43785,11 +44066,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-94",
-"band": 8,
+"id": "T1701-96",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1701-93"
+"spouse": "T1701-95"
 },
 {
 "name": "FABIÁN DE SALAZAR",
@@ -43812,11 +44093,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-95",
-"band": 8,
+"id": "T1701-97",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1701-96"
+"spouse": "T1701-98"
 },
 {
 "name": "? X X",
@@ -43839,11 +44120,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-96",
-"band": 8,
+"id": "T1701-98",
+"band": 9,
 "father": null,
 "mother": null,
-"spouse": "T1701-95"
+"spouse": "T1701-97"
 },
 {
 "name": "FORTUN GOMEZ DE SALAZAR",
@@ -43866,11 +44147,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-97",
-"band": 9,
+"id": "T1701-99",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T1701-98"
+"spouse": "T1701-100"
 },
 {
 "name": "ANA ORTIZ X",
@@ -43893,11 +44174,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-98",
-"band": 9,
+"id": "T1701-100",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T1701-97"
+"spouse": "T1701-99"
 },
 {
 "name": "ALONSO TABORDA X",
@@ -43920,11 +44201,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-99",
-"band": 9,
+"id": "T1701-101",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T1701-100"
+"spouse": "T1701-102"
 },
 {
 "name": "ISABEL DIAZ X",
@@ -43947,11 +44228,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-100",
-"band": 9,
+"id": "T1701-102",
+"band": 10,
 "father": null,
 "mother": null,
-"spouse": "T1701-99"
+"spouse": "T1701-101"
 },
 {
 "name": "GUTIERRE DE MIRANDA X",
@@ -43974,11 +44255,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-101",
-"band": 9,
-"father": "T1701-105",
-"mother": "T1701-106",
-"spouse": "T1701-102"
+"id": "T1701-103",
+"band": 10,
+"father": "T1701-107",
+"mother": "T1701-108",
+"spouse": "T1701-104"
 },
 {
 "name": "INÉS DIAZ DE TINEO",
@@ -44001,11 +44282,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-102",
-"band": 9,
-"father": "T1701-107",
-"mother": "T1701-108",
-"spouse": "T1701-101"
+"id": "T1701-104",
+"band": 10,
+"father": "T1701-109",
+"mother": "T1701-110",
+"spouse": "T1701-103"
 },
 {
 "name": "GUTIERRE DE MIRANDA X",
@@ -44028,11 +44309,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-103",
-"band": 9,
-"father": "T1701-109",
-"mother": "T1701-110",
-"spouse": "T1701-104"
+"id": "T1701-105",
+"band": 10,
+"father": "T1701-111",
+"mother": "T1701-112",
+"spouse": "T1701-106"
 },
 {
 "name": "INÉS DIAZ DE TINEO",
@@ -44055,11 +44336,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-104",
-"band": 9,
-"father": "T1701-111",
-"mother": "T1701-112",
-"spouse": "T1701-103"
+"id": "T1701-106",
+"band": 10,
+"father": "T1701-113",
+"mother": "T1701-114",
+"spouse": "T1701-105"
 },
 {
 "name": "DIEGO DE MIRANDA",
@@ -44082,11 +44363,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-105",
-"band": 10,
+"id": "T1701-107",
+"band": 11,
 "father": null,
 "mother": null,
-"spouse": "T1701-106"
+"spouse": "T1701-108"
 },
 {
 "name": "?",
@@ -44107,11 +44388,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1701-106",
-"band": 10,
+"id": "T1701-108",
+"band": 11,
 "father": null,
 "mother": null,
-"spouse": "T1701-105"
+"spouse": "T1701-107"
 },
 {
 "name": "DIEGO GARCÍA DE TINEO",
@@ -44134,11 +44415,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-107",
-"band": 10,
-"father": "T1701-113",
-"mother": "T1701-114",
-"spouse": "T1701-108"
+"id": "T1701-109",
+"band": 11,
+"father": "T1701-115",
+"mother": "T1701-116",
+"spouse": "T1701-110"
 },
 {
 "name": "ALDONZA DE QUIROZ",
@@ -44161,11 +44442,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-108",
-"band": 10,
-"father": "T1701-115",
-"mother": "T1701-116",
-"spouse": "T1701-107"
+"id": "T1701-110",
+"band": 11,
+"father": "T1701-117",
+"mother": "T1701-118",
+"spouse": "T1701-109"
 },
 {
 "name": "DIEGO DE MIRANDA",
@@ -44188,11 +44469,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-109",
-"band": 10,
+"id": "T1701-111",
+"band": 11,
 "father": null,
 "mother": null,
-"spouse": "T1701-110"
+"spouse": "T1701-112"
 },
 {
 "name": "?",
@@ -44213,11 +44494,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1701-110",
-"band": 10,
+"id": "T1701-112",
+"band": 11,
 "father": null,
 "mother": null,
-"spouse": "T1701-109"
+"spouse": "T1701-111"
 },
 {
 "name": "DIEGO GARCÍA DE TINEO",
@@ -44240,11 +44521,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-111",
-"band": 10,
-"father": "T1701-117",
-"mother": "T1701-118",
-"spouse": "T1701-112"
+"id": "T1701-113",
+"band": 11,
+"father": "T1701-119",
+"mother": "T1701-120",
+"spouse": "T1701-114"
 },
 {
 "name": "ALDONZA DE QUIROZ",
@@ -44267,11 +44548,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-112",
-"band": 10,
-"father": "T1701-119",
-"mother": "T1701-120",
-"spouse": "T1701-111"
+"id": "T1701-114",
+"band": 11,
+"father": "T1701-121",
+"mother": "T1701-122",
+"spouse": "T1701-113"
 },
 {
 "name": "JUAN GARCÍA DE TINEO",
@@ -44294,11 +44575,11 @@
 "more": true,
 "none": false,
 "ref": null,
-"id": "T1701-113",
-"band": 11,
-"father": "T1701-121",
-"mother": "T1701-122",
-"spouse": "T1701-114"
+"id": "T1701-115",
+"band": 12,
+"father": "T1701-123",
+"mother": "T1701-124",
+"spouse": "T1701-116"
 },
 {
 "name": "CATALINA BERNALDO DE QUIROZ",
@@ -44321,11 +44602,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-114",
-"band": 11,
+"id": "T1701-116",
+"band": 12,
 "father": null,
 "mother": null,
-"spouse": "T1701-113"
+"spouse": "T1701-115"
 },
 {
 "name": "GUTIERRE GONZÁLEZ DE QUIROZ",
@@ -44348,11 +44629,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-115",
-"band": 11,
+"id": "T1701-117",
+"band": 12,
 "father": null,
 "mother": null,
-"spouse": "T1701-116"
+"spouse": "T1701-118"
 },
 {
 "name": "SANCHA DE QUIJANO",
@@ -44375,11 +44656,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-116",
-"band": 11,
+"id": "T1701-118",
+"band": 12,
 "father": null,
 "mother": null,
-"spouse": "T1701-115"
+"spouse": "T1701-117"
 },
 {
 "name": "JUAN GARCIA DE TINEO",
@@ -44402,11 +44683,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-117",
-"band": 11,
+"id": "T1701-119",
+"band": 12,
 "father": null,
 "mother": null,
-"spouse": "T1701-118"
+"spouse": "T1701-120"
 },
 {
 "name": "CATALINA BERNALDO DE QUIROZ",
@@ -44429,11 +44710,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-118",
-"band": 11,
+"id": "T1701-120",
+"band": 12,
 "father": null,
 "mother": null,
-"spouse": "T1701-117"
+"spouse": "T1701-119"
 },
 {
 "name": "GUTIERRE GONZALEZ DE QUIROZ",
@@ -44456,11 +44737,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-119",
-"band": 11,
+"id": "T1701-121",
+"band": 12,
 "father": null,
 "mother": null,
-"spouse": "T1701-120"
+"spouse": "T1701-122"
 },
 {
 "name": "SANCHA DE QUIJANO",
@@ -44483,11 +44764,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-120",
-"band": 11,
+"id": "T1701-122",
+"band": 12,
 "father": null,
 "mother": null,
-"spouse": "T1701-119"
+"spouse": "T1701-121"
 },
 {
 "name": "GARCÍA ORDOÑEZ DE TINEO",
@@ -44510,11 +44791,11 @@
 "more": false,
 "none": true,
 "ref": null,
-"id": "T1701-121",
-"band": 12,
+"id": "T1701-123",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T1701-122"
+"spouse": "T1701-124"
 },
 {
 "name": "? X",
@@ -44536,11 +44817,11 @@
 "more": false,
 "none": false,
 "ref": null,
-"id": "T1701-122",
-"band": 12,
+"id": "T1701-124",
+"band": 13,
 "father": null,
 "mother": null,
-"spouse": "T1701-121"
+"spouse": "T1701-123"
 }
 ],
 "warn": []
