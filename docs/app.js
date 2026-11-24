@@ -9,7 +9,7 @@ const LCOL = ['#1f6f78', '#a23b48', '#b07a12', '#4d5fa3', '#3f7d3a', '#8a4f9e'];
 const INK = '#2a2622';
 const isMobile = () => matchMedia('(max-width: 760px)').matches;
 
-let D, P = {}, ROOT, MANUEL, TERESA, H, LINES, TREE = {};
+let D, P = {}, ROOT, MANUEL, TERESA, H, LINES, TREE = {}, INV = null, HZ = {};
 const color = p => (p && p.line >= 0 ? LCOL[p.line] : INK);
 
 /* ---------------- relaciones ---------------- */
@@ -46,6 +46,8 @@ fetch('data/familia.json').then(r => r.json()).then(init).catch(err => {
 function init(data) {
   D = data; H = data.historia; ROOT = data.root; MANUEL = data.manuel; TERESA = data.teresa; LINES = data.lines;
   data.trees.forEach(t => { TREE[t.n] = t; });
+  INV = data.investigacion || null;
+  if (INV) INV.hallazgos.forEach(h => { HZ[h.id] = h; });
   data.people.forEach(p => { P[p.id] = p; p._n = norm([p.name, ...(p.variants || [])].join(' | ')); });
   buildChart();
   buildLegend();
@@ -62,14 +64,15 @@ const rendered = {};
 function show(view) {
   $$('.view').forEach(v => (v.hidden = v.id !== 'view-' + view));
   $$('.tabs a').forEach(a => a.classList.toggle('on', a.dataset.view === view));
-  if (!rendered[view]) { rendered[view] = true; ({ historia: renderHistoria, personas: renderPersonas, originales: renderOriginales })[view]?.(); }
+  if (!rendered[view]) { rendered[view] = true; ({ historia: renderHistoria, personas: renderPersonas, originales: renderOriginales, investigacion: renderInvestigacion })[view]?.(); }
 }
 function route() {
   const h = location.hash.replace(/^#\/?/, '').split('/');
   const v = h[0] || 'arbol';
   if (v === 'persona' && P[h[1]]) { show('arbol'); openPanel(h[1], false); focusNode(h[1]); return; }
   closePanel(true);
-  if (['arbol', 'historia', 'personas', 'originales'].includes(v)) show(v); else show('arbol');
+  if (['arbol', 'historia', 'personas', 'originales', 'investigacion'].includes(v)) show(v); else show('arbol');
+  if (v === 'investigacion' && h[1]) setTimeout(() => document.getElementById('inv-' + h[1])?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
   if (v === 'historia' && h[1]) setTimeout(() => document.getElementById(h[1])?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
 }
 
@@ -135,7 +138,7 @@ function buildChart() {
   nodesSel = gRoot.append('g').selectAll('g').data(hier.descendants()).join('g')
     .attr('class', d => {
       const p = P[d.data.pid];
-      return 'node' + (d.data.stub ? ' stub' : '') + (p.bio && !d.data.stub ? ' bio' : '') + (d.depth === 0 ? ' root big' : d.depth <= 2 ? ' big' : '');
+      return 'node' + (d.data.stub ? ' stub' : '') + (p.invAdded ? ' added' : '') + (p.bio && !d.data.stub ? ' bio' : '') + (d.depth === 0 ? ' root big' : d.depth <= 2 ? ' big' : '');
     })
     .on('click', (e, d) => { e.stopPropagation(); const id = d.data.pid; if (d.data.stub) focusNode(id); openPanel(id); });
   nodesSel.append('circle').attr('r', d => (d.depth === 0 ? 10 : d.depth <= 2 ? 7 : 5)).attr('fill', d => color(P[d.data.pid]));
@@ -310,11 +313,14 @@ function openPanel(id, updateHash = true) {
   if (p.place) html += `<span class="chip">${esc(p.place)}</span>`;
   if (p.nick) html += `<span class="chip">«${esc(p.nick)}»</span>`;
   if (p.conq) html += `<span class="chip">Conquistador</span>`;
+  if (p.invAdded) html += `<span class="chip inv-added" title="Esta persona no está en los cuadros originales: la añadió la investigación">Añadida por la investigación</span>`;
+  else if (p.inv) html += `<a class="chip inv-chip" href="#inv-sec" data-scroll="inv-sec">Investigación (${p.inv.length})</a>`;
   html += `</div>`;
   if (p.note) html += `<p>${esc(p.note)}.</p>`;
   const raws = [...new Map((p.raw || []).filter(r => !/^[X?\s.]*$/.test(r)).map(r => [r.replace(/[\s.\-]/g, ''), r])).values()];
   if (raws.length)
     html += `<p class="note">Dato en los cuadros: ${esc(raws.join(' / '))}. En los cuadros originales no siempre se indica si el año es de nacimiento o de muerte.</p>`;
+  html += origNote(p);
 
   if (p.bio) {
     const s = H.linaje.find(x => x.n === p.bio);
@@ -336,6 +342,7 @@ function openPanel(id, updateHash = true) {
   const sibs = new Set();
   if (id !== ROOT) for (const k of ['father', 'mother']) if (p[k] && P[p[k]]) (P[p[k]].children || []).forEach(c => c !== id && sibs.add(c));
   if (sibs.size) html += `<div class="p-sec"><h4>Hermanos</h4>${[...sibs].map(x => personLink(x)).join('')}</div>`;
+  if (p.inv && p.inv.length) html += invSection(p);
   if (p.trees && p.trees.length) html += `<div class="p-sec"><h4>Aparece en los cuadros originales</h4><div class="p-facts">${p.trees.map(t => `<button class="chip btn" data-tree="${t}">${esc(treeName(t))}</button>`).join('')}</div></div>`;
   if (p.variants && p.variants.length) html += `<div class="p-sec"><h4>También escrito como</h4><p class="note">${p.variants.map(esc).join(' · ')}</p></div>`;
   html += `<div class="p-actions">${nodeIndex.has(id) ? `<button class="btn-primary" data-focus="${id}">Ver en el gráfico</button>` : ''}<button class="btn-ghost" data-copy="${id}">Copiar enlace</button></div>`;
@@ -348,9 +355,68 @@ function openPanel(id, updateHash = true) {
   body.onclick = e => {
     const go = e.target.closest('[data-go]'); if (go) { const gid = go.dataset.go; openPanel(gid); if (!$('#view-arbol').hidden) focusNode(gid); return; }
     const tr = e.target.closest('[data-tree]'); if (tr) { openTree(+tr.dataset.tree); return; }
+    const im = e.target.closest('[data-img]'); if (im) { e.preventDefault(); openImage(im.dataset.img, im.dataset.title || ''); return; }
+    const sc = e.target.closest('[data-scroll]'); if (sc) { e.preventDefault(); document.getElementById(sc.dataset.scroll)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
     const f = e.target.closest('[data-focus]'); if (f) { if ($('#view-arbol').hidden) { history.pushState(null, '', '#/persona/' + f.dataset.focus); show('arbol'); } focusNode(f.dataset.focus); if (isMobile()) closePanel(true); return; }
     const ph = e.target.closest('[data-photo]'); if (ph) { openImage('img/' + ph.dataset.photo, H.fotos[ph.dataset.photo] || ''); return; }
     const c = e.target.closest('[data-copy]'); if (c) { navigator.clipboard?.writeText(location.href.split('#')[0] + '#/persona/' + c.dataset.copy); c.textContent = '¡Copiado!'; }
+  };
+}
+/* ---------------- investigación ---------------- */
+const CLAS = { 'CONFIRMADO': 'ok', 'PROBABLE': 'prob', 'EN CONFLICTO': 'conf' };
+const TIPO = { extraccion: 'Corrección de la extracción', correccion: 'Corrección', verificacion: 'Verificación', adicion: 'Adición', contexto: 'Contexto', duda: 'Duda' };
+const FIELD = { year: 'Año', place: 'Lugar', name: 'Nombre', father: 'Padre', mother: 'Madre', spouses: 'Cónyuges' };
+function srcLink(k) {
+  const f = INV.fuentes[k]; if (!f) return '';
+  const orig = f.tipo === 'documento original';
+  if (f.u.startsWith('arboles/')) return `<li class="src orig"><a href="${esc(f.u)}" data-img="${esc(f.u)}" data-title="${esc(f.t)}">${esc(f.t)}</a></li>`;
+  if (f.u.startsWith('#')) return `<li class="src orig"><a href="${esc(f.u)}">${esc(f.t)}</a></li>`;
+  return `<li class="src${orig ? ' orig' : ''}"><a href="${esc(f.u)}" target="_blank" rel="noopener">${esc(f.t)}</a> <span class="src-t">${esc(f.tipo)}</span></li>`;
+}
+function badge(h) { return `<span class="inv-badge ${CLAS[h.c]}">${esc(h.c)}</span>${h.tipo ? `<span class="inv-tipo">${esc(TIPO[h.tipo] || h.tipo)}</span>` : ''}${h.a ? '<span class="inv-tipo applied">aplicado al árbol</span>' : ''}`; }
+function invCard(h, withPerson) {
+  let x = `<article class="inv-card ${CLAS[h.c]}" id="inv-${esc(h.id)}"><div class="inv-head">${badge(h)}<span class="inv-id">${esc(h.id)}</span></div><h5>${esc(h.titulo)}</h5>`;
+  if (h.o || h.n) x += `<p class="inv-diff">${h.o ? `<span class="was">Original: ${esc(h.o)}</span>` : ''}${h.n ? `<span class="now">${h.a ? 'Ahora' : 'Propuesta'}: ${esc(h.n)}</span>` : ''}</p>`;
+  x += `<p>${esc(h.t)}</p>`;
+  if (withPerson && h.p && P[h.p]) x += `<div class="inv-person">${personLink(h.p)}</div>`;
+  x += `<ul class="srcs">${h.f.map(srcLink).join('')}</ul></article>`;
+  return x;
+}
+function invSection(p) {
+  return `<div class="p-sec p-inv" id="inv-sec"><h4>Investigación</h4><p class="note">Lo que sigue no viene de los cuadros originales: es el resultado de contrastarlos con fuentes publicadas. Solo lo «confirmado» modifica el árbol.</p>${p.inv.map(id => HZ[id]).filter(Boolean).map(h => invCard(h, false)).join('')}<p><a class="more" href="#/investigacion">Ver todos los hallazgos →</a></p></div>`;
+}
+function origNote(p) {
+  const o = p.orig; if (!o && !p.merged) return '';
+  const parts = Object.entries(o || {}).map(([k, v]) => `${FIELD[k] || k}: ${Array.isArray(v) ? v.join(', ') : (v || '—')}`);
+  return `<p class="note inv-orig">${parts.length ? `Dato original de los cuadros, corregido por la investigación — ${esc(parts.join(' · '))}.` : ''}${p.merged ? ` En los cuadros aparecía también por separado como: ${esc(p.merged.join(', '))}.` : ''}</p>`;
+}
+function invNotes(sec) {
+  if (!INV) return '';
+  const hs = INV.hallazgos.filter(h => h.seccion === sec);
+  return hs.length ? `<div class="inv-notes"><b class="inv-notes-t">Investigación</b>${hs.map(h => invCard(h, true)).join('')}</div>` : '';
+}
+function renderInvestigacion() {
+  const el = $('#view-investigacion');
+  if (!INV) { el.innerHTML = '<div class="wrap"><p>No hay datos de investigación.</p></div>'; return; }
+  const hs = INV.hallazgos, cnt = c => hs.filter(h => h.c === c).length;
+  const added = D.people.filter(p => p.invAdded);
+  const groups = [...LINES, 'General'];
+  el.innerHTML = `<div class="wrap"><span class="kicker">Contraste con fuentes</span><h1 class="display" style="font-size:44px">${esc(INV.meta.titulo)}</h1>
+    <p class="lede" style="font-size:18px">${esc(INV.meta.resumen)}</p>
+    <div class="stats"><div class="stat"><b>${hs.length}</b><span>hallazgos</span></div><div class="stat"><b>${cnt('CONFIRMADO')}</b><span>confirmados</span></div><div class="stat"><b>${cnt('PROBABLE')}</b><span>probables</span></div><div class="stat"><b>${cnt('EN CONFLICTO')}</b><span>en conflicto</span></div></div>
+    <div class="box"><ul class="inv-legend">${Object.entries(INV.meta.clasificaciones).map(([k, v]) => `<li><span class="inv-badge ${CLAS[k]}">${esc(k)}</span> ${esc(v)}</li>`).join('')}<li><span class="inv-tipo">Corrección de la extracción</span> ${esc(INV.meta.tipos.extraccion)}</li></ul>
+    ${added.length ? `<p><b>Personas añadidas por la investigación:</b> ${added.map(p => `<button class="plink-inline" data-go="${p.id}">${esc(p.name)}</button>`).join(', ')}.</p>` : ''}</div>
+    <div class="toolbar">${['Todas', 'CONFIRMADO', 'PROBABLE', 'EN CONFLICTO'].map((c, i) => `<button class="fchip${i ? '' : ' on'}" data-c="${c}">${esc(c === 'Todas' ? c : c.toLowerCase())}</button>`).join('')}</div>
+    <div id="invlist">${groups.map(g => { const l = hs.filter(h => (h.linea || 'General') === g); return l.length ? `<section class="inv-group" data-g="${esc(g)}"><h2 class="sec">${g === 'General' ? 'Historia y apellido' : 'Línea ' + esc(g)}</h2>${l.map(h => invCard(h, true)).join('')}</section>` : ''; }).join('')}</div>
+    <h2 class="sec">Fuentes consultadas</h2><ul class="srcs all">${Object.keys(INV.fuentes).map(srcLink).join('')}</ul></div>`;
+  $$('.fchip[data-c]', el).forEach(b => b.onclick = () => {
+    $$('.fchip[data-c]', el).forEach(x => x.classList.toggle('on', x === b));
+    $$('.inv-card', el).forEach(c => { c.hidden = b.dataset.c !== 'Todas' && HZ[c.id.slice(4)].c !== b.dataset.c; });
+    $$('.inv-group', el).forEach(g => { g.hidden = !$$('.inv-card', g).some(c => !c.hidden); });
+  });
+  el.onclick = e => {
+    const g = e.target.closest('[data-go]'); if (g) { openPanel(g.dataset.go); return; }
+    const im = e.target.closest('[data-img]'); if (im) { e.preventDefault(); openImage(im.dataset.img, im.dataset.title || ''); }
   };
 }
 function closePanel(keepHash) {
@@ -382,9 +448,9 @@ function renderHistoria() {
   <div class="box kin"><b>Parientes antes de casarse.</b> ${esc(kinText())}</div>
   <details class="box"><summary>${esc(s.metodologia.titulo)} y notas del autor</summary>
     <ol>${s.metodologia.items.map(i => `<li>${esc(i)}</li>`).join('')}</ol>
-    <ul>${s.metodologia.notas.map(i => `<li>${esc(i)}</li>`).join('')}</ul></details>
+    <ul>${s.metodologia.notas.map(i => `<li>${esc(i)}</li>`).join('')}</ul></details>${invNotes('metodologia')}
   <h2 class="sec">${esc(s.origen.titulo)}</h2>
-  <div class="prose">${s.origen.parrafos.map(p => `<p>${esc(p)}</p>`).join('')}</div>
+  <div class="prose">${s.origen.parrafos.map(p => `<p>${esc(p)}</p>`).join('')}</div>${invNotes('origen')}
   <h2 class="sec">El linaje Álvarez del Pino</h2>
   <p class="lede" style="font-size:18px">Diez generaciones por línea de varón, desde el fundador de la familia en Antioquia hasta Manuel Salvador.</p>
   <div class="timeline">`;
@@ -402,6 +468,7 @@ function renderHistoria() {
         `<button class="kid" data-go="${k.id}" style="text-align:left"><b>${esc(k.name)}${k.nick ? ` <small>(«${esc(k.nick)}»)</small>` : ''}</b><span>Nació el ${esc(k.born)}</span>${k.spouseName ? `<span>Casado/a con ${esc(k.spouseName)}</span>` : ''}${k.note ? `<span>${esc(k.note)}</span>` : ''}</button>`).join('')}</div>
         <figure class="ph" style="max-width:560px"><img src="img/familia-final.jpg" alt="${esc(H.fotos['familia-final.jpg'])}" data-photo="familia-final.jpg" loading="lazy"><figcaption>${esc(H.fotos['familia-final.jpg'])}</figcaption></figure>`;
     }
+    h += invNotes('linaje-' + g.n);
     if (pid) h += `<div class="foot"><button class="btn-ghost" data-person="${pid}">Ver en el árbol</button></div>`;
     h += `</article>`;
   }
@@ -412,6 +479,7 @@ function renderHistoria() {
     const b = e.target.closest('[data-person]'); if (b) { goPerson(b.dataset.person); return; }
     const k = e.target.closest('[data-go]'); if (k) { openPanel(k.dataset.go); return; }
     const ph = e.target.closest('[data-photo]'); if (ph) openImage('img/' + ph.dataset.photo, H.fotos[ph.dataset.photo] || '');
+    const im = e.target.closest('[data-img]'); if (im) { e.preventDefault(); openImage(im.dataset.img, im.dataset.title || ''); }
   };
 }
 
@@ -453,7 +521,7 @@ function renderPersonas() {
     $('#plist').innerHTML = html || '<p style="padding:14px">Sin resultados.</p>';
     $('#pcount').textContent = `${list.length} personas`;
   };
-  const row = p => `<button class="row" data-id="${p.id}"><i class="dot" style="background:${color(p)}"></i><span class="r-text"><span class="r-name">${esc(p.name)}</span><span class="r-meta" style="margin:0;text-align:left;max-width:none">${esc(rel(p))}</span></span><span class="r-meta">${esc(meta(p))}</span></button>`;
+  const row = p => `<button class="row" data-id="${p.id}"><i class="dot" style="background:${color(p)}"></i><span class="r-text"><span class="r-name">${esc(p.name)}${p.invAdded ? ' <span class="mini-tag added">añadida</span>' : p.inv ? ' <span class="mini-tag">investigación</span>' : ''}</span><span class="r-meta" style="margin:0;text-align:left;max-width:none">${esc(rel(p))}</span></span><span class="r-meta">${esc(meta(p))}</span></button>`;
   $('#pq').addEventListener('input', draw);
   $$('.fchip[data-f]', el).forEach(b => b.onclick = () => { f = b.dataset.f; $$('.fchip[data-f]', el).forEach(x => x.classList.toggle('on', x === b)); draw(); });
   $('.fchip[data-sort]', el).onclick = e => { az = !az; e.currentTarget.classList.toggle('on', az); draw(); };
